@@ -1,0 +1,57 @@
+# fly.toml app configuration file generated for pt4-docusaurus on 2025-07-03T10:33:41-07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'pt4-docusaurus'
+primary_region = 'sea'
+kill_signal = 'SIGINT'
+kill_timeout = '5s'
+
+[experimental]
+  auto_rollback = true
+
+[build]
+
+# [http_service]
+#   internal_port = 8080
+#   force_https = true
+#   auto_stop_machines = 'stop'
+#   auto_start_machines = true
+#   min_machines_running = 0
+#   processes = ['app']
+
+[[services]]
+  protocol = 'tcp'
+  internal_port = 8080
+  processes = ['app']
+
+  [[services.ports]]
+    port = 80
+    handlers = ['http']
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ['tls', 'http']
+
+  [services.concurrency]
+    type = 'connections'
+    hard_limit = 10000
+    soft_limit = 10000
+
+  [[services.tcp_checks]]
+    interval = '15s'
+    timeout = '2s'
+    grace_period = '1s'
+
+  [[services.http_checks]]
+    interval = '10s'
+    timeout = '2s'
+    grace_period = '5s'
+    method = 'get'
+    path = '/health-check'
+    protocol = 'http'
+
+[[vm]]
+  size = 'shared-cpu-1x'

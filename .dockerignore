@@ -1,0 +1,57 @@
+# Node.js and Yarn
+node_modules/
+npm-debug.log
+yarn-error.log
+.yarn/
+.yarnrc
+.pnp.js
+
+# Build output (already generated in the Docker build stage)
+build/
+
+# Docusaurus cache
+.docusaurus/
+.cache/
+.cache-loader/
+
+# Version control
+.git/
+.gitignore
+.github/
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+*~
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment and configuration files (to avoid leaking secrets)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Test and CI files
+coverage/
+test-results/
+__tests__/
+*.test.js
+*.test.ts
+
+# Other common ignores
+dist/
+out/
+tmp/
+temp/

@@ -1,0 +1,28 @@
+{
+	# debug # DEV
+	# auto_https off # DEV
+}
+
+:8080 {
+	root * /srv
+	# root * /build # DEV
+	file_server
+	encode gzip
+
+	handle /health-check {
+		respond "OK" 200
+	}
+
+	# Redirects from docusaurus.config.ts
+	redir / /docs 301
+	redir /learn/devops /learn/devops/what-is-devops 301
+
+	# Handle single-page app (SPA) routing
+	try_files {path} {path}/ /index.html
+
+	# Logging
+	log {
+		output stderr
+		format console
+	}
+}

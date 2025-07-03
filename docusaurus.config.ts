@@ -57,6 +57,7 @@ const config: Config = {
         },
         sitemap: {
           filename: 'sitemap-docusaurus.xml',
+          priority: 1,
         },
         theme: {
           customCss: './src/css/custom.css',
