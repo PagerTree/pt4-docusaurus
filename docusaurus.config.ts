@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   url: 'https://pagertree.com',
-  baseUrl: '/',
+  baseUrl: '/docs/',
 
   organizationName: 'pagertree',
   projectName: 'pt4-docusaurus',
@@ -39,8 +39,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           remarkPlugins: [remarkDirectiveSugar],
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/pagertree/pt4-docusaurus/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -48,15 +47,13 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/pagertree/pt4-docusaurus/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
           remarkPlugins: [],
         },
         sitemap: {
-          filename: 'sitemap-docusaurus.xml',
           priority: 1,
         },
         theme: {
@@ -68,21 +65,6 @@ const config: Config = {
 
   plugins: [
     [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {
-            from: '/',
-            to: '/docs',
-          },
-          {
-            from: '/learn/devops',
-            to: '/learn/devops/what-is-devops',
-          },
-        ],
-      },
-    ],
-    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'learn',
@@ -90,12 +72,10 @@ const config: Config = {
         routeBasePath: 'learn',
         sidebarPath: './sidebarsLearn.ts',
         remarkPlugins: [remarkDirectiveSugar],
-        editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        editUrl: 'https://github.com/pagertree/pt4-docusaurus/tree/main/',
       },
     ],
     require.resolve('docusaurus-plugin-image-zoom'),
-    
   ],
 
   themeConfig: {
@@ -107,12 +87,12 @@ const config: Config = {
         srcDark: 'img/logo-inverted.svg'
       },
       items: [
-        {to: '/docs', label: 'Docs', position: 'left', activeBaseRegex: '^/docs(?!/api/|/cli/|/integration-guides/)',},
-        {to: '/docs/integration-guides/introduction', label: 'Integration Guides', position: 'left', activeBasePath: '/docs/integration-guides'},
-        {to: '/docs/api/introduction', label: 'API', position: 'left', activeBasePath: '/docs/api'},
-        {to: '/docs/cli/command-line-interface', label: 'CLI', position: 'left'},
-        {to: '/learn', label: 'Learn', position: 'right'},
-        {to: '/blog', label: 'Blog', position: 'right'},
+        {to: 'https://pagertree.com/docs', label: 'Docs', position: 'left', activeBaseRegex: '^/docs(?!/api/|/cli/|/integration-guides/)',},
+        {to: 'https://pagertree.com/docs/integration-guides/introduction', label: 'Integration Guides', position: 'left', activeBasePath: '/docs/integration-guides'},
+        {to: 'https://pagertree.com/docs/api/introduction', label: 'API', position: 'left', activeBasePath: '/docs/api'},
+        {to: 'https://pagertree.com/docs/cli/command-line-interface', label: 'CLI', position: 'left'},
+        {to: 'https://pagertree.com/learn', label: 'Learn', position: 'right'},
+        {to: 'https://pagertree.com/blog', label: 'Blog', position: 'right'},
         {
           href: 'https://pagertree.com',
           label: 'Website',
@@ -136,38 +116,21 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
-            {label: 'Docs', to: '/docs'},
-            {label: 'Blog', to: '/blog'},
-            {label: 'Learn', to: '/learn/introduction'},
+            {label: 'Docs', to: 'https://pagertree.com/docs'},
+            {label: 'Blog', to: 'https://pagertree.com/blog'},
+            {label: 'Learn', to: 'https://pagertree.com/learn/introduction'},
           ],
         },
         {
-          title: 'Community',
+          title: 'Contact',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'About',
+              href: 'https://pagertree.com/about/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'System Status',
+              href: 'https://status.pagertree.com/',
             },
           ],
         },

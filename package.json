@@ -6,6 +6,9 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "build:docs": "docusaurus build --out-dir build/docs --config docusaurus.config+docs.ts",
+    "build:blog": "docusaurus build --out-dir build/blog --config docusaurus.config+blog.ts",
+    "build:learn": "docusaurus build --out-dir build/learn --config docusaurus.config+learn.ts",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -16,7 +19,6 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
-    "@docusaurus/plugin-client-redirects": "^3.8.1",
     "@docusaurus/preset-classic": "3.8.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
@@ -32,6 +34,7 @@
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
+    "lodash": "^4.17.21",
     "typescript": "~5.6.2"
   },
   "browserslist": {

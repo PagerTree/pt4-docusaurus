@@ -11,7 +11,9 @@ RUN yarn install --frozen-lockfile
 COPY . .
 
 # Build the static site
-RUN yarn build
+RUN yarn build:docs
+RUN yarn build:blog
+RUN yarn build:learn
 
 # Serve stage: Use Caddy to serve static files
 FROM caddy:2-alpine
