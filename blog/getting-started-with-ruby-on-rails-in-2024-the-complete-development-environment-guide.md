@@ -1,5 +1,5 @@
 ---
-date: 2024-09-03
+date: 2024-08-27
 authors: challer
 description: >-
   In this article, we will cover the basics of Ruby on Rails by walking you

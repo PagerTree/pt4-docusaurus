@@ -1,10 +1,9 @@
 ---
-date: 2024-07-29
-title: Fly.io migrate-to-v2 Postgres stuck in read-only mode
+date: 2023-07-31
+authors: amiller
 description: >-
   A postmortem describing the issue, root cause, and remediation of our outage
   on July 30, 2023 00:30 - 01:15 (UTC)
-authors: amiller
 ---
 
 # 📜 Fly.io migrate-to-v2 Postgres stuck in read-only mode
