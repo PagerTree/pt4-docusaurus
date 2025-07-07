@@ -32,28 +32,23 @@ We have compiled a list of the top 7 industry-leading system monitoring tools us
 
 Here are the top 7 APM tools using our key criteria:
 
-1. [Datadog](system-monitoring-7-best-apm-tools.md#datadog-modern-monitoring-and-security)
+1. [Datadog](system-monitoring-7-best-apm-tools.md#datadog-modern-monitoring--security)
 2. [PRTG](system-monitoring-7-best-apm-tools.md#prtg-high-availability-system-monitoring)
 3. [LogicMonitor](system-monitoring-7-best-apm-tools.md#logicmonitor-intelligent-observability-for-modern-applications)
 4. [New Relic](system-monitoring-7-best-apm-tools.md#new-relic-discover-true-application-monitoring)
 5. [AppDynamics](system-monitoring-7-best-apm-tools.md#appdynamics-make-better-decisions-from-the-code-level-to-the-c-suite)
-6. [Elastic APM (ELK Stack)](system-monitoring-7-best-apm-tools.md#elastic-apm-elk-stack-monitor-your-infrastructure-your-logs-and-your-users-all-within-a-single-solut)
+6. [Elastic APM (ELK Stack)](system-monitoring-7-best-apm-tools.md#elastic-apm-elk-stack-monitor-your-infrastructure-your-logs-and-your-users-all-within-a-single-solution)
 7. [SolarWinds](system-monitoring-7-best-apm-tools.md#solarwinds-accelerates-the-identification-and-root-cause-of-application-performance-issues)
 
 ### What To Look For In Your System Monitoring Software
 
-When evaluating an APM tool, consider these 5 key factors to ensure you are picking the right tool to monitor your systems.\
-\
-**Reliability:** Monitoring software's primary role is to provide consistent and accurate data on your system's health and performance. The software should have a proven track record of minimal downtime and accurate measurement, reporting, and alerting.\
-\
-**Scalability:** APM tools must be able to grow with your service, handling an increasing number of devices and metrics without a drop in performance.\
-\
-**Integrations:** The monitoring system you choose should easily fit into your existing technology stack. Its ability to integrate smoothly with other tools and platforms can significantly enhance its utility and the benefits you gain from it.
+When evaluating an APM tool, consider these 5 key factors to ensure you are picking the right tool to monitor your systems.
 
-\
-**Pricing:** APM tools range in pricing anywhere from free to hundreds of dollars. Pricing should align with your budget and the value it delivers. Look for transparent pricing models that scale sensibly with your usage.\
-\
-**Ease of use:** System monitoring software should provide a user-friendly interface, clear documentation, and responsive customer support. This will dramatically improve the experience of setting up and maintaining your monitoring solution.
+- **Reliability:** Monitoring software's primary role is to provide consistent and accurate data on your system's health and performance. The software should have a proven track record of minimal downtime and accurate measurement, reporting, and alerting.
+- **Scalability:** APM tools must be able to grow with your service, handling an increasing number of devices and metrics without a drop in performance.
+- **Integrations:** The monitoring system you choose should easily fit into your existing technology stack. Its ability to integrate smoothly with other tools and platforms can significantly enhance its utility and the benefits you gain from it.
+- **Pricing:** APM tools range in pricing anywhere from free to hundreds of dollars. Pricing should align with your budget and the value it delivers. Look for transparent pricing models that scale sensibly with your usage.
+-**Ease of use:** System monitoring software should provide a user-friendly interface, clear documentation, and responsive customer support. This will dramatically improve the experience of setting up and maintaining your monitoring solution.
 
 ### Datadog: Modern Monitoring & Security
 

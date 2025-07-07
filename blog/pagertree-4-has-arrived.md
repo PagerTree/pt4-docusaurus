@@ -36,7 +36,7 @@ Austin
 
 <figure>![PagerTree Alert](<https://pagertree.com/assets/img/posts/2022/10/09/mobile-view.png>)<figcaption></figcaption></figure>
 
-## Full Upgrade Breakdown <a href="#full-upgrade-breakdown" id="full-upgrade-breakdown"></a>
+## Full Upgrade Breakdown
 
 * General
   * Search - Is now powered by ElasticSearch and is way more relevant.

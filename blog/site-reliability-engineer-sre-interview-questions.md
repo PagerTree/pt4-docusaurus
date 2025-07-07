@@ -141,7 +141,7 @@ The first step to prioritizing alerts is to understand the [severity level](http
 
 [Containers](https://pagertree.com/learn/docker/containers) are self-contained software packages that can run in any environment without any modifications. They virtualize the operating system and are capable of running in various settings, including private data centers and public clouds. [Docker](https://pagertree.com/learn/docker/overview) is a common containerization tool.
 
-### 14.  What is database sharding?
+### 14. What is database sharding?
 
 [Database sharding](https://www.mongodb.com/resources/products/capabilities/database-sharding-explained) involves distributing a large database across multiple machines. Since a single machine or database server can only handle a limited amount of data, sharding splits the data into smaller logical chunks called shards and stores them across multiple database servers to overcome this limitation.
 

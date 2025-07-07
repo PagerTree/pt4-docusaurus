@@ -10,7 +10,7 @@ description: >-
 
 Today, we are excited to release the all-new **PagerTree Command Line Interface (CLI)**, a slick tool for managing alerts and integrations from your terminal.
 
-The PagerTree CLI is all about speed and "scriptability". Automate alert handling in scripts, manage integrations in seconds, and stay in your terminal flow. Plus, it’s [open-source on GitHub](https://github.com/PagerTree/pager_tree-cli) so you can tweak it to your heart’s content. Check out the [docs](/docs/cli/command-line-interface.md) to dive in!
+The PagerTree CLI is all about speed and "scriptability". Automate alert handling in scripts, manage integrations in seconds, and stay in your terminal flow. Plus, it’s [open-source on GitHub](https://github.com/PagerTree/pager_tree-cli) so you can tweak it to your heart’s content. Check out the [docs](https://pagertree.com/docs/cli/command-line-interface) to dive in!
 
 ![PagerTree Command Line Interface (CLI) screenshot](<.gitbook/assets/image (26).png>)
 
@@ -51,7 +51,7 @@ pagertree teams current-oncall 01JTGJC37Y5MZ9EQWWGTP00AWM
 ## Get Started Now
 
 1. Download the [latest release](https://github.com/PagerTree/pager_tree-cli/releases).
-2. Add your `.env` file with your `PAGERTREE_API_KEY` - [See documentation](/docs/cli/command-line-interface.md#env).
+2. Add your `.env` file with your `PAGERTREE_API_KEY` - [See documentation](https://pagertree.com/docs/cli/command-line-interface#env).
 3. Run: `pagertree integrations list`
 
 Let’s make on-call life easier together. Try the PagerTree CLI today!

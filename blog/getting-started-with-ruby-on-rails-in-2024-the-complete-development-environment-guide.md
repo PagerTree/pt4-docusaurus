@@ -33,21 +33,21 @@ Setting up your Ruby on Rails development environment will take roughly 30 minut
 
 [Step 3: Update the Package List and Dependencies for Ruby](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-3-update-the-package-list-and-dependencies-for-ruby)
 
-[Step 4: Install the asdf Version Manager](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-4-install-asdf-version-manager)
+[Step 4: Install the asdf Version Manager](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-4-install-the-asdf-version-manager)
 
 [Step 5: Install Ruby](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-5-install-ruby)
 
-[Step 6: Install Node.js](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-6-install-node.js)
+[Step 6: Install Node.js](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-6-install-nodejs)
 
 [Step 7: Configure Git](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-7-configure-git)
 
 [Step 8: Install Rails](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-8-install-rails)
 
-[Step 9: Setup PostgreSQL](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-9-setup-postgresql)
+[Step 9: Setup PostgreSQL](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-9-install-postgresql)
 
-[Optional Step: Setup Redis](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#option-step-setup-redis)
+[Optional Step: Setup Redis](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#optional-step-install-redis)
 
-[Step 10: Get Your Rails App Running](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-10-get-your-app-running)
+[Step 10: Get Your Rails App Running](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#step-10-get-your-rails-app-running)
 
 [Resources](getting-started-with-ruby-on-rails-in-2024-the-complete-development-environment-guide.md#resources)
 

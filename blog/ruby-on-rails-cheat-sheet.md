@@ -33,9 +33,9 @@ Table of Contents:
    2. [Frameworks](ruby-on-rails-cheat-sheet.md#frameworks)
    3. [Education](ruby-on-rails-cheat-sheet.md#education)
 
-## Ruby Syntax <a href="#ruby-syntax" id="ruby-syntax"></a>
+## Ruby Syntax
 
-### Hashes <a href="#hashes" id="hashes"></a>
+### Hashes
 
 [Hashes](http://ruby-for-beginners.rubymonstas.org/built\_in\_classes/hashes.html) were one of the most confusing things to me when first starting ruby (not because they are a new concept, but because I found the syntax very hard to read). In newer versions, syntax is very similar to JSON notification. Just know there are two versions of syntax, an older and newer one.
 
@@ -57,7 +57,7 @@ hash[:one] # results in "eins"
 hash["one"] # results in nil
 ```
 
-### Safe Navigation Operator <a href="#safe-navigation-operator" id="safe-navigation-operator"></a>
+### Safe Navigation Operator
 
 Instead of checking for nil or undefined values, you can use the safe navigation operator. There’s a nice article [here](https://mitrev.net/ruby/2015/11/13/the-operator-in-ruby/) that goes into more depth of explanation.
 
@@ -69,7 +69,7 @@ if user&.email&.verified?
 if user && user.email && user.email.verified?
 ```
 
-### ERB <a href="#erb" id="erb"></a>
+### ERB
 
 **Evaluation and Output**
 
@@ -89,7 +89,7 @@ You can render partials like so:
 <%= render partial: "shared/_nav_links" %>
 ```
 
-## Rails commands <a href="#rails-commands" id="rails-commands"></a>
+## Rails commands
 
 Common rails commands. (Note: “rails g” stands for “rails generate”)
 
@@ -99,7 +99,7 @@ Common rails commands. (Note: “rails g” stands for “rails generate”)
 | `rails g scaffold user name:string age:integer account:references` | Generates controller, model, migration, view, and test files. Also modifies `config/routes.rb` |
 | `rails g scaffold_controller user`                                 | Generates controller and view files. Useful if you already have the model                      |
 
-## Rake Commands <a href="#rake-commands" id="rake-commands"></a>
+## Rake Commands
 
 Common rake commands for database management and finding routes.
 
@@ -111,9 +111,9 @@ Common rake commands for database management and finding routes.
 | `rake db:rollback`                  | Rollback a database migration (add STEP=2 to remove multiple migrations)           |
 | `rake db:drop db:create db:migrate` | Destroy the database, re-created it, and run migrations (useful for development)   |
 
-## Rails Framework <a href="#rails-framework" id="rails-framework"></a>
+## Rails Framework
 
-### Migration Data Types <a href="#migration-data-types" id="migration-data-types"></a>
+### Migration Data Types
 
 Migration data types. Here is the [source](https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add\_column) and a [stack overflow question](https://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes) I commonly reference.
 
@@ -130,7 +130,7 @@ Migration data types. Here is the [source](https://api.rubyonrails.org/classes/A
 * :time
 * :timestamp
 
-### Controller Filters <a href="#controller-filters" id="controller-filters"></a>
+### Controller Filters
 
 Filters are methods that are run “before”, “after” or “around” a controller action. See [full action controller filters documentation](https://guides.rubyonrails.org/action\_controller\_overview.html#filters) for details.
 
@@ -152,7 +152,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-### Models Callbacks <a href="#models-callbacks" id="models-callbacks"></a>
+### Models Callbacks
 
 Gusto has a really nice article one [best practices for model callbacks](https://engineering.gusto.com/the-rails-callbacks-best-practices-used-at-gusto/).
 
@@ -183,7 +183,7 @@ class User < ApplicationRecord
 end
 ```
 
-### Model Queries <a href="#model-queries" id="model-queries"></a>
+### Model Queries
 
 A couple of basic (and most commonly used) queries are below. You can find the full documentation [here](https://guides.rubyonrails.org/active\_record\_querying.html#retrieving-objects-from-the-database).
 
@@ -207,7 +207,7 @@ Additionally, you are likely to want to check for an existence of a condition ma
 Model.where().exists?
 ```
 
-### Application Configuration <a href="#application-configuration" id="application-configuration"></a>
+### Application Configuration
 
 Application configuration should be located in `config/application.rb` with specific environment configurations in `config/environments/`. **Don’t put sensitive data in your configuration files, that’s what the secrets are for.** You can access configurations in your application code with the following:
 
@@ -215,7 +215,7 @@ Application configuration should be located in `config/application.rb` with spec
 Rails.application.config.property_name
 ```
 
-### Application Secrets <a href="#application-secrets" id="application-secrets"></a>
+### Application Secrets
 
 Application secrets are just that, **secret** (think API keys). You can edit the secrets file using the following commands `rails credentials:edit --environment=env_name`. This will create files in the `config/credentials/` folder. You’ll get two files:
 
@@ -228,11 +228,11 @@ Additionally, when deploying, the key inside the `environment.key` file will nee
 Rails.application.credentials[:key_name]
 ```
 
-## Useful Things <a href="#useful-things" id="useful-things"></a>
+## Useful Things
 
 A short list of gems, frameworks and education materials that I have found useful in my Rails journey.
 
-### Gems <a href="#gems" id="gems"></a>
+### Gems
 
 * [Acts as Tenant](https://github.com/ErwinM/acts\_as\_tenant) - Easy multi-tenancy for rails database models.
 * [Administrate](https://github.com/thoughtbot/administrate) - Rails engine for flexible admin dashboard.
@@ -251,12 +251,12 @@ A short list of gems, frameworks and education materials that I have found usefu
 * [Sidekiq Cron](https://github.com/ondrejbartas/sidekiq-cron) - A scheduler for Sidekiq (think running weekly email reports).
 * [Turbolinks](https://github.com/turbolinks/turbolinks) - Makes web app feels faster (like single page application).
 
-### Frameworks <a href="#frameworks" id="frameworks"></a>
+### Frameworks
 
 * [Jumpstart Rails](https://jumpstartrails.com/) - A SaaS Framework already supporting login, payment (Stripe, Paypal, and Braintree) and multi-tenant setup.
 * [tailwindcss](https://tailwindcss.com/) - A utility first CSS framework. Seems a little verbose at first, but you’ll really learn to love it. Just by reading the code, you’ll know exactly what the screen will look like.
 
-### Education <a href="#education" id="education"></a>
+### Education
 
 * [Go Rails](https://gorails.com/) - Ruby on Rails tutorials, guides, and screencasts.
 

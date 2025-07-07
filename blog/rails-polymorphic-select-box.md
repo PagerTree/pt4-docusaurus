@@ -12,11 +12,11 @@ Today I want to show you how to build a polymorphic select box in Ruby on Rails.
 
 <!-- truncate -->
 
-### TLDR <a href="#tldr" id="tldr"></a>
+### TLDR
 
 If you don’t have time to spare and read the background, jump down to [The Solution - The Right Way](rails-polymorphic-select-box.md#the-solution---the-right-way). The solution involves SGIDs and a utility accessor method, plus a form helper.
 
-### Background and Why <a href="#background-and-why" id="background-and-why"></a>
+### Background and Why
 
 It’s no secret, as we build out [PagerTree 4](https://pagertree.com/roadmap/2021/#major-revision-4) we’ve made the design decision to use [Ruby on Rails](https://rubyonrails.org/) as our framework of choice. Why you ask? Ruby on Rails is a stable, battle-tested, and relatively simple MVC framework. Some of the largest companies ([Stripe](https://stripe.com/), [Instacart](https://www.instacart.com/), [Shopify](https://www.shopify.com/), and [Zendesk](https://www.zendesk.com/) just to name a few) use the Ruby on Rails framework for their application. As we think about the next chapter of PagerTree, the ease for new developers to work on PagerTree should follow standard conventions and tools.
 
@@ -26,7 +26,7 @@ With as mature as Ruby on Rails framework is, one would make the assumption that
 
 The solution involves using signed global ids and a utility method to set the broadcast recipients. Today I write this blog post in helps that it can save you time, and you can implement a polymorphic select box in Rails in a clean and secure manner.
 
-### Initial Setup - The Wrong Way <a href="#initial-setup---the-wrong-way" id="initial-setup---the-wrong-way"></a>
+### Initial Setup - The Wrong Way
 
 My initial setup looked something like this: A broadcast can be created with many broadcast recipients. The broadcast recipient could be a user, team, ect. The broadcast controller only accepts “permitted” params, builds the broadcast and saves it to the database.
 
@@ -80,7 +80,7 @@ It’s a pretty standard setup. I would have expected that Rails would know what
 
 I also made the assumption, that Rails would automatically just know the type of object, and it probably would have in a normal situation. The problem stems from the fact that the broadcast recipient is a linker model, **Rails didn’t know how to populate the polymorphic linker model**.
 
-### The Solution - The Right Way <a href="#the-solution---the-right-way" id="the-solution---the-right-way"></a>
+### The Solution - The Right Way
 
 Enter [Global Ids](https://github.com/rails/globalid) (I believe this is already included in Rails 6.2+). It looks like `gid://YourApp/Some::Model/id`. It has the ability to uniquely identify a model by keeping its type and id.
 
@@ -157,6 +157,6 @@ module BroadcastsHelper
 end
 ```
 
-### Conclusion <a href="#conclusion" id="conclusion"></a>
+### Conclusion
 
 In short, a polymorphic select box using linker models in Ruby on Rails is not so trivial. Using SGIDs and a utility accessor method we can make a polymorphic select box that simple and secure. I hope you’ve found value in this article and it has saved you some time :)

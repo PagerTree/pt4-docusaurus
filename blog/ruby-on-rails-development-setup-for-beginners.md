@@ -12,13 +12,13 @@ Today we will install Ruby on Rails (RoR) on a Debian Linux operating system ([U
 
 <!-- truncate -->
 
-## Introduction <a href="#introduction" id="introduction"></a>
+## Introduction
 
 I am new to developing and have been using [Ubuntu 18.04](https://releases.ubuntu.com/18.04/) LTS, a flavor of Debian Linux, for my projects. This blog will provide the steps and information needed to get the environment and dependencies installed for RoR so you can get your first project going.
 
 Ruby on Rails is an excellent framework for web application development. For those of you who are new to RoR, like me, you will need to install several different applications (referred to as dependencies) to ensure this runs smoothly.
 
-### Tools You Will Need <a href="#tools-you-will-need" id="tools-you-will-need"></a>
+### Tools You Will Need
 
 Here are the packages, tools, and databases we will be installing:
 
@@ -33,11 +33,11 @@ Here are the packages, tools, and databases we will be installing:
 * [NodeJS](ruby-on-rails-development-setup-for-beginners.md#install-nodejs) - Javascript runtime environment. Runs on the Chrome V8 engine and executes javascript code outside of a web browser.
 * [yarn](ruby-on-rails-development-setup-for-beginners.md#install-yarn) - A more secure npm (node package manager - gets installed with NodeJS).
 
-## Step-By-Step Directions <a href="#step-by-step-directions" id="step-by-step-directions"></a>
+## Step-By-Step Directions
 
 Here we will be navigating through the steps to get your Ruby on Rails development environment setup and all of the dependencies installed.
 
-### Install git <a href="#install-git" id="install-git"></a>
+### Install git
 
 You will need to run the commands below in your terminal to install git.
 
@@ -50,7 +50,7 @@ $ sudo apt-get install git -y
 
 Remember git is the program for distributed version control, and [GitHub](https://github.com/) is our preferred vendor. So, if you haven’t already, create an account with GitHub.
 
-### Create SSH Key <a href="#create-ssh-key" id="create-ssh-key"></a>
+### Create SSH Key
 
 You will need to [create an SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and connect it to GitHub. We will first check to see if there are any existing SSH keys. Run this command to see if there are any pre-existing SSH keys.
 
@@ -92,7 +92,7 @@ $ ssh-add ~/.ssh/id_ed25519
 
 The final step is to add it to GitHub. Follow [this guide](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) to do so.
 
-### Install HomeBrew <a href="#install-homebrew" id="install-homebrew"></a>
+### Install HomeBrew
 
 [Homebrew](https://brew.sh/) is a package manager (similar to apt-get) that helps us install other packages to our system. To get the Homebrew package installed, you will have to run the below command:
 
@@ -100,9 +100,9 @@ The final step is to add it to GitHub. Follow [this guide](https://docs.github.c
 $ sudo apt install linuxbrew-wrapper
 ```
 
-### Installing Ruby Environment <a href="#installing-ruby-environment" id="installing-ruby-environment"></a>
+### Installing Ruby Environment
 
-#### Install rbenv <a href="#install-rbenv" id="install-rbenv"></a>
+#### Install rbenv
 
 Remember, [rbenv](https://github.com/rbenv/rbenv) is a tool that will help us manage installing and running multiple version of Ruby. To install rbenv, run the following:
 
@@ -117,7 +117,7 @@ $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-#### Install Ruby 3.0.1 <a href="#install-ruby-301" id="install-ruby-301"></a>
+#### Install Ruby 3.0.1
 
 For our setup, let’s run the latest and greatest (as of this writing) version of Ruby (3.0.1). To install this version of Ruby, we will use rbenv. Run the following in your terminal:
 
@@ -128,11 +128,11 @@ $ rbenv global 3.0.1 # set the global
 $ ruby -v
 ```
 
-### Install Visual Studio Code <a href="#install-visual-studio-code" id="install-visual-studio-code"></a>
+### Install Visual Studio Code
 
 You can follow the directions in the [Visual Studio Code](https://code.visualstudio.com/) link to get the correct version installed on your device.
 
-### Install Postgres <a href="#install-postgres" id="install-postgres"></a>
+### Install Postgres
 
 [Postgres](https://www.postgresql.org/) will be our relational database preference for our RoR setup. To install:
 
@@ -140,7 +140,7 @@ You can follow the directions in the [Visual Studio Code](https://code.visualstu
 $ brew install postgresql
 ```
 
-### Install Redis <a href="#install-redis" id="install-redis"></a>
+### Install Redis
 
 [Redis](https://redis.io/) is our key value database that RoR uses for caching.
 
@@ -148,11 +148,11 @@ $ brew install postgresql
 $ brew install redis
 ```
 
-### Install NodeJS <a href="#install-nodejs" id="install-nodejs"></a>
+### Install NodeJS
 
 The link will take you through the steps to get the correct version of [NodeJS](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) installed to your device and will give a thorough understanding.
 
-### Install Yarn <a href="#install-yarn" id="install-yarn"></a>
+### Install Yarn
 
 For the final step we will be installing the package manager [Yarn](https://yarnpkg.com/)) by running the command below.
 
@@ -160,6 +160,6 @@ For the final step we will be installing the package manager [Yarn](https://yarn
 $ brew install yarn
 ```
 
-## Conclusion <a href="#conclusion" id="conclusion"></a>
+## Conclusion
 
 Now that your environment is ready, you can dive into your first project. All in all, Ruby on Rails is a great development environment. It is easy to navigate, scalable, and is excellent for team projects. Looking for more useful information for Ruby on Rails? Check out this [cheat sheet](ruby-on-rails-cheat-sheet.md).

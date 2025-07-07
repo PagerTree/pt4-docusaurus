@@ -17,7 +17,7 @@ _If you would like a video to follow along instead, you can see it on_ [_YouTube
 
 ::video-youtube[Prometheus Monitoring Tutorial]{#-STqqJZG36w}
 
-## Setup Docker Environment <a href="#setup-docker-environment" id="setup-docker-environment"></a>
+## Setup Docker Environment
 
 The first thing we’ll do is a machine up and running for this solution. **This tutorial assumes you will be using Ubuntu 16.04**.
 
@@ -29,7 +29,7 @@ If you don’t already have an account, use [this link](https://m.do.co/c/ab4304
 
 If you don’t know how to create a Digital Ocean droplet or SSH into the machine you can follow [this article on Medium](https://medium.com/@armiiller/create-a-docker-droplet-on-digital-ocean-f19db2b4be53).
 
-## Build the Prometheus Stack <a href="#build-the-prometheus-stack" id="build-the-prometheus-stack"></a>
+## Build the Prometheus Stack
 
 Once you’ve created the Ubuntu server, run the following command in the shell terminal:
 
@@ -47,7 +47,7 @@ At this point you’ll have automagically deployed the entire Prometheus, Grafan
 
 Since the release of Grafana 5.x, Grafana supports [auto provisioning](http://docs.grafana.org/administration/provisioning/) data sources and dashboards. We’ve updated the repo for Grafana to auto provision the Prometheus data source and dashboards. Please continue to the next section, [Grafana Dashboards](prometheus-monitoring-tutorial.md#grafana-dashboards).
 
-#### Grafana Dashboards <a href="#grafana-dashboards" id="grafana-dashboards"></a>
+#### Grafana Dashboards
 
 Awesome! Now if you navigate to the Dashboards in Grafana you will see data populating and some nice looking graphs.
 
@@ -67,7 +67,7 @@ This dashboard monitors the load on the machine that is running your Prometheus 
 
 <figure>![](<https://pagertree.com/assets/img/posts/2017/12/01/dashboard-system-monitoring.png>)<figcaption><p>System Dashboard</p></figcaption></figure>
 
-## Configure Alerts <a href="#configure-alerts" id="configure-alerts"></a>
+## Configure Alerts
 
 Now while the dashboards are cool, it would be even cooler if we were able to get alerted when something went wrong. Luckily for us, this project will create an alert after 30 seconds of high CPU. So let’s try to make use of it.
 
@@ -90,7 +90,7 @@ Now while the dashboards are cool, it would be even cooler if we were able to ge
 Ensure that for the team you are assigning alerts to, you are the Layer 1 on-call and that you have at least 1 notification method setup.
 :::
 
-### Modify the Alert Manager Configuration <a href="#modify-the-alert-manager-configuration" id="modify-the-alert-manager-configuration"></a>
+### Modify the Alert Manager Configuration
 
 Now we want to modify the alert manager configuration to make use of our PagerTree Webhook. Run the following command and make sure to replace `<Your PagerTree Webhook URL>` with the you copied.
 
@@ -104,7 +104,7 @@ After you have run the configuration script, restart the stack with the followin
 Sometimes this command fails. If it does, just run the command again.
 :::
 
-### Simulate an Alert Worthy Incident <a href="#simulate-an-alert-worthy-incident" id="simulate-an-alert-worthy-incident"></a>
+### Simulate an Alert Worthy Incident
 
 In order for us to get an alert we’ll wan to simulate some sort of Alert Worthy Incident. From the shell terminal, run the following command:
 
@@ -114,7 +114,7 @@ In order for us to get an alert we’ll wan to simulate some sort of Alert Worth
 
 Now we’ll wait for 30 seconds or so, and if you’ve followed all the steps correctly you should get a notification saying something like `Instance {{ $labels.instance }} under high load`.
 
-## Congrats! You’re done! <a href="#congrats-youre-done" id="congrats-youre-done"></a>
+## Congrats! You’re done!
 
 If you are reading this give yourself a pat on the back. Good job! You’ve successfully deployed a Prometheus monitoring system, hooked it up to Grafana, and configured and alerts to go to your PagerTree account.
 
