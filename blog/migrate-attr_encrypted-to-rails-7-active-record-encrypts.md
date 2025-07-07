@@ -6,7 +6,7 @@ description: >-
   new Active Record encrypts.
 ---
 
-# 💎 Migrate attr\_encrypted to Rails 7 Active Record encrypts
+# 💎 Migrate attr_encrypted to Rails 7 Active Record encrypts
 
 Rails 7 has introduced [Active Record Encryption](https://edgeguides.rubyonrails.org/active\_record\_encryption.html), functionality to transparently encrypt and decrypt data before storing it in the database. This is awesome news for any developer who has ever had to encrypt data before storing it.
 

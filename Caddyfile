@@ -15,6 +15,9 @@
 
 	# Redirects from docusaurus.config.ts
 	redir / /docs 301
+	redir /docs/integration-guides /docs/integration-guides/introduction 301
+	redir /docs/api /docs/api/introduction 301
+	redir /docs/cli /docs/cli/command-line-interface 301
 	redir /learn/devops /learn/devops/what-is-devops 301
 
 	# Handle single-page app (SPA) routing

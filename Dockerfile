@@ -23,3 +23,6 @@ COPY --from=builder /app/build /srv
 
 # Copy Caddyfile for configuration
 COPY Caddyfile /etc/caddy/Caddyfile
+COPY robots.txt /srv/blog/robots.txt
+COPY robots.txt /srv/learn/robots.txt
+COPY robots.txt /srv/docs/robots.txt

@@ -93,8 +93,8 @@ const config: Config = {
         {to: 'https://pagertree.com/docs/integration-guides/introduction', label: 'Integration Guides', position: 'left', activeBasePath: '/docs/integration-guides'},
         {to: 'https://pagertree.com/docs/api/introduction', label: 'API', position: 'left', activeBasePath: '/docs/api'},
         {to: 'https://pagertree.com/docs/cli/command-line-interface', label: 'CLI', position: 'left'},
-        {to: 'https://pagertree.com/learn', label: 'Learn', position: 'right'},
-        {to: 'https://pagertree.com/blog', label: 'Blog', position: 'right'},
+        {to: 'https://pagertree.com/learn', label: 'Learn', position: 'right', activeBasePath: '/learn'},
+        {to: 'https://pagertree.com/blog', label: 'Blog', position: 'right', activePath: '/blog'},
         {
           href: 'https://pagertree.com',
           label: 'Website',
