@@ -16,6 +16,8 @@ In this post I’ll go over:
 2. How a scalable serverless architecture works
 3. How you can benefit from a serverless architecture
 
+<!-- truncate -->
+
 Firstly, I would like to address that I am not advocating that a serverless architecture is always better than a traditional architecture. Each have their purpose. In this article I will be highlighting how you can benefit from a serverless architecture.
 
 ## Traditional Highly Available Scalable Architecture

@@ -19,6 +19,8 @@ If you already know these things, feel free to skip ahead to other posts in this
 * [serverless-costs.md](serverless-costs.md "mention")
 * [serverless-tools-and-best-practices.md](serverless-tools-and-best-practices.md "mention")
 
+<!-- truncate -->
+
 ## What is Serverless? <a href="#what-is-serverless" id="what-is-serverless"></a>
 
 Depending where on the internet you go to, you’ll get different answers. For example:

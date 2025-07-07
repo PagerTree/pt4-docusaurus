@@ -13,6 +13,8 @@ In Part 2: [Serverless Scales](serverless-scales.md) I briefly touched on how a 
 1. How to approach and analyze the cost of serverless
 2. Two detailed examples of a cost analysis
 
+<!-- truncate -->
+
 **Note:** I will make assumptions on costs based on the AWS pricing as of 3/19/2018 (see [EC2](https://aws.amazon.com/ec2/pricing/on-demand/), [Load Balancer](https://aws.amazon.com/elasticloadbalancing/pricing/), [API Gateway](https://aws.amazon.com/api-gateway/pricing/) and [Lambda](https://aws.amazon.com/lambda/pricing/) pricing). Different cloud providers offer different pricing for different solutions and services. It’s always a good idea to explore your options. Here is a [nice calculator](http://serverlesscalc.com/) that compares 4 of the big cloud providers costs.
 
 ## How to Approach & Analyze the Cost of Serverless

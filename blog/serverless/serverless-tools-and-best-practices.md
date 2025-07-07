@@ -14,6 +14,8 @@ Throughout this series we have been exploring how to use serverless architecture
 2. [Best Practices](serverless-tools-and-best-practices.md#best-practices) when developing serverless applications
 3. A [curated list](serverless-tools-and-best-practices.md#curated-list-of-resources) of serverless resources
 
+<!-- truncate -->
+
 When I first started experimenting with serverless technology, I was amazed at the complexity of managing individual functions and environments. At first I scratched my head, and thought, “how can the cloud providers actually believe people will really adopt this”? Now that was 2015, documentation was light and tools were in their infancy. Since then, things have changed dramatically. Today, I am excited to show you just how much easier the serverless development experience has become.
 
 ## Tutorial: Create a Serverless Slack Command
