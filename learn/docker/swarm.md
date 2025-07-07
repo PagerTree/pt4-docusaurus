@@ -44,7 +44,7 @@ The term "host" is not specific to Swarm but rather the entire Docker ecosystem 
 
 #### **Node**
 
-A node is an instance of the Docker engine participating in the swarm. You can run one or more nodes on a single [host](swarm.md#hosts).
+A node is an instance of the Docker engine participating in the swarm. You can run one or more nodes on a single [host](swarm.md#host).
 
 The term "node" is Swarm specific (see [Node vs Host FAQ below](swarm.md#node-vs-host)).
 
@@ -54,7 +54,7 @@ A cluster is a group of Docker [hosts](swarm.md#host) (2 or more) running togeth
 
 #### **Manager**
 
-Manager [nodes](swarm.md#node) are responsible for managing and coordinating the activities of a Docker Swarm [cluster](swarm.md#cluster), including [service](swarm.md#services) deployment, [task](swarm.md#tasks) distribution, fault tolerance, and security.&#x20;
+Manager [nodes](swarm.md#node) are responsible for managing and coordinating the activities of a Docker Swarm [cluster](swarm.md#cluster), including [service](swarm.md#service) deployment, [task](swarm.md#task) distribution, fault tolerance, and security.&#x20;
 
 #### Worker
 

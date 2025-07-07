@@ -33,7 +33,7 @@ Uptime and downtime are two metrics used consistently to help determine the avai
 
 Whether it's a planned maintenance or an unexpected outage, downtime is when your services are unavailable. Downtime is ultimately costly to fix and breaks customer trust. Simply put, downtime is expensive.
 
-### **Uptime**
+### Uptime
 
 **Uptime** - is the % of time in which a company’s services are available for use.
 
@@ -63,7 +63,7 @@ Mean Time To Recovery expresses the average downtime and is a good metric for as
 
 ### Mean Time To Resolve (MTTR)
 
-**Mean Time To Resolve** - the average time it takes to fully resolve an incident. This includes the time spent detecting, diagnosing, repairing, and [learning](../#learn) so that the failure won't happen again.
+**Mean Time To Resolve** - the average time it takes to fully resolve an incident. This includes the time spent detecting, diagnosing, repairing, and [learning](./README.md#learn) so that the failure won't happen again.
 
 Mean Time To Resolve (MTTR) is calculated as **\[Full Resolution Time] / \[# of Incidents]** within a given period.
 
@@ -85,7 +85,7 @@ Mean Time To Repair answers, _"How long does it take the company to troubleshoot
 
 ## Mean Time To Acknowledge (MTTA)
 
-**Mean Time To Acknowledge** - the average time it takes from when an incident is [identified](../#identify-and-log) to when an alert is [acknowledged](../#respond).
+**Mean Time To Acknowledge** - the average time it takes from when an incident is [identified](./README.md#identify-and-log) to when an alert is [acknowledged](./README.md#respond).
 
 Mean Time to Acknowledge (MTTA) is calculated as the **\[Total Time to Acknowledge] / \[# of Incidents]** within a given period.
 

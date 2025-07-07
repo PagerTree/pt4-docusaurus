@@ -17,7 +17,7 @@ To ensure the persistence of data beyond the container's lifecycle, Docker offer
 
 ## Persistent Storage
 
-### **Volumes**
+### Volumes
 
 [Docker volumes](https://docs.docker.com/storage/volumes/) are dedicated storage units managed by Docker. Only Docker containers can access volumes.
 
@@ -27,7 +27,7 @@ Volumes are independent of the container's lifecycle and can be easily managed, 
 
 <figure>![Docker Volumes](<../.gitbook/assets/docker-volumes.gif>)<figcaption><p>Docker Volumes</p></figcaption></figure>
 
-### **Bind Mounts**
+### Bind Mounts
 
 [Bind mounts](https://docs.docker.com/storage/bind-mounts/) allow you to mount a directory or file from the host machine into a container. Bind mounts can be accessed by both Docker processes and non-Docker processes.
 
@@ -37,9 +37,9 @@ One common scenario where you would use a bind mount is when you are developing 
 
 <figure>![Docker Bind Mounts](<../.gitbook/assets/docker-bind-mounts.gif>)<figcaption><p>Docker Bind Mounts</p></figcaption></figure>
 
-## **Temporary Storage**
+## Temporary Storage
 
-### **tmpfs Mounts**
+### tmpfs Mounts
 
 [tmpfs mounts](https://docs.docker.com/storage/tmpfs/), or temporary filesystems, are temporary storage areas created in a container's memory space. They are helpful for storing transient data or temporary files within a container (think log files or caching). `tmpfs` is ephemeral and does not persist data across container restarts. Additionally, you can't share `tmpfs` mounts between containers.
 

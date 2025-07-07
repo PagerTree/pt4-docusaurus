@@ -48,7 +48,7 @@ Backup and restoration tools ensure that your data is securely backed up and can
 
 <figure>![Backup and Restoration Tools](<../../.gitbook/assets/Backup and Restoration Tools.png>)<figcaption><p>Backup and Restoration Tools</p></figcaption></figure>
 
-### **Backup and Restoration Tools Include:**
+### Backup and Restoration Tools Include:
 
 * [**Velero**](https://velero.io/) (Open Source) is a tool for backing up and restoring [Kubernetes](https://kubernetes.io/) clusters. It offers features like scheduled backups, restores, and migration of cluster resources and persistent volumes. Velero supports multiple storage backends, making it a versatile solution for Kubernetes environments.
 * [**Kasten K10**](https://docs.kasten.io/latest/index.html) (Free & Paid) is a comprehensive data management platform for Kubernetes applications. It offers backup, recovery, and application mobility features. It simplifies data management by providing an intuitive interface for managing backup policies, restores, and disaster recovery operations.
@@ -74,7 +74,7 @@ Config/Service discovery tools are essential for managing dynamic and distribute
 
 <figure>![Config/Service Discovery Tools](<../../.gitbook/assets/APM Tools (2).png>)<figcaption><p>Config/Service Discovery Tools</p></figcaption></figure>
 
-### **Config/Service Discovery Tools Include:**
+### Config/Service Discovery Tools Include:
 
 * [**Consul**](https://www.consul.io/) (Free & Paid) is a service networking solution that offers service discovery, configuration, and segmentation functionality. Consul supports multi-datacenter configurations and provides an extensive framework for [service mesh](https://aws.amazon.com/what-is/service-mesh/) implementations. Its key features include service registration, health checking, and secure service communication.
 * [**Etcd**](https://etcd.io/) (Open Source) is a distributed key-value store used for storing and managing configuration data. Etcd is a core component of the Kubernetes control plane, providing a reliable and consistent store for critical data. Its high availability and strong consistency make it ideal for distributed systems.

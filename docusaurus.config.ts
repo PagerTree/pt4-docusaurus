@@ -32,10 +32,10 @@ const config: Config = {
     [
       'classic',
       {
-        // gtag: {
-        //   trackingID: 'G-XXXXXXXXXX',
-        //   anonymizeIP: true,
-        // },
+        gtag: {
+          trackingID: 'G-D5YD533NTH',
+          anonymizeIP: true,
+        },
         docs: {
           sidebarPath: './sidebars.ts',
           remarkPlugins: [remarkDirectiveSugar],
@@ -81,7 +81,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.svg',
     navbar: {
       logo: {
         alt: 'PagerTree Logo',

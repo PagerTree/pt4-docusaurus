@@ -16,7 +16,7 @@ Docker provides [6 different types of network drivers](https://docs.docker.com/n
 
 <figure>![Docker Network Types](<../.gitbook/assets/docker-network-types.png>)<figcaption><p>Docker Network Types</p></figcaption></figure>
 
-### **Bridge**
+### Bridge
 
 The [bridge network driver](https://docs.docker.com/network/drivers/bridge/) is the most common driver type. It uses a software bridge that lets containers connected to the same bridge network communicate while providing isolation from containers that aren't connected to that bridge network.
 
@@ -25,7 +25,7 @@ The [bridge network driver](https://docs.docker.com/network/drivers/bridge/) is 
 * Each running container is assigned its own IP address.
 * Provides network address translation (NAT) for outbound traffic and internet connectivity.
 
-### **Host**
+### Host
 
 The [host network driver](https://docs.docker.com/network/drivers/host/) allows containers to share the host's network stack without isolation. Containers are not allocated their own IP address, and port bindings will be published directly to the host's network interface.
 
@@ -33,14 +33,14 @@ The [host network driver](https://docs.docker.com/network/drivers/host/) allows 
 * Containers share the network namespace with the host, using the host's network interfaces directly. For example, if you run a container that binds to port 80 will bind to `<host_ip>:80`
 * Offers improved networking performance but reduces isolation.
 
-### **None**
+### None
 
 The [none network driver](https://docs.docker.com/network/drivers/none/) completely isolates a container from the host and other containers.
 
 * Disables networking for the container.
 * Useful for scenarios where network access is not required or should be restricted.
 
-### **Overlay**
+### Overlay
 
 [Overlay networks](https://docs.docker.com/network/drivers/overlay/) are distributed networks that span multiple Docker hosts. When using overlay networks, Docker transparently handles routing traffic to and from the correct Docker hosts and the correct destination containers. When [encryption is enabled](https://docs.docker.com/network/drivers/overlay/#encrypt-traffic-on-an-overlay-network), overlay networks allow containers to communicate securely.
 
@@ -58,7 +58,7 @@ Docker Swarm does not report an error when a Windows host attempts to connect to
 * Data traffic between Windows containers on the network isn't encrypted.
 :::
 
-### IPvlan&#x20;
+### IPvlan
 
 The [IPvlan network driver](https://docs.docker.com/network/drivers/ipvlan/) gives users complete control over both IPv4 and IPv6 addressing. The IPvlan driver is helpful when you are integrating containerized services with an existing physical network, need high-performance, or want fine-grained control over IP address assignment.
 
@@ -66,7 +66,7 @@ The [IPvlan network driver](https://docs.docker.com/network/drivers/ipvlan/) giv
 * Allows each container to have its own unique IP address on the host network.
 * Suitable for scenarios requiring high throughput and low latency.
 
-### **Macvlan**
+### Macvlan
 
 The [Macvlan network driver](https://docs.docker.com/network/drivers/macvlan/) allows containers to appear as physical devices on your network. It works by assigning each container on the network a unique [MAC address](https://en.wikipedia.org/wiki/MAC\_address).
 
@@ -184,7 +184,5 @@ Each Docker container is allocated its own [network namespace,](#user-content-fn
 While Docker's networking implementation involves complex and low-level details, it abstracts them away from end users, delivering a seamless container networking experience that is predictable and efficient. For complete documentation, see [Docker's packet filtering and firewalls documentation](https://docs.docker.com/network/packet-filtering-firewalls/).
 
 [^1]: A network namespace is a feature provided by the Linux kernel that allows processes to have their own isolated view of the network stack. Essentially, it creates a separate instance of the network stack for each namespace, providing a unique network environment for processes within that namespace.
-
-
 
     In the context of Docker, each container is assigned its own network namespace. This means containers have their own isolated networking configuration, including network interfaces, routing tables, firewall rules, and network sockets. As a result, containers can run their own network services without interfering with or being affected by other containers or the host system's network configuration.

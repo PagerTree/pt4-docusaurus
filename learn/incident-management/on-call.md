@@ -13,7 +13,7 @@ description: >-
 
 On-call is a critical responsibility for many IT, [DevOps](../devops/what-is-devops.md), and  Support Operations teams that maintain services demanding 24/7 [availability](https://pagertree.com/learn/devops/what-is-devops/top-25-devops-interview-questions#id-24.-what-is-high-availability-ha).&#x20;
 
-Team members take turns "being on-call", to provide coverage around the clock or outside of business hours. The person on-call is empowered to [identify, respond, and resolve](../#steps-of-the-incident-management-process) any interruptions to service availability.
+Team members take turns "being on-call", to provide coverage around the clock or outside of business hours. The person on-call is empowered to [identify, respond, and resolve](README.md#steps-of-the-incident-management-process) any interruptions to service availability.
 
 ## The importance of effective on-call schedules
 

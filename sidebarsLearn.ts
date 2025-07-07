@@ -5,7 +5,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Learn',
-      link: { type: 'doc', id: 'README' },
+      link: { type: 'doc', id: 'incident-management/README' },
       collapsed: false,
       items: [
         {
