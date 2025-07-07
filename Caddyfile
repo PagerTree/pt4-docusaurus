@@ -10,7 +10,7 @@
 	encode gzip
 
 	handle /health-check {
-		respond "OK" 200
+		respond 200
 	}
 
 	# Redirects from docusaurus.config.ts
