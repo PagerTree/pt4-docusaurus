@@ -1,9 +1,9 @@
 ---
 date: 2025-05-05
+authors: amiller
 description: >-
   The PagerTree Command Line Interface (CLI) is here! Manage alerts and
   integrations from your terminal with this open-source tool. Try it today!
-authors: amiller
 ---
 
 # 📣 Meet the PagerTree CLI: Your New On-Call Sidekick!

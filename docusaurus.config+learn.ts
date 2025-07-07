@@ -7,7 +7,6 @@ export default {
   // Override or add any blog-specific configuration here
    baseUrl: '/learn/',
 
-   plugins: [],
    presets: [
     [
       'classic',
@@ -22,5 +21,9 @@ export default {
         }
       })
     ],
+  ],
+
+  plugins: [
+    require.resolve('docusaurus-plugin-image-zoom'),
   ],
 };

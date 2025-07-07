@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   url: 'https://pagertree.com',
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
   organizationName: 'pagertree',
   projectName: 'pt4-docusaurus',
@@ -42,6 +42,8 @@ const config: Config = {
           editUrl: 'https://github.com/pagertree/pt4-docusaurus/tree/main/',
         },
         blog: {
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -51,7 +53,7 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-          remarkPlugins: [],
+          remarkPlugins: [remarkDirectiveSugar],
         },
         sitemap: {
           priority: 1,
