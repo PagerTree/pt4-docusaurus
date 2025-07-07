@@ -71,7 +71,6 @@ Remote storage options include and are not limited to the following:
 * [Cortex](https://cortexmetrics.io/)
 * [Thanos](https://thanos.io/)
 * [Mimir](https://github.com/grafana/mimir)
-* [S3](broken-reference)
 * [VictoriaMetrics](https://victoriametrics.com/)
 
 ### What protocol does Prometheus use for remote storage?

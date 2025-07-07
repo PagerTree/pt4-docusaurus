@@ -9,6 +9,7 @@ const config: Config = {
   title: 'PagerTree',
   tagline: 'OnCall. Simplified. Intelligent alert routing for the DevOps team.',
   favicon: 'img/favicon.ico',
+  trailingSlash: false,
 
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
