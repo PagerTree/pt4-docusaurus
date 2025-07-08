@@ -7,8 +7,6 @@ description: >-
 
 # SLA vs SLO vs SLI: What's The Difference?
 
-
-
 ## Video-SLA, SLO and SLI Made Simple
 
 ::video-youtube[SLA, SLO and SLI Made Simple]{#-ECVHx239Ro}
@@ -25,8 +23,6 @@ SLAs, SLOs, and SLIs all refer to the promises companies make to provide specifi
 
 These terms may seem vague at first glance, but each serves a specific purpose in maintaining the relationship between service providers and customers. Let's break down each term individually and see how they are related to and differ from one another.
 
-
-
 ## What is a Service Level Agreement (SLA)?
 
 **A Service Level Agreement (SLA) is a formal agreement between a service provider and the customer that outlines the expected level of service.** No service, large or small, has [100% availability](https://pagertree.com/blog/sre-metrics-availability),  that is why SLAs set expectations upfront so customers know what they are getting while also holding the service provider accountable for maintaining the level of service they have promised. SLAs also outline the consequences for breaching the level of service promised which could include refunds, credits, or even legal action.
@@ -39,8 +35,6 @@ These terms may seem vague at first glance, but each serves a specific purpose i
 <figure>![Service Level Agreement (SLA) Meaning](<../.gitbook/assets/Service Level Agreement SLA Definition.png>)<figcaption><p>Service Level Agreement (SLA) Definition</p></figcaption></figure>
 
 Depending on the customer and provider's needs, SLAs can include as few or as many high-level components as desired. When writing an SLA, it is important to keep it as simple and clear as possible. When writing [SLOs](sla-vs-slo-vs-sli.md#what-is-a-service-level-objective-slo), you will have the opportunity to break down your SLA into specific measurable objectives.
-
-
 
 ## What is a Service Level Objective (SLO)?
 
@@ -68,8 +62,6 @@ SLOs correspond directly with your SLA, giving teams the key metrics and deliver
 
 SLI metrics are wholly dependent on your SLAs and SLOs because they are the actual measured performance of your promised service. Service providers should aim to keep SLIs above both their SLAs and SLOs, though with a built-in error budget. Some SLIs may fall below internal SLOs.
 
-
-
 ## SLO vs SLA: What's the Difference?
 
 SLAs are customer-facing documents typically written by legal teams and product managers. They contain the service provider's “Promise” to the customer regarding service and quality of service.
@@ -82,9 +74,7 @@ SLOs, on the other hand, are internal documents typically written by product man
 
 SLAs and SLOs are both projections of the level of service that should be provided. They are both written by teams, usually based on historical performance data.
 
-SLIs are the actual “Performance” of the service provided to the customer. SLIs are monitored and measured through tools like [Prometheus](/learn/prometheus/) and should be available to both internal teams and customers to ensure SLAs and SLOs are being met.&#x20;
-
-
+SLIs are the actual “Performance” of the service provided to the customer. SLIs are monitored and measured through tools like [Prometheus](/learn/prometheus/) and should be available to both internal teams and customers to ensure SLAs and SLOs are being met.
 
 ## SLA vs SLO vs SLI in the Real World
 
@@ -94,17 +84,8 @@ The SLA shows a “Promised” performance of no more than 300ms response time b
 
 <figure>![SLA vs SLO vs SLI Examples](<../.gitbook/assets/SLA vs SLO vs SLI graph (1).png>)<figcaption><p>SLA vs SLO vs SLI Examples</p></figcaption></figure>
 
-Example A:  The SLI line is below the SLO and SLA, ranging from 180ms to 250ms response times. The "Performance" of the service being provided outperforms the SLO (Internal goal of 250) and the SLA (Customer Promise of 300).\
-\
+Example A:  The SLI line is below the SLO and SLA, ranging from 180ms to 250ms response times. The "Performance" of the service being provided outperforms the SLO (Internal goal of 250) and the SLA (Customer Promise of 300).
+
 Example B: The SLI line is between the SLO and SLA, ranging from 250ms to 300ms response times. The "Performance" of the service being provided meets the “Promise” outlined in the SLA but is missing the internal “Goal” set in the SLO. The difference between the SLO and SLA (250ms-300ms) is called the error budget. Service providers give themselves error budgets to allow teams to adjust and improve performance before breaching an SLA, as well as to test experimental features and to account for planned/unplanned outages.
 
 Example C: The SLI line has surpassed the SLO and SLA, ranging from 301ms to 340ms response times. The "Performance" of the service being provided is underperforming the “Promise” made in the SLA, and the internal “Goal” set in the SLO. This indicates that the service provider is in breach of the SLA, and the consequences for being in breach outlined in the SLA can come into effect. These consequences can range from refunds to legal action.
-
-\
-\
-
-
-\
-
-
-\
