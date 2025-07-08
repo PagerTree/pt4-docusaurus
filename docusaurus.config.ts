@@ -91,12 +91,12 @@ const config: Config = {
         href: '/docs/'
       },
       items: [
-        {to: 'https://pagertree.com/docs/', label: 'Docs', position: 'left', activeBaseRegex: '^/docs(?!/api/|/cli/|/integration-guides/)',},
-        {to: 'https://pagertree.com/docs/integration-guides/introduction', label: 'Integration Guides', position: 'left', activeBasePath: '/docs/integration-guides'},
-        {to: 'https://pagertree.com/docs/api/introduction', label: 'API', position: 'left', activeBasePath: '/docs/api'},
-        {to: 'https://pagertree.com/docs/cli/command-line-interface', label: 'CLI', position: 'left'},
-        {to: 'https://pagertree.com/learn/', label: 'Learn', position: 'right', activeBasePath: '/learn'},
-        {to: 'https://pagertree.com/blog/', label: 'Blog', position: 'right', activePath: '/blog'},
+        {to: 'https://pagertree.com/docs/', label: 'Docs', position: 'left', activeBaseRegex: '^/docs(?!/api/|/cli/|/integration-guides/)', target: '_self'},
+        {to: 'https://pagertree.com/docs/integration-guides/introduction', label: 'Integration Guides', position: 'left', activeBasePath: '/docs/integration-guides', target: '_self'},
+        {to: 'https://pagertree.com/docs/api/introduction', label: 'API', position: 'left', activeBasePath: '/docs/api', target: '_self'},
+        {to: 'https://pagertree.com/docs/cli/command-line-interface', label: 'CLI', position: 'left', target: '_self'},
+        {to: 'https://pagertree.com/learn/', label: 'Learn', position: 'right', activeBasePath: '/learn', target: '_self'},
+        {to: 'https://pagertree.com/blog/', label: 'Blog', position: 'right', activePath: '/blog', target: '_self'},
         {
           href: 'https://pagertree.com',
           label: 'Website',
@@ -120,9 +120,9 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
-            {label: 'Docs', to: 'https://pagertree.com/docs/'},
-            {label: 'Blog', to: 'https://pagertree.com/blog/'},
-            {label: 'Learn', to: 'https://pagertree.com/learn/'},
+            {label: 'Docs', to: 'https://pagertree.com/docs/', target: '_self'},
+            {label: 'Blog', to: 'https://pagertree.com/blog/', target: '_self'},
+            {label: 'Learn', to: 'https://pagertree.com/learn/', target: '_self'},
           ],
         },
         {
