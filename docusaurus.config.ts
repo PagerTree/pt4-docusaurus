@@ -9,6 +9,7 @@ const config: Config = {
   title: 'PagerTree',
   tagline: 'OnCall. Simplified. Intelligent alert routing for the DevOps team.',
   favicon: 'img/favicon.ico',
+  trailingSlash: false,
 
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -86,15 +87,16 @@ const config: Config = {
       logo: {
         alt: 'PagerTree Logo',
         src: 'img/logo.svg',
-        srcDark: 'img/logo-inverted.svg'
+        srcDark: 'img/logo-inverted.svg',
+        href: '/docs/'
       },
       items: [
-        {to: 'https://pagertree.com/docs', label: 'Docs', position: 'left', activeBaseRegex: '^/docs(?!/api/|/cli/|/integration-guides/)',},
+        {to: 'https://pagertree.com/docs/', label: 'Docs', position: 'left', activeBaseRegex: '^/docs(?!/api/|/cli/|/integration-guides/)',},
         {to: 'https://pagertree.com/docs/integration-guides/introduction', label: 'Integration Guides', position: 'left', activeBasePath: '/docs/integration-guides'},
         {to: 'https://pagertree.com/docs/api/introduction', label: 'API', position: 'left', activeBasePath: '/docs/api'},
         {to: 'https://pagertree.com/docs/cli/command-line-interface', label: 'CLI', position: 'left'},
-        {to: 'https://pagertree.com/learn', label: 'Learn', position: 'right', activeBasePath: '/learn'},
-        {to: 'https://pagertree.com/blog', label: 'Blog', position: 'right', activePath: '/blog'},
+        {to: 'https://pagertree.com/learn/', label: 'Learn', position: 'right', activeBasePath: '/learn'},
+        {to: 'https://pagertree.com/blog/', label: 'Blog', position: 'right', activePath: '/blog'},
         {
           href: 'https://pagertree.com',
           label: 'Website',
@@ -118,9 +120,9 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
-            {label: 'Docs', to: 'https://pagertree.com/docs'},
-            {label: 'Blog', to: 'https://pagertree.com/blog'},
-            {label: 'Learn', to: 'https://pagertree.com/learn/introduction'},
+            {label: 'Docs', to: 'https://pagertree.com/docs/'},
+            {label: 'Blog', to: 'https://pagertree.com/blog/'},
+            {label: 'Learn', to: 'https://pagertree.com/learn/'},
           ],
         },
         {

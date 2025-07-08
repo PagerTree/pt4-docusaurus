@@ -14,24 +14,27 @@
 	}
 
 	# Redirects from docusaurus.config.ts
-	redir / /docs 301
+	redir / /docs/ 301
+	redir /docs /docs/ 301
+	redir /learn /learn/ 301
+	redir /blog /blog/ 301
 	redir /docs/integration-guides /docs/integration-guides/introduction 301
-	redir /docs/integration-guides/ /docs/integration-guides/introduction 301
 	redir /docs/api /docs/api/introduction 301
-	redir /docs/api/ /docs/api/introduction 301
 	redir /docs/cli /docs/cli/command-line-interface 301
-	redir /docs/cli/ /docs/cli/command-line-interface 301
-	redir /learn /learn/incident-management/ 301
-	redir /learn/ /learn/incident-management/ 301
+	redir /learn/ /learn/incident-management 301
 	redir /learn/devops /learn/devops/what-is-devops 301
-	redir /learn/devops/ /learn/devops/what-is-devops 301
 	redir /learn/docker /learn/docker/overview 301
-	redir /learn/docker/ /learn/docker/overview 301
 	redir /learn/prometheus /learn/prometheus/overview 301
-	redir /learn/prometheus/ /learn/prometheus/overview 301
+
+	# Handle URLs with trailing slash by rewriting to non-trailing slash, excluding /docs/, /learn/, /blog/
+	@trailingSlash {
+		path_regexp trailing ^(.+)/$
+		not path /docs/ /learn/ /blog/
+	}
+	redir @trailingSlash {re.trailing.1} 301
 
 	# Handle single-page app (SPA) routing
-	try_files {path} {path}/ /index.html
+	try_files {path} {path}.html {path}/ /index.html
 
 	# Logging
 	log {

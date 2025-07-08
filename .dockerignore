@@ -55,3 +55,6 @@ dist/
 out/
 tmp/
 temp/
+
+README.md
+fly.toml

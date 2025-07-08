@@ -10,13 +10,13 @@ description: >-
 
 [Docker Compose](https://docs.docker.com/compose/) is a powerful tool that simplifies the management and orchestration of [multi-container](containers.md) Docker applications. It allows you to define and run multi-container applications using a single [YAML file](compose.md#the-docker-compose-file-docker-compose.yml), streamlining the development, deployment, and scaling of containerized environments.
 
-### **Key Benefits**
+### Key Benefits
 
 * **Simplicity**: Docker Compose abstracts away the complexity of managing multiple containers, providing a simple and intuitive way to define and run applications.
 * **Consistency**: With Docker Compose, you can define your application's configuration declaratively, ensuring consistency across different environments.
 * **Scalability**: Docker Compose enables you to scale your application effortlessly by defining and running multiple instances of your containers with a single command.
 
-### **Common Use Cases**
+### Common Use Cases
 
 * **Development Environments**: Docker Compose is widely used for setting up development environments, allowing developers to spin up their application stack quickly and consistently.
 * **Testing Environments**: Docker Compose facilitates the creation of isolated testing environments, enabling automated testing of multi-container applications (think GitHub Actions to build and test your application as part of it's CI/CD process).

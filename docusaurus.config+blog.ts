@@ -21,4 +21,12 @@ export default {
   plugins: [
     require.resolve('docusaurus-plugin-image-zoom'),
   ],
+
+  themeConfig: merge({}, config.themeConfig, {
+    navbar: {
+      logo: {
+        href: "/blog/",
+      }
+    }
+  }),
 };
