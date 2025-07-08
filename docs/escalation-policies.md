@@ -1,6 +1,6 @@
 # Escalation Policies
 
-## What is an Escalation Policy? <a href="#escalation-policy" id="escalation-policy"></a>
+## What is an Escalation Policy?
 
 A team's escalation policy defines the time each [escalation layer](escalation-policies.md#escalation-layers) will have (timeouts) to either [acknowledge](alerts.md#acknowledge) or [reject](alerts.md#reject) an alert.
 
@@ -15,12 +15,12 @@ A team's escalation policy defines the time each [escalation layer](escalation-p
 
 **Note**: All repeat cycles will be performed before attempting to reassign the alert.
 
-### Escalation Layers <a href="#escalation-layers" id="escalation-layers"></a>
+### Escalation Layers
 
 * An escalation policy can have 1..n escalation layers.
 * Each escalation layer has configurable timeout associated with it.
 
-### Repeat Option <a href="#repeat-option" id="repeat-option"></a>
+### Repeat Option
 
 * If an alert has been escalated through all layers, PagerTree will check to see if a repeat should be performed.
 * An alert can repeat an escalation policy between 0-3 times.
@@ -30,12 +30,12 @@ A team's escalation policy defines the time each [escalation layer](escalation-p
 If a repeat is defined, the alert will move through the escalation N + 1 times. First, for the initial escalation policy, plus the number of repeats defined.
 :::
 
-### Reassign Option <a href="#reassign-option" id="reassign-option"></a>
+### Reassign Option
 
 * If an alert has been escalated through all layers and all repeats, PagerTree will check for the reassign option.
 * If the reassign option is defined, the alert will be sent to the reassign destination. The alert will then flow through the reassign destinations workflow.
 
-### Edit Escalation Policy <a href="#edit-escalation-policy" id="edit-escalation-policy"></a>
+### Edit Escalation Policy
 
 To edit an escalation policy for a team:
 
@@ -47,7 +47,7 @@ To edit an escalation policy for a team:
     <figure>![edit escalation policy forms](<.gitbook/assets/edit-escalation-policy-form.png>)<figcaption><p>Edit Escalation Policy Form</p></figcaption></figure>
 3. Click **Update**.
 
-## Examples <a href="#examples" id="examples"></a>
+## Examples
 
 Alice, Bob, and Charlie are currently on-call for their team (Devops Team). Below is the definition of who is on-call for what layer, and the respective layer timeouts.
 
@@ -59,35 +59,35 @@ Devops Team Current On-Call Schedule and Escalation Policy:
 * Repeat 0x
 * Reassign Destinations - None
 
-### Example 1 (Acknowledge) <a href="#example-1-acknowledge" id="example-1-acknowledge"></a>
+### Example 1 (Acknowledge)
 
 * \[minute 0] - The alert is routed to the team. Alice is notified of the alert.
 * \[minute 1] - Alice acknowledges the alert. The workflow stops and no other layers are notified.
 
-### Example 2 (Reject) <a href="#example-2-reject" id="example-2-reject"></a>
+### Example 2 (Reject)
 
 * \[minute 0] - The alert is routed to the team. Alice is notified of the alert.
 * \[minute 1] - Alice rejects the alert. The alert is escalated to layer 2. Bob is notified of the alert.
 * \[minute 2] - Bob acknowledges the alert. The workflow stops and no other layers are notified.
 
-### Example 3 (Timeout) <a href="#example-3-timeout" id="example-3-timeout"></a>
+### Example 3 (Timeout)
 
 * \[minute 0] - The alert is routed to the team. Alice is notified of the alert.
 * \[minute 5] - Alice never responds to the alert. The alert times out of layer 1 and is escalated to layer 2. Bob is notified of the alert.
 * \[minute 7] - Bob acknowledges the alert. The workflow stops and no other layers are notified.
 
-### Example 4 (Drop) <a href="#example-4-drop" id="example-4-drop"></a>
+### Example 4 (Drop)
 
 * \[minute 0] - The alert is routed to the team. Alice is notified of the alert.
 * \[minute 5] - Alice never responds to the alert. The alert times out of layer 1 and is escalated to layer 2. Bob is notified of the alert.
 * \[minute 15] - Bob never responds to the alert. The alert times out of layer 2 and is escalated to layer 3. Charlie is notified of the alert.
 * \[minute 30] - Charlie never responds to the alert. The alert times out of layer 3 and is escalated. Since, there are no more layers, and a repeat of 0x is defined, the alert status is changed to dropped.
 
-### Example 5 (No one on-call) <a href="#example-5-no-one-on-call" id="example-5-no-one-on-call"></a>
+### Example 5 (No one on-call)
 
 * \[minute 0] - No one is on-call. The alert status is changed to dropped.
 
-### Example 6 (Repeat) <a href="#example-6-repeat" id="example-6-repeat"></a>
+### Example 6 (Repeat)
 
 The follow example uses the above definition, with the exception that the Repeat is set to 1x.
 
@@ -97,7 +97,7 @@ The follow example uses the above definition, with the exception that the Repeat
 * \[minute 30] - Charlie never responds to the alert. The alert times out of layer 3 is escalated. Since, there are no more layers, and a repeat of 1x is defined, the alert is escalated to layer 1. Alice is notified of the alert.
 * \[minute 31] - Alice acknowledges the alert. The workflow stops and no other layers are notified.
 
-### Example 7 (Reassign) <a href="#example-7-reassign" id="example-7-reassign"></a>
+### Example 7 (Reassign)
 
 The follow example uses the above definition, with the exception that the Reassign Destination is set to Executive Team.
 

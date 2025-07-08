@@ -4,14 +4,14 @@
 * Events are tied to a single [Escalation Layer](../escalation-policies.md#escalation-layers).
 * Events can belong to multiple [Schedules](schedules.md).
 
-## The Event Object <a href="#the-event-object" id="the-event-object"></a>
+## The Event Object
 
 | Property              | Type              | Description                                                                                                                           |
 | --------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | start\_datetime       | datetime          | The start datetime of the event.                                                                                                      |
 | end\_datetime         | datetime          | The end datetime of the event.                                                                                                        |
 | layer                 | integer           | The escalation layer number this event is assigned to.                                                                                |
-| time\_zone            | string            | The [valid time zone name](events.md#valid-time-zone-names) the event will respect.                                                   |
+| time\_zone            | string            | The [valid time zone name](#valid-time-zone-names) the event will respect.                                                   |
 | repeat                | boolean           | Flag dictating whether or not this is a [repeating](../schedules.md#repeating-event) event.                                           |
 | frequency             | integer           | A the scalar unit of how often this event repeats.                                                                                    |
 | frequency\_unit       | string            | The unit of the frequency scalar. `hourly\|daily\|weekly\|monthly\|yearly`                                                            |
@@ -23,7 +23,7 @@
 | event\_attendees      | EventAttendee\[]  | :id, :attendee\_id, attendee\_type, :position                                                                                         |
 | exceptions            | EventException\[] | :id, :start\_datetime                                                                                                                 |
 
-## Create a Event <a href="#create-a-event" id="create-a-event"></a>
+## Create a Event
 
 ```
 POST https://api.pagertree.com/api/v4/events
@@ -62,31 +62,31 @@ end
   * frequency
   * frequency\_unit
 
-## Retrieve an Event <a href="#retrieve-a-event" id="retrieve-a-event"></a>
+## Retrieve an Event
 
 ```
 GET https://api.pagertree.com/api/v4/events/:id
 ```
 
-## Update an Event <a href="#update-a-event" id="update-a-event"></a>
+## Update an Event
 
 ```
 PUT https://api.pagertree.com/api/v4/events/:id
 ```
 
-## Delete an Event <a href="#delete-a-event" id="delete-a-event"></a>
+## Delete an Event
 
 ```
 DELETE https://api.pagertree.com/api/v4/events/:id
 ```
 
-## List all Events <a href="#list-all-events" id="list-all-events"></a>
+## List all Events
 
 ```
 GET https://api.pagertree.com/api/v4/events
 ```
 
-## Override an Event <a href="#override-an-event" id="override-an-event"></a>
+## Override an Event
 
 [Overrides](../schedules.md#event-override) an existing event with a new one (handles breaking up the event, just like the UI).
 
@@ -101,11 +101,11 @@ POST https://api.pagertree.com/api/v4/events/:id/override
 | start\_time        | Start time for the override in format "YYYY-MM-DD HH:mm".                    |
 | end\_time          | End time for the override in format "YYYY-MM-DD HH:mm".                      |
 | layer              | Layer of the override.                                                       |
-| time\_zone         | A [valid time zone name](broken-reference) that the override will respect.   |
+| time\_zone         | A [valid time zone name](#valid-time-zone-names) that the override will respect.   |
 | account\_user\_ids | Array of [Account User](account-users.md) IDs that will attend the override. |
 | action\_time       | The start time of the occurrence to override (iso8601 format).               |
 
-#### **Example Request**
+#### Example Request
 
 ```
 POST https://api.pagertree.com/api/v4/events/:id/override
@@ -119,7 +119,7 @@ POST https://api.pagertree.com/api/v4/events/:id/override
 }
 ```
 
-## Add an Event Exception <a href="#add-an-event-exception" id="add-an-event-exception"></a>
+## Add an Event Exception
 
 Adds an exception for a **repeating event** (aka "delete a single occurrence").
 
@@ -127,13 +127,13 @@ Adds an exception for a **repeating event** (aka "delete a single occurrence").
 POST https://api.pagertree.com/api/v4/events/:id/add_exception
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 | Body Parameter | Description                                                                                                 |
 | -------------- | ----------------------------------------------------------------------------------------------------------- |
 | action\_time   | The start time of the occurrence to add as an exception (aka "delete a single occurrence") (iso8601 format) |
 
-#### **Example Request**
+#### Example Request
 
 ```
 POST https://api.pagertree.com/api/v4/events/:id/add_exception
@@ -142,7 +142,7 @@ POST https://api.pagertree.com/api/v4/events/:id/add_exception
 }
 ```
 
-## Terminate an Event <a href="#terminate-an-event" id="terminate-an-event"></a>
+## Terminate an Event
 
 Deletes the occurrence and all future occurrences of a **repeating event**.
 
@@ -150,13 +150,13 @@ Deletes the occurrence and all future occurrences of a **repeating event**.
 POST https://api.pagertree.com/api/v4/events/:id/terminate_on
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 | Body Parameter | Description                                                       |
 | -------------- | ----------------------------------------------------------------- |
 | action\_time   | The start time of the first occurrence to delete (iso8601 format) |
 
-#### **Example Request**
+#### Example Request
 
 ```
 POST https://api.pagertree.com/api/v4/events/:id/terminate_on
@@ -165,7 +165,7 @@ POST https://api.pagertree.com/api/v4/events/:id/terminate_on
 }
 ```
 
-## List all Event Time Zones <a href="#list-all-event-time-zones" id="list-all-event-time-zones"></a>
+## List all Event Time Zones
 
 Returns the list of all valid time zones currently supported by PagerTree.
 
@@ -177,7 +177,7 @@ It's possible these change over time as new time zones are added and removed fro
 GET https://api.pagertree.com/api/v4/events/time_zones
 ```
 
-### Valid Time Zone Names <a href="#valid-time-zone-names" id="valid-time-zone-names"></a>
+### Valid Time Zone Names
 
 As a convenience, we have listed supported time zones (as of September 25, 2022) below:
 

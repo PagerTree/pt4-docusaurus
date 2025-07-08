@@ -1,6 +1,6 @@
 # Broadcasts
 
-## What is a Broadcast? <a href="#overview" id="overview"></a>
+## What is a Broadcast?
 
 Broadcasts can notify many [account users](users.md) and/or [teams](teams.md) at once without triggering the [alert workflow](architecture-guide.md#alert-workflow).
 
@@ -10,7 +10,7 @@ To create a broadcast you must have the [admin or broadcaster role](users.md#rol
 
 ::video-youtube[PagerTree Broadcasts Tutorial Video (v4)]{#fxeJHh8_OeE}
 
-## Response Options <a href="#response-options" id="response-options"></a>
+## Response Options
 
 You can request that account users respond to the broadcast.
 

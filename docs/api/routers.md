@@ -4,7 +4,7 @@
 * Alerts can be sent to routers by [Integrations](../integrations.md) or [Account Users](account-users.md).
 * Routers are part of the [Advanced Functionality](../users.md#advanced-mode) in PagerTree. Please see the [routers documentation](../routers.md) in-depth details on how to use them.
 
-## The Router Object <a href="#the-router-object" id="the-router-object"></a>
+## The Router Object
 
 | Property                             | Type    | Description                                                                                                   |
 | ------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------- |
@@ -15,7 +15,7 @@
 | default\_receiver\_router\_id        | string  | The ID of the [Router](routers.md) to receive the alert if no rules match.                                    |
 | default\_receiver\_team\_id          | string  | The ID of the [Team](teams.md) to receive the alert if no rules match.                                        |
 
-## Create a Router <a href="#create-a-router" id="create-a-router"></a>
+## Create a Router
 
 ```
 POST https://api.pagertree.com/api/v4/routers
@@ -36,30 +36,30 @@ def router_params
 end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * name
 * at least 1 default\_receiver
 
-## Retrieve a Router <a href="#retrieve-a-router" id="retrieve-a-router"></a>
+## Retrieve a Router
 
 ```
 GET https://api.pagertree.com/api/v4/routers/:id
 ```
 
-## Update a Router <a href="#update-a-router" id="update-a-router"></a>
+## Update a Router
 
 ```
 PUT https://api.pagertree.com/api/v4/routers/:id
 ```
 
-## Delete a Router <a href="#delete-a-router" id="delete-a-router"></a>
+## Delete a Router
 
 ```
 DELETE https://api.pagertree.com/api/v4/routers/:id
 ```
 
-## List all Routers <a href="#list-all-routers" id="list-all-routers"></a>
+## List all Routers
 
 ```
 GET https://api.pagertree.com/api/v4/routers

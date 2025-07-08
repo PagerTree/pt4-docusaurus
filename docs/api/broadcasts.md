@@ -2,7 +2,7 @@
 
 * A [broadcast](../broadcasts.md) can be used to notify specific [Account Users](account-users.md) and [Teams](teams.md).
 
-## The Broadcast Object <a href="#the-broadcast-object" id="the-broadcast-object"></a>
+## The Broadcast Object
 
 | Property                        | Type                       | Description                                                                               |
 | ------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------- |
@@ -17,13 +17,13 @@
 | broadcast\_response\_options    | BroadcastResponseOption\[] | `:id, :value, :position, :broadcast_responses_count`                                      |
 | broadcast\_responses            | BroadcastResponses\[]      | `:id, :prefix_id, :account_user_id, :broadcast_response_option_id, :channel, :created_at` |
 
-## Create a Broadcast <a href="#create-a-broadcast" id="create-a-broadcast"></a>
+## Create a Broadcast
 
 ```
 POST https://api.pagertree.com/api/v4/broadcasts
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def broadcast_params
@@ -42,31 +42,31 @@ def broadcast_params
 end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * title
 * at least 1 destination (Team or Account User)
 * if response requested, at least 1 response option
 
-## Retrieve a Broadcast <a href="#retrieve-a-broadcast" id="retrieve-a-broadcast"></a>
+## Retrieve a Broadcast
 
 ```
 GET https://api.pagertree.com/api/v4/broadcasts/:id
 ```
 
-## Update a Broadcast <a href="#update-a-broadcast" id="update-a-broadcast"></a>
+## Update a Broadcast
 
 ```
 PUT https://api.pagertree.com/api/v4/broadcasts/:id
 ```
 
-## Delete a Broadcast <a href="#delete-a-broadcast" id="delete-a-broadcast"></a>
+## Delete a Broadcast
 
 ```
 DELETE https://api.pagertree.com/api/v4/broadcasts/:id
 ```
 
-## List all Broadcasts <a href="#list-all-broadcasts" id="list-all-broadcasts"></a>
+## List all Broadcasts
 
 ```
 GET https://api.pagertree.com/api/v4/broadcasts

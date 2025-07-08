@@ -1,6 +1,6 @@
 # Routers
 
-## What are Routers? <a href="#overview" id="overview"></a>
+## What are Routers?
 
 With routers, you can perform complex matching and actions on alerts. Routers consist of many router rules that are processed after the integration has transformed the 3rd party data into an alert, but before the alert has been assigned to the team.
 
@@ -13,11 +13,11 @@ With routers, you can perform complex matching and actions on alerts. Routers co
 
 <figure>![high level alert workflow](<https://pagertree.com/assets/img/kb/routers/high-level-alert-workflow-routing-rules.png>)<figcaption><p>High Level Alert Workflow (Routers)</p></figcaption></figure>
 
-### Routers Video <a href="#rules-syntax" id="rules-syntax"></a>
+### Routers Video
 
 ::video-youtube[PagerTree Routers Tutorial Video (v4)]{#DTCqJnQPPJI}
 
-## Rules Syntax <a href="#rules-syntax" id="rules-syntax"></a>
+## Rules Syntax
 
 * _rules_ - array - Always the root element - 1..n
   * _match_ - hash - 1 match condition (object) - 1
@@ -33,11 +33,11 @@ rules:
     # ... array of actions
 ```
 
-## Match Block <a href="#match-block" id="match-block"></a>
+## Match Block
 
 The match block will attempt to match [data](routers.md#data) using [operators](routers.md#operators).
 
-### Data <a href="#data" id="data"></a>
+### Data
 
 When routers are matching rules they are given access to data.
 
@@ -53,7 +53,7 @@ When routers are matching rules they are given access to data.
 }
 ```
 
-### Operators <a href="#operators" id="operators"></a>
+### Operators
 
 Internally PagerTree uses the [sift package](https://github.com/crcn/sift.js) to do rule matching. It follows the familiar MongoDB syntax.
 
@@ -79,11 +79,11 @@ Internally PagerTree uses the [sift package](https://github.com/crcn/sift.js) to
 
 There are 3 special functions that are supplemental.
 
-* [$day](routers.md#usdday)
-* [$now](routers.md#usdnow)
-* [$timeBetween](routers.md#usdtimebetween)
+* [$day](#day)
+* [$now](#now)
+* [$timeBetween](#timebetween)
 
-#### **$day**
+#### $day
 
 * **Returns** - [ISO day of the week](https://momentjs.com/docs/#/get-set/iso-weekday/) (1 Monday, 7 Sunday): integer.
 * **Parameters**
@@ -97,7 +97,7 @@ $day:
   - 7
 ```
 
-#### **$now**
+#### $now
 
 * **Returns** - Current datetime in the specified format: string.
 * **Parameters**
@@ -114,7 +114,7 @@ $now:
   - "12-25" # Christmas
 ```
 
-#### **$timeBetween**
+#### $timeBetween
 
 * **Returns** - A boolean if the current time is between (inclusive) the time provided :boolean
 * **Parameters**
@@ -133,9 +133,9 @@ $timeBetween:
   endtime: "05:00 pm"
 ```
 
-## Actions Block <a href="#actions-block" id="actions-block"></a>
+## Actions Block
 
-### Action Types <a href="#action-types" id="action-types"></a>
+### Action Types
 
 * [aggregate](routers.md#aggregate) - Aggregate alerts based on fields.
 * [assign](routers.md#assign) - Assign the alert to a team, router, or account user.
@@ -144,7 +144,7 @@ $timeBetween:
 * [setval](routers.md#setval) - Set a value on the alert.
 * [stakeholder](routers.md#stakeholder) - Attach a stakeholder to the alert.
 
-#### **Aggregate**
+#### Aggregate
 
 The aggregate function will aggregate alerts by the specified _by_ properties for _timeout_ amount of time. The first alert will be immediately routed to the _receiver_ and all subsequent alerts that arrive matching the aggregate by will be added as a child to the first alert and immediately discarded.
 
@@ -162,7 +162,7 @@ The aggregate function will aggregate alerts by the specified _by_ properties fo
   receiver: tem_xxxxxx
 ```
 
-#### **Assign**
+#### Assign
 
 The assign function will assign the alert to an account user, router or team.
 
@@ -184,7 +184,7 @@ The assign function will assign the alert to an account user, router or team.
   delay: 5m
 ```
 
-#### **Ignore**
+#### Ignore
 
 The ignore function will change the alert's status to `suppressed` and stop routing.
 
@@ -192,7 +192,7 @@ The ignore function will change the alert's status to `suppressed` and stop rout
 - type: ignore
 ```
 
-#### **Incident**
+#### Incident
 
 The incident action will mark the alert as an incident.
 
@@ -215,7 +215,7 @@ The incident action will mark the alert as an incident.
   message: Please join the call - https://mycallsoftware.com/call/123
 ```
 
-#### **Setval**
+#### Setval
 
 The setval action will assign data to the alert. Define a custom title, description, tags, or urgency.
 
@@ -246,7 +246,7 @@ The setval action will assign data to the alert. Define a custom title, descript
     - tags
 ```
 
-#### **Stakeholder**
+#### Stakeholder
 
 The stakeholder action will attach stakeholders to the alert.
 
@@ -260,9 +260,9 @@ The stakeholder action will attach stakeholders to the alert.
   - stk_xxxxx1
 ```
 
-## Putting It All Together <a href="#putting-it-all-together" id="putting-it-all-together"></a>
+## Putting It All Together
 
-### Attach the Router to your Integration <a href="#attach-the-router-to-your-integration" id="attach-the-router-to-your-integration"></a>
+### Attach the Router to your Integration
 
 When you are happy with your router definition **you must connect the Integration to the Router**.
 
@@ -274,7 +274,7 @@ For each integration that should use your routers logic:
 
 ## Examples <a href="#examples" id="examples"></a>
 
-### Example #1 Always Aggregate By Source <a href="#example-1-always-aggregate-by-source" id="example-1-always-aggregate-by-source"></a>
+### Example #1 Always Aggregate By Source
 
 * Matches everything
 * Aggregates by unique alert.source\_id (usually a integration or user) for a period of 1 hour
@@ -294,7 +294,7 @@ rules:
     receiver: tem_xxxxxx1
 ```
 
-### Example #2 Critical System Down Router <a href="#example-2-critical-system-down-router" id="example-2-critical-system-down-router"></a>
+### Example #2 Critical System Down Router
 
 * Matches any alert with "Critical Systems Down" (case insensitive) in the title and the urgency of high or critical.
 * Attaches stakeholder stk\_xxxxx1 to the alert.
@@ -321,7 +321,7 @@ rules:
     delay: 5m
 ```
 
-### Example #3 Aggregate by Title <a href="#example-3-aggregate-by-title" id="example-3-aggregate-by-title"></a>
+### Example #3 Aggregate by Title
 
 * Matches any alert with "staging" (case sensitive) in the title.
 * Aggregates by unique alert.title for a period of 1 day.
@@ -342,7 +342,7 @@ rules:
     receiver: tem_xxxxxx1
 ```
 
-### Example #4 Office Hours <a href="#example-4-office-hours" id="example-4-office-hours"></a>
+### Example #4 Office Hours
 
 * Matches current time of day between 8a-5p, M-F (Europe/London) and routes to tem\_xxxxxx1.
 * If outside of office hours, the alert is ignored.
@@ -381,17 +381,17 @@ rules:
     - type: ignore
 ```
 
-## Common Errors <a href="#common-errors" id="common-errors"></a>
+## Common Errors
 
 Routers are some of the most complex pieces of PagerTree. If you run into issues make sure to check out the [Router Workflows](https://app.pagertree.com/workflows?direction=desc\&sort=created\_at\&type=Workflow::AlertRouter) and their logs.
 
-### Forgot to Set Integration Destination <a href="#forgot-to-set-integration-destination" id="forgot-to-set-integration-destination"></a>
+### Forgot to Set Integration Destination
 
 Many times a customer has written the router correctly but forgets to set the integration destination as the router.
 
 _Don't forget to point the integrations that should use the router logic to point to your router!_
 
-### Bad Indentation <a href="#bad-indentation" id="bad-indentation"></a>
+### Bad Indentation
 
 A common error when configuring routers is that the YAML is not formatted correctly (mostly always indentation). You can use the [JSON2YAML tool](https://www.bairesdev.com/tools/json2yaml/) to check your indentation.
 

@@ -15,7 +15,7 @@ Most `4xx` errors that could be handled programmatically (e.g. a bad format) inc
 | 429        | Too Many Requests     | Too many request hit the API too quickly. We recommend an exponential backoff. |
 | 500        | Internal Server Error | Something went wrong on PagerTree's servers. (These are rare.)                 |
 
-## Handling Errors <a href="#handling-errors" id="handling-errors"></a>
+## Handling Errors
 
 When there is an error, PagerTree will respond with errors body to help you diagnose why the request failed. The errors body has the following format:
 

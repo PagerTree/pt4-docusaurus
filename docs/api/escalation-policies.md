@@ -14,13 +14,13 @@
 | team\_ids                    | string\[]                                                         | The team IDs currently using this escalation policy.                                            |
 | escalation\_layers           | [EscalationLayer](../escalation-policies.md#escalation-layers)\[] | :account\_id, :id, :prefix\_id, :layer, :timeout, :timeout\_unit, :color\_hex                   |
 
-## Create a Escalation Policy <a href="#create-a-escalation-policy" id="create-a-escalation-policy"></a>
+## Create a Escalation Policy
 
 ```
 POST https://api.pagertree.com/api/v4/escalation_policies
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def escalation_policy_params
@@ -41,29 +41,29 @@ def escalation_policy_params
 end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * name
 
-## Retrieve an Escalation Policies <a href="#retrieve-a-escalation-policies" id="retrieve-a-escalation-policies"></a>
+## Retrieve an Escalation Policies
 
 ```
 GET https://api.pagertree.com/api/v4/escalation_policies/:id
 ```
 
-## Update an Escalation Policies <a href="#update-a-escalation-policies" id="update-a-escalation-policies"></a>
+## Update an Escalation Policies
 
 ```
 PUT https://api.pagertree.com/api/v4/escalation_policies/:id
 ```
 
-## Delete an Escalation Policies <a href="#delete-a-escalation-policies" id="delete-a-escalation-policies"></a>
+## Delete an Escalation Policies
 
 ```
 DELETE https://api.pagertree.com/api/v4/escalation_policies/:id
 ```
 
-## List all Escalation Policies <a href="#list-all-escalation-policies" id="list-all-escalation-policies"></a>
+## List all Escalation Policies
 
 ```
 GET https://api.pagertree.com/api/v4/escalation_policies

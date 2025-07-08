@@ -2,19 +2,19 @@
 
 * A comment can be attached to [Alerts](alerts.md) or [Broadcasts](broadcasts.md).
 
-## The Comment Object <a href="#the-broadcast-object" id="the-broadcast-object"></a>
+## The Comment Object
 
 | Property | Type   | Description                 |
 | -------- | ------ | --------------------------- |
 | body     | string | The title of the broadcast. |
 
-## Create a Comment <a href="#create-a-broadcast" id="create-a-broadcast"></a>
+## Create a Comment
 
 ```
 POST https://api.pagertree.com/api/v4/comments
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def comment_params
@@ -24,7 +24,7 @@ def comment_params
 end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * body
 

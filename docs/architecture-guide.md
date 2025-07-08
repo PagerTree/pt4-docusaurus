@@ -4,7 +4,7 @@ The Architecture Guide will give you an overview of the most important concepts 
 
 For detailed documentation of each object, please see it's respective documentation page.
 
-## Key Definitions <a href="#key-definitions" id="key-definitions"></a>
+## Key Definitions
 
 * [**User**](users.md) - Represents an actual person. A user can have many [phones](users.md#phone-numbers) and [emails](users.md#emails). A user has their own notification preferences.
 * [**Account**](accounts.md) - Represents an organization. This can usually be a company but could also be a department. Accounts are responsible for billing.
@@ -14,7 +14,7 @@ For detailed documentation of each object, please see it's respective documentat
 * [**Alerts**](alerts.md) - Represent and urgent notice (state of alarm). Alerts are created by Integrations or Account Users. Alerts can be sent to Account Users, Teams, or Routers to ultimately notify a User.
 * [**Notifications**](notifications.md) - Represent a message sent on a single notification channel (push, email, sms, voice, ...).
 
-## Account Organization <a href="#account-organization" id="account-organization"></a>
+## Account Organization
 
 PagerTree has two global objects, Accounts and Users, they are joined by an Account User object. This allows **users to be part of many accounts**. Every other model, belongs to the Account model. So it can be said:
 
@@ -25,9 +25,9 @@ PagerTree has two global objects, Accounts and Users, they are joined by an Acco
 
 <figure>![Pagertree high level account organization](<.gitbook/assets/high-level-account-organization.png>)<figcaption><p>PagerTree High Level Account Organization</p></figcaption></figure>
 
-## Permissions <a href="#permissions" id="permissions"></a>
+## Permissions
 
-### Global Permissions <a href="#global-permissions" id="global-permissions"></a>
+### Global Permissions
 
 There are 4 global roles in PagerTree:
 
@@ -41,20 +41,20 @@ If not assigned one of the above permission, the account user is then a **regula
 * view all objects
 * acknowledge/reject Alerts
 
-### Team Permissions <a href="#team-permissions" id="team-permissions"></a>
+### Team Permissions
 
 There are [2 roles](teams.md#team-roles) for a PagerTree Team:
 
 * **team admin** - Can manage the team, team members, team admins, schedule, and escalation policy. Can schedule account users on-call.
 * **team member** - No special permissions
 
-### Account Owner <a href="#account-owner" id="account-owner"></a>
+### Account Owner
 
 * There is only ever 1 account owner (usually the person who created the account, but could have also had the account transferred to them).
 * The account owner always has the admin and billing permission
 * The account owner is the only person that can [transfer](accounts.md#transfer) the account to another account user.
 
-## Alert Workflow <a href="#alert-workflow" id="alert-workflow"></a>
+## Alert Workflow
 
 The diagram below is the most common alert workflow. It shows how data is ingested from 3rd Party systems, transformed, and moves through PagerTree to ultimately notify Account Users.
 
@@ -75,7 +75,7 @@ Check out the following video, for a more in-depth explanation of the above diag
 
 ::video-youtube[PagerTree Alert Workflow Video (v4)]{#6-_hScwSlMg}
 
-## On-Call Schedule Workflow <a href="#on-call-schedule-workflow" id="on-call-schedule-workflow"></a>
+## On-Call Schedule Workflow
 
 <figure>![oncall schedule workflow](<.gitbook/assets/on-call-schedule-workflow.png>)<figcaption><p>On-Call Schedule Workflow</p></figcaption></figure>
 

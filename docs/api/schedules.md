@@ -3,13 +3,13 @@
 * [Schedules](../schedules.md) represent an on-call calendar. A schedule has many [Events](events.md).
 * Schedules are independent objects. The [Team object](teams.md) is responsible for assigning itself a primary schedule and an [Escalation Policy](escalation-policies.md).
 
-## The Schedule Object <a href="#the-schedule-object" id="the-schedule-object"></a>
+## The Schedule Object
 
 | Property | Type   | Description              |
 | -------- | ------ | ------------------------ |
 | name     | string | The name of the schedule |
 
-## Create a Schedule <a href="#create-a-schedule" id="create-a-schedule"></a>
+## Create a Schedule
 
 ```
 POST https://api.pagertree.com/api/v4/schedules
@@ -25,35 +25,35 @@ def schedule_params
 end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * name
 
-## Retrieve a Schedule <a href="#retrieve-a-schedule" id="retrieve-a-schedule"></a>
+## Retrieve a Schedule
 
 ```
 GET https://api.pagertree.com/api/v4/schedules/:id
 ```
 
-## Update a Schedule <a href="#update-a-schedule" id="update-a-schedule"></a>
+## Update a Schedule
 
 ```
 PUT https://api.pagertree.com/api/v4/schedules/:id
 ```
 
-## Delete a Schedule <a href="#delete-a-schedule" id="delete-a-schedule"></a>
+## Delete a Schedule
 
 ```
 DELETE https://api.pagertree.com/api/v4/schedules/:id
 ```
 
-## List all Schedules <a href="#list-all-schedules" id="list-all-schedules"></a>
+## List all Schedules
 
 ```
 GET https://api.pagertree.com/api/v4/schedules
 ```
 
-## Flush a Schedule <a href="#flush-a-schedule" id="flush-a-schedule"></a>
+## Flush a Schedule
 
 Removes all events from the schedule. See [flush schedule documentation](../schedules.md#flush-schedule).
 
@@ -61,7 +61,7 @@ Removes all events from the schedule. See [flush schedule documentation](../sche
 DELETE https://api.pagertree.com/api/v4/schedules/:id/flush
 ```
 
-## Current On-Call <a href="#current-on-call" id="current-on-call"></a>
+## Current On-Call
 
 Returns on-call event attendees for now. (Handles repeating events and rotations)
 
@@ -69,7 +69,7 @@ Returns on-call event attendees for now. (Handles repeating events and rotations
 GET https://api.pagertree.com/api/v4/schedules/:id/current_oncall
 ```
 
-## Window Events <a href="#window-events" id="window-events"></a>
+## Window Events
 
 Return on-call event attendees for a specified time frame. (Handles repeating events and rotations)
 
@@ -82,7 +82,7 @@ Return on-call event attendees for a specified time frame. (Handles repeating ev
 GET https://api.pagertree.com/api/v4/schedules/:id/window_events?start=2022-10-12 07:00:00&end=2022-10-13 07:00:00
 ```
 
-## Events <a href="#events" id="events"></a>
+## Events
 
 Return [Events](events.md) that are assigned to this schedule. (Does not handle repeating events and rotations. Unprocessed representation of events.)
 

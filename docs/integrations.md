@@ -10,7 +10,7 @@ For a full list of our supported integrations, please see the [integrations page
 
 Integrations are open sourced and can be found on [GitHub](https://github.com/PagerTree/pager_tree-integrations).
 
-## Integration Options <a href="#integration-options" id="integration-options"></a>
+## Integration Options
 
 Every integration type will have different integration options that can be selected. At a minimum the following must be selected:
 
@@ -30,7 +30,7 @@ The auto aggregate and resolve functionality are only available in the [Elite pr
 
 ### Auto Aggregate
 
-You can configure an integration to aggregate incoming alerts by title to reduce noise. The scope of the aggregation is limited to alerts created by the integration in the `queued|open|acknowledged|dropped` [alert states](alerts.md#alert-states) with an exact match on the title string.&#x20;
+You can configure an integration to aggregate incoming alerts by title to reduce noise. The scope of the aggregation is limited to alerts created by the integration in the `queued|open|acknowledged|dropped` [alert states](alerts.md#alert-states) with an exact match on the title string.
 
 The timeout value is the amount of time PagerTree will look back for alerts with the same title created by the integration and must be between 15 minutes (15m) and 30 days (30d) specified in [ms notation](https://github.com/vercel/ms).
 
@@ -40,20 +40,20 @@ This feature is useful for integration types like [email](integration-guides/ema
 
 ### Auto Resolve
 
-You can configure integrations to auto-resolve alerts after a period of time. This is useful if your users might not always resolve alerts or if an integration doesn't support resolving an alert natively (ex: [email integration)](integration-guides/email.md).&#x20;
+You can configure integrations to auto-resolve alerts after a period of time. This is useful if your users might not always resolve alerts or if an integration doesn't support resolving an alert natively (ex: [email integration)](integration-guides/email.md).
 
 The timeout value is the amount of time to wait after the alert has been created before auto-resolving the alert. The timeout must be between 15 minutes (15m) and 30 days (30d) specified in [ms notation.](https://github.com/vercel/ms)
 
 <figure>![PagerTree Auto Resolve After Timeout Option](<.gitbook/assets/auto-resolve-option.jpg>)<figcaption><p>Auto Resolve After Timeout Option</p></figcaption></figure>
 
-## Templates <a href="#templates" id="templates"></a>
+## Templates
 
 Each integration supports customizing the alert title and description using handlebars substitution.
 
 * Use any [handlebars-helpers](https://github.com/helpers/handlebars-helpers) to support any logic.
-* Use [JSON dot notation selection](https://lodash.com/docs/4.17.10#get) to access deeply nested data (ex: `data.alarm.region`). If you are unsure of the data being received by your integration, make sure to check the [logs](broken-reference).
+* Use [JSON dot notation selection](https://lodash.com/docs/4.17.10#get) to access deeply nested data (ex: `data.alarm.region`). If you are unsure of the data being received by your integration, make sure to check the [logs](#integration-logs).
 
-### Data <a href="#data" id="data"></a>
+### Data
 
 ```json
 {
@@ -93,7 +93,7 @@ The following example shows how to use the JSON body of the HTTP payload.
 **The above would render**: "Custom Data - I want to use this data"
 
 :::warning
-C**ommon Mistake**: Make sure to use `data.<json_body_key>`.  Do not use `data.params.<key>` or `params.<key>`.
+**Common Mistake**: Make sure to use `data.<json_body_key>`.  Do not use `data.params.<key>` or `params.<key>`.
 :::
 
 #### Webhook Example #2 - Referencing an integration log <a href="#troubleshooting" id="troubleshooting"></a>
@@ -126,14 +126,14 @@ The following example shows how to use integration templates while referencing a
 **The above would render:** "Sensor 1234 is DOWN!"
 
 :::warning
-C**ommon Mistake**: Make sure to use `data.<json_body_key>`.  Do not use `data.params.<key>` or `params.<key>`.
+**Common Mistake**: Make sure to use `data.<json_body_key>`.  Do not use `data.params.<key>` or `params.<key>`.
 :::
 
 
 
-## Troubleshooting Integrations <a href="#troubleshooting" id="troubleshooting"></a>
+## Troubleshooting Integrations
 
-### Integration Logs <a href="#integration-logs" id="integration-logs"></a>
+### Integration Logs
 
 1. See the **logs section** on the integration page to see what PagerTree has received from your 3rd party tool.
 2. **Click any log** to see more details of what was received.
@@ -150,7 +150,7 @@ If you don't see any logs, check your 3rd Party Configuration. A couple of commo
 
 If the logs aren't showing up, it's because PagerTree never received requests from your tool. If you do see logs, but it is still not behaving as expected, please [check the source](integrations.md#check-the-source).
 
-### Check the Source <a href="#check-the-source" id="check-the-source"></a>
+### Check the Source
 
 Check the [source code](https://github.com/PagerTree/pager_tree-integrations) for your specific integration to see why it might not be working the way you expect.
 
@@ -180,7 +180,7 @@ def _state
 end
 ```
 
-## Alert Aggregation <a href="#alert-aggregation" id="alert-aggregation"></a>
+## Alert Aggregation
 
 To reduce noise PagerTree will try to aggregate incoming alerts by `thirdparty_id`. The thirdparty\_id will differ for each integration, see the [source code](https://github.com/PagerTree/pager_tree-integrations/tree/main/app/models/pager_tree/integrations) for your integration to see what the thirdparty\_id consists of.
 
@@ -215,7 +215,7 @@ Most integrations should handle unique ids for you, but if your integration requ
 1. The 3rd party system is sending the "resolved" message to PagerTree. This will auto "resolve" the alert in PagerTree.
 2. Make sure your team is marking the alert as "resolved" in PagerTree. This will allow the system to create a new alert with the same ID.
 
-### Alert Aggregation Example #1 (Simple) <a href="#alert-aggregation-example-1-simple" id="alert-aggregation-example-1-simple"></a>
+### Alert Aggregation Example #1 (Simple)
 
 This example shows how a properly working integration would send information. Sequentially opening and resolving alerts.
 
@@ -226,7 +226,7 @@ This example shows how a properly working integration would send information. Se
 5. Integration I1 sends "create" request with thirdparty\_id 123.
 6. A new alert (Alert A2) is created.
 
-### Alert Aggregation Example #2 (Dedup) <a href="#alert-aggregation-example-2-dedup" id="alert-aggregation-example-2-dedup"></a>
+### Alert Aggregation Example #2 (Dedup)
 
 This example shows how a noisy integration might send information. Duplicating create events.
 
@@ -239,7 +239,7 @@ This example shows how a noisy integration might send information. Duplicating c
 7. Integration I1 sends "create" request with thirdparty\_id 123.
 8. A new alert (Alert A2) is created.
 
-### Alert Aggregation Example #3 (Multiple Integrations) <a href="#alert-aggregation-example-3-multiple-integrations" id="alert-aggregation-example-3-multiple-integrations"></a>
+### Alert Aggregation Example #3 (Multiple Integrations)
 
 This example shows how integrations thirdparty\_id namespace is unique.
 
@@ -252,7 +252,7 @@ This example shows how integrations thirdparty\_id namespace is unique.
 7. Integration I2 continuously sends "create" requests with thirdparty\_id 123.
 8. Alert A2 dedup count is incremented until it is resolved by "Integration I2" or manually by a User.
 
-### Alert Aggregation Example #4 (User Intervention) <a href="#alert-aggregation-example-4-user-intervention" id="alert-aggregation-example-4-user-intervention"></a>
+### Alert Aggregation Example #4 (User Intervention)
 
 This example shows how a user can mark the alert as resolved to reset the deduplication flow.
 

@@ -3,7 +3,7 @@
 * An [alert](../alerts.md) represents an urgent notice (state of alarm)
 * Alerts are created by [Integrations](../integrations.md) or [Account Users](../users.md)
 
-## The Alert Object <a href="#the-alert-object" id="the-alert-object"></a>
+## The Alert Object
 
 | Property         | Type      | Description                                                                                                                         |
 | ---------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,19 +20,19 @@
 | resolved\_at     | timestamp | A timestamp of when the alert was resolved.                                                                                         |
 | dedup\_keys      | string\[] | Unique identifiers that group alerts within the account.                                                                            |
 
-### **Notes**
+### Notes
 
 * Set the `meta.incident` to true to flag this alert as an [incident](../alerts.md#incident).
 * Set the `meta.incident_severity` to set the [severity](../alerts.md#severities). `SEV-1|SEV-2|SEV-3|SEV-4|SEV-5|SEV-UNKNOWN`
 * Set the `meta.incident_message` to set the special incident message.
 
-## Create an Alert <a href="#create-a-alert" id="create-a-alert"></a>
+## Create an Alert
 
 ```
 POST https://api.pagertree.com/api/v4/alerts
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def alert_params
@@ -53,37 +53,37 @@ def alert_params
 end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * title
 * urgency
 * at least 1 destination (Team, Router, or Account User)
 
-## Retrieve an Alert <a href="#retrieve-a-alert" id="retrieve-a-alert"></a>
+## Retrieve an Alert
 
 ```
 GET https://api.pagertree.com/api/v4/alerts/:id
 ```
 
-## Update an Alert <a href="#update-a-alert" id="update-a-alert"></a>
+## Update an Alert
 
 ```
 PUT https://api.pagertree.com/api/v4/alerts/:id
 ```
 
-## Delete an Alert <a href="#delete-a-alert" id="delete-a-alert"></a>
+## Delete an Alert
 
 ```
 DELETE https://api.pagertree.com/api/v4/alerts/:id
 ```
 
-## List all Alerts <a href="#list-all-alerts" id="list-all-alerts"></a>
+## List all Alerts
 
 ```
 GET https://api.pagertree.com/api/v4/alerts
 ```
 
-## Acknowledge an Alert <a href="#acknowledge-an-alert" id="acknowledge-an-alert"></a>
+## Acknowledge an Alert
 
 [Acknowledge](../alerts.md#acknowledge) an alert. Must be in the open|dropped|suppressed state.
 
@@ -91,7 +91,7 @@ GET https://api.pagertree.com/api/v4/alerts
 POST https://api.pagertree.com/api/v4/alerts/:id/acknowledge
 ```
 
-## Reject an Alert <a href="#reject-an-alert" id="reject-an-alert"></a>
+## Reject an Alert
 
 [Reject](../alerts.md#reject) an alert. API Key user must have an open workflow for this alert.
 
@@ -99,7 +99,7 @@ POST https://api.pagertree.com/api/v4/alerts/:id/acknowledge
 POST https://api.pagertree.com/api/v4/alerts/:id/reject
 ```
 
-## Resolve an Alert <a href="#resolve-an-alert" id="resolve-an-alert"></a>
+## Resolve an Alert
 
 [Resolve](../alerts.md#resolve) an alert. Must be in the open|dropped|acknowledged state.
 

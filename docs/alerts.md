@@ -1,13 +1,13 @@
 # Alerts
 
-## What is an Alert? <a href="#overview" id="overview"></a>
+## What is an Alert?
 
 * An alert should represent an actionable issue that needs [user](users.md) interaction.
 * Alerts will notify users using the [alert workflow](architecture-guide.md#alert-workflow).
 * Alerts are created by [Integrations](integrations.md) or [Account Users](users.md).
 * Alerts have one or more "destinations". An alert destination can be a [Team](teams.md), Account User, or [Router](routers.md).
 
-## User Interface <a href="#user-interface" id="user-interface"></a>
+## User Interface
 
 <figure>![annotated alert information](<.gitbook/assets/alert-ui-annotated.png>)<figcaption><p>Annotated Alert Information</p></figcaption></figure>
 
@@ -35,21 +35,21 @@ Account users can comment on the alert. Comments are meant for human conversatio
 
 <figure>![alert comments](<.gitbook/assets/alert-comments.png>)<figcaption><p>Alert Comments</p></figcaption></figure>
 
-### Logs <a href="#logs" id="logs"></a>
+### Logs
 
 Alert logs are created by PagerTree to document what happened during the alert's lifecycle.
 
 <figure>![alert logs](<.gitbook/assets/alert-logs.png>)<figcaption><p>Alert Logs</p></figcaption></figure>
 
-## Alert Actions <a href="#alert-actions" id="alert-actions"></a>
+## Alert Actions
 
-### Acknowledge <a href="#acknowledge" id="acknowledge"></a>
+### Acknowledge
 
 Acknowledging an alert indicates that the person acknowledging the alert will be responsible for addressing the alert. If the person is not able to adequately resolve the issue themselves, it is their responsibility to gather others who can help take this alert to resolution. The acknowledging user could also [handoff](alerts.md#handoff) the alert to another Account User or Team who could better address the alert.
 
 To acknowledge an alert, the alert must be in the `open` status.
 
-#### **Methods to Acknowledge**
+#### Methods to Acknowledge
 
 | Channel    | Directions                                                                  |
 | ---------- | --------------------------------------------------------------------------- |
@@ -60,13 +60,13 @@ To acknowledge an alert, the alert must be in the `open` status.
 | slack      | Click the acknowledge button.                                               |
 | web ui     | Click the acknowledge button.                                               |
 
-### Reject <a href="#reject" id="reject"></a>
+### Reject
 
 Rejecting an alert indicates that the person rejecting the alert cannot address the alert at the current time. (ex: The rejecting user is stuck in traffic.)
 
 To reject an alert, the account user must have an open alert workflow.
 
-#### **Methods to Reject**
+#### Methods to Reject
 
 | Channel    | Directions                                                             |
 | ---------- | ---------------------------------------------------------------------- |
@@ -77,7 +77,7 @@ To reject an alert, the account user must have an open alert workflow.
 | slack      | Click the reject button.                                               |
 | web ui     | Click the reject button.                                               |
 
-### Resolve <a href="#resolve" id="resolve"></a>
+### Resolve
 
 Resolving an alert indicates that the alert has been fully fixed (aka "resolved").
 
@@ -85,18 +85,18 @@ To resolve an alert it must be in the `acknowledged` state. Resolving an alert c
 
 Integrations can auto-resolve alerts. In this case, an alert can go from `open` -> `resolved` directly.
 
-#### **Methods to Resolve**
+#### Methods to Resolve
 
 | Channel    | Directions                                                              |
 | ---------- | ----------------------------------------------------------------------- |
 | mobile app | Tap the push notification. On the alert page, click the resolve button. |
 | web ui     | Click the resolve button.                                               |
 
-### Handoff <a href="#handoff" id="handoff"></a>
+### Handoff
 
 You many handoff the alert to another [Team](teams.md) or [Router](routers.md) once the alert is in the `acknowledged` state. Handing off an alert can only be done via the mobile app or web ui.
 
-#### **Methods to Handoff**
+#### Methods to Handoff
 
 1. In the top right of the alert page, **Click Handoff**.
 2. On the Alert Handoff form:
@@ -104,7 +104,7 @@ You many handoff the alert to another [Team](teams.md) or [Router](routers.md) o
    2. Provide a brief note as to why you are handing it off.
 3. **Click Handoff**.
 
-## Incident <a href="#incident" id="incident"></a>
+## Incident
 
 Marking an alert as an incident communicates to your team members this alert is a greater degree of severity than a normal alert. It can be causing an outage or even customer facing. An incident represents a problem or an issue that needs to be addressed an resolved immediately.
 
@@ -113,7 +113,7 @@ Marking an alert as an incident communicates to your team members this alert is 
 
 <figure>![alert incident banner](<.gitbook/assets/alert-incident-banner.png>)<figcaption><p>Alert Incident Banner</p></figcaption></figure>
 
-### Severities <a href="#severities" id="severities"></a>
+### Severities
 
 The incident severity level communicates the impact of the incident. It will be displayed on notification channels and in a red banner on top of the alert page.
 
@@ -128,7 +128,7 @@ If you are unsure which level an incident is (e.g. not sure if SEV-2 or SEV-1), 
 | SEV-5 (lowest)  | Cosmetic issues or bugs, not affecting customer ability to use the product.                        |
 | SEV-UNKNOWN     | Impact currently unknown (can be updated in the future)                                            |
 
-## Alert States <a href="#alert-states" id="alert-states"></a>
+## Alert States
 
 | State        | Description                                                                                                          |
 | ------------ | -------------------------------------------------------------------------------------------------------------------- |
@@ -140,7 +140,7 @@ If you are unsure which level an incident is (e.g. not sure if SEV-2 or SEV-1), 
 
 <figure>![alert states](<.gitbook/assets/alert-states.png>)<figcaption><p>Alert States</p></figcaption></figure>
 
-## FAQs <a href="#fa-qs" id="fa-qs"></a>
+## FAQs
 
 | Question                          | Answer                                                                                                     |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------- |

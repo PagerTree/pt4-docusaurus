@@ -6,9 +6,9 @@
 * Maintenance windows can be created for the present or scheduled for the future.
 * To create maintenance windows, you must enable "advanced mode" and have the role of admin.
 
-## Integrations <a href="#integrations" id="integrations"></a>
+## Integrations
 
-### Quick Create <a href="#quick-create" id="quick-create"></a>
+### Quick Create
 
 A maintenance window can be quickly created via an integration page.
 

@@ -89,25 +89,25 @@ POST https://api.pagertree.com/api/v4/account_users
 }
 ```
 
-### Retrieve a Account User <a href="#retrieve-a-account-user" id="retrieve-a-account-user"></a>
+### Retrieve a Account User
 
 ```
 GET https://api.pagertree.com/api/v4/account_users/:id
 ```
 
-### Update a Account User <a href="#update-a-account-user" id="update-a-account-user"></a>
+### Update a Account User
 
 ```
 PUT https://api.pagertree.com/api/v4/account_users/:id
 ```
 
-### Delete a Account User <a href="#delete-a-account-user" id="delete-a-account-user"></a>
+### Delete a Account User
 
 ```
 DELETE https://api.pagertree.com/api/v4/account_users/:id
 ```
 
-### List all Account Users <a href="#list-all-account-users" id="list-all-account-users"></a>
+### List all Account Users
 
 ```
 GET https://api.pagertree.com/api/v4/account_users

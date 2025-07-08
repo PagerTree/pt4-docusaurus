@@ -13,7 +13,7 @@
 | time\_zone       | string    | The time zone this maintenance window will respect. (See [event time zones](events.md#list-all-event-time-zones) for the list of all available time zone names.) |
 | integration\_ids | string\[] | The IDs of the [integrations](integrations.md) this maintenance window affects during the specified time frame.                                                  |
 
-## Create a Maintenance Window <a href="#create-a-maintenance-window" id="create-a-maintenance-window"></a>
+## Create a Maintenance Window
 
 ```
 POST https://api.pagertree.com/api/v4/maintenance_windows
@@ -34,7 +34,7 @@ def maintenance_window_params
 end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * name
 * start\_datetime
@@ -42,25 +42,25 @@ end
 * time\_zone
 * at least 1 integration\_id
 
-## Retrieve a Maintenance Window <a href="#retrieve-a-maintenance-window" id="retrieve-a-maintenance-window"></a>
+## Retrieve a Maintenance Window
 
 ```
 GET https://api.pagertree.com/api/v4/maintenance_windows/:id
 ```
 
-## Update a Maintenance Window <a href="#update-a-maintenance-window" id="update-a-maintenance-window"></a>
+## Update a Maintenance Window
 
 ```
 PUT https://api.pagertree.com/api/v4/maintenance_windows/:id
 ```
 
-## Delete a Maintenance Window <a href="#delete-a-maintenance-window" id="delete-a-maintenance-window"></a>
+## Delete a Maintenance Window
 
 ```
 DELETE https://api.pagertree.com/api/v4/maintenance_windows/:id
 ```
 
-## List all Maintenance Windows <a href="#list-all-maintenance-windows" id="list-all-maintenance-windows"></a>
+## List all Maintenance Windows
 
 ```
 GET https://api.pagertree.com/api/v4/maintenance_windows

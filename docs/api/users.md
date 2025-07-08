@@ -4,7 +4,7 @@
 * A User can have many [Emails](../users.md#emails) and [Phones](../users.md#phone-numbers).
 * A User is associated with one to many [Account Users](account-users.md).
 
-### The User Object <a href="#the-account-user-object" id="the-account-user-object"></a>
+### The User Object
 
 | Property             | Type      | Description                                                                  |
 | -------------------- | --------- | ---------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@
 | phones\[].country    | string    | ISO 3166 alpha-2 country code of the number (determined by PagerTree).       |
 | phones\[].blocked    | boolean   | Boolean indicating whether this phone has been blocked.                      |
 
-### Create a User <a href="#create-a-account-user" id="create-a-account-user"></a>
+### Create a User
 
 ```
 POST https://api.pagertree.com/api/v4/users
@@ -73,25 +73,25 @@ POST https://api.pagertree.com/api/v4/users
 }
 ```
 
-### Retrieve a User <a href="#retrieve-a-account-user" id="retrieve-a-account-user"></a>
+### Retrieve a User
 
 ```
 GET https://api.pagertree.com/api/v4/users/:id
 ```
 
-### Update a User <a href="#update-a-account-user" id="update-a-account-user"></a>
+### Update a User
 
 ```
 PUT https://api.pagertree.com/api/v4/users/:id
 ```
 
-### Delete a User <a href="#delete-a-account-user" id="delete-a-account-user"></a>
+### Delete a User
 
 :::danger
 This action is not supported. Please see the [Delete a Account User](account-users.md#delete-a-account-user) method.
 :::
 
-### List all Users <a href="#list-all-account-users" id="list-all-account-users"></a>
+### List all Users
 
 ```
 GET https://api.pagertree.com/api/v4/users

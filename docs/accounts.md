@@ -1,14 +1,14 @@
 # Accounts
 
-### Billing <a href="#billing" id="billing"></a>
+### Billing
 
 Account billing documentation can be found on the [billing page](billing.md).
 
-### Single Sign On <a href="#single-sign-on" id="single-sign-on"></a>
+### Single Sign On
 
 Single Sign On (SSO) documentation can be found on the [Single Sign On page](single-sign-on-sso.md).
 
-### Transfer <a href="#transfer" id="transfer"></a>
+### Transfer
 
 To transfer an account you must be the [account owner](architecture-guide.md#account-owner) and can only transfer the account to another account user. The account user you transfer the account to will immediately assume the [roles](users.md#roles) of account owner, admin, and billing.
 
@@ -20,7 +20,7 @@ To transfer an account you must be the [account owner](architecture-guide.md#acc
 
 <figure>![transfer account ownership](<.gitbook/assets/transfer-account.png>)<figcaption><p>Transfer Account Form</p></figcaption></figure>
 
-### Delete <a href="#delete" id="delete"></a>
+### Delete
 
 To delete an account you must be the account owner. If you delete the account, all data will be lost and cannot be restored. This affects all account users in this account (not just you).
 

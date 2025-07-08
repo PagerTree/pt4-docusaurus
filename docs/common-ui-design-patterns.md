@@ -7,7 +7,7 @@ If you do not see the buttons to perform any action it can be because any of the
 * You do not have sufficient [permissions](users.md#roles) (role) to perform this action.
 * Your [subscription](billing.md) does not support creating these types of objects.
 
-### Creating an Object <a href="#creating-an-object" id="creating-an-object"></a>
+### Creating an Object
 
 To create objects:
 
@@ -18,7 +18,7 @@ To create objects:
 3. Enter the requested information, then click the **Create** button.
 4. If the object was successfully created, you will be directed to the object page with a notice stating the "Record was successfully created". If there were errors, they will be displayed in red.
 
-### Update an Object <a href="#update-an-object" id="update-an-object"></a>
+### Update an Object
 
 To update objects:
 
@@ -29,7 +29,7 @@ To update objects:
 3. Change the information you would like to update, then click the **Update** button.
 4. If the object was successfully updated, you will be directed to the object page with a notice stating the "Record was successfully updated". If there were errors, they will be displayed in red.
 
-### Deleting Objects <a href="#deleting-objects" id="deleting-objects"></a>
+### Deleting Objects
 
 To delete an object:
 
@@ -40,7 +40,7 @@ To delete an object:
 3. If you are sure you would like to delete the object, click **Confirm**.
 4. If the object was successfully deleted, you will be directed to the Object collection page with a notice stating the "Record was successfully destroyed". If there were errors, they will be displayed in red.
 
-### Mass Actions on Objects <a href="#mass-actions-on-objects" id="mass-actions-on-objects"></a>
+### Mass Actions on Objects
 
 To perform mass actions on objects (ex: delete many objects at a time):
 
@@ -54,7 +54,7 @@ To perform mass actions on objects (ex: delete many objects at a time):
 4. If you are sure you would like to perform the mass action on the selected objects, click **Confirm**.
 5. After the action, you will be directed to the object collection page with a notice stating of any success or errors.
 
-### Form Hints <a href="#form-hints" id="form-hints"></a>
+### Form Hints
 
 PagerTree is meant to be self documented. In most places, hover over the field in a form, and a hint will display with more details.
 

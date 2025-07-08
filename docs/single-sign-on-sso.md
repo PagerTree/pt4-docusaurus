@@ -7,12 +7,12 @@ description: >-
 
 # Single Sign On (SSO)
 
-## Definitions <a href="#definitions" id="definitions"></a>
+## Definitions
 
 * _Identity Provider (IdP)_ - This is your Identity Provider (Google, Okta, Azure AD).
 * _Service Provider (SP)_ - This is PagerTree.
 
-## SAML Required Attributes <a href="#saml-required-attributes" id="saml-required-attributes"></a>
+## SAML Required Attributes
 
 * _Version_ - 2.0
 * _Assertion Consumer URL (ACS)_ - `https://app.pagertree.com/public/saml/callback?sp_entity_id=<sp-entity-id>`

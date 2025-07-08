@@ -1,6 +1,6 @@
 # Notification Rules
 
-## What are Notification Rules? <a href="#overview" id="overview"></a>
+## What are Notification Rules?
 
 With notification rules, you can perform custom notification sequences. Notification rules are processed after PagerTree has selected the account user to notify, but before default notification channels are used. The diagram below shows the high level workflow for alerts and how they move within the PagerTree system.
 
@@ -14,11 +14,11 @@ With notification rules, you can perform custom notification sequences. Notifica
 
 <figure>![high level alert workflow](<https://pagertree.com/assets/img/kb/routers/high-level-alert-workflow-notification-rules.png>)<figcaption><p>High Level Alert Workflow (Notification Rules)</p></figcaption></figure>
 
-### Notification Rules Video <a href="#example-video" id="example-video"></a>
+### Notification Rules Video
 
 ::youtube-video[Notification Rules Tutorial Video (v4)]{#ZdIt5eODXHI}
 
-## Rules Syntax <a href="#rules-syntax" id="rules-syntax"></a>
+## Rules Syntax
 
 * The notification rules syntax is the same as routers.
 * The match block works exactly the same (data and operators are the same)
@@ -27,12 +27,12 @@ With notification rules, you can perform custom notification sequences. Notifica
 Please see the routers documentation for rules syntax and match conditions.
 
 :::info
-_Remember to come back here for_ [_notification rule specific action types_](broken-reference).
+_Remember to come back here for_ [_notification rule specific action types_](notification-rules.md#action-types).
 :::
 
-## Actions Block <a href="#actions-block" id="actions-block"></a>
+## Actions Block
 
-### Action Types <a href="#action-types" id="action-types"></a>
+### Action Types
 
 * [notify](notification-rules.md#notify) - Notify the user on specific channels.
 * [repeat](notification-rules.md#repeat) - Repeat the notification cycle.
@@ -91,9 +91,9 @@ The ignore action will suppress sending any notifications to the account user wh
 - type: ignore
 ```
 
-## Putting It All Together <a href="#putting-it-all-together" id="putting-it-all-together"></a>
+## Putting It All Together
 
-### Attach the Notification Rules to your User <a href="#attach-the-notification-rules-to-your-user" id="attach-the-notification-rules-to-your-user"></a>
+### Attach the Notification Rules to your User
 
 When you are happy with your notification rule definition **you must connect the Notification Rules to the User**.
 
@@ -104,9 +104,9 @@ When you are happy with your notification rule definition **you must connect the
     <figure>![select the notification rule](<.gitbook/assets/select-notification-rules.png>)<figcaption><p>Select the notification rule.</p></figcaption></figure>
 4. Click **Update**.
 
-## Examples <a href="#examples" id="examples"></a>
+## Examples
 
-### Example #1 Match Everything <a href="#example-1-match-everything" id="example-1-match-everything"></a>
+### Example #1 Match Everything
 
 * Matches everything
   1. Notify email, sms, slack (wait 1 minute)
@@ -136,7 +136,7 @@ rules:
       times: 1
 ```
 
-### Example #2 Special Alerts and Working Hours <a href="#example-2-special-alerts-and-working-hours" id="example-2-special-alerts-and-working-hours"></a>
+### Example #2 Special Alerts and Working Hours
 
 * Match alerts with title containing "special title" (case insensitive)
   1. Notify email, sms, slack (wait 1 minute)
@@ -189,7 +189,7 @@ rules:
     - type: ignore
 ```
 
-### Example #3 Primary Secondary Phone <a href="#example-3-primary-secondary-phone" id="example-3-primary-secondary-phone"></a>
+### Example #3 Primary Secondary Phone
 
 Matches everything
 
@@ -218,19 +218,19 @@ rules:
       timeout: 5m
 ```
 
-## Common Mistakes <a href="#common-mistakes" id="common-mistakes"></a>
+## Common Mistakes
 
-### Forgot to Attach to User <a href="#forgot-to-attach-to-user" id="forgot-to-attach-to-user"></a>
+### Forgot to Attach to User
 
-Many times a customer has written the notification rule correctly but forgets to [attach the notification rule to the user](broken-reference).
+Many times a customer has written the notification rule correctly but forgets to [attach the notification rule to the user](#attach-the-notification-rules-to-your-user).
 
 _Don't forget to attach the notification rule to the user!_
 
-### Bad Indentation <a href="#bad-indentation" id="bad-indentation"></a>
+### Bad Indentation
 
 A common error when configuring notification rules is that the YAML is not formatted correctly (mostly always indentation). You can use the [JSON2YAML tool](https://www.bairesdev.com/tools/json2yaml/) to check your indentation.
 
-## FAQs <a href="#fa-qs" id="fa-qs"></a>
+## FAQs
 
 | Question                                                                                        | Answer                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

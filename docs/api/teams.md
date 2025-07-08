@@ -80,7 +80,7 @@ GET https://api.pagertree.com/api/v4/teams
 
 Returns on-call event attendees for now for this team. (Handles repeating events and rotations)
 
-Shortcut for [schedule current on-call method](schedules.md#current-on-call).
+Shortcut for [schedule current on-call method](/docs/api/schedules.md#current-on-call).
 
 ```
 GET https://api.pagertree.com/api/v4/teams/:id/current_oncall

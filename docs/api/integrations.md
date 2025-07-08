@@ -5,7 +5,7 @@
 * Integrations are responsible for transforming 3rd party webhook data into [Alerts](../alerts.md).
 * If able to successfully transform the 3rd party webhook data into an Alert and determining the webhook was a `create` action, the integration will send the alert to any of [Account Users](account-users.md), [Routers](../routers.md), or [Teams](../teams.md).
 
-## The Integration Object <a href="#the-integration-object" id="the-integration-object"></a>
+## The Integration Object
 
 | Property           | Type      | Description                                                                     |
 | ------------------ | --------- | ------------------------------------------------------------------------------- |
@@ -18,13 +18,13 @@
 | router\_ids        | string\[] | IDs of [routers](routers.md) this integration routes to by default.             |
 | team\_ids          | string\[] | IDs of [teams](teams.md) this integration routes to by default.                 |
 
-## Create an Integration <a href="#create-a-integration" id="create-a-integration"></a>
+## Create an Integration
 
 ```
 POST https://api.pagertree.com/api/v4/integrations
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def integration_params
@@ -42,11 +42,11 @@ def integration_params
   end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * name
 * urgency
-* integration\_type\_id (see how to get a [list of Integration Types](integrations.md#list-all-integration-types) below)
+* integration\_type\_id (see how to get a [list of Integration Types](#list-all-integration-types) below)
 * at least 1 destination (Account User, Router, or Team)
 
 #### **Example Request**
@@ -61,37 +61,37 @@ POST https://api.pagertree.com/api/v4/integrations/
 }
 ```
 
-## Retrieve an Integration <a href="#retrieve-a-integration" id="retrieve-a-integration"></a>
+## Retrieve an Integration
 
 ```
 GET https://api.pagertree.com/api/v4/integrations/:id
 ```
 
-## Update an Integration <a href="#update-a-integration" id="update-a-integration"></a>
+## Update an Integration
 
 ```
 PUT https://api.pagertree.com/api/v4/integrations/:id
 ```
 
-## Delete an Integration <a href="#delete-a-integration" id="delete-a-integration"></a>
+## Delete an Integration
 
 ```
 DELETE https://api.pagertree.com/api/v4/integrations/:id
 ```
 
-## List all Integrations <a href="#list-all-integrations" id="list-all-integrations"></a>
+## List all Integrations
 
 ```
 GET https://api.pagertree.com/api/v4/integrations
 ```
 
-## Retrieve an Integration Type <a href="#retrieve-a-integration-type" id="retrieve-a-integration-type"></a>
+## Retrieve an Integration Type
 
 ```
 GET https://api.pagertree.com/api/v4/integration_types/:id
 ```
 
-## List all Integration Types <a href="#list-all-integration-types" id="list-all-integration-types"></a>
+## List all Integration Types
 
 ```
 GET https://api.pagertree.com/api/v4/integration_types

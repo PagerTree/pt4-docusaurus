@@ -1,6 +1,6 @@
 # Schedules
 
-## What is a Schedule? <a href="#overview" id="overview"></a>
+## What is a Schedule?
 
 On-call schedules are composed of calendar [events](schedules.md#events). Each calendar event is associated with one or more users and one [escalation layers](escalation-policies.md#escalation-layers).
 
@@ -12,43 +12,43 @@ On-call schedules are composed of calendar [events](schedules.md#events). Each c
 
 <figure>![High level alert workflow](<.gitbook/assets/high-level-alert-workflow-schedule.png>)<figcaption><p>High Level Alert Workflow (Schedules)</p></figcaption></figure>
 
-### Schedules Tutorial Video <a href="#basic-calendar-interactions" id="basic-calendar-interactions"></a>
+### Schedules Tutorial Video
 
 ::video-youtube[PagerTree On-Call Schedules Video (v4)]{#xaCrRCvQud8}
 
-## Basic Calendar Interactions <a href="#basic-calendar-interactions" id="basic-calendar-interactions"></a>
+## Basic Calendar Interactions
 
-### Create a Single Day Event <a href="#create-a-single-day-event" id="create-a-single-day-event"></a>
+### Create a Single Day Event
 
 Double click the calendar (in the white space) to create a single day event.
 
 <figure>![Single day event](<.gitbook/assets/double-click-single-day.png>)<figcaption><p>Double click for a single day event.</p></figcaption></figure>
 
-### Create a Multi-Day Event <a href="#create-a-mutli-day-event" id="create-a-mutli-day-event"></a>
+### Create a Multi-Day Event
 
 Click and drag the calendar (in the white space) to create a multi-day event.
 
 <figure>![drag-n-drop calendar](<.gitbook/assets/click-and-drag-multi-day.png>)<figcaption><p>Click and drag to create a multi-day event.</p></figcaption></figure>
 
-### Show Event Details <a href="#show-event-details" id="show-event-details"></a>
+### Show Event Details
 
 Click the event to show it's details.
 
 <figure>![show event details](<.gitbook/assets/click-event-for-details.png>)<figcaption><p>Click the event to show the event details.</p></figcaption></figure>
 
-### Drag and Drop Events <a href="#drag-and-drop-events" id="drag-and-drop-events"></a>
+### Drag and Drop Events
 
 You can drag and drop events to modify them on the fly. This only works for regular events (not repeating or rotations).
 
 <figure>![Drop-n-drop events](<.gitbook/assets/drag-and-drop-event.png>)<figcaption><p>You can drag and drop regular (non-repeating) events to modify them on the fly.</p></figcaption></figure>
 
-### Event Actions <a href="#event-actions" id="event-actions"></a>
+### Event Actions
 
 Click the event to show it's details. You can then use the action buttons to work on the event.
 
 <figure>![annotated event actions](<.gitbook/assets/event-actions.png>)<figcaption><p>Event actions (annotated).</p></figcaption></figure>
 
-### Flush Schedule <a href="#flush-schedule" id="flush-schedule"></a>
+### Flush Schedule
 
 "Flushing" a schedule will remove all events from the calendar. Be careful, once events are deleted they will be lost and cannot be restored.
 
@@ -56,7 +56,7 @@ Click the event to show it's details. You can then use the action buttons to wor
 
 ## Scheduling Users On-Call <a href="#scheduling-users-on-call" id="scheduling-users-on-call"></a>
 
-## Events <a href="#events" id="events"></a>
+## Events
 
 When creating events you must always select the following:
 
@@ -69,7 +69,7 @@ When creating events you must always select the following:
 
 <figure>![Date picker](<.gitbook/assets/date-picker.png>)<figcaption><p>PagerTree date and time picker.</p></figcaption></figure>
 
-### Regular Event <a href="#regular-event" id="regular-event"></a>
+### Regular Event
 
 A regular event is one that doesn't repeat or rotate. It has a start and end date.
 
@@ -77,7 +77,7 @@ A regular event is one that doesn't repeat or rotate. It has a start and end dat
 
 <figure>![regular event on a calendar](<.gitbook/assets/regular-event.png>)<figcaption><p>Regular event on a calendar.</p></figcaption></figure>
 
-### Repeating Event <a href="#repeating-event" id="repeating-event"></a>
+### Repeating Event
 
 A repeating event is one that has an initial occurrence start and end date. It will then repeat based on the options selected.
 
@@ -88,25 +88,25 @@ Options for repeating events are the following:
 * _Applicable Days of the Week_ - Only days of the week this event should occur. (Only works with frequency unit Days)
 * _Repeat End (Inclusive)_ - The last day this event should occur on. (If you set this to be Oct 31, the last occurrence will be Oct 31-> Nov 1)
 
-#### **Example: Simple Repeating Event**
+#### Example: Simple Repeating Event
 
 <figure>![simple repeating event](<.gitbook/assets/repeating-event-form.png>)<figcaption><p>Simple repeating event form</p></figcaption></figure>
 
 <figure>![simple repeating event on a calendar](<.gitbook/assets/repeating-event.png>)<figcaption><p>Simple repeating event on a calendar.</p></figcaption></figure>
 
-#### **Example: Repeating Event During Working Hours**
+#### Example: Repeating Event During Working Hours
 
 <figure>![repeating event](<.gitbook/assets/repeating-event-working-hours-form.png>)<figcaption><p>Repeating event (working hours) form.</p></figcaption></figure>
 
 <figure>![repeating event on a calendar](<.gitbook/assets/repeating-event-working-hours.png>)<figcaption><p>Repeating event (working hours) on a calendar.</p></figcaption></figure>
 
-#### **Example: Repeating Event With End Date**
+#### Example: Repeating Event With End Date
 
 <figure>![repeating event with end date](<.gitbook/assets/repeating-event-with-repeat-end-form.png>)<figcaption><p>Repeating event (with end date) form.</p></figcaption></figure>
 
 <figure>![repeating event with end date on calendar](<.gitbook/assets/repeating-event-with-repeat-end.png>)<figcaption><p>Repeating event (with end date) on a calendar.</p></figcaption></figure>
 
-### Rotating Event <a href="#rotating-event" id="rotating-event"></a>
+### Rotating Event
 
 A rotating event is similar to a repeating event, but it will rotate users for every occurrence.
 
@@ -114,9 +114,9 @@ A rotating event is similar to a repeating event, but it will rotate users for e
 
 <figure>![rotating event on a calendar](<.gitbook/assets/rotating-event.png>)<figcaption><p>Rotating event on a calendar.</p></figcaption></figure>
 
-## Advanced Calendar Interactions <a href="#advanced-calendar-interactions" id="advanced-calendar-interactions"></a>
+## Advanced Calendar Interactions
 
-### Event Override <a href="#event-override" id="event-override"></a>
+### Event Override
 
 To override and event for a duration of time:
 
@@ -133,7 +133,7 @@ To override and event for a duration of time:
 
 <figure>![event override on calendar](<.gitbook/assets/event-override.png>)<figcaption><p>Event override on a calendar.</p></figcaption></figure>
 
-### Event Clone <a href="#event-clone" id="event-clone"></a>
+### Event Clone
 
 1. Single click the Event to show the event details.
 2.  Click the **Event Clone** button.&#x20;
@@ -147,7 +147,7 @@ To override and event for a duration of time:
 
 <figure>![event clone on calendar](<.gitbook/assets/event-clone.png>)<figcaption><p>Event clone on a calendar.</p></figcaption></figure>
 
-### Repeating Event Question <a href="#repeating-event-question" id="repeating-event-question"></a>
+### Repeating Event Question
 
 For repeating events you may be asked which how you would like to edit the event.
 
