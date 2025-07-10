@@ -97,6 +97,7 @@ const sidebars: SidebarsConfig = {
     'integration-guides/hetrix-tools',
     'integration-guides/honeybadger',
     'integration-guides/hydrozen',
+    'integration-guides/hyperping',
     'integration-guides/jira-server',
     'integration-guides/jotform',
     'integration-guides/kapacitor',
