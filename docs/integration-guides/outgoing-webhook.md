@@ -15,7 +15,7 @@ This documentation is meant for webhooks that are _outgoing_ from PagerTree. If 
 ### Create An Outgoing Webhook
 
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Outgoing Webhook logo**.
-2.  Provide the **URL** you want PagerTree to send webhooks to.&#x20;
+2.  Provide the **URL** you want PagerTree to send webhooks to.
 
     <figure>![Webhooks integrations](<../.gitbook/assets/image (6) (1) (1).png>)<figcaption><p>Provide a URL where PagerTree should send webhooks to.</p></figcaption></figure>
 
@@ -105,7 +105,7 @@ Where `event_type` is an [applicable event](outgoing-webhook.md#applicable-event
 
 Outgoing webhooks can also send data in a custom format. The request is still a **POST** request and must be in **JSON** format.
 
-You can edit the format in the **JSON Template** section of the integration settings.&#x20;
+You can edit the format in the **JSON Template** section of the integration settings.
 
 <figure>![ JSON template section.](<../.gitbook/assets/image (2) (1) (1) (1) (1).png>)<figcaption><p>Use a custom format by editing the JSON template section.</p></figcaption></figure>
 
@@ -274,7 +274,7 @@ rules:
 
 ## Successful Responses And Limitations
 
-1. Responses in the 2xx family will be considered a success, any other response will be considered a failure.&#x20;
+1. Responses in the 2xx family will be considered a success, any other response will be considered a failure.
 2. Webhooks retries will be attempted up to 14 times with exponential backoff.
 
 ***

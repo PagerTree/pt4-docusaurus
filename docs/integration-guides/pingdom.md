@@ -12,7 +12,7 @@ description: Connect your Pingdom monitors to PagerTree.
 
 [Pingdom](https://www.pingdom.com/) is a service that tracks the uptime, downtime, and performance of websites.
 
-## **How It Works**
+## How It Works
 
 Pingdom triggers user defined alerts by monitoring website uptime, downtime, and performance.
 
@@ -30,10 +30,10 @@ In this integration tutorial we will show you how to send alerts from Pingdom in
 
 ### **In Pingdom**
 
-1.  **Click Menu -> Integrations -> Integrations**.&#x20;
+1.  **Click Menu -> Integrations -> Integrations**.
 
     <figure>![Pingdom integrations](<../.gitbook/assets/image (1) (1) (3).png>)<figcaption><p>Navigate to Menu -> Integrations -> Integrations</p></figcaption></figure>
-2.  On the Integrations Page **click “Add Integration”**.&#x20;
+2.  On the Integrations Page **click “Add Integration”**.
 
     <figure>![Pingdom Add integrations](<../.gitbook/assets/image (2) (3).png>)<figcaption><p>Click the add integration button.</p></figcaption></figure>
 3. In the Add Alert box
@@ -41,13 +41,13 @@ In this integration tutorial we will show you how to send alerts from Pingdom in
    2. Name the integration appropriately (ex: PagerTree Integration)
    3. **Paste** the **PagerTree Endpoint URL** you copied for **URL**
    4. Ensure the **Active** checkbox is **checked**
-   5.  **Click “Save integration”**&#x20;
+   5.  **Click “Save integration”**
 
        <figure>![Pingdom PagerTree Integration Configuration](<../.gitbook/assets/image (4) (8).png>)<figcaption><p>Pingdom PagerTree Integration Configuration</p></figcaption></figure>
 4. **Navigate** to a **check** and **click “Edit”**.
 5. **Scroll** to the **bottom** of the “Edit Check” dialog
    1. Ensure the **integration checkbox** next to your new integration is **checked**.
-   2.  **Click “Modify check”.**&#x20;
+   2.  **Click “Modify check”.**
 
        <figure>![Connect checks to PagerTree.](<../.gitbook/assets/image (5) (4).png>)<figcaption><p>Connect checks to PagerTree.</p></figcaption></figure>
 

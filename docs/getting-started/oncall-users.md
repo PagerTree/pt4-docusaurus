@@ -57,7 +57,7 @@ PagerTree [alert statuses](https://pagertree.com/docs/alerts#alert-states) typic
 As an on-call user, you will follow the following steps when an alert is created.
 
 1. A notification will be received via your [preferred notification method.](https://pagertree.com/docs/users#default-notification-channels)
-2. **Acknowledge** the **Alert**.&#x20;
+2. **Acknowledge** the **Alert**.
 3. **Proceed** to the **alert dashboard** for any additional alert information
 4. Resolve the root cause that triggered the alert.
 5. **Resolve** the **Alert** in PagerTree.

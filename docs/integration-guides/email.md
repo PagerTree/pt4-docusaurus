@@ -18,7 +18,7 @@ If your tool is not listed on our integrations page, the email integration is a 
 
 If you need to alias your email address to something more memorable (ex: outages@example.com), make sure to check out the [Custom Email Address section](email.md#custom-email-address) below.
 
-## **How It Works**
+## How It Works
 
 * When an email is received, an alert is created in PagerTree automatically.
 
@@ -38,7 +38,7 @@ In this integration tutorial we will show you how to create an email integration
    1. To - **Paste** the **PagerTree Endpoint URL you copied**
    2. Subject - Something descriptive
    3. Body - Some more details on the issue
-3.  **Click Send**&#x20;
+3.  **Click Send**
 
     <figure>![PagerTree email endpoint](<../.gitbook/assets/image (4) (1) (1) (1).png>)<figcaption><p>Send an email to the PagerTree email endpoint.</p></figcaption></figure>
 
@@ -64,7 +64,7 @@ Many customers have expressed the need for a custom email address (ex: alias@myc
 
 ### Distribution Group
 
-1. Create a distribution group and add the PagerTree email address as member of the group.&#x20;
+1. Create a distribution group and add the PagerTree email address as member of the group.
 
 :::info
 Remember, if the members of the group are those people going on-call, it might make sense that the PagerTree email is the only member of the group.

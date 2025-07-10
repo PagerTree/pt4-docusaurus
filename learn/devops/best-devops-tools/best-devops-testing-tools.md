@@ -23,7 +23,7 @@ The testing phase in the [DevOps lifecycle](https://pagertree.com/learn/devops/b
 
 ## Test Automation Tools
 
-Test automation tools are designed to [automate repetitive](https://pagertree.com/learn/devops/what-is-devops/devops-infrastructure-and-automation#infrastructure-automation-in-devops) and time-consuming testing tasks, enabling teams to focus on more complex and critical issues. These tools support various types of testing, including functional, performance, and [security testing](https://pagertree.com/learn/devops/what-is-devops/what-is-devsecops#common-devsecops-tools), making them indispensable in a [DevOps pipeline](https://pagertree.com/learn/devops/what-is-devops/what-is-a-devops-pipeline).&#x20;
+Test automation tools are designed to [automate repetitive](https://pagertree.com/learn/devops/what-is-devops/devops-infrastructure-and-automation#infrastructure-automation-in-devops) and time-consuming testing tasks, enabling teams to focus on more complex and critical issues. These tools support various types of testing, including functional, performance, and [security testing](https://pagertree.com/learn/devops/what-is-devops/what-is-devsecops#common-devsecops-tools), making them indispensable in a [DevOps pipeline](https://pagertree.com/learn/devops/what-is-devops/what-is-a-devops-pipeline).
 
 <figure>![Test Automation Tools](<../../.gitbook/assets/Test Automations Tools.png>)<figcaption><p>Test Automation Tools</p></figcaption></figure>
 

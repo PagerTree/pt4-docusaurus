@@ -56,14 +56,14 @@ Each user has their own preferences. It is up to the user to elect how they want
 Users can be added to your [account](architecture-guide.md).
 
 1. Navigate to the [Users page](https://app.pagertree.com/users).
-2.  Click the **New User** button in the top right corner.&#x20;
+2.  Click the **New User** button in the top right corner.
 
     ![create user button](.gitbook/assets/create-user-button.png)
 3. Follow the instructions on the New User form:
    * _Name_ - Full Name _(Required)_
    * _Email_ - Work Email _(Required)_
    * _Roles_ - Roles this user should have in this PagerTree account.
-   *   _Team_ - Team this user should be a member of.&#x20;
+   *   _Team_ - Team this user should be a member of.
     ![create user form](.gitbook/assets/create-user-form.png)
 4. Click **Create** button.
 
@@ -81,14 +81,14 @@ In each case, the created or invited user will receive an email with directions 
 ### Create an Integration
 
 1. Navigate to the [Integrations page](https://app.pagertree.com/integrations).
-2.  Click the **New Integration** button in the top right corner.&#x20;
+2.  Click the **New Integration** button in the top right corner.
     ![Create Integration Button](.gitbook/assets/create-integration-button.png)
-3.  Click the **integration logo** of the tool you are trying to integrate. If you do not see your tool select the email or webhook integration.&#x20;
+3.  Click the **integration logo** of the tool you are trying to integrate. If you do not see your tool select the email or webhook integration.
     ![Create Integration Logo](.gitbook/assets/create-integration-logo.png)
 4. Follow the instructions on the New Integration form:
    * _Name_ - A memorable name for this integration _(Required)_.
    * _Urgency_ - An appropriate urgency for alerts coming through this integration _(Required)_.
-   * _Destination_ - The team alerts should be assigned to for alerts created by this integration _(Required)_.&#x20;
+   * _Destination_ - The team alerts should be assigned to for alerts created by this integration _(Required)_.
        ![Create Integration Form](.gitbook/assets/create-integration-form.png)
 5. Click **Create**.
 

@@ -12,7 +12,7 @@ description: Send your PagerTree alerts to Echoes HQ.
 
 [Echoes HQ](https://www.echoeshq.com/) gives comprehensive insights into your teams to understand how they are progressing and spot bottlenecks and areas of improvement.
 
-## **How It Works**
+## How It Works
 
 PagerTree sends your PagerTree alerts to Echoes HQ when:
 

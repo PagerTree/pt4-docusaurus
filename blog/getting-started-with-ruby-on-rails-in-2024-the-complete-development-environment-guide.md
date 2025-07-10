@@ -23,7 +23,7 @@ This blog post will walk you through 10 simple steps to get your Ruby on Rails d
 
 ## Ruby on Rails Development Environment Overview
 
-Setting up your Ruby on Rails development environment will take roughly 30 minutes from start to finish.&#x20;
+Setting up your Ruby on Rails development environment will take roughly 30 minutes from start to finish.
 
 ### Ruby on Rails Development Environment Setup Steps:
 
@@ -200,7 +200,7 @@ npm install -g yarn
 
 ## Step 7: Configure Git
 
-Git is a standard tool in the software development industry for version control. We will set up our Ruby on Rails development environment to utilize Git as our version control.&#x20;
+Git is a standard tool in the software development industry for version control. We will set up our Ruby on Rails development environment to utilize Git as our version control.
 
 **7.1** Create an account on [GitHub](https://github.com/).
 
@@ -235,13 +235,13 @@ cat ~/.ssh/id_ed25519.pub
 
 Click New SSH Key, give your SSH Key a title, and then paste the output from your previous command into the key section.
 
-**7.5** Confirm everything is working with the following command from your Ubuntu terminal:&#x20;
+**7.5** Confirm everything is working with the following command from your Ubuntu terminal:
 
 ```bash
 ssh -T git@github.com
 ```
 
-You should receive the following message:&#x20;
+You should receive the following message:
 
 Hi (username)! You've successfully authenticated, but GitHub does not provide shell access.
 
@@ -249,7 +249,7 @@ Hi (username)! You've successfully authenticated, but GitHub does not provide sh
 
 Rails is a web application development framework written in Ruby. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started.
 
-**8.1** Check for the newest version of Rails for your environment [here](https://rubygems.org/gems/rails/versions).&#x20;
+**8.1** Check for the newest version of Rails for your environment [here](https://rubygems.org/gems/rails/versions).
 
 **8.2** Run the following command with the version you are downloading.
 
@@ -320,7 +320,7 @@ sudo systemctl enable redis-server
 
 ## Step 10: Get Your Rails App Running
 
-Your Ruby on Rails development environment is almost complete. The last steps are to create your app, create your database, and get coding.&#x20;
+Your Ruby on Rails development environment is almost complete. The last steps are to create your app, create your database, and get coding.
 
 **10.1** create your app using the following command:
 
@@ -359,7 +359,7 @@ Your app can now be viewed on [http://localhost:3000](http://localhost:3000) or 
 
 <figure>![Rails Server](<.gitbook/assets/Rails Server.png>)<figcaption><p>Rails Server</p></figcaption></figure>
 
-Your Ruby on Rails development environment is now complete! 🎉 You are now ready to begin your Ruby on Rails journey. If you are not sure where to start or are looking for more resources to help you in your coding journey, we have compiled a list of resources below.&#x20;
+Your Ruby on Rails development environment is now complete! 🎉 You are now ready to begin your Ruby on Rails journey. If you are not sure where to start or are looking for more resources to help you in your coding journey, we have compiled a list of resources below.
 
 ## Resources
 

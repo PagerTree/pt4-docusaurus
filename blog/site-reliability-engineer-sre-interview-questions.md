@@ -57,11 +57,11 @@ Site Reliability Engineering (SRE) is a [DevOps](https://app.gitbook.com/s/N7Juq
 ### 2. What are the key principles of SRE?
 
 * **Embracing and managing risk -** Utilizing error budget to implement and test new features.
-* **Maintaining Service Level Objectives -** Tracking and comparing SLIs to your SLOs to ensure you meet your SLA.&#x20;
+* **Maintaining Service Level Objectives -** Tracking and comparing SLIs to your SLOs to ensure you meet your SLA.
 * **Eliminating toil -** Reducing repetitive mundane tasks that can be automated, allowing for better use of time.
 * **Monitoring -** Keeping track of systems and performance to address issues before they become real problems.
 * **Automation -** Implementing automation to reduce toil.
-* **Release engineering -** The technical aspects of compiling, assembling, and delivering source code.&#x20;
+* **Release engineering -** The technical aspects of compiling, assembling, and delivering source code.
 * **Simplicity -** Its easier to understand the effect of small simple changes over large batch changes.
 
 For a more in-depth information on the key principles of SRE can be found [here](https://sre.google/sre-book/part-II-principles/).

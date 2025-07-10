@@ -14,7 +14,7 @@ description: Connect your AppDynamics actions to PagerTree.
 
 [AppDynamics](https://www.appdynamics.com/) provides application and database performance management, monitoring, and analytic tools to help you identify and resolve performance issues, drive business outcomes, increase user engagement, and deliver amazing web user experiences.
 
-## **How It Works**
+## How It Works
 
 AppDynamics triggers user defined events by monitoring applications.
 
@@ -34,7 +34,7 @@ In this integration tutorial we will show you how to send alerts from AppDynamic
 
 #### Create an HTTP Request Template
 
-1.  Go to the **Alert & Respond** tab, then **HTTP Request Templates**, then **click “+ New”**&#x20;
+1.  Go to the **Alert & Respond** tab, then **HTTP Request Templates**, then **click “+ New”**
 
     <figure>![AppDynamics HTTP Request Template](<../.gitbook/assets/image (2) (5).png>)<figcaption><p>New HTTP Request Template</p></figcaption></figure>
 2.  In the “Create HTTP Request Template” box
@@ -43,7 +43,7 @@ In this integration tutorial we will show you how to send alerts from AppDynamic
        1. Name the template appropriately (ex: “PagerTree Integration Template”)
     2. Custom Templating Variables
        1. Add 1 custom templating variable
-          1.  **pt\_event\_type** with value **trigger**&#x20;
+          1.  **pt\_event\_type** with value **trigger**
 
               <figure>![AppDynamics Custom Template variable](<../.gitbook/assets/image (1) (2) (4).png>)<figcaption><p>Add the custom template variable</p></figcaption></figure>
     3. Request URL Section
@@ -103,49 +103,49 @@ In this integration tutorial we will show you how to send alerts from AppDynamic
    1. Under **Success Criteria**, click **Add Success Criteria**.
       1. Select **200** from the **Status Code** list
       2. **Check Expect Payload checkbox**
-      3.  Select **application/json** from the **Content/Type** list&#x20;
+      3.  Select **application/json** from the **Content/Type** list
 
           <figure>![Response Handling Criteria](<../.gitbook/assets/image (18) (4).png>)<figcaption><p>Response Handling Criteria</p></figcaption></figure>
 2. Settings Section
-   1.  **Check “One Request Per Event”**&#x20;
+   1.  **Check “One Request Per Event”**
 
        <figure>![AppDynamics settings](<../.gitbook/assets/image (22) (2).png>)<figcaption><p>One Request Per Event</p></figcaption></figure>
    2. Once your template is saved you can test it to make sure an alert is created in PagerTree. Click the **Test** button, then click **Add Event Type** and select an event you want to test (our example uses “Health Rule Violation Started – Warning”, but you can pick any event type), then click **Run Test**. If you executed all steps correctly, PagerTree should have created an alert and notified the team member on-call. If you see that PagerTree did not create an alert, scroll to the very bottom of the **Test Transcript** and check the **Response Payload** for any errors.
 
 #### Create Trigger Action
 
-1.  Click **Actions** on the left menu, select an application or database to create actions for, then click “**+ Create**”&#x20;
+1.  Click **Actions** on the left menu, select an application or database to create actions for, then click “**+ Create**”
 
     <figure>![AppDynamics new action](<../.gitbook/assets/image (5) (5).png>)<figcaption><p>Create a new action.</p></figcaption></figure>
-2.  Select **Make an HTTP Request** from the list and **click OK**.&#x20;
+2.  Select **Make an HTTP Request** from the list and **click OK**.
 
     <figure>![Appdynamics HTTP Request action](<../.gitbook/assets/image (21) (1).png>)<figcaption><p>Select the HTTP Request action.</p></figcaption></figure>
-3.  Give the action a **Name** (ex: “PagerTree Trigger”) and then **select** the **template** you just created from the list, then click **Save**.&#x20;
+3.  Give the action a **Name** (ex: “PagerTree Trigger”) and then **select** the **template** you just created from the list, then click **Save**.
 
     <figure>![Appdynamics action](<../.gitbook/assets/image (24).png>)<figcaption><p>Name the action.</p></figcaption></figure>
 
 #### Create Resolve Action
 
-1.  Create another action that will be used for resolving alerts. Give the action a **Name** (ex: “PagerTree Resolve”) and select the template you just created again. When the form populates, change the **pt\_event\_type** for this new action to **resolve**, then click **Save**.&#x20;
+1.  Create another action that will be used for resolving alerts. Give the action a **Name** (ex: “PagerTree Resolve”) and select the template you just created again. When the form populates, change the **pt\_event\_type** for this new action to **resolve**, then click **Save**.
 
     <figure>![appdynamics resolve action](<../.gitbook/assets/image (13) (2).png>)<figcaption><p>Create the "resolve" action.</p></figcaption></figure>
 
 #### Create Trigger Policy
 
-1.  Lastly, we need to add these new actions to your desired policies. Click **Policies** on the left menu, and either **edit or create** a new **policy**.&#x20;
+1.  Lastly, we need to add these new actions to your desired policies. Click **Policies** on the left menu, and either **edit or create** a new **policy**.
 
     <figure>![appdynamics new policy](<../.gitbook/assets/image (19) (4).png>)<figcaption><p>Create a new Policy.</p></figcaption></figure>
 2. At the top of the Create Policy dialog box **Name** the policy (ex: “Critical or Warn”).
-3.  On the **Trigger Tab**, check the conditions with “**Health Rule Violation Started**” in the name.&#x20;
+3.  On the **Trigger Tab**, check the conditions with “**Health Rule Violation Started**” in the name.
 
     <figure>![Configure the policy triggers](<../.gitbook/assets/image (23).png>)<figcaption><p>Configure the policy triggers</p></figcaption></figure>
-4.  On the **Actions Tab**, click the **“+” button** to add an action to execute. **Name** the policy (ex: “Critical or Warn”). **Click** the **Trigger Action** you recently created, and then click Select. In the Create Policy Dialog **click Save**.&#x20;
+4.  On the **Actions Tab**, click the **“+” button** to add an action to execute. **Name** the policy (ex: “Critical or Warn”). **Click** the **Trigger Action** you recently created, and then click Select. In the Create Policy Dialog **click Save**.
 
     <figure>![AppDynamics policy action](<../.gitbook/assets/image (25).png>)<figcaption><p>Set the policy action.</p></figcaption></figure>
 
 #### Create Resolve Policy
 
-1.  Create another policy that triggers when any conditions with “**Health Rule Violation Ended**” in the name. Assign the **Resolve Action** to this policy.&#x20;
+1.  Create another policy that triggers when any conditions with “**Health Rule Violation Ended**” in the name. Assign the **Resolve Action** to this policy.
 
     <figure>![Create another policy for the resolve action.](<../.gitbook/assets/image (20) (3).png>)<figcaption><p>Create another policy for the resolve action.</p></figcaption></figure>
 

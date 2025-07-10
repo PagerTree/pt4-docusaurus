@@ -26,7 +26,7 @@ With Twilio [Live Call Routing](https://pagertree.com/features/live-call-routing
 
 Additionally, live call routing can be configured to route to multiple teams. When configured to route to multiple teams, callers will be presented with team options. For example: “Press 1 for Devops, Press 2 for Network Operations, Press 3 for Security”.
 
-## **How it works**
+## How It Works
 
 Twilio users can route incoming phone calls to on-call customer support.
 
@@ -39,7 +39,7 @@ In this integration tutorial we will show you how to route an incoming phone cal
 ### **In Twilio -** Create API Credentials
 
 1. Open a text editor, as we’ll need to copy several pieces of data.
-2.  In the top right menu bar, **navigate to Account -> Keys & Credentials -> API Keys & tokens**.&#x20;
+2.  In the top right menu bar, **navigate to Account -> Keys & Credentials -> API Keys & tokens**.
 
     <figure>![Twilio API](<../../.gitbook/assets/image (11) (1) (1) (1).png>)<figcaption><p>Click API keys &#x26; tokens</p></figcaption></figure>
 3.  Ensure the **United States (US1) Region is selected** and **click Create API key** button. _(Other regions can be used, but you must make sure that the configured routing regions for the phone number, API Key and Secret, and PagerTree API region all match)._
@@ -48,14 +48,14 @@ In this integration tutorial we will show you how to route an incoming phone cal
 4. Give your key the following:
    1. Friendly name - Something you will easily remember
    2. Region - This must be United States (US1)
-   3.  Key type - Standard&#x20;
+   3.  Key type - Standard
 
        <figure>![Twilio Create API](<../../.gitbook/assets/image (7) (2) (1).png>)<figcaption><p>When you create the API Key, make sure you've set all the correct settings.</p></figcaption></figure>
 5. **Copy the SID and Secret** to your text editor.
-6.  Check the "Got it! I have saved my API..." and click Done.&#x20;
+6.  Check the "Got it! I have saved my API..." and click Done.
 
     <figure>![Twilio Copy Secret Key](<../../.gitbook/assets/image (3) (1) (1) (1) (1).png>)<figcaption><p>Copy the Twilio API Key SID and Secret</p></figcaption></figure>
-7.  Your text editor should now have the API Key SID and Secret.&#x20;
+7.  Your text editor should now have the API Key SID and Secret.
 
     <figure>![Notepad](<../../.gitbook/assets/image (1) (1) (1) (1) (1).png>)<figcaption><p>Text editor with our API Key SID and Secret</p></figcaption></figure>
 
@@ -70,7 +70,7 @@ Please note the _**API Key SID is different from the Account SID**_, so do not g
     <figure>![Twilio Dashbaord](<../../.gitbook/assets/image (19) (1) (1).png>)<figcaption><p>Copy the Twilio Account SID</p></figcaption></figure>
 2. Your text editor should now have:
    1. API Key SID and Secret
-   2.  Account SID&#x20;
+   2.  Account SID
 
        <figure>![](<../../.gitbook/assets/image (5) (1) (1) (1) (1).png>)<figcaption></figcaption></figure>
 
@@ -80,7 +80,7 @@ Please note the _**API Key SID is different from the Account SID**_, so do not g
 2. In the Options section, edit each option accordingly
    1. **Paste** the API Key **SID** you copied earlier to the **Twilio API Key** field. (Should start with "SK")
    2. **Paste** the API **Secret** you copied earlier to the **Twilio API Secret** field.
-   3.  **Paste** the **Account SID** you copied earlier to the **Twilio Account SID** field. (Should start with "AC")&#x20;
+   3.  **Paste** the **Account SID** you copied earlier to the **Twilio Account SID** field. (Should start with "AC")
 
        <figure>![Twilio Live Call Routing](<../../.gitbook/assets/image (15) (1).png>)<figcaption><p>Your Twilio live call routing integration should look like the above.</p></figcaption></figure>
 3. **Click “Create”**
@@ -90,7 +90,7 @@ Please note the _**API Key SID is different from the Account SID**_, so do not g
 
 1. If you haven’t already, [upgrade to a paid Twilio account](https://support.twilio.com/hc/en-us/articles/223183208-Upgrading-to-a-paid-Twilio-Account).
 2. If you haven’t already, [buy a phone number](https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console).
-3.  Navigate to your purchased number **Develop -> Phone Numbers -> Manage -> Active Numbers**.&#x20;
+3.  Navigate to your purchased number **Develop -> Phone Numbers -> Manage -> Active Numbers**.
 
     <figure>![Twilio active number](<../../.gitbook/assets/image (9) (1) (1).png>)<figcaption></figcaption></figure>
 4. Select the phone number that will be used for Live Call Routing.
@@ -98,7 +98,7 @@ Please note the _**API Key SID is different from the Account SID**_, so do not g
    1. **Paste** the **PagerTree Endpoint URL** you copied earlier
    2. Ensure the type is **Webhook**
    3. Ensure the action is **HTTP POST**
-   4.  Click **Save**&#x20;
+   4.  Click **Save**
 
        <figure>![Twilio Configure](<../../.gitbook/assets/image (14) (1) (1).png>)<figcaption><p>Configure the Twilio phone number to send incoming calls to PagerTree.</p></figcaption></figure>
 
@@ -135,7 +135,7 @@ If you elect to enable the voicemail option, you will likely want to disable aut
 To disable HTTP Basic Authentication for media access in Twilio:
 
 1. Navigate to **Develop -> Voice -> Settings -> General**.
-2.  Under the HTTP Basic Authentication for media access section, select **Disabled**.&#x20;
+2.  Under the HTTP Basic Authentication for media access section, select **Disabled**.
 
     <figure>![In Twilio, select disabled for HTTP Basic Authentication for Media Access](<../../.gitbook/assets/image (68).png>)<figcaption><p>In Twilio, select disabled for HTTP Basic Authentication for Media Access</p></figcaption></figure>
 3. Scroll to the bottom of the page and click **Save**.

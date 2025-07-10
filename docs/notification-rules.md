@@ -99,7 +99,7 @@ When you are happy with your notification rule definition **you must connect the
 
 1. Navigate to the [My Settings Page](https://app.pagertree.com/user/settings).
 2. Scroll to the **Other Settings section**.
-3.  Select the notification rule definition from the **Notification Rules** select box.&#x20;
+3.  Select the notification rule definition from the **Notification Rules** select box.
 
     <figure>![select the notification rule](<.gitbook/assets/select-notification-rules.png>)<figcaption><p>Select the notification rule.</p></figcaption></figure>
 4. Click **Update**.

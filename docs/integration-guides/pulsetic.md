@@ -12,7 +12,7 @@ description: Connect your Pulsetic monitors to PagerTree.
 
 Pulsetic is a website uptime monitoring service that offers a user-friendly website monitoring tool.
 
-## **How It Works**
+## How It Works
 
 Pulsetic triggers alerts by monitoring website uptime and certificates.
 
@@ -32,12 +32,12 @@ This integration tutorial will show you how to send alerts from Pulsetic into Pa
 ### **In Pusletic**
 
 1. **Click Menu -> Monitors**
-2.  **Click on a monitor**&#x20;
+2.  **Click on a monitor**
 
     <figure>![Pulsetic Monitor](<../.gitbook/assets/pulsetic-monitors.jpg>)<figcaption><p>Click on your Pulsetic Monitor</p></figcaption></figure>
 3. **Click Alerts Tab -> Webhook**
 4. **Paste** the **PagerTree Endpoint URL** you copied
-5.  **Click Save**&#x20;
+5.  **Click Save**
 
     <figure>![Configure the Pulsetic integration to point to PagerTree](<../.gitbook/assets/pulsetic-configure-webhook.jpg>)<figcaption><p>Configure the Pulsetic webhook to point to PagerTree</p></figcaption></figure>
 
@@ -49,10 +49,10 @@ You can test the integration by:
 
 1. Click "Send Offline Request" button (Create)
 2. Click "Send Online Request" button (Resolve)
-3.  Click "Send Ssl Expires Soon Request" button (Create)&#x20;
+3.  Click "Send Ssl Expires Soon Request" button (Create)
 
     <figure>![Test your Pulsetic to PagerTree integration](<../.gitbook/assets/pulsetic-test.jpg>)<figcaption><p>Test your Pulsetic to PagerTree Integration</p></figcaption></figure>
 
 ***
 
-You have completed the Pulsetic Integration.&#x20;
+You have completed the Pulsetic Integration.

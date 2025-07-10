@@ -68,7 +68,7 @@ Automated testing and continuous [monitoring](https://pagertree.com/learn/devops
 
 DevOps practices enable organizations to scale their infrastructure and applications more efficiently. Infrastructure as Code (IaC) allows for automated provisioning and management of resources, making it easier to scale up or down based on demand. This flexibility ensures that your business can adapt quickly to changing needs without [compromising performance](https://pagertree.com/learn/incident-management/how-to-calculate-mttr-and-other-common-incident-recovery-metrics#downtime) or reliability.
 
-* **Infrastructure as Code (IaC):** IaC tools like [Terraform](https://www.terraform.io/use-cases/infrastructure-as-code) and [CloudFormation](https://aws.amazon.com/cloudformation/) automate the provisioning and management of infrastructure, ensuring consistency and repeatability.&#x20;
+* **Infrastructure as Code (IaC):** IaC tools like [Terraform](https://www.terraform.io/use-cases/infrastructure-as-code) and [CloudFormation](https://aws.amazon.com/cloudformation/) automate the provisioning and management of infrastructure, ensuring consistency and repeatability.
 * **Elastic Scaling:** Cloud-based infrastructure can be scaled automatically based on demand, ensuring optimal performance during peak times and cost savings during low usage periods.
 
 ### 6. Improved Security

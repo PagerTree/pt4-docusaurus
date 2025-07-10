@@ -12,7 +12,7 @@ description: Connect your Kapacitor alerts to PagerTree using our Kapacitor Inte
 
 [Kapacitor](https://www.influxdata.com/) is an open source data processing framework that makes it easy to create alerts, run ETL jobs and detect anomalies. It can process both stream and batch data from InfluxDB. It lets you plug in your own custom logic or user-defined functions to process alerts with dynamic thresholds, match metrics for patterns, compute statistical anomalies, and perform specific actions based on these alerts like dynamic load rebalancing.
 
-## **How It Works**
+## How It Works
 
 Kapacitor triggers alerts when alert rules are triggered.
 
@@ -30,14 +30,14 @@ In this integration tutorial we will show you how to send alerts from Kapacitor 
 
 ### **In Kapacitor**
 
-1.  From your Chronograph dashboard, in the left hand menu, select **Alerting -> Manage Tasks**.&#x20;
+1.  From your Chronograph dashboard, in the left hand menu, select **Alerting -> Manage Tasks**.
 
     <figure>![Manage Tasks](<../.gitbook/assets/image (21) (2).png>)<figcaption><p>Navigate to Alerting -> Manage Tasks</p></figcaption></figure>
-2.  Click the **Write TICKscript** button.&#x20;
+2.  Click the **Write TICKscript** button.
 
     <figure>![ Write TICKscript button](<../.gitbook/assets/image (16) (3).png>)<figcaption><p>Click the Write TICKscript button.</p></figcaption></figure>
 3. In the TICKscript editor:
-   1.  Select a database.&#x20;
+   1.  Select a database.
 
        <figure>![database](<../.gitbook/assets/image (18) (2).png>)<figcaption><p>Select a database.</p></figcaption></figure>
    2. Title your TICKscript (e.g. “high\_cpu”).
@@ -77,12 +77,12 @@ var trigger = data
        .post(pagertree_url)
 ```
 
-1.  Click the **Save New TICKscript** button.&#x20;
+1.  Click the **Save New TICKscript** button.
 
     <figure>![TICKscript](<../.gitbook/assets/image (27) (1).png>)<figcaption><p>Save the TICKscript.</p></figcaption></figure>
 
 :::info
-This tick script, uses InfluxDB’s sample Telegraph collector that merely collects CPU usage on your local machine. You’ll need to apply the alert to your own tickscripts to alert on metrics you wish to monitor.&#x20;
+This tick script, uses InfluxDB’s sample Telegraph collector that merely collects CPU usage on your local machine. You’ll need to apply the alert to your own tickscripts to alert on metrics you wish to monitor.
 :::
 
 The **important pieces** to this script are:

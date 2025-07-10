@@ -12,7 +12,7 @@ description: Connect your StatusCake alerts to PagerTree.
 
 [StatusCake](https://www.statuscake.com/) provides a website monitoring service, providing you various kinds of statistics, analytics and information about your website\`s downtime.
 
-## **How It Works**
+## How It Works
 
 StatusCake triggers user defined alerts by monitoring websites.
 
@@ -35,7 +35,7 @@ In this integration tutorial we will show you how to send alerts from StatusCake
 1. **Click Menu -> Alerting -> Contact Groups -> New Contact Group**
 2. **Paste** the **PagerTree Endpoint URL** you copied for the **Webhook URL**
 3. Ensure the **Webhook Method** is **POST**
-4.  **Click “Save Now”** button&#x20;
+4.  **Click “Save Now”** button
 
     <figure>![StatusCake PagerTree Contact Group](<../.gitbook/assets/image (2) (4) (2).png>)<figcaption><p>StatusCake PagerTree Contact Group</p></figcaption></figure>
 
@@ -45,7 +45,7 @@ In this integration tutorial we will show you how to send alerts from StatusCake
 2. On the **Test Page**
    1. Enter the Required Details as applicable to your situation
    2. **Select** the **Contact Groups** you created previously (e.g. “PagerTree”)
-   3.  **Click "Create test"** button&#x20;
+   3.  **Click "Create test"** button
 
        <figure>![Connect the PagerTree contact group to the StatusCake test.](<../.gitbook/assets/image (1) (4) (2).png>)<figcaption><p>Connect the PagerTree contact group to the StatusCake test.</p></figcaption></figure>
 

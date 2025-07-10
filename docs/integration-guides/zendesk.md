@@ -12,7 +12,7 @@ description: Connect your Zendesk tickets to PagerTree.
 
 [Zendesk](https://www.zendesk.com/) is a cloud-based customer service software and support ticketing system.
 
-## **How It Works**
+## How It Works
 
 Zendesk creates tickets.
 
@@ -38,13 +38,13 @@ Cloning targets and/or triggers in Zendesk could lead to unexpected behavior. We
 #### **Create a Webhook**
 
 1. **Navigate** to **Menu -> Admin Gear -> Go to Admin Center**. ![Navigate to Admin Gear](<../.gitbook/assets/Navigate to Admin Gear (1).webp>)
-2.  In the Admin center, search "webhooks", and **click** the **Webhooks** link.&#x20;
+2.  In the Admin center, search "webhooks", and **click** the **Webhooks** link.
 
     <figure>![Admin Center webhooks](<../.gitbook/assets/In the Admin Center, click Webhooks..webp>)<figcaption><p>In the Admin Center, click Webhooks.</p></figcaption></figure>
-3.  **Click the Create webhook button.**&#x20;
+3.  **Click the Create webhook button.**
 
     <figure>![Zendesk Create Webhook](<../.gitbook/assets/Click the create webhook button..webp>)<figcaption><p>Click the create webhook button.</p></figcaption></figure>
-4.  Select **Trigger or automation** and **click Next**.&#x20;
+4.  Select **Trigger or automation** and **click Next**.
 
     <figure>![Zendesk trigger or automation](<../.gitbook/assets/image (1) (1) (1) (3).png>)<figcaption><p>Select Trigger or automation.</p></figcaption></figure>
 5. Enter in the following details:
@@ -53,14 +53,14 @@ Cloning targets and/or triggers in Zendesk could lead to unexpected behavior. We
    3. Request method – **Select POST**
    4. Request format – **Select JSON**
    5. Authentication - **None**
-   6.  **Click Create webhook button**.&#x20;
+   6.  **Click Create webhook button**.
 
        <figure>![Zendesk PagerTree Webhook](<../.gitbook/assets/Zendesk PagerTree Webhook.webp>)<figcaption><p>Zendesk PagerTree Webhook</p></figcaption></figure>
 6. Click the **Admin Center link** to connect the webhook to a trigger.
 
 #### **Connect the Webhook in a Trigger**
 
-1.  In the Business Rules -> Triggers page, click **Add Trigger**.&#x20;
+1.  In the Business Rules -> Triggers page, click **Add Trigger**.
 
     <figure>![Zendesk Add Trigger](<../.gitbook/assets/Click the Add trigger button.webp>)<figcaption><p>Click the Add trigger button</p></figcaption></figure>
 2. In the New Trigger form
@@ -86,7 +86,7 @@ Cloning targets and/or triggers in Zendesk could lead to unexpected behavior. We
 }
 ```
 
-1.  **Click “Create”** button.&#x20;
+1.  **Click “Create”** button.
 
     <figure>![Zendesk PagerTree Create Trigger](<../.gitbook/assets/Zendesk PagerTree Create Trigger (1).webp>)<figcaption><p>Zendesk PagerTree Create Trigger</p></figcaption></figure>
 

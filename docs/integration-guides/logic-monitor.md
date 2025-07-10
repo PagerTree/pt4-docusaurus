@@ -12,7 +12,7 @@ description: Connect your Logic Monitor alerts to PagerTree.
 
 [LogicMonitor](https://www.logicmonitor.com/) provides IT observability and monitoring for physical, virtual, and cloud-based IT infrastructures
 
-## **How It Works**
+## How It Works
 
 LogicMonitor triggers alerts when alerting rule conditions are met.
 

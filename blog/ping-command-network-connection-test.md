@@ -13,7 +13,7 @@ The [ping](https://linux.die.net/man/8/ping) network test, a core utility since 
 
 ## Understanding Ping: More Than Just a Sound
 
-### **What is Ping Exactly?**&#x20;
+### What is Ping Exactly?
 
 Ping is a command available on [Windows](https://ss64.com/osx/ping.html), [Mac, and Linux systems](https://linux.die.net/man/8/ping) that sends data packets to a specific IP address, gauging the existence of connectivity between devices. Originating from sonar technology, where a sound wave is emitted and an echo is awaited, ping measures the round-trip time for data requests, revealing network health and potential issues.
 
@@ -53,7 +53,7 @@ Below is what the ping command will return:
 
 ## Troubleshooting Ping Connectivity Errors
 
-### **Common Errors and Solutions**&#x20;
+### **Common Errors and Solutions**
 
 * **Request Timed Out**: There is a problem in establishing a connection. This occurs when the destination host is either non-existent, powered off, or disconnected from the network.
 * **Firewall Impact**: Firewalls, based on port numbers and IP addresses, may permit or restrict traffic. In some instances, ping might be blocked as a precaution against potential reconnaissance by malicious actors.

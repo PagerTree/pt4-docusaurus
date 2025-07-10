@@ -46,6 +46,6 @@ Any user can create a new account.
 
 Any user can switch between accounts, so as long as they belong to more than one account.
 
-1.  From the profile menu, **click on the name of the company** you would like to switch to.&#x20;
+1.  From the profile menu, **click on the name of the company** you would like to switch to.
 
     <figure>![pagertree switch accounts](<.gitbook/assets/image (2) (6).png>)<figcaption><p>Profile Menu -> Company Name</p></figcaption></figure>

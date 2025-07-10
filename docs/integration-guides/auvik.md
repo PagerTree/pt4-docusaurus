@@ -12,7 +12,7 @@ description: Connect your Auvik alerts to PagerTree.
 
 [Auvik](https://www.auvik.com/) is a cloud-based network monitoring & management software to automate complex network tasks.
 
-## **How It Works**
+## How It Works
 
 Auvik triggers user defined alerts by monitoring network devices.
 
@@ -33,15 +33,15 @@ In this integration tutorial we will show you how to send alerts from Auvik into
 #### **Add Integration**
 
 1. From the navigation menu **Click Menu -> Integrations**.
-2.  On the Integrations Page **click “Add Integration” button**.&#x20;
+2.  On the Integrations Page **click “Add Integration” button**.
 
     <figure>![Auvik dashboard](<../.gitbook/assets/image (6) (1) (2).png>)<figcaption><p>Click the add integration button.</p></figcaption></figure>
-3.  Select the **Webhook** as the integration type.&#x20;
+3.  Select the **Webhook** as the integration type.
 
     <figure>![Auvik webhooks integrations](<../.gitbook/assets/image (4) (6).png>)<figcaption><p>Select webhook as the integration type.</p></figcaption></figure>
 4. In the Add Webhook Integration box:
    1. Title your integration (ex: “PagerTree”)
-   2.  **Paste** the **PagerTree Endpoint URL** you copied for the **Webhook URL**.&#x20;
+   2.  **Paste** the **PagerTree Endpoint URL** you copied for the **Webhook URL**.
 
        <figure>![webhook pagertree integration](<../.gitbook/assets/image (32).png>)<figcaption><p>Paste the PagerTree Endpoint URL as the Webhook URL.</p></figcaption></figure>
 5. **Click “Save”**.
@@ -49,13 +49,13 @@ In this integration tutorial we will show you how to send alerts from Auvik into
 #### Add Notification Channel
 
 1. From the navigation menu **Click Menu -> Manage Alerts -> Notification Channels**.
-2.  On the Notification Channels Page **click “Add Notification Channel” button**.&#x20;
+2.  On the Notification Channels Page **click “Add Notification Channel” button**.
 
     <figure>![Auvik Dashboard](<../.gitbook/assets/image (18) (1).png>)<figcaption><p>Click the add notification channel button.</p></figcaption></figure>
 3. In the Add Notification Channel box
    1. Name your notification channel (ex: “PagerTree”)
    2. Contact Method (1) - **Webhook**
-   3.  Contact Method (2) - **PagerTree** (what you titled your integration in step 4.1 above)&#x20;
+   3.  Contact Method (2) - **PagerTree** (what you titled your integration in step 4.1 above)
 
        <figure>![Auvik PagerTree Notification Channel](<../.gitbook/assets/image (1) (1) (1) (2).png>)<figcaption><p>Auvik PagerTree Notification Channel</p></figcaption></figure>
 4. **Click “Save”**.
@@ -65,10 +65,10 @@ In this integration tutorial we will show you how to send alerts from Auvik into
 In this example we’ll show you how to create a new alert type for demo purposes, the important idea is to _associate the notification channel with an alert_.
 
 1. From the navigation menu **Click Menu -> Manage Alerts -> Alerts**.
-2.  On the Alerts Page **click “Add Alert” button**.&#x20;
+2.  On the Alerts Page **click “Add Alert” button**.
 
     <figure>![Auvik alert dashboard](<../.gitbook/assets/image (20) (1).png>)<figcaption><p>Click the add alert button</p></figcaption></figure>
-3.  Select the **Collector** as the alert type.&#x20;
+3.  Select the **Collector** as the alert type.
 
     <figure>![Select Collector as the alert type.](<../.gitbook/assets/image (14) (1).png>)<figcaption><p>Select Collector as the alert type.</p></figcaption></figure>
 4. In the Add Collector Alert box fill in basic information, below is important information:
@@ -79,7 +79,7 @@ In this example we’ll show you how to create a new alert type for demo purpose
    2. Notification Channels
       1. **Select From Existing Channels**
       2. **Add PagerTree (Webhook)** as a notification channel
-      3.  Email Frequency - **Immediately**&#x20;
+      3.  Email Frequency - **Immediately**
 
           <figure>![Auvik Collector Alert PagerTree Configuration](<../.gitbook/assets/image (3) (2).png>)<figcaption><p>Auvik Collector Alert PagerTree Configuration</p></figcaption></figure>
 5. **Click “Save”**

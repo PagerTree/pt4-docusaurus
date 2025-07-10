@@ -20,22 +20,22 @@ PagerTree Forms are available on our [Pro and Elite pricing plans](https://pager
 
 ## Easy to setup <a href="#easy-to-setup" id="easy-to-setup"></a>
 
-1.  From the integrations page, **click** the **“Create Integration”** button.&#x20;
+1.  From the integrations page, **click** the **“Create Integration”** button.
 
     <figure>![New Integrations Button](<https://pagertree.com/assets/img/integrations/click-integrations-button.png>)<figcaption></figcaption></figure>
-2.  Find the **Form Integration**, then **click the logo**.&#x20;
+2.  Find the **Form Integration**, then **click the logo**.
 
     <figure>![Forms Integration ](<.gitbook/assets/image (5).png>)<figcaption></figcaption></figure>
 3. On the new integration form, fill in the integration details.
-4.  **Click Create**&#x20;
+4.  **Click Create**
 
     <figure>![Create Button](<.gitbook/assets/image (11).png>)<figcaption></figcaption></figure>
 
 
 
-## **Navigate to your new form**
+## Navigate to your new form
 
-1.  In **Chrome or Firefox**, paste the **CNAME** URL into the browser URL bar.&#x20;
+1.  In **Chrome or Firefox**, paste the **CNAME** URL into the browser URL bar.
 
     <figure>![Cnames URL](<.gitbook/assets/image (21).png>)<figcaption></figcaption></figure>
 

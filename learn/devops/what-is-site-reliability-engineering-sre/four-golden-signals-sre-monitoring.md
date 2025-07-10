@@ -39,7 +39,7 @@ For instance, an increase in error rates might indicate issues such as database 
 
 ## How to Use The Four Golden Signals
 
-To use the Four Golden Signals effectively, it is important to set up comprehensive monitoring and alerting for your system. This begins by:&#x20;
+To use the Four Golden Signals effectively, it is important to set up comprehensive monitoring and alerting for your system. This begins by:
 
 1. **Defining Baselines and Thresholds:** Establish normal operating ranges or [Service Level Objectives](https://pagertree.com/learn/incident-management/sla-vs-slo-vs-sli) for each signal. SLOs help identify anomalies and set up meaningful alerts. For instance, you might set a latency threshold of 200ms, beyond which an alert is triggered.
 2. **Implementing Alerting:** Configure alerts to notify your [oncall team](https://pagertree.com/learn/incident-management/on-call) when signals exceed predefined thresholds, ensuring that you can respond to issues promptly. Use tools like [PagerTree](https://pagertree.com/) to manage and escalate alerts and notifications.
@@ -48,9 +48,9 @@ To use the Four Golden Signals effectively, it is important to set up comprehens
 
 ## SRE Monitoring Tools
 
-Several tools can help you monitor and manage the Four Golden Signals effectively. When selecting a monitoring tool for your systems, you should consider many factors, including reliability, scalability, integrations, pricing, and ease of use.&#x20;
+Several tools can help you monitor and manage the Four Golden Signals effectively. When selecting a monitoring tool for your systems, you should consider many factors, including reliability, scalability, integrations, pricing, and ease of use.
 
-Learn more about monitoring tools and our top picks in our [7 Best APM Tools](https://pagertree.com/blog/system-monitoring-7-best-apm-tools) article.&#x20;
+Learn more about monitoring tools and our top picks in our [7 Best APM Tools](https://pagertree.com/blog/system-monitoring-7-best-apm-tools) article.
 
 A short list of these tools include:
 

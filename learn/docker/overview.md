@@ -27,15 +27,15 @@ Docker has revolutionized the way we build, ship, and run applications. In this 
 
 ## What is Docker?
 
-[Docker](https://www.docker.com/) is an open-source platform for developing, shipping, and running applications.&#x20;
+[Docker](https://www.docker.com/) is an open-source platform for developing, shipping, and running applications.
 
-Docker provides the ability to package and run an application in a loosely isolated environment called a [container](containers.md). The isolation and [security](overview.md#is-docker-secure) let you run many containers simultaneously on a given host. Containers are lightweight and contain everything needed to run the application, so you don't need to rely on what's installed on the host.&#x20;
+Docker provides the ability to package and run an application in a loosely isolated environment called a [container](containers.md). The isolation and [security](overview.md#is-docker-secure) let you run many containers simultaneously on a given host. Containers are lightweight and contain everything needed to run the application, so you don't need to rely on what's installed on the host.
 
 Ultimately, Docker provides a consistent environment across different infrastructures, making developing, testing, and deploying software applications easier.
 
 ## What is the Purpose of Docker?
 
-The primary purpose of Docker is to simplify the software development and deployment process.&#x20;
+The primary purpose of Docker is to simplify the software development and deployment process.
 
 Docker eliminates the "it works on my machine" problem by "containerizing" applications, ensuring you can ship, test, and deploy your application in any environment without worrying about incompatibility issues, regardless of the underlying machine's configuration settings.
 
@@ -60,7 +60,7 @@ Docker combines virtualization and container technology to provide an isolated s
 
 ### Architecture
 
-Docker uses a client-server architecture.&#x20;
+Docker uses a client-server architecture.
 
 The Docker client talks to the Docker daemon, which does the heavy lifting of building and running your Docker containers. The Docker client and daemon can run on the same or different system. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface.
 
@@ -113,7 +113,7 @@ Containers and virtual machines have similar resource isolation and allocation b
 
 Docker allows you to ship, test, and deploy your applications in any environment without worrying about incompatibility issues, regardless of the machine's configuration settings.
 
-Docker simplifies the software development lifecycle by streamlining the process of building, shipping, and running applications. It improves productivity, accelerates time to market, and enhances collaboration among development teams.&#x20;
+Docker simplifies the software development lifecycle by streamlining the process of building, shipping, and running applications. It improves productivity, accelerates time to market, and enhances collaboration among development teams.
 
 ### When Use Docker?
 

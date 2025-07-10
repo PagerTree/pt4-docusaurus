@@ -12,7 +12,7 @@ description: Connect your Sentry issues to PagerTree.
 
 [Sentry](https://sentry.io/welcome/) is a developer-first error tracking and performance monitoring platform that helps developers see what actually matters, solve quicker, and learn continuously about their applications.
 
-## **How It Works**
+## How It Works
 
 Sentry triggers user-defined alerts by monitoring website performance, errors, and issues.
 
@@ -31,16 +31,16 @@ In this integration tutorial, we will show you how to send issues from Sentry in
 
 1. Navigate to **Settings -> Integrations.**
 2. **Search "PagerTree".**
-3.  **Click on "PagerTree".**&#x20;
+3.  **Click on "PagerTree".**
 
     <figure>![Sentry Settings](<../.gitbook/assets/image (54).png>)<figcaption><p>Settings -> Integrations -> PagerTree</p></figcaption></figure>
 4.  **Click the "Accept & Install" button.** _(This will redirect you to the PagerTree New Integration page.)_
 
     <figure>![Pagertree install](<../.gitbook/assets/image (55).png>)<figcaption><p>Click "Accept &#x26; Install"</p></figcaption></figure>
-5.  On the PagerTree New Integration page, **provide at minimum, a name and destinations** for the Sentry issues that will be sent to this integration. **Click "Create"**.&#x20;
+5.  On the PagerTree New Integration page, **provide at minimum, a name and destinations** for the Sentry issues that will be sent to this integration. **Click "Create"**.
 
     <figure>![Sentry PagerTree Integration](<../.gitbook/assets/image (56).png>)<figcaption><p>Provide name and destinations. Click Create.</p></figcaption></figure>
-6.  _You will be redirected back to Sentry_ and can confirm that the integration was installed correctly.&#x20;
+6.  _You will be redirected back to Sentry_ and can confirm that the integration was installed correctly.
 
     <figure>![Confirm that the PagerTree Sentry app is installed correctly.](<../.gitbook/assets/image (57).png>)<figcaption><p>Confirm that the PagerTree Sentry app is installed correctly.</p></figcaption></figure>
 
@@ -76,22 +76,22 @@ PagerTree also supports Sentry's legacy webhooks.
 
 #### Create Webhook Integration
 
-1.  **Settings -> Integrations -> Webhooks**.&#x20;
+1.  **Settings -> Integrations -> Webhooks**.
 
     <figure>![Sentry Webhooks](<../.gitbook/assets/image (43).png>)<figcaption><p>Settings -> Integrations -> Webhooks</p></figcaption></figure>
-2.  On the Webhook Integration Page **click “Add to Project”**.&#x20;
+2.  On the Webhook Integration Page **click “Add to Project”**.
 
     <figure>![Sentry Add Project](<../.gitbook/assets/image (44).png>)<figcaption><p>Click "Add to Project" button.</p></figcaption></figure>
-3.  **Paste** the **PagerTree Endpoint URL** you copied in the **Callback URLs field**. Then click, **Save Changes**.&#x20;
+3.  **Paste** the **PagerTree Endpoint URL** you copied in the **Callback URLs field**. Then click, **Save Changes**.
 
     <figure>![Sentry save changes](<../.gitbook/assets/image (47).png>)<figcaption><p>Paste the PagerTree Endpoint URL you copied into the Callback URLs field.</p></figcaption></figure>
-4.  Click **Enable Plugin**.&#x20;
+4.  Click **Enable Plugin**.
 
     <figure>![Sentry Enable Plugin](<../.gitbook/assets/image (46).png>)<figcaption><p>Click enable plugin.</p></figcaption></figure>
 
 #### Add Alert Conditions
 
-1.  Navigate to **Alerts**, and click the **"Create Alert" button**.&#x20;
+1.  Navigate to **Alerts**, and click the **"Create Alert" button**.
 
     <figure>![Sentry Create Alert](<../.gitbook/assets/image (51).png>)<figcaption><p>Navigate to Alerts and click "Create Alert" button.</p></figcaption></figure>
 2.  Select **Issues,** and click "**Set Conditions " button.**
@@ -106,7 +106,7 @@ PagerTree also supports Sentry's legacy webhooks.
 
           <figure>![Sentry Webhooks](<../.gitbook/assets/image (53).png>)<figcaption><p>Configure the new Alert rule to trigger on new issues and old issues going from resolved -> unresolved.</p></figcaption></figure>
    3. Provide an Alert Name (ex: **Report Issues to PagerTree**)
-4.  **Click Save Rule**&#x20;
+4.  **Click Save Rule**
 
     <figure>![Sentry Save Rule](<../.gitbook/assets/image (52).png>)<figcaption><p>Click "Save Rule" button.</p></figcaption></figure>
 

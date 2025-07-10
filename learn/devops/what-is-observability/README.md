@@ -58,7 +58,7 @@ Integrating observability into your DevOps practices is essential for maintainin
 
 #### Implementing Moden Observability
 
-Effective modern observability requires integrating various tools and practices to collect, analyze, and act on system data. Once your systems are set up and monitored, you can easily implement observability practices like [RED and USE methods](https://pagertree.com/learn/devops/what-is-observability/use-and-red-method) to stay on top of hardware and service issues.&#x20;
+Effective modern observability requires integrating various tools and practices to collect, analyze, and act on system data. Once your systems are set up and monitored, you can easily implement observability practices like [RED and USE methods](https://pagertree.com/learn/devops/what-is-observability/use-and-red-method) to stay on top of hardware and service issues.
 
 1. **Set Up Logging:** Ensure all critical events and actions are logged. Use a centralized logging system to manage and analyze logs effectively.
 2. **Monitor Metrics:** Choose key performance indicators (KPIs) relevant to your system and set up dashboards for [real-time monitoring](https://pagertree.com/blog/system-monitoring-7-best-apm-tools). Examples of observation metrics include response times, error rates, and throughput.

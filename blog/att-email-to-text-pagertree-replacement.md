@@ -41,8 +41,8 @@ Follow these steps to set up PagerTree as your new notification solution:
 
 ## Switch from AT\&T Email to Text Today
 
-Don’t let the AT\&T email to text shutdown on June 17, 2025, disrupt your notifications. PagerTree offers a modern, reliable, and easy-to-use alternative for individuals and teams.&#x20;
+Don’t let the AT\&T email to text shutdown on June 17, 2025, disrupt your notifications. PagerTree offers a modern, reliable, and easy-to-use alternative for individuals and teams.
 
-Sign up for your free trial at [pagertree.com](https://pagertree.com/) and replace AT\&T email to text with a smarter solution.&#x20;
+Sign up for your free trial at [pagertree.com](https://pagertree.com/) and replace AT\&T email to text with a smarter solution.
 
 For setup help or more information, [read the documentation](https://pagertree.com/docs) or email [support@pagertree.com](mailto:support@pagertree.com).

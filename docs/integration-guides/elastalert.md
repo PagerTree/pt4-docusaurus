@@ -12,7 +12,7 @@ description: Connect your ElastAlert alerts to PagerTree.
 
 [ElastAlert](https://github.com/Yelp/elastalert) is a simple framework for alerting on anomalies, spikes, or other patterns of interest from data in Elasticsearch.
 
-## **How It Works**
+## How It Works
 
 ElastAlert triggers alerts when alerting rule conditions are met.
 

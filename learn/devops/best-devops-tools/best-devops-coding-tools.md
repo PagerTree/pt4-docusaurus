@@ -12,7 +12,7 @@ The coding phase of the [DevOps lifecycle](https://pagertree.com/learn/devops/wh
 
 Before teams begin to write code and build your project, it is important to ensure everyone is on the same page, goals are outlined, and project scope has been determined. If you’re looking for tools to assist in the DevOps planning phase, check out our “[Best DevOps Planning Tools](https://pagertree.com/learn/devops/best-devops-tools/best-devops-planning-tools)” article.
 
-This article will explore the [best DevOps tools](https://pagertree.com/learn/devops/best-devops-tools) for source code management and IDEs. We will offer tools for you to experiment with and explore to ensure you pick the right tool for your team.&#x20;
+This article will explore the [best DevOps tools](https://pagertree.com/learn/devops/best-devops-tools) for source code management and IDEs. We will offer tools for you to experiment with and explore to ensure you pick the right tool for your team.
 
 **DevOps coding tools include:**
 

@@ -11,7 +11,7 @@ description: >-
 * **On-call** - is the practice of designating specific people to be available during specific times to be able to respond to an [incident](../) (even if outside of normal working hours).
 * **On-call schedule** - is a schedule that ensures the right person is always available to quickly respond to incidents and outages.
 
-On-call is a critical responsibility for many IT, [DevOps](../devops/what-is-devops.md), and  Support Operations teams that maintain services demanding 24/7 [availability](https://pagertree.com/learn/devops/what-is-devops/top-25-devops-interview-questions#id-24.-what-is-high-availability-ha).&#x20;
+On-call is a critical responsibility for many IT, [DevOps](../devops/what-is-devops.md), and  Support Operations teams that maintain services demanding 24/7 [availability](https://pagertree.com/learn/devops/what-is-devops/top-25-devops-interview-questions#id-24.-what-is-high-availability-ha).
 
 Team members take turns "being on-call", to provide coverage around the clock or outside of business hours. The person on-call is empowered to [identify, respond, and resolve](README.md#steps-of-the-incident-management-process) any interruptions to service availability.
 
@@ -42,7 +42,7 @@ For management, ensure on-call duties are being balanced among team members and 
 
 ### Clearly define on-call responsibility
 
-Responsibilities during on-call should be clearly defined and documented.&#x20;
+Responsibilities during on-call should be clearly defined and documented.
 
 A couple of questions to consider:
 
@@ -60,7 +60,7 @@ A well documented on-call plan that spreads responsibilities out fairly across a
 
 ### Have primary and secondary responders
 
-Life doesn't stop just because a person is on-call. To prevent an incident from going unsolved and possibly causing damages, it's a good idea to have a secondary (or "back-up") on-call responder.&#x20;
+Life doesn't stop just because a person is on-call. To prevent an incident from going unsolved and possibly causing damages, it's a good idea to have a secondary (or "back-up") on-call responder.
 
 Secondary on-call takes a lot of the stress off the primary on-call, knowing they have a backup they can contact and are not the single point of failure. For the business, this adds a layer of redundancy in the on-call process.
 

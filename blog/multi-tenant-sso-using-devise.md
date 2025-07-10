@@ -54,7 +54,7 @@ Some of the most confusing things in SSO implementation is that there is no "sta
 
 ## SSO Workflow Overview
 
-If you are not familiar with SSO that's ok, I am going to go over the basic ideas (a full explanation is outside the scope of this article).&#x20;
+If you are not familiar with SSO that's ok, I am going to go over the basic ideas (a full explanation is outside the scope of this article).
 
 If you've ever logged in to an app using your Microsoft, Google, or work account, it likely used SAML to exchange information about your authentication. **The IdP is responsible for the authentication of users (aka verifying users are who they say they are)**.
 
@@ -291,7 +291,7 @@ end
 
 The important paths are as follows:
 
-* `/sso` - Where the user comes in the SP initiated workflow. We ask them for their email here.&#x20;
+* `/sso` - Where the user comes in the SP initiated workflow. We ask them for their email here.
 * `/saml_callback` - Alias for `/public/saml/consume` (see below). We had to support some legacy URLs when [upgrading to v4](pagertree-4-has-arrived.md).
 * `/public/saml/consume` - Where the IdP redirects the user to after they have provided their credentials to the IdP. This is the `assertion_consumer_url`. The payload of the request will be the assertion of who the user is.
 * `/public/saml/metadata` - A convenience endpoint for users to get information in XML format about the SP. IdP's sometimes will ask for this. Its a programmatic way for the SP to provide the IdP with details like the `assertion_consumer_service_url`

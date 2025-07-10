@@ -12,7 +12,7 @@ description: Connect your Jira Server issues to PagerTree.
 
 [Jira Server](https://www.atlassian.com/) is an application that helps agile teams plan, track, and release great software.
 
-## **How It Works**
+## How It Works
 
 Jira Server creates issues.
 
@@ -37,7 +37,7 @@ In this integration tutorial we will show you how to send issues from Jira Serve
    1. **Name** - An appropriate name (ex: “PagerTree Webhook Listener”)
    2. **Url** – **Paste** the **PagerTree Endpoint URL** you copied earlier
    3. Issue Related events
-      1.  Check **Issue Created**&#x20;
+      1.  Check **Issue Created**
 
           <figure>![Jira PagerTree Webhook Configuration](<../.gitbook/assets/image (1) (3) (2).png>)<figcaption><p>Jira PagerTree Webhook Configuration</p></figcaption></figure>
    4. **Click “Save”** button.

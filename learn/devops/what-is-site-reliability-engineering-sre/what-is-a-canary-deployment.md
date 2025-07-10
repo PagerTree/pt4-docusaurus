@@ -52,6 +52,6 @@ Despite its advantages, canary deployments have some challenges:
 
 3. **Inconsistent User Experience:** Users selected for a canary group may receive a vastly different experience than those still utilizing the stable version of your software. Implementing opt-ins for testing may be necessary to reduce negative user experience.
 
-Canary deployments effectively balance [embracing and managing risk](https://pagertree.com/blog/site-reliability-engineer-sre-interview-questions#id-2.-what-are-the-key-principles-of-sre). By deploying updates to a small group of users first, you allow time for teams to catch and fix issues before all users become affected. Just like coal miners using canaries as an early warning system, canary deployments help ensure that when an update finally reaches all users, it is safe and reliable.&#x20;
+Canary deployments effectively balance [embracing and managing risk](https://pagertree.com/blog/site-reliability-engineer-sre-interview-questions#id-2.-what-are-the-key-principles-of-sre). By deploying updates to a small group of users first, you allow time for teams to catch and fix issues before all users become affected. Just like coal miners using canaries as an early warning system, canary deployments help ensure that when an update finally reaches all users, it is safe and reliable.
 
 \

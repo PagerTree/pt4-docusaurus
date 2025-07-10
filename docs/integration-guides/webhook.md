@@ -20,7 +20,7 @@ If your tool is not listed on our integrations page, the webhook integration is 
 This documentation is meant for webhooks that are _incoming_ into PagerTree. If you are looking for outgoing webhooks, please refer to the [outgoing webhook documentation](outgoing-webhook.md).
 :::
 
-## **How It Works**
+## How It Works
 
 Webhooks are versatile user-defined callbacks that many applications support.
 

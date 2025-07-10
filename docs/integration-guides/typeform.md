@@ -12,7 +12,7 @@ description: Connect your Typeform form submissions to PagerTree.
 
 [Typeform](https://www.typeform.com/) helps users build beautiful, engaging, and conversational online forms, surveys, quizzes, landing pages.
 
-## **How It Works**
+## How It Works
 
 Typeform hosts forms that are submitted by users.
 
@@ -29,13 +29,13 @@ In this integration tutorial we will show you how to send form submission from T
 
 ### **In Apex Ping**
 
-1.  **Dashboard -> Select Desired Form**&#x20;
+1.  **Dashboard -> Select Desired Form**
 
     <figure>![Apex Ping dashboard](<../.gitbook/assets/image (5) (1) (1) (3).png>)<figcaption><p>Select your desired form</p></figcaption></figure>
 2. On the **Configure Tab -> Webhooks tab**
    1. **Paste** the **PagerTree Endpoint URL** you copied for the box under “Destination URL”
    2. **Click On/Off Toggle** at the bottom of the page to enable the webhook.
-   3.  **Click “Save Changes** button&#x20;
+   3.  **Click “Save Changes** button
 
        <figure>![Apex Ping Configure](<../.gitbook/assets/image (2) (1) (1) (1).png>)<figcaption><p>Configure the PagerTree Endpoint URL</p></figcaption></figure>
    4. **Click “View my typeform”** button in the upper right hand corner of the screen

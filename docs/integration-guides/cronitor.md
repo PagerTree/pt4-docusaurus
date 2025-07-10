@@ -12,7 +12,7 @@ description: Connect your Cronitor alerts to PagerTree.
 
 [Cronitor](https://cronitor.io/) is a web-based tracking application that monitors, alerts, and analyzes scheduled computer processes. The application informs its users when their computer processes do not run on time, take too long to run, and gets completed too quickly.
 
-## **How It Works**
+## How It Works
 
 Cronitor triggers user defined alerts when monitors fail.
 
@@ -30,13 +30,13 @@ In this integration tutorial we will show you how to send alerts from Cronitor i
 
 ### **In Cronitor**
 
-1.  Navigate to **Settings -> Alerts**.&#x20;
+1.  Navigate to **Settings -> Alerts**.
 
     <figure>![Cronitor Dashboard](<../.gitbook/assets/image (13) (1) (3).png>)<figcaption><p>Navigate to Settings -> Alerts</p></figcaption></figure>
-2.  **Click Edit** on the **Default notification list**.&#x20;
+2.  **Click Edit** on the **Default notification list**.
 
     <figure>![Cronitor Default notifications ](<../.gitbook/assets/image (11) (3).png>)<figcaption><p>Edit the default notification list.</p></figcaption></figure>
-3.  **Paste** the **PagerTree Endpoint URL** you copied into **Webhook Endpoints.**&#x20;
+3.  **Paste** the **PagerTree Endpoint URL** you copied into **Webhook Endpoints.**
 
     <figure>![Cronitor PagerTree Webhook Configuration](<../.gitbook/assets/image (1) (6).png>)<figcaption><p>Cronitor PagerTree Webhook Configuration</p></figcaption></figure>
 4. **Click Save Notification List**.

@@ -12,7 +12,7 @@ description: Connect your SolarWinds alerts to PagerTree.
 
 [SolarWinds](https://www.solarwinds.com/) gives you the tools to monitor your applications and environment through a single web console.
 
-## **How It Works**
+## How It Works
 
 SolarWinds triggers user defined alerts when (configured) network events occur.
 
@@ -37,29 +37,29 @@ In this integration tutorial we will show you how to send alerts from SolarWinds
    1. Properties
       1. Name of the alert definition - An appropriate name (e.g. High CPU)
       2. Choose the severity of the alert. (PagerTree automatically maps the SolarWinds severity to the PagerTree urgency)
-      3.  Click **Next**&#x20;
+      3.  Click **Next**
 
           <figure>![SolarWinds Alert Properties](<../.gitbook/assets/image (3) (4).png>)<figcaption><p>SolarWinds Alert Properties</p></figcaption></figure>
    2. Trigger Condition
       1. Select conditions that will trigger an alert (create an alert)
-      2.  Click **Next**&#x20;
+      2.  Click **Next**
 
           <figure>![SolarWinds Trigger Condition](<../.gitbook/assets/image (40).png>)<figcaption><p>SolarWinds Trigger Condition</p></figcaption></figure>
    3. Reset Condition
       1. Select conditions that will reset and alert (resolve and alert)
-      2.  Click **Next**&#x20;
+      2.  Click **Next**
 
           <figure>![SolarWinds Reset Condition](<../.gitbook/assets/image (39).png>)<figcaption><p>SolarWinds Reset Condition</p></figcaption></figure>
    4. Time of Day
       1. Select time of day conditions (if only applicable during certain times)
-      2.  Click **Next**&#x20;
+      2.  Click **Next**
 
           <figure>![Solarwinds Time of Day](<../.gitbook/assets/image (10) (4).png>)<figcaption><p>Solarwinds Time of Day</p></figcaption></figure>
    5. Trigger Action
       1. Message - Create an appropriate message (this will be displayed in the `title` of the alert created in PagerTree)
       2. Trigger Actions
          1. Click **Add Action**
-         2.  Select the **Send a GET or POST Request to a Web Server** option, then click **Configure Action**.&#x20;
+         2.  Select the **Send a GET or POST Request to a Web Server** option, then click **Configure Action**.
 
 
 
@@ -70,10 +70,10 @@ In this integration tutorial we will show you how to send alerts from SolarWinds
                 1. **Paste** the **PagerTree Endpoint URL** you copied for the **URL**
                 2. Select **Use HTTP/S POST**
                 3. Body to POST - copy and paste the [solarwinds\_action\_payload (below)](solarwinds.md#solarwinds-action-payload)
-                4.  Click **Add Action**&#x20;
+                4.  Click **Add Action**
 
                     <figure>![Solarwinds PagerTree HTTP/S action configuration.](<../.gitbook/assets/image (42).png>)<figcaption><p>Solarwinds PagerTree HTTP/S action configuration.</p></figcaption></figure>
-             3.  Click **Next**&#x20;
+             3.  Click **Next**
 
                  <figure>![Solarwinds PagerTree HTTP/S action configuration.](<../.gitbook/assets/image (2) (1) (1) (1) (3).png>)<figcaption></figcaption></figure>
          3. Reset Action
@@ -84,12 +84,12 @@ In this integration tutorial we will show you how to send alerts from SolarWinds
                   1. **Paste** the **PagerTree Endpoint URL** you copied for the **URL**
                   2. Select **Use HTTP/S POST**
                   3. Body to POST - copy and paste the [solarwinds\_reset\_payload (below)](solarwinds.md#solarwinds-reset-payload)
-                  4.  Click **Add Action**&#x20;
+                  4.  Click **Add Action**
 
                       <figure>![Solarwinds PagerTree Reset Action](<../.gitbook/assets/image (38).png>)<figcaption><p>Solarwinds PagerTree Reset Action</p></figcaption></figure>
                3. Click **Next**
                4. Summary
-                  1.  Review all configuration details and if correct, click **Submit**&#x20;
+                  1.  Review all configuration details and if correct, click **Submit**
 
                       <figure>![Review alert configuration](<../.gitbook/assets/image (41).png>)<figcaption><p>Review alert configuration</p></figcaption></figure>
 

@@ -12,7 +12,7 @@ description: Connect your 66uptime monitors to PagerTree.
 
 66uptime is a self-hosted, easy-to-use, lightweight, and performant uptime monitoring and status page software.
 
-## **How It Works**
+## How It Works
 
 66uptime triggers user-defined notifications by monitoring websites.
 
@@ -29,21 +29,21 @@ In this integration tutorial we will show you how to send notifications from 66u
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **66uptime logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In 66uptime**
+### In 66uptime
 
 #### Create the Notification Handler
 
-1.  From the **Left Menu, click Notification handlers.**&#x20;
+1.  From the **Left Menu, click Notification handlers.**
 
     <figure>![From the Left Menu, click Notification handlers. ](<../.gitbook/assets/navigate-to-notification-handlers.png>)<figcaption><p>From the Left Menu, click Notification handlers.</p></figcaption></figure>
-2.  Click **Create notification handler button**.&#x20;
+2.  Click **Create notification handler button**.
 
     <figure>![Click Create notification handler button.](<../.gitbook/assets/create-notification-handler-button.png>)<figcaption><p>Click Create notification handler button.</p></figcaption></figure>
 3. In the create a new notification handler form
    1. Name - Something descriptive (ex: "PagerTree")
    2. Notification type - Webhook
    3. Webhook URL - Paste the PagerTree Endpoint URL you copied
-4.  **Click Create.**&#x20;
+4.  **Click Create.**
 
     <figure>![New Notification Handler Form](<../.gitbook/assets/create-notification-handler-form.png>)<figcaption><p>New Notification Handler Form</p></figcaption></figure>
 
@@ -51,10 +51,10 @@ In this integration tutorial we will show you how to send notifications from 66u
 
 1. From the **Left Menu, navigate to any of your monitors** (e.g., Uptime monitors).
 2. **Select a monitor**.
-3.  **Click** the **Edit button**.&#x20;
+3.  **Click** the **Edit button**.
 
     <figure>![Click edit monitor button.](<../.gitbook/assets/click-edit-website-button.png>)<figcaption><p>Click edit monitor button.</p></figcaption></figure>
-4.  **Check** the newly created **Notification Handler** and **click Update**.&#x20;
+4.  **Check** the newly created **Notification Handler** and **click Update**.
 
     <figure>![Attach notification handler to uptime check.](<../.gitbook/assets/edit-website-check.png>)<figcaption><p>Attach notification handler to uptime check.</p></figcaption></figure>
 

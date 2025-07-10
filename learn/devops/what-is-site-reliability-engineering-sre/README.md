@@ -36,10 +36,10 @@ SRE key principles can be broken down into:
 
 Observability and monitoring are critical to effective Site Reliability Engineering. With a proper understanding of service, hardware, and system performance, SREs can enhance availability and reliability. Monitoring refers to using tools such as [Prometheus](https://pagertree.com/learn/prometheus/overview) and [DataDog](https://www.datadoghq.com/) to collect and analyze data from various parts of the system to ensure everything functions as expected. On the other hand, observability is about understanding your system's internal state through the outputs it produces or the data collected by monitoring tools.
 
-SREs employ a range of tools and techniques to achieve observability. Metrics, logs, and traces, referred to as [The Pillars of Observability](https://pagertree.com/learn/devops/what-is-observability#the-pillars-of-observability), are the primary components of observability.&#x20;
+SREs employ a range of tools and techniques to achieve observability. Metrics, logs, and traces, referred to as [The Pillars of Observability](https://pagertree.com/learn/devops/what-is-observability#the-pillars-of-observability), are the primary components of observability.
 
-* **Metrics:** provide quantitative data on system performance, such as response times and error rates.&#x20;
-* **Logs:** offer detailed records of system events, helping diagnose issues.&#x20;
+* **Metrics:** provide quantitative data on system performance, such as response times and error rates.
+* **Logs:** offer detailed records of system events, helping diagnose issues.
 * **Traces:** Traces track the flow of requests through the system, providing insights into how different components interact and where bottlenecks may occur.
 
 ## What are the Key Metrics for Site Reliability Engineering?

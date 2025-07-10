@@ -12,7 +12,7 @@ description: Connect your New Relic alerts to PagerTree.
 
 [New Relic](https://newrelic.com/) is a digital intelligence platform that lets developers, ops, and tech teams measure and monitor the performance of their applications and infrastructure.
 
-## **How It Works**
+## How It Works
 
 New Relic creates alerts.
 
@@ -33,30 +33,30 @@ In this integration tutorial we will show you how to send alerts from New Relic 
 
 #### Add a Webhook Destination
 
-1.  Navigate to **Alerts & AI -> Destinations -> Webhook**&#x20;
+1.  Navigate to **Alerts & AI -> Destinations -> Webhook**
 
     <figure>![New Relic Webhook](<../.gitbook/assets/image (3).png>)<figcaption><p>Navigate to Alerts &#x26; AI -> Destinations -> Webhook</p></figcaption></figure>
 2. In the Add a destination form
    1. Webhook Name - PagerTree
    2. Endpoint URL - **Paste** the **PagerTree Endpoint URL** you copied
-   3.  Click **Save Destination**&#x20;
+   3.  Click **Save Destination**
 
        <figure>![New Relic PagerTree Configuration](<../.gitbook/assets/image (27).png>)<figcaption><p>New Relic PagerTree Configuration</p></figcaption></figure>
 
 #### Connect Webhook Destination To Alert Policy
 
-1.  Navigate to **Alerts & AI -> Alert conditions (Policies) -> Notification Settings.**&#x20;
+1.  Navigate to **Alerts & AI -> Alert conditions (Policies) -> Notification Settings.**
 
     <figure>![New Relic Alert](<../.gitbook/assets/image (28).png>)<figcaption><p>Navigate to Alerts &#x26; AI -> Alert conditions (Policies) -> Notification Settings</p></figcaption></figure>
 2. **Click "Create workflow" button.**
-3.  **Click "Webhook"**&#x20;
+3.  **Click "Webhook"**
 
     <figure>![New Relic Webhook](<../.gitbook/assets/image (19).png>)<figcaption><p>In the new workflow, click Webhook.</p></figcaption></figure>
 4. In the Edit notification message form
    1. Name - PagerTree
    2. Destination - **PagerTree** (this is the Webhook destination you created above)
    3. Payload Template - Use the default.
-   4.  **Click "Save Message"**&#x20;
+   4.  **Click "Save Message"**
 
        <figure>![PagerTree Notification](<../.gitbook/assets/image (7).png>)<figcaption><p>Configure the PagerTree Notification</p></figcaption></figure>
 5.  Click the **"..." ellipses on the right to change the "Notify when.."**

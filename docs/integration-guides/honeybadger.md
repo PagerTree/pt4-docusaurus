@@ -14,7 +14,7 @@ description: >-
 
 [Honeybadger](https://www.honeybadger.io/) provides exception and uptime monitoring to keep your web apps error-free.
 
-## **How It Works**
+## How It Works
 
 Honeybadger triggers error, uptime, and check-in events.
 
@@ -32,16 +32,16 @@ In this integration tutorial we will show you how to send alerts from Honeybadge
 
 ### **In Honeybadger**
 
-1.  From your Honeybadger homepage, **select** the appropriate **project**.&#x20;
+1.  From your Honeybadger homepage, **select** the appropriate **project**.
 
     <figure>![ Honeybadger Dashboard](<../.gitbook/assets/image (4) (2) (1).png>)<figcaption><p>Select the appropriate project in Honeybadger</p></figcaption></figure>
-2.  From the Project page, **select** the **settings tab.**&#x20;
+2.  From the Project page, **select** the **settings tab.**
 
     <figure>![Honeybadger project page settings](<../.gitbook/assets/image (3) (2) (1).png>)<figcaption><p>On the Honeybadger project page, select the settings tab.</p></figcaption></figure>
-3.  From the Settings page, **select** the **alerts and integrations** tab.&#x20;
+3.  From the Settings page, **select** the **alerts and integrations** tab.
 
     <figure>![Honeybadger settings page alert and integrations](<../.gitbook/assets/image (21) (1) (1).png>)<figcaption><p>On the Honeybadger settings page, select the alerts and integrations tab.</p></figcaption></figure>
-4.  Under the **Add a Project Integration section**, **select PagerTree.**&#x20;
+4.  Under the **Add a Project Integration section**, **select PagerTree.**
 
     <figure>![Honeybadger PagerTree integration](<../.gitbook/assets/image (1) (2) (1) (1).png>)<figcaption><p>Under the add a project integration section, select PagerTree.</p></figcaption></figure>
 5. On the Setup PagerTree page
@@ -57,7 +57,7 @@ In this integration tutorial we will show you how to send alerts from Honeybadge
       3. Error Events
          1. “When a check-in is missing”
          2. “When a check-in is reporting again”
-6.  **Click** the **Save Changes Button**&#x20;
+6.  **Click** the **Save Changes Button**
 
     <figure>![Honeybadger PagerTree Configuration](<../.gitbook/assets/image (2) (1) (1) (1) (2).png>)<figcaption><p>Honeybadger PagerTree Configuration</p></figcaption></figure>
 

@@ -12,7 +12,7 @@ description: Connect your Uptime monitors to PagerTree.
 
 [Uptime](https://uptime.com/) checks your website availability at one minute intervals from 30 different locations across 6 continents. Uptime & performance monitoring made easy.
 
-## **How It Works**
+## How It Works
 
 Uptime triggers user defined alerts by monitoring websites.
 
@@ -30,7 +30,7 @@ In this integration tutorial we will show you how to send alerts from Uptime int
 
 ### **In Uptime**
 
-1.  Click **Notifications -> Integrations** from the navigation bar.&#x20;
+1.  Click **Notifications -> Integrations** from the navigation bar.
 
     <figure>![Uptime Add an Integration Profile](<../.gitbook/assets/image (3) (5).png>)<figcaption><p>Add an Integration Profile</p></figcaption></figure>
 2. In the upper right hand corner, click **Add Integration Profile**
@@ -38,7 +38,7 @@ In this integration tutorial we will show you how to send alerts from Uptime int
    2. Name - Name the Integration Profile (e.g. “PagerTree”)
    3. Assign to Contacts - **Default**
    4. URL - **Paste** the **PagerTree Endpoint URL** you copied for the **Endpoint URL**
-   5.  **Click “Save”** button&#x20;
+   5.  **Click “Save”** button
 
        <figure>![Uptime PagerTree Integration Profile](<../.gitbook/assets/image (15) (2).png>)<figcaption><p>Uptime PagerTree Integration Profile</p></figcaption></figure>
 

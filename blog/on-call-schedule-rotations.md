@@ -26,20 +26,20 @@ Schedule Rotation Features:
 
 Configuring rotations is easy!
 
-1.  On the calendar, use the cross hairs to select a date range for the length of the initial event.&#x20;
+1.  On the calendar, use the cross hairs to select a date range for the length of the initial event.
 
     <figure>![Drag-n-drop scheduler](<.gitbook/assets/click-and-drag-multi-day.png>)<figcaption></figcaption></figure>
 2. Configure the event:
    1. Select multiple users for the rotation.
    2. Check the repeat flag
    3. Check the rotation flag
-   4.  Drag and drop the user to change the order of the rotation&#x20;
+   4.  Drag and drop the user to change the order of the rotation
 
        <figure>![event scheduler](<.gitbook/assets/rotating-event-form.png>)<figcaption></figcaption></figure>
 
 
 
-Voila! Just like that you have a “rotating” schedule.&#x20;
+Voila! Just like that you have a “rotating” schedule.
 
 <figure>![oncall rotation](<.gitbook/assets/rotating-event.png>)<figcaption></figcaption></figure>
 
@@ -47,11 +47,11 @@ Voila! Just like that you have a “rotating” schedule.&#x20;
 
 In the future if you ever need to update, clone, or delete the rotation:
 
-1. **Double click** any of the rotation events.&#x20;
-2.  Click the **Pencil Icon**.&#x20;
+1. **Double click** any of the rotation events.
+2.  Click the **Pencil Icon**.
 
     <figure>![User ID](<.gitbook/assets/image (20).png>)<figcaption></figcaption></figure>
-3.  Click **All Events (in this series)**&#x20;
+3.  Click **All Events (in this series)**
 
     <figure>![all events button](<.gitbook/assets/image (2).png>)<figcaption></figcaption></figure>
 4. Modify any of the attributes. (This could be layer, rotation order, frequency, ect.)

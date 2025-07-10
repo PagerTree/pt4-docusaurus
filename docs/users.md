@@ -31,12 +31,12 @@ By default PagerTree hides many of the more "advanced" functionality. To view ad
 
 1. Navigate to the [My Settings Page](https://app.pagertree.com/user/settings).
 2. Scroll to the **Other Settings section**.
-3.  Check the **Advanced Mode checkbox**.&#x20;
+3.  Check the **Advanced Mode checkbox**.
 
     <figure>![advanced mode check box](<.gitbook/assets/advanced-mode.png>)<figcaption><p>Advanced Mode Checkbox</p></figcaption></figure>
 4. Click **Update**.
 
-You should now see the advanced options in the navigation menu.&#x20;
+You should now see the advanced options in the navigation menu.
 
 <figure>![advanced options in menu bar](<.gitbook/assets/advanced-options-in-the-menu-bar.png>)<figcaption><p>Advanced options in the menu bar.</p></figcaption></figure>
 
@@ -55,13 +55,13 @@ You should now see the advanced options in the navigation menu.&#x20;
 
 1. Navigate to the [My Settings Page](https://app.pagertree.com/user/settings).
 2. Input your **mobile phone number** and choose a **verification channel**.
-3.  Click **Update**.&#x20;
+3.  Click **Update**.
 
     <figure>![phone input form](<.gitbook/assets/phone-input.png>)<figcaption><p>Phone Input Form</p></figcaption></figure>
-4.  Click **Verify**.&#x20;
+4.  Click **Verify**.
 
     <figure>![phone verify button](<.gitbook/assets/phone-verify-button.png>)<figcaption><p>Phone Verify Button</p></figcaption></figure>
-5.  Input your **verification code** and click **Update**.&#x20;
+5.  Input your **verification code** and click **Update**.
 
     <figure>![phone verification form](<.gitbook/assets/phone-verify-form.png>)<figcaption><p>Phone Verification Form</p></figcaption></figure>
 
@@ -105,13 +105,13 @@ Users can use API Tokens to access the [PagerTree API](https://pagertree.com/doc
 ### Create an API Token
 
 1. Scroll to the **"API Tokens" section**.
-2.  **Click** the **New API Token** button.&#x20;
+2.  **Click** the **New API Token** button.
 
     <figure>![new api token button](<.gitbook/assets/api-token-button.png>)<figcaption><p>New API Token Button</p></figcaption></figure>
-3.  Provide a **Name** and **click Create** button.&#x20;
+3.  Provide a **Name** and **click Create** button.
 
     <figure>![api token form](<.gitbook/assets/api-token-form.png>)<figcaption><p>API Token Form</p></figcaption></figure>
-4.  Copy your **Token**. &#x20;
+4.  Copy your **Token**. 
 
     <figure>![copy your api token](<.gitbook/assets/api-token.png>)<figcaption><p>Copy your API token.</p></figcaption></figure>
 
@@ -126,13 +126,13 @@ All of the following security options can be found from the [My Settings Page](h
 PagerTree supports two factor authentication (2FA). To enable two factor authentication:
 
 1. Scroll to the **"Two-factor Authentication" section**.
-2.  Click the **Enable two-factor authentication** button.&#x20;
+2.  Click the **Enable two-factor authentication** button.
 
     <figure>![Enable two factor authentication button](<.gitbook/assets/enable-two-factor-authentication-button.png>)<figcaption><p>Enable Two Factor Authentication Button</p></figcaption></figure>
-3.  **Copy the recovery codes** and store them somewhere secure.&#x20;
+3.  **Copy the recovery codes** and store them somewhere secure.
 
     <figure>![backup codes](<.gitbook/assets/enable-two-factor-authentication-codes.png>)<figcaption><p>Copy the 2FA backup codes and store somewhere secure.</p></figcaption></figure>
-4.  With your 2FA app, **scan the bar code** and **enter the six digit code**.&#x20;
+4.  With your 2FA app, **scan the bar code** and **enter the six digit code**.
 
     <figure>![qr code](<.gitbook/assets/enable-two-factor-authentication-qr.png>)<figcaption><p>2FA QR Code</p></figcaption></figure>
 5. If successful, you will be redirected the the My Settings page with a notice stating "Two-factor authentication was enabled successfully".
@@ -156,7 +156,7 @@ To reset your password you will need to know your current password. If you have 
    * Provide your current password
    * Provide a new password
    * Confirm your new password
-3.  Click **Update**.&#x20;
+3.  Click **Update**.
 
     <figure>![reset password form](<.gitbook/assets/reset-password-form.png>)<figcaption><p>Reset Password Form.</p></figcaption></figure>
 

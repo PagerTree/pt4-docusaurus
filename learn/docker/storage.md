@@ -6,9 +6,9 @@ description: >-
 
 # Storage
 
-By default, data in [Docker containers](containers.md) is only preserved for the duration of the container's lifespan; once the container is removed or destroyed, the data becomes inaccessible. Thus, persistent storage becomes necessary when you need to retain data beyond the lifespan of a container.&#x20;
+By default, data in [Docker containers](containers.md) is only preserved for the duration of the container's lifespan; once the container is removed or destroyed, the data becomes inaccessible. Thus, persistent storage becomes necessary when you need to retain data beyond the lifespan of a container.
 
-Applications that require data persistence, such as databases, file storage systems, or stateful applications, typically rely on persistent storage to store and retrieve data across container restarts or redeployments.&#x20;
+Applications that require data persistence, such as databases, file storage systems, or stateful applications, typically rely on persistent storage to store and retrieve data across container restarts or redeployments.
 
 To ensure the persistence of data beyond the container's lifecycle, Docker offers two persistent solutions:
 
@@ -53,7 +53,7 @@ docker volume create pg-vol
 
 ### How to Mount a Docker Volume?
 
-To [mount a Docker volume](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag), you can use the `-v` or `--volume` flag with the `docker run` command, specifying the volume name and mount path within the container.&#x20;
+To [mount a Docker volume](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag), you can use the `-v` or `--volume` flag with the `docker run` command, specifying the volume name and mount path within the container.
 
 ```bash
 docker run -d \

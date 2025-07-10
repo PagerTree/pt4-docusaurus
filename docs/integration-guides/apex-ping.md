@@ -12,7 +12,7 @@ description: Connect your Apex Ping alerts to PagerTree.
 
 [Apex Ping](https://apex.sh/ping/) provides uptime monitoring for websites and APIs. It has flexible alerting, rich reporting, and weekly summaries.
 
-## **How It Works**
+## How It Works
 
 Apex Ping triggers user defined alerts by monitoring website & API uptime.
 
@@ -30,10 +30,10 @@ In this integration tutorial we will show you how to send alerts from Apex Ping 
 
 ### **In Apex Ping**
 
-1.  **Click Menu -> Alerts**&#x20;
+1.  **Click Menu -> Alerts**
 
     <figure>![Apex Ping Alerts](<https://pagertree.com/assets/img/integrations/apex-ping/click-alerts.png>)<figcaption></figcaption></figure>
-2.  On the Alerts Page **click “Add Alert +”**&#x20;
+2.  On the Alerts Page **click “Add Alert +”**
 
     <figure>![Apex Ping Add Alert](<https://pagertree.com/assets/img/integrations/apex-ping/click-add-alert.png>)<figcaption></figcaption></figure>
 3. In the Add Alert box

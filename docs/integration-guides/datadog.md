@@ -12,7 +12,7 @@ description: Connect your Datadog alerts to PagerTree.
 
 [Datadog](https://www.datadoghq.com/) is a monitoring service for cloud-scale applications, bringing together data from servers, databases, tools, and services to present a unified view of an entire stack.
 
-## **How It Works**
+## How It Works
 
 Datadog triggers user defined alerts by monitoring services and applications.
 
@@ -32,13 +32,13 @@ In this integration tutorial we will show you how to send alerts from Datadog in
 
 #### Create the Integration
 
-1.  **Click Menu -> Integrations -> Integration**.&#x20;
+1.  **Click Menu -> Integrations -> Integration**.
 
     <figure>![Datadog integrations](<../.gitbook/assets/image (28) (2).png>)<figcaption><p>Navigate to Integrations</p></figcaption></figure>
-2.  **Type “webhook”** in the **search bar**, then **click “+Available”**.&#x20;
+2.  **Type “webhook”** in the **search bar**, then **click “+Available”**.
 
     <figure>![datadog webhook integrations](<../.gitbook/assets/image (16) (1).png>)<figcaption><p>Search for the webhook integration.</p></figcaption></figure>
-3.  **Click** the **“Configuration” tab**.&#x20;
+3.  **Click** the **“Configuration” tab**.
 
     <figure>![webhook configurations](<../.gitbook/assets/image (3) (1) (2).png>)<figcaption><p>Click the configuration tab for the webhook integration.</p></figcaption></figure>
 4. Scroll to the bottom and enter in the following values
@@ -71,7 +71,7 @@ In this integration tutorial we will show you how to send alerts from Datadog in
 }
 ```
 
-1.  **Click “Install Integration”.**&#x20;
+1.  **Click “Install Integration”.**
 
     <figure>![Datadog PagerTree Integration Configuration](<../.gitbook/assets/image (23) (1).png>)<figcaption><p>Datadog PagerTree Integration Configuration</p></figcaption></figure>
 2. **Click outside the modal** to exit.
@@ -82,15 +82,15 @@ In this integration tutorial we will show you how to send alerts from Datadog in
 Its necessary the integration be attached to a monitor. The monitor will create an alert that is sent to PagerTree. In this example we actually create a new monitor, but you could just as easily attach it to an existing monitor.
 :::
 
-1.  **Click Menu -> Monitors -> New Monitor**.&#x20;
+1.  **Click Menu -> Monitors -> New Monitor**.
 
     <figure>![Datadog new monitor](<../.gitbook/assets/image (31).png>)<figcaption><p>Navigate to new monitor</p></figcaption></figure>
-2.  **Click** the appropriate **monitor type** for your scenario (e.g. “Host”).&#x20;
+2.  **Click** the appropriate **monitor type** for your scenario (e.g. “Host”).
 
     <figure>![datadog host monitor type](<../.gitbook/assets/image (4) (1) (2).png>)<figcaption><p>Select the host monitor type.</p></figcaption></figure>
 3. Enter in appropriate monitor values for your situation.
    1. Under the “Notify your team” section
-      1.  **Select** the **Webhook Integration** you just created (e.g. @webhook-pt\_retail\_team\_integration)&#x20;
+      1.  **Select** the **Webhook Integration** you just created (e.g. @webhook-pt\_retail\_team\_integration)
 
           <figure>![Notify PagerTree when monitor in Datadog fails.](<../.gitbook/assets/image (2) (1) (1) (2) (1).png>)<figcaption><p>Notify PagerTree when monitor in Datadog fails.</p></figcaption></figure>
 4. **Click “Save”.**

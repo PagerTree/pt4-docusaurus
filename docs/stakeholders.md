@@ -29,10 +29,10 @@ Stakeholders subscribe to a set of "interested events". Based on which events th
 Stakeholders can be manually attached to an alert via the alert form.
 
 1. Navigate to the alert form.
-2.  Click the **Show advanced options** button.&#x20;
+2.  Click the **Show advanced options** button.
 
     <figure>![show advanced options button](<.gitbook/assets/alert-show-advanced-options.png>)<figcaption><p>Show Advanced Options Button</p></figcaption></figure>
-3.  You can now **select** the **stakeholders** to attach to this alert.&#x20;
+3.  You can now **select** the **stakeholders** to attach to this alert.
 
     <figure>![stakeholders](<.gitbook/assets/alert-stakeholder-options.png>)<figcaption><p>Select the stakeholders to attach to the alert.</p></figcaption></figure>
 

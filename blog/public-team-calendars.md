@@ -19,13 +19,13 @@ By default, all calendars are private, so to make use of this feature you must e
 ## Steps to Enable a Public Calendar <a href="#steps-to-enable-a-public-calendar" id="steps-to-enable-a-public-calendar"></a>
 
 1. **Navigate** to the **Team Page** you would like to share the schedule for.
-2.  In the **top information box**, click the **globe icon.**&#x20;
+2.  In the **top information box**, click the **globe icon.**
 
     <figure>![PagerTree Dashboard](<.gitbook/assets/image (13).png>)<figcaption></figcaption></figure>
-3.  Click **confirm**.&#x20;
+3.  Click **confirm**.
 
     <figure>![Confirm Button](<.gitbook/assets/image (9).png>)<figcaption></figcaption></figure>
-4.  **Click** your new **public team calendar link**.&#x20;
+4.  **Click** your new **public team calendar link**.
 
     <figure>![Public Calendar Link](<.gitbook/assets/image (1).png>)<figcaption></figcaption></figure>
 

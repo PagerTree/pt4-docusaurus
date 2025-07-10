@@ -12,7 +12,7 @@ If you do not see the buttons to perform any action it can be because any of the
 To create objects:
 
 1. Navigate to the Object collection page found in the navigation bar.
-2.  In the upper right hand corner, click the **New Object** button.&#x20;
+2.  In the upper right hand corner, click the **New Object** button.
 
     <figure>![Create new object button](<.gitbook/assets/create-user-button.png>)<figcaption><p>Create New Object Button</p></figcaption></figure>
 3. Enter the requested information, then click the **Create** button.
@@ -23,7 +23,7 @@ To create objects:
 To update objects:
 
 1. Navigate to the Object collection page found in the navigation bar.
-2.  From the table, find the object you are interested in updating. At the very end of the row (far right side), click **Actions -> Edit**.&#x20;
+2.  From the table, find the object you are interested in updating. At the very end of the row (far right side), click **Actions -> Edit**.
 
     <figure>![edit object button](<.gitbook/assets/edit-button.png>)<figcaption><p>Edit Object Button</p></figcaption></figure>
 3. Change the information you would like to update, then click the **Update** button.
@@ -34,7 +34,7 @@ To update objects:
 To delete an object:
 
 1. Navigate to the Object collection page found in the navigation bar.
-2.  From the table, find the object you are interested in updating. At the very end of the row (far right side), click **Actions -> Delete**.&#x20;
+2.  From the table, find the object you are interested in updating. At the very end of the row (far right side), click **Actions -> Delete**.
 
     <figure>![delete object button](<.gitbook/assets/delete-button.png>)<figcaption><p>Delete Object Button</p></figcaption></figure>
 3. If you are sure you would like to delete the object, click **Confirm**.
@@ -45,10 +45,10 @@ To delete an object:
 To perform mass actions on objects (ex: delete many objects at a time):
 
 1. Navigate to the Object collection page found in the navigation bar.
-2.  From the table, find the object(s) you are interested in performing actions on. Check the checkbox next to the object (left side of the ID).&#x20;
+2.  From the table, find the object(s) you are interested in performing actions on. Check the checkbox next to the object (left side of the ID).
 
     <figure>![mass action checkbox](<.gitbook/assets/mass-action-checkbox.png>)<figcaption><p>Mass Action Checkbox</p></figcaption></figure>
-3.  An action button will appear in the top-left corner of the table. Click **Action->\[Mass Action]**.&#x20;
+3.  An action button will appear in the top-left corner of the table. Click **Action->\[Mass Action]**.
 
     <figure>![mass action options](<.gitbook/assets/mass-action-options.png>)<figcaption><p>Mass Action Options</p></figcaption></figure>
 4. If you are sure you would like to perform the mass action on the selected objects, click **Confirm**.

@@ -74,7 +74,7 @@ The [Macvlan network driver](https://docs.docker.com/network/drivers/macvlan/) a
 * Offers network connectivity similar to physical hosts.
 * Ideal for applications requiring direct host-like networking capabilities.
 
-The Macvlan driver is helpful, especially for legacy applications or applications that need to monitor network traffic.&#x20;
+The Macvlan driver is helpful, especially for legacy applications or applications that need to monitor network traffic.
 
 The Macvlan network type requires you to dedicate one of your host's physical interfaces to the virtual network. The network should be appropriately configured to support the potentially large number of MAC addresses that could be created by running many containers. See the warnings provided in [Docker documentation](https://docs.docker.com/network/drivers/macvlan/).
 

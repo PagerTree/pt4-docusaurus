@@ -14,7 +14,7 @@ description: >-
 
 Team admins are responsible for managing a [team](https://pagertree.com/docs/teams) and its [schedule](https://pagertree.com/docs/schedules). Teams can be managed from the team page within the PagerTree app and on the PagerTree Web UI.
 
-### &#x20;Editing Your Team
+### Editing Your Team
 
 1. Navigate to your team page.
 2. In the top right, **Click** the **Edit Button**.

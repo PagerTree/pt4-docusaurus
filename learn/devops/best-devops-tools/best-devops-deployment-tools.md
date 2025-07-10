@@ -21,7 +21,7 @@ For many businesses and software companies, [DevOps](https://pagertree.com/learn
 [Secrets Management Tools](https://docs.google.com/document/d/1viaHEAoEhY541ERKzKVpUMcOsxyEkCGxAoMU52S8vkI/edit#heading=h.ka1i42a31uy3)
 
 * HashiCorp Vault
-* AWS Secrets Operator&#x20;
+* AWS Secrets Operator
 * Google Cloud Secret Manager
 * Azure Key Vault
 
@@ -50,7 +50,7 @@ Infrastructure provisioning tools are essential for automating the setup and man
 
 ## Containerization and Orchestration Tools:
 
-[Containerization](https://pagertree.com/learn/docker/containers) and orchestration tools have improved the way applications are deployed and managed. Containerization involves packaging an application and its dependencies into a container, ensuring consistency across different environments. Orchestration tools manage the lifecycle of containers, handling tasks such as deployment, scaling, networking, and [monitoring](https://pagertree.com/blog/system-monitoring-7-best-apm-tools). These tools enable microservices architectures, allowing for greater flexibility, scalability, and fault tolerance.&#x20;
+[Containerization](https://pagertree.com/learn/docker/containers) and orchestration tools have improved the way applications are deployed and managed. Containerization involves packaging an application and its dependencies into a container, ensuring consistency across different environments. Orchestration tools manage the lifecycle of containers, handling tasks such as deployment, scaling, networking, and [monitoring](https://pagertree.com/blog/system-monitoring-7-best-apm-tools). These tools enable microservices architectures, allowing for greater flexibility, scalability, and fault tolerance.
 
 <figure>![Containerization and Orchestration Tools](<../../.gitbook/assets/Containerization Tools (2).png>)<figcaption><p>Containerization and Orchestration Tools</p></figcaption></figure>
 

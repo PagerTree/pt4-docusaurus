@@ -12,7 +12,7 @@ description: Connect your Dead Man’s Snitch snitches to PagerTree.
 
 [Dead Man’s Snitch](https://deadmanssnitch.com/) is a cron job monitoring tool that keeps an eye on your periodic processes and notifies you when something doesn’t happen.
 
-## **How It Works**
+## How It Works
 
 Dead Man’s Snitch triggers notifications when a snitch does not report in (aka goes “missing”).
 
@@ -30,13 +30,13 @@ In this integration tutorial we will show you how to send notifications from Dea
 
 ### **In Dead Man's Snitch**
 
-1.  From the navigation menu, click **Integrations**.&#x20;
+1.  From the navigation menu, click **Integrations**.
 
     <figure>![Dead Man&#x27;s Snitch integrations](<../.gitbook/assets/image (14) (3).png>)<figcaption><p>Click Integrations.</p></figcaption></figure>
-2.  Click the **+ Add** button next to the webhooks integration type.&#x20;
+2.  Click the **+ Add** button next to the webhooks integration type.
 
     <figure>![Dead Man&#x27;s Snitch Webhooks integration](<../.gitbook/assets/image (7) (2) (3).png>)<figcaption><p>Click the add button next to the webhooks integration type.</p></figcaption></figure>
-3.  **Paste** the **PagerTree Endpoint URL** you copied for **Hook URL**.&#x20;
+3.  **Paste** the **PagerTree Endpoint URL** you copied for **Hook URL**.
 
     <figure>![Dead Man&#x27;s Snitch Pagertree endpoint url](<../.gitbook/assets/image (9) (4).png>)<figcaption><p>Paste your PagerTree endpoint URL.</p></figcaption></figure>
 

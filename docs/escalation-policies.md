@@ -39,10 +39,10 @@ If a repeat is defined, the alert will move through the escalation N + 1 times. 
 
 To edit an escalation policy for a team:
 
-1.  Click the **Edit** button.&#x20;
+1.  Click the **Edit** button.
 
     <figure>![edit escalation policy button](<.gitbook/assets/edit-escalation-policy-button.png>)<figcaption><p>Edit Escalation Policy Button</p></figcaption></figure>
-2.  Modify the escalation policy as needed.&#x20;
+2.  Modify the escalation policy as needed.
 
     <figure>![edit escalation policy forms](<.gitbook/assets/edit-escalation-policy-form.png>)<figcaption><p>Edit Escalation Policy Form</p></figcaption></figure>
 3. Click **Update**.

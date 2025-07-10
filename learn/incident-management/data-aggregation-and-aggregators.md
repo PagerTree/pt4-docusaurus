@@ -18,7 +18,7 @@ With over[ 328 million terabytes of data created daily](https://explodingtopics.
 
 ## What is Data Aggregation?
 
-Data aggregation is the process of collecting, processing, and presenting, typically large data sets from multiple sources into more specific, easily digestible summaries. Simply put, _data aggregation helps businesses sift through large amounts of data to find the information they need, presenting that data in a consumable way._&#x20;
+Data aggregation is the process of collecting, processing, and presenting, typically large data sets from multiple sources into more specific, easily digestible summaries. Simply put, _data aggregation helps businesses sift through large amounts of data to find the information they need, presenting that data in a consumable way._
 
 A simple example of data aggregation is when you summarize the daily expenses of your business and then combine that data into a monthly summary. This approach helps you avoid dealing with 365 separate line items for expenses, and you can easily view your expenses for the entire month. You can then create an average daily expense if needed without manually entering 30 days' worth of data to obtain the information you need.
 
@@ -49,7 +49,7 @@ Data aggregation is used for a variety of purposes across different industries, 
 Data aggregation is a fundamental process in [data management](https://www.tableau.com/learn/articles/what-is-data-management) and analysis, involving three main stages: collection, processing, and presentation. Each stage plays a critical role in transforming raw data into actionable insights.
 
 1. **Collection:** The first step in data aggregation is collecting data. This stage involves gathering data from multiple databases, systems, or external sources. Effective collection requires comprehensive systems to ensure data is accurately and consistently retrieved.
-2. **Processing:** Once data is collected, the next step is processing. This stage involves cleaning and organizing the data to ensure it is useful for analysis. Processing may include filtering out irrelevant data, correcting errors, and resolving inconsistencies.&#x20;
+2. **Processing:** Once data is collected, the next step is processing. This stage involves cleaning and organizing the data to ensure it is useful for analysis. Processing may include filtering out irrelevant data, correcting errors, and resolving inconsistencies.
 3. **Presentation:** The final stage of data aggregation is presentation. This stage involves translating the processed data into a format that is easy to understand and actionable for decision-makers. This often means visualizing the data in charts, graphs, or tables that highlight the key insights from the data aggregation process.
 
 <figure>![How Does Data Aggregation Work](<../.gitbook/assets/Data Aggregation (10).png>)<figcaption><p>Data Aggregation Flow</p></figcaption></figure>

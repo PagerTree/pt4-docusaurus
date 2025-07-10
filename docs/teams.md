@@ -55,10 +55,10 @@ Please see the [escalation policies documentation](escalation-policies.md) for f
 Options for [stakeholder notifications](teams.md#stakeholder-notifications), [drop notification](teams.md#drop-notifications), and [handoff notifications](teams.md#handoff-notifications) can be configured under the "Advanced Options" of the team form.
 
 1. Navigate to the Team Edit page.
-2.  Click the **Show advanced options** button.&#x20;
+2.  Click the **Show advanced options** button.
 
     <figure>![show advanced option button](<.gitbook/assets/show-advanced-options-button.png>)<figcaption><p>Show advanced options button.</p></figcaption></figure>
-3.  You will then see the advanced options appear.&#x20;
+3.  You will then see the advanced options appear.
 
     <figure>![advanced options](<.gitbook/assets/advanced-options.png>)<figcaption><p>Advanced Options</p></figcaption></figure>
 
@@ -131,30 +131,30 @@ For any of the below instructions, you'll need to copy the ICal URL from the Pag
 
 ### Google Calendar
 
-1.  In [Google Calendar](https://calendar.google.com/), from the left hand navigation bar, click the **+** button next to the "Add a coworker's calendar".&#x20;
+1.  In [Google Calendar](https://calendar.google.com/), from the left hand navigation bar, click the **+** button next to the "Add a coworker's calendar".
 
     <figure>![add calendar](<https://pagertree.com/assets/img/kb/schedules/ical/google/add-a-coworkers-calendar.png>)<figcaption></figcaption></figure>
-2.  Select the **From URL** option.&#x20;
+2.  Select the **From URL** option.
 
     <figure>![from url](<https://pagertree.com/assets/img/kb/schedules/ical/google/select-from-url.png>)<figcaption></figcaption></figure>
-3.  Paste the **PagerTree ICal URL** you copied earlier into the "**From URL**" input field and then click **ADD CALENDAR**.&#x20;
+3.  Paste the **PagerTree ICal URL** you copied earlier into the "**From URL**" input field and then click **ADD CALENDAR**.
 
     <figure>![Pagertree Ical url](<https://pagertree.com/assets/img/kb/schedules/ical/google/paste-url-to-from-url-field.png>)<figcaption></figcaption></figure>
-4.  Click the back arrow button.&#x20;
+4.  Click the back arrow button.
 
     <figure>![settings button](<https://pagertree.com/assets/img/kb/schedules/ical/google/back-button.png>)<figcaption></figcaption></figure>
 
 ### Outlook Calendar
 
 1. From the Calendar Ribbon, click **Add Calendar -> From Internet...** ![Click Add Calendar From Internet](https://pagertree.com/assets/img/kb/schedules/ical/outlook/click-add-calendar-from-internet.png)
-2.  Paste the **PagerTree ICal URL** you copied earlier into the "**New Internet Calendar Subscription**" input field and then click **OK**.&#x20;
+2.  Paste the **PagerTree ICal URL** you copied earlier into the "**New Internet Calendar Subscription**" input field and then click **OK**.
 
     <figure>![New internet calendar](<https://pagertree.com/assets/img/kb/schedules/ical/outlook/paste-url-to-new-internet-calendar-subscription.png>)<figcaption></figcaption></figure>
 
 ### iCal (Mac) Calendar
 
 1. From the menu bar, click **File -> New Calendar Subscription...** ![Click New Calendar Subscription](https://pagertree.com/assets/img/kb/schedules/ical/ical/click-file-new-calendar-subscription.png)
-2.  Paste the **PagerTree ICal URL** you copied earlier into the "**Calendar URL**" input field and then click **Subscribe**.&#x20;
+2.  Paste the **PagerTree ICal URL** you copied earlier into the "**Calendar URL**" input field and then click **Subscribe**.
 
     <figure>![Pagertree Ical URL](<https://pagertree.com/assets/img/kb/schedules/ical/ical/paste-url-to-subscribe-to.png>)<figcaption></figcaption></figure>
 3. Configure the **Auto-refresh** to **Every hour** then click **OK**. ![Configure AUto Refesh](https://pagertree.com/assets/img/kb/schedules/ical/ical/configure-settings.png)

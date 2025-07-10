@@ -12,7 +12,7 @@ description: Connect your Uptime Kuma monitors to PagerTree.
 
 Uptime Kuma is an easy-to-use self-hosted monitoring tool.
 
-## **How It Works**
+## How It Works
 
 Uptime Kuma triggers user defined notifications by monitoring websites.
 
@@ -34,10 +34,10 @@ The Uptime Kuma integration will only work if your version of Uptime Kuma includ
 
 ### **In Uptime Kuma**
 
-1.  From the **Profile Menu, click Settings.**&#x20;
+1.  From the **Profile Menu, click Settings.**
 
     <figure>![Uptime Kuma Settings](<../.gitbook/assets/image (2) (2).png>)<figcaption><p>Profile Menu -> Settings</p></figcaption></figure>
-2.  Click the **Notifications Tab**, then click **Setup Notification button**.&#x20;
+2.  Click the **Notifications Tab**, then click **Setup Notification button**.
 
     <figure>![Uptime Kuma notifications](<../.gitbook/assets/image (6).png>)<figcaption><p>Notifications -> Setup Notification</p></figcaption></figure>
 3. In the Setup Notification box
@@ -47,7 +47,7 @@ The Uptime Kuma integration will only work if your version of Uptime Kuma includ
    4. Urgency - An appropriate urgency
    5. Auto Resolve - Auto Resolve
    6. Default Enabled - Checked
-   7.  Apply on all existing monitors - Checked&#x20;
+   7.  Apply on all existing monitors - Checked
 
        <figure>![Uptime Kuma PagerTree Notification Configuration](<../.gitbook/assets/image (2) (7).png>)<figcaption><p>Uptime Kuma PagerTree Notification Configuration</p></figcaption></figure>
 4. **Click Save.**

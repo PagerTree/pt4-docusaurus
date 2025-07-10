@@ -58,7 +58,7 @@ There are [4 global roles](https://pagertree.com/docs/architecture-guide#global-
 
 There are [2 roles](https://pagertree.com/docs/teams#team-roles) for a PagerTree [team](https://pagertree.com/docs/teams):
 
-* [Team admin](https://pagertree.com/docs/getting-started/team-admins) - Can manage the team, team members, team admins, on-call schedules, and escalation policy.&#x20;
+* [Team admin](https://pagertree.com/docs/getting-started/team-admins) - Can manage the team, team members, team admins, on-call schedules, and escalation policy.
 * [Team member](https://pagertree.com/docs/getting-started/oncall-users) - No special permissions.
 
 ## Integrations
@@ -202,7 +202,7 @@ You should now see the advanced options in the navigation menu.
 
 ### Routers
 
-With [routers](https://pagertree.com/docs/routers), you can perform complex [matching](https://pagertree.com/docs/routers#match-block) and [actions](https://pagertree.com/docs/routers#actions-block) on alerts. Routers consist of many router rules that are processed after the integration has transformed the 3rd party data into an alert, but before the alert has been assigned to the team.&#x20;
+With [routers](https://pagertree.com/docs/routers), you can perform complex [matching](https://pagertree.com/docs/routers#match-block) and [actions](https://pagertree.com/docs/routers#actions-block) on alerts. Routers consist of many router rules that are processed after the integration has transformed the 3rd party data into an alert, but before the alert has been assigned to the team.
 
 <figure>![Workflow (Routers)](<../.gitbook/assets/alert-worklfow-routers.png>)<figcaption><p>Work Flow (Routers)</p></figcaption></figure>
 
@@ -216,7 +216,7 @@ You can see the full documentation [here](https://pagertree.com/docs/routers).
 
 ### Notification Rules
 
-With [notification rules](https://pagertree.com/docs/notification-rules), you can perform custom notification sequences. Notification rules are processed after PagerTree has selected the account user to notify but before [default notification channels](account-admins.md#default-notification-channels) are used.&#x20;
+With [notification rules](https://pagertree.com/docs/notification-rules), you can perform custom notification sequences. Notification rules are processed after PagerTree has selected the account user to notify but before [default notification channels](account-admins.md#default-notification-channels) are used.
 
 <figure>![Alert Workflow (Notification Rules)](<../.gitbook/assets/alert-workflow-notification-rules.png>)<figcaption><p>Alert Workflow (Notification Rules)</p></figcaption></figure>
 
@@ -229,7 +229,7 @@ You can find the full documentation for notification rules [here](https://pagert
 :::hint
 **When to use Routers vs Notification Rules?**
 
-Routers would be used if you would like to route an alert to your after-hours team when it comes in during non-business hours.&#x20;
+Routers would be used if you would like to route an alert to your after-hours team when it comes in during non-business hours.
 
 Notification rules would be used if you had a specific cycle you would like to be contacted in, i.e., call the primary phone first, call the secondary, then send an SMS, and repeat.
 :::
@@ -249,7 +249,7 @@ You have now completed the PagerTree account admin quick start guide. For additi
 * [User Quick Start Guide](https://pagertree.com/docs/getting-started/oncall-users)
 * [Team Admin Quick Start Guide](https://pagertree.com/docs/getting-started/team-admins)
 * [Architecture Guide](https://pagertree.com/docs/architecture-guide)
-* [Common UI Design Patterns](https://pagertree.com/docs/common-ui-design-patterns)&#x20;
+* [Common UI Design Patterns](https://pagertree.com/docs/common-ui-design-patterns)
 * [Alert States](https://pagertree.com/docs/alerts#alert-states)
 * [Billing](https://pagertree.com/docs/billing)
 * [Notification Limits](https://pagertree.com/docs/billing#notification-limits)

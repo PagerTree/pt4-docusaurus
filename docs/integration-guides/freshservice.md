@@ -10,7 +10,7 @@ description: >-
 
 [Freshservice](https://freshservice.com/) is a cloud based ITSM software for your service desk. It provides automation tools to manage incidents, assets, and more.
 
-## **How It Works**
+## How It Works
 
 Freshservice creates tickets.
 
@@ -30,16 +30,16 @@ In this integration tutorial we will show you how to send tickets from Freshserv
 ### **In Freshservice**
 
 1. **Click** the **Gear Icon** in the left side navigation menu to go to the admin page.
-2.  On the admin page, **navigate to Automation & Productivity -> Workflow Automator.**&#x20;
+2.  On the admin page, **navigate to Automation & Productivity -> Workflow Automator.**
 
     <figure>![Freshservice Automation and Productivity](<../.gitbook/assets/image (7) (3) (1).png>)<figcaption><p>Navigate to Automation &#x26; Productivity -> Workflow Automator</p></figcaption></figure>
-3.  **Click** the **New Automator button** and select **Ticket**.&#x20;
+3.  **Click** the **New Automator button** and select **Ticket**.
 
     <figure>![Freshservice new Automator](<../.gitbook/assets/image (5) (2) (1).png>)<figcaption><p>Click the New Automator button and select Ticket</p></figcaption></figure>
 4.  On the New Ticket Automator form:
 
     1. Title - PagerTree
-    2. **Click Create**&#x20;
+    2. **Click Create**
 
     <figure>![Freshservice PagerTree Automator](<../.gitbook/assets/image (8) (2).png>)<figcaption><p>Freshservice PagerTree Automator</p></figcaption></figure>
 5.  In the new Event form:
@@ -52,7 +52,7 @@ In this integration tutorial we will show you how to send tickets from Freshserv
     4. **Click Done.**
 
     <figure>![Freshservice Ticket Automator Event](<../.gitbook/assets/image (4) (4).png>)<figcaption><p>Ticket Automator Event</p></figcaption></figure>
-6. &#x20;**Drag** the **Web Request action,** connecting it to your event. ![Freshservice web request](<../.gitbook/assets/image (13) (2) (1).png>)
+6. **Drag** the **Web Request action,** connecting it to your event. ![Freshservice web request](<../.gitbook/assets/image (13) (2) (1).png>)
 7. On the Web Request Form:
    1. Request Type - **POST**
    2. Endpoint - Paste the **PagerTree endpoint URL** you copied earlier.
@@ -60,13 +60,13 @@ In this integration tutorial we will show you how to send tickets from Freshserv
    4. Authentication Type - **No Auth**
    5. Body - **Copy and paste** the [Freshservice Webhook Format (see below)](freshservice.md#freshservice-webhook-format) into the text box.
    6. Label - PagerTree Webhook
-   7.  **Click Done.**&#x20;
+   7.  **Click Done.**
 
        <figure>![Freshservice PagerTree Web Request](<../.gitbook/assets/image (9) (2) (1).png>)<figcaption><p>Freshservice PagerTree Web Request</p></figcaption></figure>
-8.  **Click Activate.**&#x20;
+8.  **Click Activate.**
 
     <figure>![Freshservice Ticket Automator](<../.gitbook/assets/image (11) (2) (1).png>)<figcaption><p>Click active on the Ticket Automator</p></figcaption></figure>
-9.  **Click Confirm.**&#x20;
+9.  **Click Confirm.**
 
     <figure>![confirm button](<../.gitbook/assets/image (1) (2) (3).png>)<figcaption><p>Click confirm</p></figcaption></figure>
 

@@ -12,7 +12,7 @@ description: Connect your PRTG notifications to PagerTree.
 
 [PRTG](https://www.paessler.com/prtg) (Paessler Router Traffic Graphe&#x72;_)_ is _a_ network monitoring tool that helps you to ensure that your computer systems are running smoothly and that no outages occur. PRTG monitors your whole IT infrastructure 24/7 and alerts you to problems before users even notice.
 
-## **How It Works**
+## How It Works
 
 PRTG triggers notifications when a sensor’s check fails.
 
@@ -30,19 +30,19 @@ In this integration tutorial we will show you how to send alerts from PRTG into 
 
 ### **In PRTG**
 
-1.  **Menu -> Setup -> Account Settings -> Notification Templates**.&#x20;
+1.  **Menu -> Setup -> Account Settings -> Notification Templates**.
 
     <figure>![PRTG Notification Templates](<../.gitbook/assets/image (9) (2).png>)<figcaption><p>Navigate to Notification Templates</p></figcaption></figure>
-2.  Click the **Add Notification Template** button.&#x20;
+2.  Click the **Add Notification Template** button.
 
     <figure>![PRTG Notification Templates Button](<../.gitbook/assets/image (1) (3) (1) (1).png>)<figcaption><p>Click the Add Notification Template Button</p></figcaption></figure>
 3. On the Add Notification Template Page:
    1. Under **Basic Settings**
-      1.  **Template Name** - PagerTree&#x20;
+      1.  **Template Name** - PagerTree
 
           <figure>![PRTG Notification Templates](<../.gitbook/assets/image (14) (2).png>)<figcaption><p>Name the Template "PagerTree"</p></figcaption></figure>
    2. Under **Notification Summarization**
-      1.  **Method** - **Always notify ASAP, never summarize**.&#x20;
+      1.  **Method** - **Always notify ASAP, never summarize**.
 
           <figure>![Notification summarization ](<../.gitbook/assets/image (2) (2) (1).png>)<figcaption><p>Never summarize notifications</p></figcaption></figure>
    3. Enable **Execute HTTP Action**
@@ -58,7 +58,7 @@ sensorid=%sensorid&sensor=%sensor&status=%status
    1. When sensor state is **Down** for at least **30** seconds, perform **:// PagerTree**
    2. When sensor state is **Down** for at least **900** seconds, perform **no notification** and repeat every **0** minutes.
    3. When sensor leaves **Down** state after a notification was triggered, perform **:// PagerTree**
-   4.  Click the **check mark icon button** to save.&#x20;
+   4.  Click the **check mark icon button** to save.
 
        <figure>![ PRTG Notification Triggers](<../.gitbook/assets/image (4) (5) (1).png>)<figcaption><p>Configure the PRTG Notification Triggers</p></figcaption></figure>
 

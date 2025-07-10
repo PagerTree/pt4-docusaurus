@@ -12,7 +12,7 @@ description: Connect your Prometheus alerts to PagerTree.
 
 [Prometheus](https://prometheus.io/) is an open-source systems monitoring and alerting toolkit.
 
-## **How It Works**
+## How It Works
 
 Prometheus Alertmanager creates alerts.
 

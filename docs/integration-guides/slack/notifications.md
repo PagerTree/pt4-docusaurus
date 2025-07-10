@@ -24,7 +24,7 @@ description: >-
 For an overview of how we collect, manage, and store your data please see our [privacy policy](https://pagertree.com/privacy).
 :::
 
-## **How It Works**
+## How It Works
 
 Slack users will experience a seamless connection between Slack and PagerTree. Not only will users now receive notifications via Slack, but they will also be able to perform many actions like creating, acknowledging, and resolving alerts.
 
@@ -38,13 +38,13 @@ In this integration tutorial we will show you how to connect your Slack workspac
 ### In PagerTree
 
 1. Navigate to the [My Preferences](https://app.pagertree.com/user/settings) page.
-2.  In your General Settings **Click** the **Add to Slack** button. This will take you to the Slack Authorization page.&#x20;
+2.  In your General Settings **Click** the **Add to Slack** button. This will take you to the Slack Authorization page.
 
     <figure>![In General Settings, click the &#x22;Add to Slack&#x22; button.](<../../.gitbook/assets/image (9).png>)<figcaption><p>In General Settings, click the "Add to Slack" button.</p></figcaption></figure>
-3.  In the upper right hand corner of the Authorization page, **select** the **workspace** you would like to install the PagerTree App to.&#x20;
+3.  In the upper right hand corner of the Authorization page, **select** the **workspace** you would like to install the PagerTree App to.
 
     <figure>![PagerTree Button](<../../.gitbook/assets/image (13).png>)<figcaption><p>Select the appropriate workspace.</p></figcaption></figure>
-4.  **Click** the **Authorize** button.&#x20;
+4.  **Click** the **Authorize** button.
 
     <figure>![authorize button](<../../.gitbook/assets/image (2) (1).png>)<figcaption><p>Click "Authorize".</p></figcaption></figure>
 

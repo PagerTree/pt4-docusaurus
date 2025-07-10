@@ -9,7 +9,7 @@ description: A DevOps and SRE Incident Management Guide
 **Incident** is a broad term describing events that disrupt or reduce the quality of a service. Some examples of incidents:
 
 * A business application going down (complete outage)
-* A very slow web application (degradation in performance)&#x20;
+* A very slow web application (degradation in performance)
 * A piece of software functionality that is broken (software bug)
 
 Incidents can vary widely in [severity](incident-management/severity-levels.md), but usually require immediate response from [on-call teams](incident-management/on-call.md). An incident is resolved when the affected service resumes service and is restored to its intended state.
@@ -77,7 +77,7 @@ Lastly, it's important to ensure whatever caused the incident doesn't happen aga
 
 The following are common categories of tools used throughout the incident lifecycle:
 
-* **Monitoring** - automated systems to alert you if something is wrong with your system.&#x20;
+* **Monitoring** - automated systems to alert you if something is wrong with your system.
 * **Incident Tracking** - a tool to serve as a central location to document and track incidents across multiple services.
 * **Alerting System** - a tool supporting [on-call schedules](https://pagertree.com/) and reliable notifications to always notify the right person on your team.
 * **Chat Room** - real-time text communication is key for diagnosing and resolving incidents as a team.

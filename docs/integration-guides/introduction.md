@@ -9,10 +9,10 @@ description: >-
 ## Create an Integration
 
 1. Navigate to the [integrations page](https://app.pagertree.com/integrations?direction=asc\&limit=10\&sort=tiny\_id).
-2.  **Click** the **New Integration Button**.&#x20;
+2.  **Click** the **New Integration Button**.
 
     <figure>![PagerTree New Integration](<../.gitbook/assets/image (17) (1).png>)<figcaption><p>New Integration Button</p></figcaption></figure>
-3.  **Click** on the **logo of the tool** you wish to integrate.&#x20;
+3.  **Click** on the **logo of the tool** you wish to integrate.
 
     <figure>![Pagertree integrations](<../.gitbook/assets/image (13) (1) (1).png>)<figcaption><p>Click the logo of the tool to integrate.</p></figcaption></figure>
 
@@ -21,7 +21,7 @@ description: >-
 Most integrations will send data to PagerTree via an "endpoint URL". You will need this endpoint for many integrations.
 
 1. On the integration page, in the top information box, **find section labeled Endpoint**.
-2.  **Click the clipboard icon**, to copy the endpoint URL.&#x20;
+2.  **Click the clipboard icon**, to copy the endpoint URL.
 
     <figure>![PagerTree Integrations](<../.gitbook/assets/image (12) (1) (1).png>)<figcaption><p>Click the clipboard icon next to endpoint to copy the endpoint URL.</p></figcaption></figure>
 

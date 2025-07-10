@@ -12,7 +12,7 @@ description: Connect your Healthchecks alerts to PagerTree.
 
 [Healthchecks](https://healthchecks.io/) provides monitoring and alerting for when cronjobs fail. It is a free alternative to [Cronitor](https://cronitor.io/) and [Dead Man’s Snitch](https://deadmanssnitch.com/).
 
-## **How It Works**
+## How It Works
 
 Healthchecks triggers user defined alerts by monitoring cronjob checks.
 
@@ -30,10 +30,10 @@ In this integration tutorial we will show you how to send alerts from Healthchec
 
 ### **In Healthchecks**
 
-1.  From the navigation menu, **Click Integrations.**&#x20;
+1.  From the navigation menu, **Click Integrations.**
 
     <figure>![Healthchecks.io integrations](<../.gitbook/assets/image (4) (5).png>)<figcaption><p>Naviage to Integrations</p></figcaption></figure>
-2.  On the Integrations Page find the PagerTree row and **click “Add Integration”**.&#x20;
+2.  On the Integrations Page find the PagerTree row and **click “Add Integration”**.
 
     <figure>![Healthchecks.io pagertree integrations](<../.gitbook/assets/image (1) (4) (1).png>)<figcaption><p>In Healthchecks, add the PagerTree integration.</p></figcaption></figure>
 3.  On the Add PagerTree Integration Page

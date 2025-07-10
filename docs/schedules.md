@@ -121,13 +121,13 @@ A rotating event is similar to a repeating event, but it will rotate users for e
 To override and event for a duration of time:
 
 1. Single click the Event to show the event details.
-2.  Click the **Event Override** button.&#x20;
+2.  Click the **Event Override** button.
 
     <figure>![event override button](<.gitbook/assets/event-override-button.png>)<figcaption><p>Event Override Button</p></figcaption></figure>
 3. On the event override form:
    1. Select the **user** that will be overriding.
    2. Scope the **dates and times** of when the user will be overriding.
-   3.  Click **Create** button.&#x20;
+   3.  Click **Create** button.
 
        <figure>![event override form](<.gitbook/assets/event-override-form.png>)<figcaption><p>Event Override Form</p></figcaption></figure>
 
@@ -136,12 +136,12 @@ To override and event for a duration of time:
 ### Event Clone
 
 1. Single click the Event to show the event details.
-2.  Click the **Event Clone** button.&#x20;
+2.  Click the **Event Clone** button.
 
     <figure>![Event clone button](<.gitbook/assets/event-clone-button.png>)<figcaption><p>Event Clone Button</p></figcaption></figure>
 3. On the event clone form:
    1. Make any appropriate changes.
-   2.  Click **Create** button.&#x20;
+   2.  Click **Create** button.
 
        <figure>![event clone form](<.gitbook/assets/event-clone-form.png>)<figcaption><p>Event Clone Form</p></figcaption></figure>
 

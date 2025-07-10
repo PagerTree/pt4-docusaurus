@@ -13,7 +13,7 @@
 A maintenance window can be quickly created via an integration page.
 
 1. Click the **Maintenance Window** dropdown (top right actions).
-2.  Select the **duration** the maintenance window should span.&#x20;
+2.  Select the **duration** the maintenance window should span.
 
     <figure>![maintenance window](<.gitbook/assets/quick-create-maintenance-window.png>)<figcaption><p>Maintenance Window Quick Create Options</p></figcaption></figure>
 3. The maintenance window will be created and you will be redirected to the integration page.

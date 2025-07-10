@@ -10,7 +10,7 @@ description: >-
 | --------------------------------------- | -------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | [PagerTree LLC.](https://pagertree.com) | 1 minute       | [view](form.md) | [v3.rb](https://github.com/PagerTree/pager\_tree-integrations/blob/main/app/models/pager\_tree/integrations/form/v3.rb) |
 
-## **How It Works**
+## How It Works
 
 * When a form is submitted, an alert is created in PagerTree automatically.
 
@@ -76,11 +76,11 @@ Please create the CNAME in your DNS first. Self signed certificates depend on th
 #### **In PagerTree**
 
 1. Navigate to the edit integration page.
-2.  In the **CNAMEs section, add your CNAME** (ex: support.example.com)&#x20;
+2.  In the **CNAMEs section, add your CNAME** (ex: support.example.com)
 
     <figure>![PagerTree CNAME](<../.gitbook/assets/image (20).png>)<figcaption><p>Add the CNAME.</p></figcaption></figure>
 3. **Click Update.**
-4.  From the integration page, **copy the CNAME URL**.&#x20;
+4.  From the integration page, **copy the CNAME URL**.
 
     <figure>![PagerTree CNAME URL](<../.gitbook/assets/image (16).png>)<figcaption><p>Copy the CNAME URL.</p></figcaption></figure>
 5. **Paste** the **URL** in the **location bar** of a browser you are not signed into (ex: you can use incognito mode).

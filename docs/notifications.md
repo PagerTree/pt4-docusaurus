@@ -33,7 +33,7 @@ To receive push notifications you must:
 ### Register Your Device
 
 1. Navigate to the [My Settings page](https://app.pagertree.com/user/settings).
-2.  Under the App Registrations section, click "Register this device".&#x20;
+2.  Under the App Registrations section, click "Register this device".
 
     <figure>![register mobile device](<.gitbook/assets/image (1) (2).png>)<figcaption><p>Register Mobile Device</p></figcaption></figure>
 
@@ -48,41 +48,41 @@ Download the [PagerTree contact card (vCard)](https://pagertree.com/assets/img/k
 1. Star the PagerTree Contact.
    1. Open the **Contacts App**.
    2. Tap the **PagerTree contact**.
-   3.  **Star** the PagerTree contact.&#x20;
+   3.  **Star** the PagerTree contact.
 
        <figure>![favorite contact](<https://pagertree.com/assets/img/kb/notifications/android-star-pagertree-contact.jpg>)<figcaption></figcaption></figure>
 2. Enable Starred Contacts to Bypass DnD.
-   1.  Tap **Settings**.&#x20;
+   1.  Tap **Settings**.
 
        <figure>![android settings](<https://pagertree.com/assets/img/kb/notifications/android-select-settings.jpg>)<figcaption></figcaption></figure>
-   2.  Tap **Notifications**.&#x20;
+   2.  Tap **Notifications**.
 
        <figure>![android notification](<https://pagertree.com/assets/img/kb/notifications/android-select-notifications.jpg>)<figcaption></figcaption></figure>
-   3.  Tap **Do not disturb**.&#x20;
+   3.  Tap **Do not disturb**.
 
        <figure>![android do not disturb](<https://pagertree.com/assets/img/kb/notifications/android-select-dnd.jpg>)<figcaption></figcaption></figure>
-   4.  Tap **Allow exceptions**.&#x20;
+   4.  Tap **Allow exceptions**.
 
        <figure>![allow exceptions](<https://pagertree.com/assets/img/kb/notifications/android-select-allow-exceptions.jpg>)<figcaption></figcaption></figure>
-   5.  For **Calls from** and **Messages from** select **Favorite contacts only**.&#x20;
+   5.  For **Calls from** and **Messages from** select **Favorite contacts only**.
 
        <figure>![message from button](<https://pagertree.com/assets/img/kb/notifications/android-select-from-favorites.jpg>)<figcaption></figcaption></figure>
 
 #### Android App
 
-1.  Tap **Settings**.&#x20;
+1.  Tap **Settings**.
 
     <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-select-settings.jpg>)<figcaption></figcaption></figure>
-2.  Tap **Notifications**.&#x20;
+2.  Tap **Notifications**.
 
     <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-select-notifications.jpg>)<figcaption></figcaption></figure>
-3.  Tap the **PagerTree App**.&#x20;
+3.  Tap the **PagerTree App**.
 
     <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-select-pagertree-app.jpg>)<figcaption></figcaption></figure>
-4.  Tap the **Alert Channel** that needs to be customized.&#x20;
+4.  Tap the **Alert Channel** that needs to be customized.
 
     <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-select-pagertree-channel.jpg>)<figcaption></figcaption></figure>
-5.  Toggle the **Ignore Do not disturb** setting to **on**.&#x20;
+5.  Toggle the **Ignore Do not disturb** setting to **on**.
 
     <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-toggle-dnd.jpg>)<figcaption></figcaption></figure>
 
@@ -90,13 +90,13 @@ Download the [PagerTree contact card (vCard)](https://pagertree.com/assets/img/k
 
 #### iPhone Contact
 
-1.  Launch the contacts app, find the PagerTree contact, and tap **Edit**.&#x20;
+1.  Launch the contacts app, find the PagerTree contact, and tap **Edit**.
 
     <figure>![Iphone edit](<https://pagertree.com/assets/img/kb/notifications/iphone-emergency-bypass-contact-edit.jpg>)<figcaption></figcaption></figure>
-2.  Scroll down until you see entries for **Ringtone** and **Text Tone**. Emergency bypass, can be set for each. Tap either Ringtone or Text Tone.&#x20;
+2.  Scroll down until you see entries for **Ringtone** and **Text Tone**. Emergency bypass, can be set for each. Tap either Ringtone or Text Tone.
 
     <figure>![iphone bypss](<https://pagertree.com/assets/img/kb/notifications/iphone-emergency-bypass-ringtone-texttone.jpg>)<figcaption></figcaption></figure>
-3.  At the top of menu there is the **Emergency Bypass** option. Toggle it **on** for each desired method of contact.&#x20;
+3.  At the top of menu there is the **Emergency Bypass** option. Toggle it **on** for each desired method of contact.
 
     <figure>![iphone bypass](<https://pagertree.com/assets/img/kb/notifications/iphone-emergency-bypass-toggle-dnd.jpg>)<figcaption></figcaption></figure>
 
@@ -114,7 +114,7 @@ When a user has persistent notifications, push notifications will be sent every 
 
 1. Navigate to the [My Settings Page](https://app.pagertree.com/user/settings).
 2. Scroll to the **Other Settings section**.
-3.  Select the alert urgency that should have persistent notifications.&#x20;
+3.  Select the alert urgency that should have persistent notifications.
 
     <figure>![persistent notification setting](<.gitbook/assets/select-persistent-notification-setting.png>)<figcaption><p>Persistent Notification Setting</p></figcaption></figure>
 4. Click **Update**.

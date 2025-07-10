@@ -14,7 +14,7 @@ description: >-
 
 [HetrixTools](https://hetrixtools.com/) is a simple, effective, and free solution for uptime monitoring and blacklist monitoring.
 
-## **How It Works**
+## How It Works
 
 HetrixTools triggers webhook notifications:
 
@@ -35,10 +35,10 @@ In this integration tutorial we will show you how to send alerts from HetrixTool
 ### **In HetrixTools**
 
 1. In the left navigation menu, **click Contact Lists.**
-2.  For the contact list you wish to edit, **click the Pencil Button.**&#x20;
+2.  For the contact list you wish to edit, **click the Pencil Button.**
 
     <figure>![Navigate to Contact Lists and then click the Pencil button.](<../.gitbook/assets/hetrix-navigate-to-contact-lists.png>)<figcaption><p>Navigate to Contact Lists and then click the Pencil button.</p></figcaption></figure>
-3.  In the webhook section, **Paste** the **PagerTree Endpoint URL** you copied into the **Webhook URL field**.&#x20;
+3.  In the webhook section, **Paste** the **PagerTree Endpoint URL** you copied into the **Webhook URL field**.
 
     <figure>![Paste the PagerTree Endpoint URL into the Webhook URL field.](<../.gitbook/assets/hetrix-webhook-configuration.png>)<figcaption><p>Paste the PagerTree Endpoint URL into the Webhook URL field.</p></figcaption></figure>
 4. Click **Edit button** to save.

@@ -37,10 +37,10 @@ Once you’ve created the Ubuntu server, run the following command in the shell 
 curl https://raw.githubusercontent.com/PagerTree/prometheus-grafana-alertmanager-example/master/install.sh -H 'Cache-Control: no-cache' | sudo sh; cd prometheus-grafana-alertmanager-example;
 ```
 
-At this point you’ll have automagically deployed the entire Prometheus, Grafana, and Alert Manager stack. You can now access the Grafana dashboard from your browser at:&#x20;
+At this point you’ll have automagically deployed the entire Prometheus, Grafana, and Alert Manager stack. You can now access the Grafana dashboard from your browser at:
 
 * Address: `http://<Host IP Address>:3000`
-* &#x20;Username: `admin`
+* Username: `admin`
 * Password: `9uT46ZKE`
 
 ### Add the Prometheus Datasource to Grafana <a href="#add-the-prometheus-datasource-to-grafana" id="add-the-prometheus-datasource-to-grafana"></a>
@@ -57,13 +57,13 @@ At this point you’ll then 2 dashboards. They are pretty cool. Check them out. 
 
 **Ping Dashboard**
 
-This dashboard monitors a couple websites for uptime.&#x20;
+This dashboard monitors a couple websites for uptime.
 
 <figure>![](<https://pagertree.com/assets/img/posts/2017/12/01/dashboard-ping.png>)<figcaption><p>Ping Dashboard</p></figcaption></figure>
 
 **System Monitor Dashboard**
 
-This dashboard monitors the load on the machine that is running your Prometheus stack.&#x20;
+This dashboard monitors the load on the machine that is running your Prometheus stack.
 
 <figure>![](<https://pagertree.com/assets/img/posts/2017/12/01/dashboard-system-monitoring.png>)<figcaption><p>System Dashboard</p></figcaption></figure>
 
@@ -74,7 +74,7 @@ Now while the dashboards are cool, it would be even cooler if we were able to ge
 ### Create a Prometheus Integration in PagerTree
 
 1. Create a [new integration](https://app.pagertree.com/integrations/new).
-2.  Click the Prometheus Logo.&#x20;
+2.  Click the Prometheus Logo.
 
     <figure>![](<.gitbook/assets/image (6).png>)<figcaption></figcaption></figure>
 3. Fill out the following:
@@ -82,7 +82,7 @@ Now while the dashboards are cool, it would be even cooler if we were able to ge
    2. Appropriate urgency for the Prometheus alerts
    3. A team alerts from Prometheus should be assigned to
 4. Click Create button
-5.  Copy the endpoint URL&#x20;
+5.  Copy the endpoint URL
 
     <figure>![](<.gitbook/assets/image (3).png>)<figcaption></figcaption></figure>
 

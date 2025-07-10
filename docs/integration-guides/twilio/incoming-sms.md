@@ -13,7 +13,7 @@ With Twilio Incoming SMS, PagerTree users can:
 * Purchase and manage global phone numbers using [Twilio](https://www.twilio.com/).
 * Create alerts from incoming SMS
 
-## **How it works**
+## How It Works
 
 * When a new SMS comes in from Twilio, an alert is created in PagerTree automatically.
 
@@ -30,7 +30,7 @@ In this integration tutorial we will show you how to route an incoming SMS from 
 
 1. If you haven’t already, [upgrade to a paid Twilio account](https://support.twilio.com/hc/en-us/articles/223183208-Upgrading-to-a-paid-Twilio-Account).
 2. If you haven’t already, [buy a phone number](https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console).
-3.  Navigate to your purchased number **Develop -> Phone Numbers -> Manage -> Active Numbers**.&#x20;
+3.  Navigate to your purchased number **Develop -> Phone Numbers -> Manage -> Active Numbers**.
 
     <figure>![Twilio Active Number](<../../.gitbook/assets/image (9) (1) (1).png>)<figcaption></figcaption></figure>
 4. Select the phone number that will be used for incoming SMS (this can be the same as a [Live Call Routing](live-call-routing.md) number).
@@ -38,7 +38,7 @@ In this integration tutorial we will show you how to route an incoming SMS from 
    1. **Paste** the **PagerTree Endpoint URL** you copied earlier
    2. Ensure the type is **Webhook**
    3. Ensure the action is **HTTP POST**
-   4.  Click **Save**&#x20;
+   4.  Click **Save**
 
        <figure>![Twilio Messages](<../../.gitbook/assets/image (8) (1) (1).png>)<figcaption><p>Confige the messaging endpoint for the incoming sms integration.</p></figcaption></figure>
 
@@ -55,7 +55,7 @@ If you plan to send images via MMS (Multimedia Messaging Service) to your phone 
 To disable HTTP Basic Authentication for media access in Twilio:
 
 1. Navigate to **Develop -> Messaging -> Settings -> General**.
-2.  Under the HTTP Basic Authentication for media access section, select **Disabled**.&#x20;
+2.  Under the HTTP Basic Authentication for media access section, select **Disabled**.
 
     <figure>![In Twilio, select disabled for HTTP Basic Authentication for Media Access](<../../.gitbook/assets/image (78).png>)<figcaption><p>In Twilio, select disabled for HTTP Basic Authentication for Media Access</p></figcaption></figure>
 3. Scroll to the bottom of the page and click **Save**.

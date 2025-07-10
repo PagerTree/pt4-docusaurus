@@ -12,7 +12,7 @@ description: Connect your Freshdesk tickets to PagerTree using our Freshdesk Int
 
 [Freshdesk](https://freshdesk.com/) is an online cloud-based customer service software providing helpdesk support with smart automations to get things done faster.
 
-## **How It Works**
+## How It Works
 
 Freshdesk creates tickets.
 
@@ -32,16 +32,16 @@ In this integration tutorial we will show you how to send tickets from Freshdesk
 ### **In Freshdesk**
 
 1. **Click** the **Gear Icon** in the left side navigation menu to go to the admin page.
-2.  On the admin page, **navigate to Workflows -> Automations.**&#x20;
+2.  On the admin page, **navigate to Workflows -> Automations.**
 
     <figure>![Freshdesk automations](<../.gitbook/assets/image (17) (3).png>)<figcaption><p>Navigate to Workflows -> Automations</p></figcaption></figure>
 
 #### Rule - Ticket Creation
 
-1.  On the tab of "Ticket Creation", **ensure "Executing all matching rules" is selected**.&#x20;
+1.  On the tab of "Ticket Creation", **ensure "Executing all matching rules" is selected**.
 
     <figure>![Freshdesk matching rules](<../.gitbook/assets/image (29).png>)<figcaption><p>Ensure "executing all matching rules" is selected.</p></figcaption></figure>
-2.  **Click New Rule button.**&#x20;
+2.  **Click New Rule button.**
 
     <figure>![Freshdesk new rule](<../.gitbook/assets/image (28) (1).png>)<figcaption><p>Click New Rule Button</p></figcaption></figure>
 3. On the New rule for Ticket creation form:
@@ -56,22 +56,22 @@ In this integration tutorial we will show you how to send tickets from Freshdesk
       4. Encoding - **JSON**
       5. Content - **Advanced**
       6. **Copy and paste** the [Freshdesk Webhook Format (see below)](freshdesk.md#freshdesk-webhook-format) into the text box.
-4.  **Click Preview and Save**.&#x20;
+4.  **Click Preview and Save**.
 
     <figure>![Freshdesk PagerTree Rule for ticket creation](<../.gitbook/assets/image (25) (2).png>)<figcaption><p>Freshdesk PagerTree Rule for ticket creation</p></figcaption></figure>
-5.  In the confirmation dialog, **click** **Save and enable**.&#x20;
+5.  In the confirmation dialog, **click** **Save and enable**.
 
     <figure>![Pagertree confirmation](<../.gitbook/assets/image (18) (3).png>)<figcaption><p>In the confirmation dialog, click Save and enable.</p></figcaption></figure>
-6.  Your rules that run on ticket creation should now have the PagerTree rule enabled.&#x20;
+6.  Your rules that run on ticket creation should now have the PagerTree rule enabled.
 
     <figure>![PagerTree rule enabled](<../.gitbook/assets/image (3) (1) (1) (1).png>)<figcaption></figcaption></figure>
 
 #### Rule - Ticket Updates
 
-1.  On the tab of "Ticket Updates", **ensure "Executes all matching rules" is selected**.&#x20;
+1.  On the tab of "Ticket Updates", **ensure "Executes all matching rules" is selected**.
 
     <figure>![Freshdesk executes all matching rules](<../.gitbook/assets/image (1) (1) (1) (1).png>)<figcaption><p>Ensure "executes all matching rules" is selected.</p></figcaption></figure>
-2.  **Click New Rule button.**&#x20;
+2.  **Click New Rule button.**
 
     <figure>![Freshdesk New Rule](<../.gitbook/assets/image (30).png>)<figcaption><p>On the ticket updates tab, click new rule button.</p></figcaption></figure>
 3. On the New rule for Ticket update form:
@@ -94,13 +94,13 @@ In this integration tutorial we will show you how to send tickets from Freshdesk
       4. Encoding - **JSON**
       5. Content - **Advanced**
       6. **Copy and paste** the [Freshdesk Webhook Format (see below)](freshdesk.md#freshdesk-webhook-format) into the text box.
-   6.  **Click Preview and Save**.&#x20;
+   6.  **Click Preview and Save**.
 
        <figure>![Freshdesk PagerTree Ticket Update Form](<../.gitbook/assets/image (6) (2) (1).png>)<figcaption><p>Freshdesk PagerTree Ticket Update Form</p></figcaption></figure>
-4.  In the confirmation dialog, click **Save and enable**.&#x20;
+4.  In the confirmation dialog, click **Save and enable**.
 
     <figure>![PagerTree confirmation dialog](<../.gitbook/assets/image (4) (1) (1).png>)<figcaption><p>In the confirmation dialog, click save and enable.</p></figcaption></figure>
-5.  Your rules that run on ticket updates should now have the PagerTree rule enabled.&#x20;
+5.  Your rules that run on ticket updates should now have the PagerTree rule enabled.
 
     <figure>![Pagertree new rule](<../.gitbook/assets/image (23) (2).png>)<figcaption></figcaption></figure>
 

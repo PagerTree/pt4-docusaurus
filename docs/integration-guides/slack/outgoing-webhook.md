@@ -10,10 +10,10 @@ description: Connect your Slack workspace to PagerTree.
 
 ## **Important Information**
 
-* Slack -> PagerTree (keyword trigger) - Continue reading this page.&#x20;
+* Slack -> PagerTree (keyword trigger) - Continue reading this page.
 * PagerTree -> Slack (post to channel) - See [Slack Post to Channel Integration](post-to-channel.md).
 
-## **How It Works**
+## How It Works
 
 Slack Outgoing Webhooks triggers a webhook anytime a Slack message _starts with_ configured trigger words.
 
@@ -32,17 +32,17 @@ In this integration tutorial we will show you how to connect your Slack Outgoing
 ### **In Slack**
 
 1. Go to [Slack Outgoing Webhooks App Page](https://slack.com/apps/A0F7VRG6Q-outgoing-webhooks)
-2.  On the App page, **click “Add Configuration”**&#x20;
+2.  On the App page, **click “Add Configuration”**
 
     <figure>![Slack Webhooks](<../../.gitbook/assets/image (8) (1).png>)<figcaption><p>Click "Add Configuration".</p></figcaption></figure>
-3.  On the New configuration page, **click “Add Outgoing Webhooks Integration”**&#x20;
+3.  On the New configuration page, **click “Add Outgoing Webhooks Integration”**
 
     <figure>![outgoing webhooks](<../../.gitbook/assets/image (5) (1).png>)<figcaption><p>Click "Add Outgoing Webhooks Integration".</p></figcaption></figure>
 4. Scroll down the page to the **Integration Settings**
    1. Channel - Select an appropriate **channel** this will apply to, or any for all channels.
    2. Trigger Words - Select the words that trigger the webhook (e.g. outage, sev-1, down).
    3. URL(s) - **Paste** the **PagerTree Endpoint URL** you copied.
-   4.  Descriptive Label - Easy to remember label on what this outgoing webhook does.&#x20;
+   4.  Descriptive Label - Easy to remember label on what this outgoing webhook does.
 
        <figure>![Slack Outgoing Webhook PagerTree Configuration](<../../.gitbook/assets/image (10).png>)<figcaption><p>Slack Outgoing Webhook PagerTree Configuration</p></figcaption></figure>
 5. **Click “Save Settings”**
@@ -53,7 +53,7 @@ For security purposes, you can also provide PagerTree with the token Slack provi
 
 #### **In Slack**
 
-1.  From the App Page, **Copy** the **Token**&#x20;
+1.  From the App Page, **Copy** the **Token**
 
     <figure>![Slack Token](<../../.gitbook/assets/image (11) (2).png>)<figcaption><p>Copy the token.</p></figcaption></figure>
 

@@ -25,24 +25,24 @@ To get started, you’ll need several things.
 
 From your Slack workspace:
 
-1.  In the left hand menu, click the **+** button, next to the Channels.&#x20;
+1.  In the left hand menu, click the **+** button, next to the Channels.
 
     <figure>![Slack menu](<https://pagertree.com/assets/img/posts/2019/05/07/slack-add-a-channel.png>)<figcaption></figcaption></figure>
-2.  In the Create a channel form, let’s add the name of the group to be **stakeholders**, then click the **Create Channel** button.&#x20;
+2.  In the Create a channel form, let’s add the name of the group to be **stakeholders**, then click the **Create Channel** button.
 
     <figure>![Create a channel](<https://pagertree.com/assets/img/posts/2019/05/07/create-a-stakeholder-channel.png>)<figcaption></figcaption></figure>
 
 ### Create the Slack Email Integration <a href="#create-the-slack-email-integration" id="create-the-slack-email-integration"></a>
 
 1. In your browser, navigate to the [Slack Email Integration](https://pagertree.slack.com/apps/A0F81496D-email).
-2.  Click the **Install** Button.&#x20;
+2.  Click the **Install** Button.
 
     <figure>![Slack email integration](<https://pagertree.com/assets/img/posts/2019/05/07/install-slack-email-integration.png>)<figcaption></figcaption></figure>
-3.  Select the **#stakeholders** channel we just created above, then click **Add Email Integration**&#x20;
+3.  Select the **#stakeholders** channel we just created above, then click **Add Email Integration**
 
     <figure>![add email integration](<https://pagertree.com/assets/img/posts/2019/05/07/configure-email-integration.png>)<figcaption></figcaption></figure>
 4. **Copy** the **email address** that slack provides you.
-5.  Click **Save Integration**&#x20;
+5.  Click **Save Integration**
 
     <figure>![integration settings](<https://pagertree.com/assets/img/posts/2019/05/07/copy-slack-email.png>)<figcaption></figcaption></figure>
 

@@ -12,7 +12,7 @@ description: Connect your Google Hangouts Chat rooms to PagerTree.
 
 [Google Hangouts Chat](https://gsuite.google.com/products/chat/) makes it easy for teams to be able to get their work done in one place. From direct messages to group conversations, Chat helps teams collaborate easily and efficiently.
 
-## **How It Works**
+## How It Works
 
 Messages are sent to Google Hangouts Chat chat rooms, making sure the right rooms are notified of alerts.
 
@@ -24,19 +24,19 @@ In this integration tutorial we will show you how to send alerts from PagerTree 
 
 ### In Google Hangouts Chat
 
-1.  In the left hand navigation **select a room**.&#x20;
+1.  In the left hand navigation **select a room**.
 
     <figure>![Google hangout room](<../.gitbook/assets/image (10) (2).png>)<figcaption><p>Select a room.</p></figcaption></figure>
-2.  In the top navbar, click the **room options menu**, then select **Configure webhooks**.&#x20;
+2.  In the top navbar, click the **room options menu**, then select **Configure webhooks**.
 
     <figure>![google hangouts Configure webhooks](<../.gitbook/assets/image (10) (6).png>)<figcaption><p>Click "Configure webhooks".</p></figcaption></figure>
 3. In the form:
    1. **Name** - PagerTree
    2. **Avatar URL** - https://pagertree.com/assets/img/logo/pagertree-icon-256-256.png
-   3.  **Click Save**.&#x20;
+   3.  **Click Save**.
 
        <figure>![google hangouts PagerTree webhook](<../.gitbook/assets/image (1) (2) (1) (4).png>)<figcaption><p>Configure the incoming PagerTree webhook.</p></figcaption></figure>
-4.  **Click Copy Button**.&#x20;
+4.  **Click Copy Button**.
 
     <figure>![Google Hangouts Chat URL](<../.gitbook/assets/image (4) (2) (2).png>)<figcaption><p>Copy the Google Hangouts Chat URL.</p></figcaption></figure>
 

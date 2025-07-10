@@ -24,7 +24,7 @@ A key practice of DevOps is to automate as much of the development and deploymen
 
 ### Continuous Improvement
 
-Continuous improvement is the practice of focusing on customer needs, reducing waste, and optimizing for speed, cost, and ease of delivery.&#x20;
+Continuous improvement is the practice of focusing on customer needs, reducing waste, and optimizing for speed, cost, and ease of delivery.
 
 DevOps teams use short feedback loops with end users to develop products and services tailored to their needs. With shorter feedback loops, DevOps teams get immediate visibility into how end users interact with a software system, enabling them to develop further improvements.
 
@@ -34,7 +34,7 @@ DevOps teams use short feedback loops with end users to develop products and ser
 
 1. **Plan** - Teams identify the business needs and collect user feedback. They explore, [organize](https://pagertree.com/learn/devops/best-devops-tools/best-devops-planning-tools), and prioritize ideas to be worked on during this sprint.
 2. **Code** -Teams write the code for the tasks they have prioritized. Using [tools](https://pagertree.com/learn/devops/best-devops-tools/best-devops-coding-tools) like git, code is stored in a central repository to be worked on collaboratively.
-3. **Build** - Once the developers finish their task, they commit code to the central repository to be packaged by build tools like Maven, Gradle, or Docker.&#x20;
+3. **Build** - Once the developers finish their task, they commit code to the central repository to be packaged by build tools like Maven, Gradle, or Docker.
 4. **Test**- Automated tests check code to make sure it works correctly. Tools like Selenium, JUnit, and MiniTest can all be used to run tests in parallel and to ensure software quality. Additionally, during this phase, the packaged software can be pushed to a testing (or staging) environment for user acceptance tests, [performance testing](https://pagertree.com/learn/devops/what-is-site-reliability-engineering-sre), security testing, etc.
 5. **Release** - The build is marked as "release" and then stored in a central image repository. A central image repository ensures there is always a releasable version. The team schedules the deployment based on the organization's needs.
 6. **Deploy**- The packaged code is deployed to the production servers. Using [Infrastructure as Code (IaC)](#infrastructure-as-code-iac) tools, like Terraform and Chef, software can safely and predictably be deployed without downtime to end users. Deployment methods include [canary]/learn/devops/what-is-site-reliability-engineering-sre/what-is-a-canary-deployment.md) and blue-green deployment.

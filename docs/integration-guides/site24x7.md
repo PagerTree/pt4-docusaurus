@@ -12,7 +12,7 @@ description: Connect your Site24x7 monitors to PagerTree.
 
 [Site24x7](https://www.site24x7.com/) is a full stack performance monitoring solutions company. The company provides monitoring solutions such as mobile, website and web application monitoring, server and network monitoring, public and private cloud monitoring, and application performance monitoring in one console.
 
-## **How It Works**
+## How It Works
 
 Site24x7 triggers user defined alerts by monitoring website uptime, downtime, and performance.
 
@@ -30,13 +30,13 @@ In this integration tutorial we will show you how to send alarms from Site24x7 i
 
 ### **In Site 24x7**
 
-1.  **Admin -> Third Party Integration**.&#x20;
+1.  **Admin -> Third Party Integration**.
 
     <figure>![Site24x7](<../.gitbook/assets/image (1) (2) (1) (3) (1).png>)<figcaption><p>Navigate to Admin -> Third Party Integration</p></figcaption></figure>
-2.  On the Integrations Page **click “Add Third Party Integration”**.&#x20;
+2.  On the Integrations Page **click “Add Third Party Integration”**.
 
     <figure>![Third Party Integration button](<../.gitbook/assets/image (5) (2) (2).png>)<figcaption><p>Click the Add Third Party Integration button.</p></figcaption></figure>
-3.  On the Integrations Type Page **click “Webhooks”**.&#x20;
+3.  On the Integrations Type Page **click “Webhooks”**.
 
     <figure>![Webhooks](<../.gitbook/assets/image (2) (3) (1).png>)<figcaption><p>Click Webhooks</p></figcaption></figure>
 4. On the Webhooks Page
@@ -45,7 +45,7 @@ In this integration tutorial we will show you how to send alarms from Site24x7 i
    3. HTTP Method - **POST**
    4. Post as JSON - **checked**
    5. Send Incident Parameters - **checked**
-   6.  **Click Save**.&#x20;
+   6.  **Click Save**.
 
        <figure>![Site 24x7 PagerTree Integration Configuration](<../.gitbook/assets/image (6) (1).png>)<figcaption><p>Site 24x7 PagerTree Integration Configuration</p></figcaption></figure>
 

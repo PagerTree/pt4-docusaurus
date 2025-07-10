@@ -44,7 +44,7 @@ This documentation provides instructions for installing, configuring, and using 
 
 The PagerTree CLI can use multiple methods for configuration:
 
-1. An [environment variable file](command-line-interface.md#env) `.env`&#x20;
+1. An [environment variable file](command-line-interface.md#env) `.env`
 2. [Environment variables](command-line-interface.md#environment-variables)
 
 ### .env

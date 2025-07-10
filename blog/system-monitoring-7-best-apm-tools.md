@@ -139,9 +139,9 @@ With over [750 integrations](https://newrelic.com/instant-observability) and an 
 
 <figure>![New Relic APM Tool Dashboard](<.gitbook/assets/NewRelic-dashboard.png>)<figcaption><p>New Relic APM Dashboard</p></figcaption></figure>
 
-New Relic offers dynamic pricing to meet the needs of every business, large or small. They utilize the [following equation](https://newrelic.com/pricing#how-we-calculate-price) to determine pricing on all plans, [Data](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-pricing-billing/new-relic-one-pricing-billing/#free) + [Users](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/#user-type-comparison-table) = Price.&#x20;
+New Relic offers dynamic pricing to meet the needs of every business, large or small. They utilize the [following equation](https://newrelic.com/pricing#how-we-calculate-price) to determine pricing on all plans, [Data](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-pricing-billing/new-relic-one-pricing-billing/#free) + [Users](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/#user-type-comparison-table) = Price.
 
-New Relics pricing starts at $10/month for the first user with every additional costing $99/m.&#x20;
+New Relics pricing starts at $10/month for the first user with every additional costing $99/m.
 
 **New Relics’ APM tool at a glance**
 
@@ -205,7 +205,7 @@ Elastic APM offers a “[free](https://www.elastic.co/subscriptions)” plan for
 
 <figure>![SolarWinds Logo](<.gitbook/assets/SW (1).jpg>)<figcaption><p>SolarWinds Logo</p></figcaption></figure>
 
-[SolarWinds](https://www.solarwinds.com/apmsuite) APM tool, AppOptics, delivers effective and efficient application performance monitoring for the needs of any business, small or large. They boast their cost-effective scaling to match the growth of your businesses.&#x20;
+[SolarWinds](https://www.solarwinds.com/apmsuite) APM tool, AppOptics, delivers effective and efficient application performance monitoring for the needs of any business, small or large. They boast their cost-effective scaling to match the growth of your businesses.
 
 AppOptics offers full-stack visibility into your application as well as an auto-instrumenting application service, allowing you to quickly diagnose issues within your environment. They present data in a simple, easy-to-understand way that allows you to find issues quickly and dig deeper into them with more detailed views. AppOptics boasts integrations into multiple oncall software, allowing you to be notified of any issues 24/7.
 

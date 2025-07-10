@@ -12,7 +12,7 @@ description: Connect your JotForm forms to PagerTree.
 
 [JotForm](https://www.jotform.com/) helps users create online forms for generating leads, distributing surveys, collecting payments and more.
 
-## **How It Works**
+## How It Works
 
 JotForm hosts forms that are submitted by users.
 
@@ -29,19 +29,19 @@ In this integration tutorial we will show you how to send form submission from J
 
 ### **In JotForm**
 
-1.  **Dashboard -> Select Desired Form -> Edit Form**&#x20;
+1.  **Dashboard -> Select Desired Form -> Edit Form**
 
     <figure>![JotForm dashboard](<../.gitbook/assets/image (17) (4).png>)<figcaption><p>Select the desired JotForm.</p></figcaption></figure>
 2. On the **Settings Tab -> Integrations**
    1. **Search “webhook”** in the search box
-   2.  **Click** the **“WebHooks” box**&#x20;
+   2.  **Click** the **“WebHooks” box**
 
        <figure>![Jotform webhook integration](<../.gitbook/assets/image (1) (2) (2).png>)<figcaption><p>Click the webhook integration.</p></figcaption></figure>
    3. **Paste** the **PagerTree Endpoint URL** you copied for the box under “Add Webhook”
-   4.  **Click “Complete Integration”** button&#x20;
+   4.  **Click “Complete Integration”** button
 
        <figure>![webhooks PagerTree Endpoint URL.](<../.gitbook/assets/image (16) (4).png>)<figcaption><p>Add the PagerTree Endpoint URL.</p></figcaption></figure>
-   5.  **Click “Finish”** button&#x20;
+   5.  **Click “Finish”** button
 
        <figure>![webhooks integrations ready](<../.gitbook/assets/image (2) (1) (1) (2).png>)<figcaption><p>Click Finish.</p></figcaption></figure>
 

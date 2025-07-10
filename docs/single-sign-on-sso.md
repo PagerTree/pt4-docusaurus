@@ -21,14 +21,14 @@ description: >-
 
 1. Enable "advanced mode".
 2. Navigate to the [Idp Configs page](https://app.pagertree.com/single\_sign\_on\_configs).
-3. Click **New SSO Config** button.&#x20;
+3. Click **New SSO Config** button.
 4. In the new Idp Config form:
-   1. Copy the **metadata xml** (or metadata url) from your **IdP to the PagerTree**&#x20;
+   1. Copy the **metadata xml** (or metadata url) from your **IdP to the PagerTree**
 5. **Configure your IdP** with the provided **SP (PagerTree) information**.
    * _Service Provider (PagerTree) Entity ID_ - Sometimes called the "audience" by the IdP.
    * _Service Provider (PagerTree) Assertion Consumer Service (ACS) URL_
-   * _Service Provider (PagerTree) Single Logout Service (SLO) URL_&#x20;
-6. Click **Enable** Button&#x20;
+   * _Service Provider (PagerTree) Single Logout Service (SLO) URL_
+6. Click **Enable** Button
 
 Members of your account will now be required to sign-in using SSO via the [Single Sign-On login page](https://app.pagertree.com/sso)
 
@@ -36,20 +36,20 @@ Members of your account will now be required to sign-in using SSO via the [Singl
 
 1. Enable ["advanced mode"](https://docs.pagertree.com/knowledge-base/users#advanced-mode).
 2. Navigate to the [Idp Configs page](https://app.pagertree.com/single\_sign\_on\_configs).
-3.  Click **New SSO Config** button.&#x20;
+3.  Click **New SSO Config** button.
 
     <figure>![new sso config button](<.gitbook/assets/idp-config-button.png>)<figcaption><p>New SSO Config Button</p></figcaption></figure>
 4. In the new Idp Config form:
-   1.  Copy the **metadata xml** (or metadata url) from your **IdP to the PagerTree**.&#x20;
+   1.  Copy the **metadata xml** (or metadata url) from your **IdP to the PagerTree**.
 
        <figure>![sso config form](<.gitbook/assets/idp-config-form.png>)<figcaption><p>SSO Config Form</p></figcaption></figure>
 5. **Configure your IdP** with the provided **SP (PagerTree) information**.
    * _Service Provider (PagerTree) Entity ID_ - Sometimes called the "audience" by the IdP.
    * _Service Provider (PagerTree) Assertion Consumer Service (ACS) URL_
-   *   _Service Provider (PagerTree) Single Logout Service (SLO) URL_&#x20;
+   *   _Service Provider (PagerTree) Single Logout Service (SLO) URL_
 
        <figure>![IDP](<.gitbook/assets/idp-config-data.png>)<figcaption><p>Identity Provider (IdP) Data</p></figcaption></figure>
-6.  Click **Enable** Button.&#x20;
+6.  Click **Enable** Button.
 
     <figure>![enable sso config button](<.gitbook/assets/idp-config-enable-button.png>)<figcaption><p>Enable SSO Config Button</p></figcaption></figure>
 

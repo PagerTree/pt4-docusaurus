@@ -10,10 +10,10 @@ description: Connect your Mattermost workspace to PagerTree.
 
 ## **Important Information**
 
-* Mattermost -> PagerTree (keyword trigger) - Continue reading this page.&#x20;
+* Mattermost -> PagerTree (keyword trigger) - Continue reading this page.
 * PagerTree -> Mattermost (post to channel) - See [Mattermost Integration](post-to-channel.md).
 
-## **How It Works**
+## How It Works
 
 Mattermost Outgoing Webhooks triggers a webhook anytime a Mattermost message _starts with_ configured trigger words.
 
@@ -31,20 +31,20 @@ In this integration tutorial we will show you how to connect your Mattermost Out
 
 ### **In Mattermost**
 
-1.  Go to Menu and choose **Integrations.**&#x20;
+1.  Go to Menu and choose **Integrations.**
 
     <figure>![Mattermost navigation](<../../.gitbook/assets/image (19) (5).png>)<figcaption><p>Navigate to integrations.</p></figcaption></figure>
 2.  At the following screen choose **Outgoing Webhooks.**
 
     <figure>![Mattermost Outgoing Webhooks](<../../.gitbook/assets/image (9) (5).png>)<figcaption><p>Click on "Outgoing Webhooks".</p></figcaption></figure>
-3.  Click the button on the top right **Add Outgoing Webhook.**&#x20;
+3.  Click the button on the top right **Add Outgoing Webhook.**
 
     <figure>![Mattermost Add Outgoing Webhook](<../../.gitbook/assets/image (2) (2) (2).png>)<figcaption><p>Click "Add Outgoing Webhook" button.</p></figcaption></figure>
 4. Setup the outgoing webhook
    1. Content Type - Specify **application/json**.
    2. Channel - Select an appropriate **channel** this will apply to, or any for all channels.
    3. Trigger Words - Select the words that trigger the webhook (e.g. outage, sev-1, down).
-   4.  URL(s) - **Paste** the **PagerTree Endpoint URL** you copied.&#x20;
+   4.  URL(s) - **Paste** the **PagerTree Endpoint URL** you copied.
 
        <figure>![Mattermost Outgoing Webhook PagerTree Configuration.](<../../.gitbook/assets/image (7) (3).png>)<figcaption><p>Mattermost Outgoing Webhook PagerTree Configuration.</p></figcaption></figure>
 5. Click **Save.**

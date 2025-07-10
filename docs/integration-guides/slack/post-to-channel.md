@@ -13,7 +13,7 @@ description: Connect your Slack channels to PagerTree.
 * PagerTree -> Slack (post to channel) - Continue reading this page.
 * Slack -> PagerTree (keyword trigger) - See [Slack Outgoing Webhooks](outgoing-webhook.md).
 
-## **How It Works**
+## How It Works
 
 Messages are sent to Slack Incoming Webhooks that post to channels, making sure the right channels are notified of alerts.
 
@@ -26,19 +26,19 @@ In this integration tutorial we will show you how to send alerts from PagerTree 
 ### In Slack
 
 1. Go to [Slack Incoming Webhooks App Page](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks)
-2.  On the App page, **click “Add to Slack”** button.&#x20;
+2.  On the App page, **click “Add to Slack”** button.
 
     <figure>![Add the incoming webhook integration to Slack.](<../../.gitbook/assets/image (14).png>)<figcaption><p>Add the incoming webhook integration to Slack.</p></figcaption></figure>
 3. On the new app page:
    1. **Select the channel** you want PagerTree to post to.
-   2.  **Click Add Incoming Webhooks Integration**&#x20;
+   2.  **Click Add Incoming Webhooks Integration**
 
        <figure>![Select the channel messages should post to.](<../../.gitbook/assets/image (4) (1).png>)<figcaption><p>Select the channel messages should post to.</p></figcaption></figure>
 4. **Scroll down** to the **Integration Settings Section**.
    1. **Customize Name** - PagerTree
    2. **Customize Icon** - [download this image](https://pagertree.com/assets/img/logo/pagertree-icon-256-256.png) and upload it.
    3. Click the **Copy URL** link next to the **Webhook URL**.
-   4.  **Click Save Settings Button**.&#x20;
+   4.  **Click Save Settings Button**.
 
        <figure>![Copy the Slack Webhook URL.](<../../.gitbook/assets/slack-post-to-channel-slack-integration-settings.png>)<figcaption><p>Copy the Slack Webhook URL.</p></figcaption></figure>
 
@@ -48,7 +48,7 @@ In this integration tutorial we will show you how to send alerts from PagerTree 
 2. In the New integration form:
    1. Name - Input a friendly name
    2. **URL -** Paste the Slack URL you copied earlier.
-   3.  **Events -** Select the events you would like to get notified of.&#x20;
+   3.  **Events -** Select the events you would like to get notified of.
 
        <figure>![Copy the Slack Webhook URL.](<../../.gitbook/assets/slack-post-to-channel-integration-configuration (1).png>)<figcaption></figcaption></figure>
 3. **Click Create.**

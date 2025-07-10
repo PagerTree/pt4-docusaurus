@@ -90,7 +90,7 @@ All times are UTC and any references to communication or actions taken by PagerT
     4. We searched the internet how to make the appropriate change to all new connections. After searching for 5 or 10 minutes we found a working solution `alter database application_db_name set default_transaction_read_only=off;`
     5. We restarted the PagerTree application and confirmed that the database was now in a writable state.
 16. Sunday, July 30 at 01:16 we posted an update to our [status page](https://status.pagertree.com/) that the incident had been recovered and we were monitoring.
-17. Sunday, July 30 at 01:43 we declared the incident resolved.&#x20;
+17. Sunday, July 30 at 01:43 we declared the incident resolved.
 
 
 

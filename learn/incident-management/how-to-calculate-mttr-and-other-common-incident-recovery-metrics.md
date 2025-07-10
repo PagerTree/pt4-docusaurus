@@ -39,7 +39,7 @@ Whether it's a planned maintenance or an unexpected outage, downtime is when you
 
 Uptime is calculated as **\[Total Time - Downtime] / \[Total Time]** within a given period.
 
-Uptime is an important measure of operational **availability**.&#x20;
+Uptime is an important measure of operational **availability**.
 
 Uptime answers, _“Can our customers trust us to be there when we say we will?”_
 
@@ -57,7 +57,7 @@ MTTR can have different meanings depending on its context. The R can stand for r
 
 Mean Time To Recovery (MTTR) is calculated as **\[Total Downtime] / \[# of Incidents]** within a given period.
 
-Mean Time To Recovery answers, _"How quickly can we restore service to our customers?"_&#x20;
+Mean Time To Recovery answers, _"How quickly can we restore service to our customers?"_
 
 Mean Time To Recovery expresses the average downtime and is a good metric for assessing the speed of your systems' overall recovery process.
 
@@ -67,7 +67,7 @@ Mean Time To Recovery expresses the average downtime and is a good metric for as
 
 Mean Time To Resolve (MTTR) is calculated as **\[Full Resolution Time] / \[# of Incidents]** within a given period.
 
-MTTR is an important metric because it measures operational **resilience**.&#x20;
+MTTR is an important metric because it measures operational **resilience**.
 
 Mean Time To Resolve answers, _“How long does it take the company to recover from an incident and implement systems and processes so the incident doesn't happen again?”_
 
@@ -79,7 +79,7 @@ Mean Time To Resolve answers, _“How long does it take the company to recover f
 
 Mean Time To Repair (MTTR) is calculated as the **\[Total Time Spent Repairing] / \[# of Repairs]**
 
-Mean Time To Repair is a metric that support and maintenance teams use to keep repair times on track. The goal is to keep this number as low as possible by improving the efficiency of repair processes.&#x20;
+Mean Time To Repair is a metric that support and maintenance teams use to keep repair times on track. The goal is to keep this number as low as possible by improving the efficiency of repair processes.
 
 Mean Time To Repair answers, _"How long does it take the company to troubleshoot and repair the system?"_
 
@@ -91,7 +91,7 @@ Mean Time to Acknowledge (MTTA) is calculated as the **\[Total Time to Acknowled
 
 Mean time to acknowledge (MTTA) measures the first step in the recovery process: acknowledgment. Once someone acknowledges the incident alert, the rest of the recovery process can begin. Acknowledgment not only signifies a significant milestone within MTTR but also assigns ownership to whoever acknowledged the incident. Ownership can be passed from one individual to the next, but incident response best practices suggest keeping a clear owner/lead to drive the recovery process at all times.
 
-MTTA is an important metric because it’s a measure of operational **responsiveness**.&#x20;
+MTTA is an important metric because it’s a measure of operational **responsiveness**.
 
 Mean Time To Acknowledge answers, _“How long does it take the company to begin working toward a resolution?”_
 
@@ -105,7 +105,7 @@ MTBF is calculated as **\[Total Time - Downtime] / \[# of Incidents]** within a 
 
 It’s one thing to resolve issues quickly. It’s another to prevent them from happening in the first place. MTBF acts as a counterbalance to MTTR. It ensures your teams are getting smarter, not just faster, about incident resolution.
 
-MTBF is an important metric because it measures operational **reliability**.&#x20;
+MTBF is an important metric because it measures operational **reliability**.
 
 Mean Time Between Failures answers the question, _“How often do our systems break?”_
 
@@ -144,7 +144,7 @@ Even if your team is good at avoiding downtime or resolving incidents, it could 
 
 **Error Budget** - The maximum time a system can fail without contractual consequences.
 
-So, for example, if your service promises 99.9% uptime, your team has 8 hours and 45 minutes of acceptable downtime per year. How you spend your downtime is up to you, but preferably, it should be used to innovate and take risks.&#x20;
+So, for example, if your service promises 99.9% uptime, your team has 8 hours and 45 minutes of acceptable downtime per year. How you spend your downtime is up to you, but preferably, it should be used to innovate and take risks.
 
 The benefit of an error budget approach is that it encourages teams to minimize real incidents and maximize innovation.
 

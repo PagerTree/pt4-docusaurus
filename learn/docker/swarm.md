@@ -10,7 +10,7 @@ description: >-
 
 Docker Swarm is a container orchestration tool that enables the management and deployment of containerized applications at scale.
 
-It allows users to create and manage a cluster of [Docker](/learn/docker/) hosts, known as a Swarm, and deploy applications across the [cluster](swarm.md#cluster) seamlessly.&#x20;
+It allows users to create and manage a cluster of [Docker](/learn/docker/) hosts, known as a Swarm, and deploy applications across the [cluster](swarm.md#cluster) seamlessly.
 
 Docker Swarm provides a simple yet powerful solution for automating the [deployment, scaling, and management](swarm.md#deploying-and-scaling-services) of containerized applications in production environments.
 
@@ -54,7 +54,7 @@ A cluster is a group of Docker [hosts](swarm.md#host) (2 or more) running togeth
 
 #### **Manager**
 
-Manager [nodes](swarm.md#node) are responsible for managing and coordinating the activities of a Docker Swarm [cluster](swarm.md#cluster), including [service](swarm.md#service) deployment, [task](swarm.md#task) distribution, fault tolerance, and security.&#x20;
+Manager [nodes](swarm.md#node) are responsible for managing and coordinating the activities of a Docker Swarm [cluster](swarm.md#cluster), including [service](swarm.md#service) deployment, [task](swarm.md#task) distribution, fault tolerance, and security.
 
 #### Worker
 

@@ -30,7 +30,7 @@ You have a [high availability](sre-metrics-availability.md) web app that you mai
 <metric_name>{<label_name>=<label_value>, ...}
 ```
 
-Example:&#x20;
+Example:
 
 To query the total HTTP requests metric for your fleet of servers, you would use:
 
@@ -91,7 +91,7 @@ PromQL provides various aggregation functions to summarize and aggregate time se
 * `min`: Returns the minimum value among all matching time series.
 * `max`: Returns the maximum value among all matching time series.
 
-Example:&#x20;
+Example:
 
 To calculate the average HTTP requests across all production instances, you can use:
 
@@ -134,7 +134,7 @@ Enjoying this content? Check out our full article on Counter Rates and Increases
 
 <figure>![PromQL: rate vs irate functions](<.gitbook/assets/promql-cheat-sheet-rate-vs-irate.jpg>)<figcaption><p>PromQL: rate vs irate functions</p></figcaption></figure>
 
-Example:&#x20;
+Example:
 
 To calculate the number of HTTP requests you are getting for your entire production fleet.
 
