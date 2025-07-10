@@ -26,4 +26,10 @@ export default {
   plugins: [
     require.resolve('docusaurus-plugin-image-zoom'),
   ],
+
+  themeConfig: merge({}, config.themeConfig, {
+    metadata: [
+      {name: 'og:type', content: 'website'},
+    ],
+  })
 };

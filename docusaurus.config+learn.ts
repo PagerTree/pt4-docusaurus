@@ -28,6 +28,9 @@ export default {
   ],
 
   themeConfig: merge({}, config.themeConfig, {
+    metadata: [
+      {name: 'og:type', content: 'website'},
+    ],
     navbar: {
       logo: {
         href: "/learn/incident-management/",
