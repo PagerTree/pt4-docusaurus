@@ -9,7 +9,7 @@
 | -------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | name     | string  | The name of the notification rule.                                                                                                              |
 | enabled  | boolean | Boolean indicating if this notification rule is currently enabled. If false, it will just notify users via their default notification channels. |
-| rules    | string  | YAML definition of the notification rule. See [notification rules documentatio](../notification-rules.md)n.                                     |
+| rules    | string  | YAML definition of the notification rule. See [notification rules documentation](../notification-rules.md).                                     |
 
 ## Create a Notification Rule
 
