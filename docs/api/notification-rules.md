@@ -17,7 +17,7 @@
 POST https://api.pagertree.com/api/v4/notification_rules
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def notification_rule_params

@@ -29,7 +29,7 @@ In this integration tutorial we will show you how to send notifications from Hyd
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Hydrozen logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Hydrozen**
+### In Hydrozen
 
 #### Create the Notification Handler
 

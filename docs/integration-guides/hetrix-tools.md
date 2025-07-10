@@ -32,7 +32,7 @@ In this integration tutorial we will show you how to send alerts from HetrixTool
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **HetrixTools logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In HetrixTools**
+### In HetrixTools
 
 1. In the left navigation menu, **click Contact Lists.**
 2.  For the contact list you wish to edit, **click the Pencil Button.**

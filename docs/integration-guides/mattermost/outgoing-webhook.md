@@ -8,7 +8,7 @@ description: Connect your Mattermost workspace to PagerTree.
 | ------------------------------------------ | -------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Mattermost Inc.](https://mattermost.com/) | 5 minutes      | [view](https://docs.mattermost.com/developer/webhooks-outgoing.html) | [v3.rb](https://github.com/PagerTree/pager_tree-integrations/blob/main/app/models/pager_tree/integrations/mattermost/outgoing_webhook/v3.rb) |
 
-## **Important Information**
+## Important Information
 
 * Mattermost -> PagerTree (keyword trigger) - Continue reading this page.
 * PagerTree -> Mattermost (post to channel) - See [Mattermost Integration](post-to-channel.md).
@@ -29,7 +29,7 @@ In this integration tutorial we will show you how to connect your Mattermost Out
 1. [Create the integration](../introduction.md#create-an-integration) by clicking the **Mattermost (Outgoing Webhook) logo**.
 2. [Copy the Endpoint URL](../introduction.md#copy-the-endpoint-url)**.**
 
-### **In Mattermost**
+### In Mattermost
 
 1.  Go to Menu and choose **Integrations.**
 
@@ -50,11 +50,11 @@ In this integration tutorial we will show you how to connect your Mattermost Out
 5. Click **Save.**
 6. On the next screen **Copy** the **Token** value, as this can be used for the [additional security step](outgoing-webhook.md#bonus-additional-security) below. ![Copy Token](<../../.gitbook/assets/image (22).png>)
 
-### **Bonus: Additional Security**
+### Bonus: Additional Security
 
 For security purposes, you can also provide PagerTree with the token Mattermost provides. If using this feature, PagerTree will not create an alert unless the token sent by Mattermost is the same token that is configured with the integration. This protects against spoofing attacks.
 
-#### **In PagerTree**
+#### In PagerTree
 
 1. From the Integration Page, **Click Edit.**
 2. **Paste** the **Token** that you copied from Mattermost to the **Token** field.

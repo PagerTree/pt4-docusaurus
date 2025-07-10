@@ -40,7 +40,7 @@ In this integration tutorial we will show you how to send alerts from PagerTree 
 
     <figure>![Google Hangouts Chat URL](<../.gitbook/assets/image (4) (2) (2).png>)<figcaption><p>Copy the Google Hangouts Chat URL.</p></figcaption></figure>
 
-### **In PagerTree**
+### In PagerTree
 
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Google Hangouts Chat logo**.
 2. In the New integration form:

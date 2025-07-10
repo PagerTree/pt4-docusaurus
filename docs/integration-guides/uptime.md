@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from Uptime int
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Uptime logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Uptime**
+### In Uptime
 
 1.  Click **Notifications -> Integrations** from the navigation bar.
 

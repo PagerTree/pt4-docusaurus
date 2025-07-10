@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from Healthchec
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Healthchecks logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Healthchecks**
+### In Healthchecks
 
 1.  From the navigation menu, **Click Integrations.**
 

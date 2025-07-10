@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from Stackdrive
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Stackdriver logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Stackdriver**
+### In Stackdriver
 
 1.  From the top navigation menu click **\[Workspace Name] -> Workspace Settings**.
 

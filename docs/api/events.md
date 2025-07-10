@@ -94,7 +94,7 @@ GET https://api.pagertree.com/api/v4/events
 POST https://api.pagertree.com/api/v4/events/:id/override
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 | Body Parameter     | Description                                                                  |
 | ------------------ | ---------------------------------------------------------------------------- |

@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send notifications from Ser
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **ServerGuard24 logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In ServerGuard24**
+### In ServerGuard24
 
 1.  **Menu -> Contacts -> Create New Contact**.
 

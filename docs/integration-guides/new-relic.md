@@ -29,7 +29,7 @@ In this integration tutorial we will show you how to send alerts from New Relic 
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **New Relic logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In New Relic**
+### In New Relic
 
 #### Add a Webhook Destination
 

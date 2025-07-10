@@ -59,7 +59,7 @@ Open up a text editor app to more easily save the fields you will copy below.
 
     <figure>![Give the Worplace app the appropriate permissions.](<../.gitbook/assets/image (63).png>)<figcaption><p>Give the Worplace app the appropriate permissions.</p></figcaption></figure>
 
-### **In PagerTree**
+### In PagerTree
 
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Meta Workplace logo**.
 2. In the New integration form:

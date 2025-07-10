@@ -36,7 +36,7 @@ The `group_wait` and `group_interval` will affect the delay of alerts sent into 
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Prometheus logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Prometheus**
+### In Prometheus
 
 1. In your Prometheus Alertmanager receiver configuration, **Copy & Paste** the following, replacing **\<Copied PagerTree Endpoint URL>** with your **Endpoint URL.**
 

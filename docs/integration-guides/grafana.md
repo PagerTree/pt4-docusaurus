@@ -28,9 +28,9 @@ In this integration tutorial we will show you how to send alerts from Grafana in
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Grafana logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Grafana**
+### In Grafana
 
-#### **Create a Notification Channel**
+#### Create a Notification Channel
 
 1.  **Click Menu -> Alerting -> Notification Channels**
 

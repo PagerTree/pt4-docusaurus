@@ -49,7 +49,7 @@ def integration_params
 * integration\_type\_id (see how to get a [list of Integration Types](#list-all-integration-types) below)
 * at least 1 destination (Account User, Router, or Team)
 
-#### **Example Request**
+#### Example Request
 
 ```
 POST https://api.pagertree.com/api/v4/integrations/

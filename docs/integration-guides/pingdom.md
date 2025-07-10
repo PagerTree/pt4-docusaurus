@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from Pingdom in
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Apex Ping logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Pingdom**
+### In Pingdom
 
 1.  **Click Menu -> Integrations -> Integrations**.
 

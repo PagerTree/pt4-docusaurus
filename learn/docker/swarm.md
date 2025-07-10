@@ -6,7 +6,7 @@ description: >-
 
 # Swarm
 
-## **What is Docker Swarm?**
+## What is Docker Swarm?
 
 Docker Swarm is a container orchestration tool that enables the management and deployment of containerized applications at scale.
 
@@ -14,7 +14,7 @@ It allows users to create and manage a cluster of [Docker](/learn/docker/) hosts
 
 Docker Swarm provides a simple yet powerful solution for automating the [deployment, scaling, and management](swarm.md#deploying-and-scaling-services) of containerized applications in production environments.
 
-### **Benefits**
+### Benefits
 
 * **Simplicity**: Docker Swarm offers a straightforward setup and management experience, making it accessible to developers and operations teams.
 * **Scalability**: With Docker Swarm, you can easily scale your applications horizontally by adding or removing [nodes](swarm.md#node) from the cluster.
@@ -22,7 +22,7 @@ Docker Swarm provides a simple yet powerful solution for automating the [deploym
 * **Resource Efficiency**: Docker Swarm optimizes resource utilization by efficiently scheduling and distributing tasks across nodes in the [cluster](swarm.md#cluster).
 * **Cost-effectiveness**: Docker Swarm helps reduce infrastructure costs by enabling the efficient use of resources and supporting dynamic scaling based on demand.
 
-### **Key Concepts**
+### Key Concepts
 
 A Docker Swarm is a group of Docker [nodes](swarm.md#node) that work together. Some nodes act as [managers](swarm.md#manager) to handle membership and tasks, while others act as [workers](swarm.md#worker) to run services. Each node can be a manager, a worker, or both.
 
@@ -36,23 +36,23 @@ Just like you can use [Docker Compose](compose.md) to set up containers, you can
 
 <figure>![Docker Swarm Key Concepts](<../.gitbook/assets/docker-swarm.png>)<figcaption><p>Docker Swarm Key Concepts</p></figcaption></figure>
 
-#### **Host**
+#### Host
 
 A Docker host refers to a physical or virtual machine (e.g., a server or a cloud instance) on which the [Docker Engine](overview.md) is installed and running.
 
 The term "host" is not specific to Swarm but rather the entire Docker ecosystem (see the [Node vs. Host FAQ below](swarm.md#node-vs-host)).
 
-#### **Node**
+#### Node
 
 A node is an instance of the Docker engine participating in the swarm. You can run one or more nodes on a single [host](swarm.md#host).
 
 The term "node" is Swarm specific (see [Node vs Host FAQ below](swarm.md#node-vs-host)).
 
-#### **Cluster**
+#### Cluster
 
 A cluster is a group of Docker [hosts](swarm.md#host) (2 or more) running together as a single virtual host.
 
-#### **Manager**
+#### Manager
 
 Manager [nodes](swarm.md#node) are responsible for managing and coordinating the activities of a Docker Swarm [cluster](swarm.md#cluster), including [service](swarm.md#service) deployment, [task](swarm.md#task) distribution, fault tolerance, and security.
 
@@ -60,43 +60,43 @@ Manager [nodes](swarm.md#node) are responsible for managing and coordinating the
 
 Worker [nodes](swarm.md#node) are responsible for executing [tasks](swarm.md#task) and communicating with the Swarm manager to receive task assignments, report their status, and request updates.
 
-#### **Service**
+#### Service
 
 [Services](https://docs.docker.com/engine/swarm/key-concepts/#services-and-tasks) are the primary unit of work in Docker Swarm. They define an application's desired state, including the number of replicas, networking configuration, and resource constraints.
 
-#### **Task**
+#### Task
 
 [Tasks](https://docs.docker.com/engine/swarm/key-concepts/#services-and-tasks) represent individual service instances running on a worker node. Docker Swarm manages the distribution and execution of tasks across the cluster.
 
-#### **Networking**
+#### Networking
 
 Docker Swarm uses [overlay networks](swarm.md#overlay-networking) to facilitate communication between services running on different nodes in the cluster. Overlay networks provide transparent network connectivity and support [load balancing](https://docs.docker.com/engine/swarm/key-concepts/#load-balancing) and service discovery.
 
-#### **Volumes**
+#### Volumes
 
 [Volumes](swarm.md#volume-management) in Docker Swarm enable persistent storage for containerized applications. They allow data to be shared and preserved across container restarts or redeployments.
 
-## **Deploying and Scaling Services**
+## Deploying and Scaling Services
 
-### **Service Deployment**
+### Service Deployment
 
 You can [deploy services](https://docs.docker.com/reference/cli/docker/service/) to Docker Swarm using [Docker Compose](compose.md) files (ex: `docker stack deploy --compose-file compose.yaml stack_name`) or the Docker CLI. Services define the desired state of an application, including the number of replicas and resource constraints.
 
-### **Scaling Services**
+### Scaling Services
 
 Docker Swarm makes it easy to [scale services](https://docs.docker.com/reference/cli/docker/service/scale/) horizontally by adjusting the number of replicas. You can scale services up or down based on demand to meet performance and capacity requirements. (ex: `docker service scale stack_name=5`)
 
-### **Rolling Updates**
+### Rolling Updates
 
 Docker Swarm allows you to apply [rolling updates](https://docs.docker.com/reference/cli/docker/service/update/) easily (ex: `docker service update --image myapp:lastest stack_name`). If the update fails, the deployment will halt. Rolling updates ensure applications can maintain high availability.
 
-## **Networking and Storage in Swarm**
+## Networking and Storage in Swarm
 
-### **Overlay Networking**
+### Overlay Networking
 
 Docker Swarm uses [overlay networks](network.md#overlay) to enable communication between services running on different nodes in the cluster. Overlay networks provide a transparent and efficient way to connect [containers](containers.md) across the Swarm.
 
-### **Volume Management**
+### Volume Management
 
 Docker Swarm supports volume management for [persistent storage](storage.md#persistent-storage) in containerized applications. Volumes allow data to be shared and preserved across container restarts or redeployments, ensuring data integrity and availability.
 

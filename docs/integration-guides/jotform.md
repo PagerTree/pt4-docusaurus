@@ -27,7 +27,7 @@ In this integration tutorial we will show you how to send form submission from J
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **JotForm logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In JotForm**
+### In JotForm
 
 1.  **Dashboard -> Select Desired Form -> Edit Form**
 

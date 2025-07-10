@@ -299,7 +299,7 @@ While both Docker Compose and [Kubernetes](https://kubernetes.io/) are popular t
 * **Features**: Docker Compose offers features such as service definition, container networking, volume management, and dependency management, making it well-suited for development and testing environments.
 * **Scaling**: While Docker Compose supports scaling of container instances, it is limited compared to Kubernetes and is typically used for smaller-scale deployments.
 
-#### **Kubernetes:**
+#### Kubernetes:
 
 * **Scope**: Kubernetes is a powerful container orchestration platform designed for deploying, managing, and scaling containerized applications across clusters of machines.
 * **Complexity**: Kubernetes has a steeper learning curve than Docker Compose due to its extensive feature set and complex architecture.
@@ -307,7 +307,7 @@ While both Docker Compose and [Kubernetes](https://kubernetes.io/) are popular t
 * **High Availability**: Kubernetes offers built-in support for high availability and fault tolerance, with features like pod replication, load balancing, and service discovery.
 * **Production Deployments**: Kubernetes is well-suited for production deployments of containerized applications, offering advanced features for managing large-scale, mission-critical workloads.
 
-#### **Docker Compose vs Summary**
+#### Docker Compose vs Summary
 
 * Docker Compose is ideal for local development, testing, and small-scale deployments where simplicity and ease of use are paramount.
 * Kubernetes is better suited for production deployments, large-scale applications, and environments requiring high availability, scalability, and advanced orchestration features.

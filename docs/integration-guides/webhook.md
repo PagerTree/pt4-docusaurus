@@ -37,7 +37,7 @@ In this integration tutorial we will show you how to send a Webhook into PagerTr
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Webhook logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url).
 
-### **In Other Application - Configure the Webhook**
+### In Other Application - Configure the Webhook
 
 The calling application must send a **POST** request with a **Content-Type: application/json**. The body of the request should have the following values.
 

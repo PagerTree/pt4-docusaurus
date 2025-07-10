@@ -33,9 +33,9 @@ Cloning targets and/or triggers in Zendesk could lead to unexpected behavior. We
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Zendesk logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Zendesk**
+### In Zendesk
 
-#### **Create a Webhook**
+#### Create a Webhook
 
 1. **Navigate** to **Menu -> Admin Gear -> Go to Admin Center**. ![Navigate to Admin Gear](<../.gitbook/assets/Navigate to Admin Gear (1).webp>)
 2.  In the Admin center, search "webhooks", and **click** the **Webhooks** link.
@@ -58,7 +58,7 @@ Cloning targets and/or triggers in Zendesk could lead to unexpected behavior. We
        <figure>![Zendesk PagerTree Webhook](<../.gitbook/assets/Zendesk PagerTree Webhook.webp>)<figcaption><p>Zendesk PagerTree Webhook</p></figcaption></figure>
 6. Click the **Admin Center link** to connect the webhook to a trigger.
 
-#### **Connect the Webhook in a Trigger**
+#### Connect the Webhook in a Trigger
 
 1.  In the Business Rules -> Triggers page, click **Add Trigger**.
 

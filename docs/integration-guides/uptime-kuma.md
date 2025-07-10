@@ -32,7 +32,7 @@ The Uptime Kuma integration will only work if your version of Uptime Kuma includ
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Uptime Kuma logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Uptime Kuma**
+### In Uptime Kuma
 
 1.  From the **Profile Menu, click Settings.**
 

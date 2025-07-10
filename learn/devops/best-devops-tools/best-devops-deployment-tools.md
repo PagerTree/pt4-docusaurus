@@ -2,7 +2,7 @@
 
 For many businesses and software companies, [DevOps](https://pagertree.com/learn/devops/what-is-devops) has become a cornerstone for achieving faster, more reliable deployments. Each phase of the [DevOps lifecycle](https://pagertree.com/learn/devops/what-is-devops/what-is-a-devops-pipeline), from [planning](https://pagertree.com/learn/devops/best-devops-tools/best-devops-planning-tools) to monitoring, serves a purpose in streamlining and enhancing software development.  The deployment phase is one of the most critical components in this lifecycle, ensuring that applications are delivered seamlessly to production environments. To facilitate this process, a wide [range of tools](https://pagertree.com/learn/devops/best-devops-tools) are available to automate, manage, and secure deployments. This article explores the best [DevOps deployment tools](https://pagertree.com/learn/devops/what-is-devops/best-ci-cd-tools) across four categories: Infrastructure Provisioning, Containerization and Orchestration, Secret Management, and [Continuous Deployment (CD)](https://pagertree.com/learn/devops/what-is-devops/what-is-ci-cd#key-components-of-cd).
 
-### **DevOps Deployment Tools Include**
+### DevOps Deployment Tools Include
 
 [Infrastructure Provisioning Tools](https://docs.google.com/document/d/1viaHEAoEhY541ERKzKVpUMcOsxyEkCGxAoMU52S8vkI/edit#heading=h.zcaqwza8qzri)
 

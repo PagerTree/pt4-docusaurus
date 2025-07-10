@@ -36,7 +36,7 @@ Twilio users can route incoming phone calls to on-call customer support.
 
 In this integration tutorial we will show you how to route an incoming phone call from Twilio into PagerTree. The estimated time for this integration is 7 minutes. We assume that you already have a PagerTree and Twilio account setup.
 
-### **In Twilio -** Create API Credentials
+### In Twilio - Create API Credentials
 
 1. Open a text editor, as we’ll need to copy several pieces of data.
 2.  In the top right menu bar, **navigate to Account -> Keys & Credentials -> API Keys & tokens**.
@@ -86,7 +86,7 @@ Please note the _**API Key SID is different from the Account SID**_, so do not g
 3. **Click “Create”**
 4. [Copy the Endpoint URL](../introduction.md#copy-the-endpoint-url)**.**
 
-### **In Twilio - Configure a Phone Number**
+### In Twilio - Configure a Phone Number
 
 1. If you haven’t already, [upgrade to a paid Twilio account](https://support.twilio.com/hc/en-us/articles/223183208-Upgrading-to-a-paid-Twilio-Account).
 2. If you haven’t already, [buy a phone number](https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console).

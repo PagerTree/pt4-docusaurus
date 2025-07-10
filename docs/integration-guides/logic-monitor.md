@@ -31,7 +31,7 @@ In this integration tutorial we will show you how to send notifications from Log
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **LogicMonitor logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In LogicMonitor**
+### In LogicMonitor
 
 1. Create a Custom HTTP Delivery (Settings -> Integrations -> Click "Add" -> Custom HTTP Delivery)
 2. In the form, select all of the following:

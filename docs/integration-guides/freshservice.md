@@ -27,7 +27,7 @@ In this integration tutorial we will show you how to send tickets from Freshserv
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Freshservice logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Freshservice**
+### In Freshservice
 
 1. **Click** the **Gear Icon** in the left side navigation menu to go to the admin page.
 2.  On the admin page, **navigate to Automation & Productivity -> Workflow Automator.**

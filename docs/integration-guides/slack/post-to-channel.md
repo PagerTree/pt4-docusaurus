@@ -8,7 +8,7 @@ description: Connect your Slack channels to PagerTree.
 | ---------------------------------------------- | -------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | [Slack Technologies, Inc.](https://slack.com/) | 5 minutes      | [view](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) | [v3.rb](https://github.com/PagerTree/pager\_tree-integrations/blob/main/app/models/pager\_tree/integrations/channel/slack/v3.rb) |
 
-## **Important Information**
+## Important Information
 
 * PagerTree -> Slack (post to channel) - Continue reading this page.
 * Slack -> PagerTree (keyword trigger) - See [Slack Outgoing Webhooks](outgoing-webhook.md).

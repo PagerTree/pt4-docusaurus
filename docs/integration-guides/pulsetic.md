@@ -29,7 +29,7 @@ This integration tutorial will show you how to send alerts from Pulsetic into Pa
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Pulsetic logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Pusletic**
+### In Pusletic
 
 1. **Click Menu -> Monitors**
 2.  **Click on a monitor**

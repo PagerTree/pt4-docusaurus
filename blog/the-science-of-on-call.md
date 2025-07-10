@@ -78,7 +78,7 @@ Dev managers can help their employees better recover from a night on-call by emp
 
 When you’re operating within your realm of expertise with added layers of redundancy and backup, you can finally put down that phone, enjoy dinner with family, and get some much needed rest.
 
-### **References**
+### References
 
 * [Extended Work Availability and Its Relation With Start-of-Day Mood and Cortisol](https://www.apa.org/pubs/journals/features/ocp-ocpa0039602.pdf)
 * [The Physiology of Stress: Cortisol and the Hypothalamic-Pituitary-Adrenal Axis](https://issuu.com/dartmouth\_science/docs/dujs\_10f)

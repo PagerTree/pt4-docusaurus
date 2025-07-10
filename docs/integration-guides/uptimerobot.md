@@ -32,7 +32,7 @@ In this integration tutorial we will show you how to send alerts from UptimeRobo
 For this integration, the Endpoint URL should end with "/g?"
 :::
 
-### **In UptimeRobot**
+### In UptimeRobot
 
 1. Click [**My Settings**](https://uptimerobot.com/dashboard.php#mySettings) from the top navigation bar.
 2.  On the right hand side, under the **Alert Contacts** section, click the **Add Alert Contact** button.

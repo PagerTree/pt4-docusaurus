@@ -57,7 +57,7 @@ The form integration has the ability to require (or not require) specific fields
 
 <figure>![PagerTree Form (with annotations)](<../.gitbook/assets/image (1) (3) (3).png>)<figcaption><p>PagerTree Form (with annotations)</p></figcaption></figure>
 
-### **Configure a CNAME**
+### Configure a CNAME
 
 You can configure a CNAME for your form so it can be hosted under your own domain (https://support.example.com).
 
@@ -65,7 +65,7 @@ You can configure a CNAME for your form so it can be hosted under your own domai
 Please create the CNAME in your DNS first. Self signed certificates depend on the CNAME existing before its configured in PagerTree.
 :::
 
-#### **In your DNS provider**
+#### In your DNS provider
 
 1. Create a **CNAME record** of your choice pointing to **forms.pagertree.com** (ex: support.example.com -> forms.pagertree.com). Consult your DNS provider’s documentation for specific instructions on creating CNAME records.
 
@@ -73,7 +73,7 @@ Please create the CNAME in your DNS first. Self signed certificates depend on th
 | ------ | ------- | ------------------- |
 | CNAME  | support | forms.pagertree.com |
 
-#### **In PagerTree**
+#### In PagerTree
 
 1. Navigate to the edit integration page.
 2.  In the **CNAMEs section, add your CNAME** (ex: support.example.com)

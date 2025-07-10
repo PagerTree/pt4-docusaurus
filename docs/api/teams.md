@@ -24,7 +24,7 @@
 POST https://api.pagertree.com/api/v4/teams
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def team_params
@@ -42,7 +42,7 @@ def team_params
 end
 ```
 
-#### **Required Parameters**
+#### Required Parameters
 
 * name
 * at least 1 account user as a [member role](../teams.md#team-roles)

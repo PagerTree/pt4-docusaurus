@@ -19,7 +19,7 @@
 POST https://api.pagertree.com/api/v4/maintenance_windows
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def maintenance_window_params

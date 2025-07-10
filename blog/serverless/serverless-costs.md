@@ -57,7 +57,7 @@ As much as the cloud providers want to advertise that the migration to serverles
 
 You want to host a small web application that counts votes, similar to [this one](https://app.gh-polls.com/). On average, per month, you receive 3M votes each resulting in a 1KB response which take 300ms on a (256MB lambda).
 
-#### **Example 1: Serverless Costs**
+#### Example 1: Serverless Costs
 
 **API Gateway Cost** = 3M requests \* $3.50/1M requests = **$10.50**\
 **API Gateway Data Transfer** = (3M requests \* 1KB) \* $.09/GB = **$0.27**\
@@ -67,7 +67,7 @@ You want to host a small web application that counts votes, similar to [this one
 
 That gets you a fully functioning voting application that is highly available.
 
-#### **Example 1: Classic Costs**
+#### Example 1: Classic Costs
 
 A similar setup with a classic architecture that includes 1 load balancer and 3 of the smallest EC2 (t2.nano) instances (for high availability, see [Part 2: Serverless Scales](serverless-scales.md)) would cost you:
 
@@ -78,7 +78,7 @@ A similar setup with a classic architecture that includes 1 load balancer and 3 
 **Total Cost (3 tier)** = **$73.86**\
 
 
-#### **Example 1: Analysis**
+#### Example 1: Analysis
 
 As you can see, it is actually _**more cost effective to run the voting application in a serverless environment**_. Depending on the architecture it can be anywhere from 2x to 5x more cost effective to run serverless.
 
@@ -86,7 +86,7 @@ As you can see, it is actually _**more cost effective to run the voting applicat
 
 You have a legacy application (meme generator) that your boss wants you to take serverless. The application receives some text, overlays it on an image and returns it to the user. The application needs a lot of memory (2GB) to run, and takes approximately 2 seconds to generate a meme thats about 1MB in size. You application is fairly popular and receives 30M requests per month.
 
-#### **Example 2: Serverless Costs**
+#### Example 2: Serverless Costs
 
 **API Gateway Cost** = 30M requests \* $3.50/1M Requests = **$105**\
 **API Gateway Data Transfer** = (30M requests \* 1MB) \* $.09/GB = **$2700**\
@@ -98,7 +98,7 @@ Notice how quickly the data transfer charges added up.
 
 This setup will successfully run your legacy meme generator, be highly available and load balanced.
 
-#### **Example 2: Classic Costs**
+#### Example 2: Classic Costs
 
 In order to architect a classic setup, we’ll need to figure out how much computed power we’ll need. On average, we’ll receive 11.57 requests per second (1M requests per day / 86,400 seconds per day).
 
@@ -111,7 +111,7 @@ Since each request takes approximately 2 seconds and 2GB of memory, we’ll need
 **Total Cost (3 tier)** = **$1288**\
 
 
-#### **Example 2: Analysis**
+#### Example 2: Analysis
 
 In this example, it’s actually _**more expensive to run the meme generator application in a serverless environment**_. Depending on your architecture choice, between 4x to 7x more expensive.
 

@@ -28,9 +28,9 @@ In this integration tutorial we will show you how to send alerts from StatusCake
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **StatusCake logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In StatusCake**
+### In StatusCake
 
-#### **Create the Contact Group**
+#### Create the Contact Group
 
 1. **Click Menu -> Alerting -> Contact Groups -> New Contact Group**
 2. **Paste** the **PagerTree Endpoint URL** you copied for the **Webhook URL**

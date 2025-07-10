@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from Cronitor i
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Apex Ping logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Cronitor**
+### In Cronitor
 
 1.  Navigate to **Settings -> Alerts**.
 

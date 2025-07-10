@@ -31,7 +31,7 @@ In this integration tutorial we will show you how to create an email integration
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Email logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url). For the email integration this should be an email address (ex: a+01GM8N3GZZGTAN4QHV85XBBBBB@alerts.pagertree.com)
 
-### **Test the Integration**
+### Test the Integration
 
 1. In any email client, compose a **new email**
 2. In the email, enter in the following:

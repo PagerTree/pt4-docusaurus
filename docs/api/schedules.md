@@ -15,7 +15,7 @@
 POST https://api.pagertree.com/api/v4/schedules
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def schedule_params

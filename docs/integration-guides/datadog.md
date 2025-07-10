@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from Datadog in
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Datadog logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Datadog**
+### In Datadog
 
 #### Create the Integration
 

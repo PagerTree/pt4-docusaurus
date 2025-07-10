@@ -30,7 +30,7 @@ In this integration tutorial we will show you how to send alarms from AWS CloudW
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Amazon Web Services logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In AWS SNS Console**
+### In AWS SNS Console
 
 1.  In the SNS Console, **click “Create Topic”**.
 

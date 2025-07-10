@@ -28,9 +28,9 @@ In this integration tutorial we will show you how to send alerts from Auvik into
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Auvik logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Auvik**
+### In Auvik
 
-#### **Add Integration**
+#### Add Integration
 
 1. From the navigation menu **Click Menu -> Integrations**.
 2.  On the Integrations Page **click “Add Integration” button**.
@@ -60,7 +60,7 @@ In this integration tutorial we will show you how to send alerts from Auvik into
        <figure>![Auvik PagerTree Notification Channel](<../.gitbook/assets/image (1) (1) (1) (2).png>)<figcaption><p>Auvik PagerTree Notification Channel</p></figcaption></figure>
 4. **Click “Save”**.
 
-#### **Associate Notification Channel With Alerts**
+#### Associate Notification Channel With Alerts
 
 In this example we’ll show you how to create a new alert type for demo purposes, the important idea is to _associate the notification channel with an alert_.
 

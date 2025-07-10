@@ -40,7 +40,7 @@ In this integration tutorial, we will show you how to send alerts from PagerTree
 
     <figure>![Copy the webhook URL.](<../.gitbook/assets/image (73).png>)<figcaption><p>Copy the webhook URL.</p></figcaption></figure>
 
-### **In PagerTree**
+### In PagerTree
 
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Microsoft Teams logo**.
 2. In the New integration form:

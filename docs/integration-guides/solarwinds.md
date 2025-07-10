@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from SolarWinds
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **SolarWinds logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In SolarWinds**
+### In SolarWinds
 
 1. Navigate to **Alerts & Activity -> Alerts**.
 2. In the upper right hand corner, click the **Manage Alerts** button to go to the Alert Manager.

@@ -28,13 +28,13 @@ In this integration tutorial we will show you how to send alarms from Azure Moni
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Azure logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Azure**
+### In Azure
 
 1.  **Navigate** to **Azure Monitor**
 
     <figure>![ Azure Monitor](<../.gitbook/assets/image (1) (2) (2) (1).png>)<figcaption><p>Navigate to Azure Monitor</p></figcaption></figure>
 
-#### **Create an Action Group**
+#### Create an Action Group
 
 1.  **Click** the **Alerts Tab** from the Monitor Navigation.
 
@@ -62,7 +62,7 @@ In this integration tutorial we will show you how to send alarms from Azure Moni
 7. **Click** the **Review + Create** button.
 8. **Click** the **Create** button.
 
-#### **Attach Action Group to Alert Rules**
+#### Attach Action Group to Alert Rules
 
 1.  From the Azure Monitor Dashboard, **Click** the **Manage alert rules tab**.
 

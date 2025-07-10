@@ -26,7 +26,7 @@ In this integration tutorial we will show you how to route an incoming SMS from 
 1. [Create the integration](../introduction.md#create-an-integration) by clicking the **Twilio (Incoming SMS) logo**.
 2. [Copy the Endpoint URL](../introduction.md#copy-the-endpoint-url)**.**
 
-### **In Twilio**
+### In Twilio
 
 1. If you haven’t already, [upgrade to a paid Twilio account](https://support.twilio.com/hc/en-us/articles/223183208-Upgrading-to-a-paid-Twilio-Account).
 2. If you haven’t already, [buy a phone number](https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console).

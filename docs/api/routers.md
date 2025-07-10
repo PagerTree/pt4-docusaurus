@@ -21,7 +21,7 @@
 POST https://api.pagertree.com/api/v4/routers
 ```
 
-#### **Allowed Parameters**
+#### Allowed Parameters
 
 ```ruby
 def router_params

@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send notifications from Dea
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Dead Man's Snitch logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Dead Man's Snitch**
+### In Dead Man's Snitch
 
 1.  From the navigation menu, click **Integrations**.
 

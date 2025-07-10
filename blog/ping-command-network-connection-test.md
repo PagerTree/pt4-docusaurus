@@ -27,7 +27,7 @@ Executing a ping test varies by operating system. For Windows, open the Command 
 
 ## Navigating Ping Tests: Common Addresses and Results
 
-### **Common Addresses to Ping**
+### Common Addresses to Ping
 
 Performing ping tests involves checking your internet connectivity. Reliable addresses to ping include:
 
@@ -36,7 +36,7 @@ Performing ping tests involves checking your internet connectivity. Reliable add
 
 Failure to receive a response from these addresses may indicate a problem on your end.
 
-### **Understanding Ping Results**
+### Understanding Ping Results
 
 Interpreting ping results is crucial. Analyzing server hostnames, response times, Time to Live (TTL), and packet loss provides insights into network performance. Troubleshooting connection issues becomes more effective when armed with this information.
 
@@ -53,7 +53,7 @@ Below is what the ping command will return:
 
 ## Troubleshooting Ping Connectivity Errors
 
-### **Common Errors and Solutions**
+### Common Errors and Solutions
 
 * **Request Timed Out**: There is a problem in establishing a connection. This occurs when the destination host is either non-existent, powered off, or disconnected from the network.
 * **Firewall Impact**: Firewalls, based on port numbers and IP addresses, may permit or restrict traffic. In some instances, ping might be blocked as a precaution against potential reconnaissance by malicious actors.

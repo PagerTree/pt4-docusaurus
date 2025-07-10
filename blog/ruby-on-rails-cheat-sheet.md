@@ -81,7 +81,7 @@ Evaluation can be done with the `<% %>` syntax and output can be achieved with t
 <% end %>
 ```
 
-#### **Partials**
+#### Partials
 
 You can render partials like so:
 
@@ -199,7 +199,7 @@ A couple of basic (and most commonly used) queries are below. You can find the f
 | `Model.select(:id, :name)`                   | Select only specific fields                                    |
 | `Model.limit(10).offset(20)`                 | Limit and offset (great for pagination)                        |
 
-### **Fastest Check For Existence**
+### Fastest Check For Existence
 
 Additionally, you are likely to want to check for an existence of a condition many times. There are many ways to do this, namely present?, any?, empty?, and exists? but the `exists?` method will be the fastest. This [semaphore article](https://semaphoreci.com/blog/2017/03/14/faster-rails-how-to-check-if-a-record-exists.html) explains nicely why `exists?` is the fastest method for checking if one of a query exists.
 

@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from PRTG into 
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **PRTG logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In PRTG**
+### In PRTG
 
 1.  **Menu -> Setup -> Account Settings -> Notification Templates**.
 

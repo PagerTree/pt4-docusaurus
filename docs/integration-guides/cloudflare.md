@@ -29,9 +29,9 @@ In this integration tutorial we will show you how to send notifications from Clo
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Cloudflare logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Cloudflare**
+### In Cloudflare
 
-#### **Create the Webhook Destination**
+#### Create the Webhook Destination
 
 1. Navigate to **Cloudflare dashboard -> Notifications**.
 2.  Under **Destinations, click Create**.

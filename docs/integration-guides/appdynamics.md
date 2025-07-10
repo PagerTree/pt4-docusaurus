@@ -30,7 +30,7 @@ In this integration tutorial we will show you how to send alerts from AppDynamic
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **AppDynamics logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In AppDynamics**
+### In AppDynamics
 
 #### Create an HTTP Request Template
 

@@ -38,7 +38,7 @@ _Remember to come back here for_ [_notification rule specific action types_](not
 * [repeat](notification-rules.md#repeat) - Repeat the notification cycle.
 * [ignore](notification-rules.md#ignore) - Suppress notifications from being sent.
 
-#### **Notify**
+#### Notify
 
 The notify action will notify the account user on specified channels then wait for a timeout for next instructions.
 
@@ -70,7 +70,7 @@ The notify action will notify the account user on specified channels then wait f
   timeout: 1m
 ```
 
-#### **Repeat**
+#### Repeat
 
 The repeat action will repeat the above notify actions n times. You can repeat between 0 and 3 times.
 
@@ -83,7 +83,7 @@ The repeat action will repeat the above notify actions n times. You can repeat b
   times: 1
 ```
 
-#### **Ignore**
+#### Ignore
 
 The ignore action will suppress sending any notifications to the account user when matched.
 

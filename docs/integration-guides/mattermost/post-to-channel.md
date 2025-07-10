@@ -8,7 +8,7 @@ description: Connect your Mattermost channels to PagerTree.
 | ------------------------------------------ | -------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | [Mattermost Inc.](https://mattermost.com/) | 5 minutes      | [view](https://developers.mattermost.com/integrate/incoming-webhooks/) | [v3.rb](https://github.com/PagerTree/pager\_tree-integrations/blob/main/app/models/pager\_tree/integrations/channel/mattermost/v3.rb) |
 
-## **Important Information**
+## Important Information
 
 * PagerTree -> Mattermost (post to channel) - Continue reading this page.
 * Mattermost -> PagerTree (keyword trigger) - See [Mattermost Outgoing Webhooks](outgoing-webhook.md).

@@ -30,7 +30,7 @@ In this integration tutorial we will show you how to send alerts from Honeybadge
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Honeybadger logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Honeybadger**
+### In Honeybadger
 
 1.  From your Honeybadger homepage, **select** the appropriate **project**.
 

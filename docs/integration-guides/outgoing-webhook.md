@@ -122,7 +122,7 @@ The data you have access to are the following properties:
 }
 ```
 
-### **Popular Templates**
+### Popular Templates
 
 #### Plain JSON (using triple-stash operator)
 
@@ -152,7 +152,7 @@ For the [Slack Incoming Webhook App](https://slack.com/apps/A0F7XDUAZ-incoming-w
 }
 ```
 
-### **Troubleshooting Templates**
+### Troubleshooting Templates
 
 If for any reason you do not receive the webhook with a custom template, it is likely you have a formatting error. On the integration page, look at the [integration’s logs](../integrations.md#integration-logs).
 

@@ -72,7 +72,7 @@ PagerTree also supports Sentry's legacy webhooks.
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Sentry logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Sentry**
+### In Sentry
 
 #### Create Webhook Integration
 

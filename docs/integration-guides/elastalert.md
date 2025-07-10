@@ -27,7 +27,7 @@ In this integration tutorial we will show you how to send notifications from Ela
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **ElastAlert logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In ElastAlert**
+### In ElastAlert
 
 1. In your ElastAlert rules YAML file add the following, replacing `<PagerTree Endpoint URL>` with the **PagerTree Endpoint URL** you copied earlier.
 

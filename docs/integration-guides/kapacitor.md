@@ -28,7 +28,7 @@ In this integration tutorial we will show you how to send alerts from Kapacitor 
 1. [Create the integration](introduction.md#create-an-integration) by clicking the **Kapacitor logo**.
 2. [Copy the Endpoint URL](introduction.md#copy-the-endpoint-url)**.**
 
-### **In Kapacitor**
+### In Kapacitor
 
 1.  From your Chronograph dashboard, in the left hand menu, select **Alerting -> Manage Tasks**.
 
