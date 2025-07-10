@@ -27,6 +27,7 @@
 	redir /learn/prometheus /learn/prometheus/overview 301
 	redir /learn/devops/best-devops-tools/best-devops-monitroing-tools /learn/devops/best-devops-tools/best-devops-monitoring-tools 301
 	redir /learn/incident-management/what-is-incident-management-beginners-guide /learn/incident-management 301
+	redir /blog/sre-availability-metrics /blog/sre-metrics-availability 301
 
 	# Handle URLs with trailing slash by rewriting to non-trailing slash, excluding /docs/, /learn/, /blog/
 	@trailingSlash {
