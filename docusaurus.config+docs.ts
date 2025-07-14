@@ -1,6 +1,5 @@
 import config from './docusaurus.config';
 import { merge } from 'lodash';
-import remarkDirectiveSugar from 'remark-directive-sugar';
 
 export default {
   ...config,
@@ -16,7 +15,7 @@ export default {
           path: 'docs',
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          remarkPlugins: [remarkDirectiveSugar],
+          remarkPlugins: [],
           editUrl: 'https://github.com/pagertree/pt4-docusaurus/tree/main/',
         }
       })
