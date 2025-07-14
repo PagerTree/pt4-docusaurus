@@ -16,7 +16,7 @@ With notification rules, you can perform custom notification sequences. Notifica
 
 ### Notification Rules Video
 
-::youtube-video[Notification Rules Tutorial Video (v4)]{#ZdIt5eODXHI}
+<iframe src="https://www.youtube-nocookie.com/embed/ZdIt5eODXHI" title="Notification Rules Tutorial Video (v4)" class="rds-video"></iframe>
 
 ## Rules Syntax
 
