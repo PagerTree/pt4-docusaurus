@@ -32,7 +32,7 @@ Incident management is a critical process for any organization that aims to prov
 3. [Resolve](./#resolve)
 4. [Learn](./#learn)
 
-:::hint
+:::tip
 The key to good incident management is having a good process, clear communication, and a calm head.
 :::
 

@@ -8,7 +8,7 @@ description: >-
 
 ## Team Admin Video
 
-::video-youtube[Team Admin QuickStart Guide]{#_SCn2-ZiBoc}
+<iframe src="https://www.youtube-nocookie.com/embed/_SCn2-ZiBoc" title="Team Admin QuickStart Guide" class="rds-video"></iframe>
 
 ## Managing Teams and Team members
 

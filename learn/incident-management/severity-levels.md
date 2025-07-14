@@ -12,7 +12,7 @@ description: >-
 
 Incidents can be classified by severity, usually a "SEV" definition. Severities rank from SEV-1 to SEV-5. The lower the severity number, the more impactful the incident. Anything above a SEV-3 should automatically be considered a "major incident".
 
-:::hint
+:::tip
 Always assume the worst - If you are unsure which severity an incident should be, treat it as the higher one.
 :::
 

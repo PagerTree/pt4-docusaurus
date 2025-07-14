@@ -73,7 +73,7 @@ Check out the following video, for a more in-depth explanation of the above diag
 
 ### Alert Workflow Video
 
-::video-youtube[PagerTree Alert Workflow Video (v4)]{#6-_hScwSlMg}
+<iframe src="https://www.youtube-nocookie.com/embed/6-_hScwSlMg" title="PagerTree Alert Workflow Video (v4)" class="rds-video"></iframe>
 
 ## On-Call Schedule Workflow
 

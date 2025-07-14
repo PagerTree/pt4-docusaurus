@@ -21,7 +21,7 @@ So, what are these commonly used [incident management](https://pagertree.com/lea
 
 ## What is MTTR? (Video)
 
-::video-youtube[Yuan Cheng explains "what is MTTR?" and the key incident recovery metrics you need to reduce downtime.]{#OSnBQraYlkA}
+<iframe src="https://www.youtube-nocookie.com/embed/OSnBQraYlkA" title="Yuan Cheng explains 'what is MTTR?' and the key incident recovery metrics you need to reduce downtime." class="rds-video"></iframe>
 
 ## What are Uptime and Downtime?
 

@@ -30,7 +30,7 @@ Sincerely,
 
 Austin
 
-::video-youtube[PagerTree 4.0 Release]{#Gfgw7ah2Xt4}
+<iframe src="https://www.youtube-nocookie.com/embed/Gfgw7ah2Xt4" title="PagerTree 4.0 Release" class="rds-video"></iframe>
 
 <figure>![PagerTree Alert Dashboard](<https://pagertree.com/assets/img/posts/2022/10/09/desktop-view.png>)<figcaption></figcaption></figure>
 

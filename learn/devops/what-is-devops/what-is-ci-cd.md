@@ -34,11 +34,11 @@ Continuous Delivery (CD) extends the principles of CI by automating the delivery
 * **Infrastructure as Code (IaC):** Managing [infrastructure](https://pagertree.com/learn/devops/what-is-devops/devops-infrastructure-and-automation#what-is-devops-infrastructure) through code ensures that environments are reproducible and consistent.
 * **Monitoring and Logging:** [Monitoring](https://pagertree.com/blog/system-monitoring-7-best-apm-tools) and logging systems track application performance and detect issues early.
 
-:::hint
+:::tip
 The CD in CI/CD is sometimes confused with continuous deployment. The largest difference between continuous delivery and continuous deployment is that continuous deployment automates the entire process, including the deployment to production, allowing every change that passes automated tests to be released without human intervention.
 :::
 
-::video-youtube[CI/CD Explained]{#scEDHsr3APg}
+<iframe src="https://www.youtube-nocookie.com/embed/scEDHsr3APg" title="CI/CD Explained" class="rds-video"></iframe>
 
 ## CI/CD Best Practices
 

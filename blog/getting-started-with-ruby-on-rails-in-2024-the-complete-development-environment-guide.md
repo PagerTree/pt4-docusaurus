@@ -19,7 +19,7 @@ This blog post will walk you through 10 simple steps to get your Ruby on Rails d
 
 ## Ruby on Rails Setup Video
 
-::video-youtube[Ruby on Rails Development Environment Video]{#YY3OO3QUrN4}
+<iframe src="https://www.youtube-nocookie.com/embed/YY3OO3QUrN4" title="Ruby on Rails Development Environment Video" class="rds-video"></iframe>
 
 ## Ruby on Rails Development Environment Overview
 

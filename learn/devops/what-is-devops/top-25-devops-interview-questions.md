@@ -148,7 +148,7 @@ DevOps and Agile are practices aimed at improving the software development proce
 
 [CI/CD](https://pagertree.com/learn/devops/what-is-devops/what-is-ci-cd) stands for Continuous Integration and Continuous Deployment (or Continuous Delivery). Continuous Integration involves developers frequently integrating code changes into a shared repository with automated builds and tests to catch issues early, improving software quality and reducing release time.
 
-::video-youtube[DevOps CI/CD in 100 Seconds]{#scEDHsr3APg}
+<iframe src="https://www.youtube-nocookie.com/embed/scEDHsr3APg" title="DevOps CI/CD in 100 Seconds" class="rds-video"></iframe>
 
 ### 10. What is the difference between Continuous Delivery and Continuous Deployment?
 

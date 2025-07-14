@@ -8,7 +8,7 @@ description: >-
 
 ## Quick Start Video
 
-::video-youtube[PagerTree Quick Start Video (v4)]{#ffQJHPfRDhY}
+<iframe src="https://www.youtube-nocookie.com/embed/ffQJHPfRDhY" title="PagerTree Quick Start Video (v4)" class="rds-video"></iframe>
 
 ## Key Terms
 

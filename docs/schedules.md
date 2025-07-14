@@ -14,7 +14,7 @@ On-call schedules are composed of calendar [events](schedules.md#events). Each c
 
 ### Schedules Tutorial Video
 
-::video-youtube[PagerTree On-Call Schedules Video (v4)]{#xaCrRCvQud8}
+<iframe src="https://www.youtube-nocookie.com/embed/xaCrRCvQud8" title="PagerTree On-Call Schedules Video (v4)" class="rds-video"></iframe>
 
 ## Basic Calendar Interactions
 

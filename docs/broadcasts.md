@@ -8,7 +8,7 @@ To create a broadcast you must have the [admin or broadcaster role](users.md#rol
 
 ### Tutorial Video
 
-::video-youtube[PagerTree Broadcasts Tutorial Video (v4)]{#fxeJHh8_OeE}
+<iframe src="https://www.youtube-nocookie.com/embed/fxeJHh8_OeE" title="PagerTree Broadcasts Tutorial Video (v4)" class="rds-video"></iframe>
 
 ## Response Options
 

@@ -45,7 +45,7 @@ Summaries calculate **client-side-calculated quantiles** from observations, like
 **NOTE:** Summaries cannot be aggregated across labels or multiple instances.
 :::
 
-:::hint
+:::tip
 **NOTICE:** The client has already reduced summaries into a floating point number.
 :::
 
@@ -67,7 +67,7 @@ Histograms track cumulative **bucketed counts** of observations, such as request
 
 Histograms need to be processed by the Prometheus server. They also will always have the label "le" denoting the upper bound of the bucket.
 
-:::hint
+:::tip
 **NOTICE:** Histograms are observed as counts, similar to the [counter metric type](metric-types.md#counter).
 :::
 

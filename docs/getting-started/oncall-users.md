@@ -8,7 +8,7 @@ description: >-
 
 ## OnCall User Video
 
-::video-youtube[OnCall User QuickStart Guide]{#wRitKYlyV9c}
+<iframe src="https://www.youtube-nocookie.com/embed/wRitKYlyV9c" title="OnCall User QuickStart Guide" class="rds-video"></iframe>
 
 ## User Creation and Setup
 

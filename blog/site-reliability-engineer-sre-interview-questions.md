@@ -82,7 +82,7 @@ For a more in-depth information on the 4 Golden Signals of SRE can be found [her
 For additional learning on this topic, read our[ in-depth SLA, SLO, and SLI ](https://pagertree.com/learn/incident-management/sla-vs-slo-vs-sli)resources.
 
 
-::video-youtube[SLA vs SLO vs SLI]{#-ECVHx239Ro}
+<iframe src="https://www.youtube-nocookie.com/embed/-ECVHx239Ro" title="SLA vs SLO vs SLI" class="rds-video"></iframe>
 
 ### 5. What is error budget, and what role does it play in SRE?
 
@@ -178,7 +178,7 @@ For more in-depth learning on SRE security and best practices, read “[Security
 
 Transmission control protocol or TCP is a reliable connection-based protocol. While more reliable than UDP, data transfers are slower. [User Datagram Protocol](https://www.avast.com/c-tcp-vs-udp-difference) or UDP is a less reliable connectionless protocol that works faster than TCP. You can think of TCP as a “handshake” communication technology, and UDP as a ”broadcast/shout to the ether” communication technology.
 
-::video-youtube[In-depth TCP vs UDP]{#jE_FcgpQ7Co}
+<iframe src="https://www.youtube-nocookie.com/embed/jE_FcgpQ7Co" title="In-depth TCP vs UDP" class="rds-video"></iframe>
 
 ### 21. Explain the difference between IaaS, PaaS and SaaS.
 

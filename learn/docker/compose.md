@@ -51,7 +51,7 @@ Docker Compose provides [many commands](https://docs.docker.com/compose/referenc
 
 The Docker Compose file (`compose.yaml`) serves as the blueprint for your multi-container application. It defines the services, networks, volumes, and other configurations required to run your application stack. The Docker compose file follows the [Compose Specification](https://docs.docker.com/compose/compose-file/).
 
-:::hint
+:::tip
 The default path for a Compose file is `compose.yaml` (preferred) or `compose.yml` that is placed in the working directory. Compose also supports `docker-compose.yaml` and `docker-compose.yml` for backward compatibility with earlier versions. If both files exist, Compose prefers the canonical`compose.yaml`.
 :::
 
@@ -151,7 +151,7 @@ PG_VERSION="15"
 
 The `.env` file should be placed at the root of the project directory next to `compose.yaml`.
 
-:::hint
+:::tip
 The `.env` file is the default method for setting environment variables in containers.
 :::
 

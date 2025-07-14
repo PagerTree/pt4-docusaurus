@@ -30,7 +30,7 @@ SRE key principles can be broken down into:
 
 **Embracing and Managing Risk:** SREs understand that 100% service availability is impossible, but SREs embrace risk to improve system resilience by learning from failures, [taking calculated risks](https://pagertree.com/learn/incident-management/how-to-calculate-mttr-and-other-common-incident-recovery-metrics#error-budget), and managing known issues.
 
-::video-youtube[Managing Risk as an SRE]{#4kGu1_M7Igg}
+<iframe src="https://www.youtube-nocookie.com/embed/4kGu1_M7Igg" title="Managing Risk as an SRE" class="rds-video"></iframe>
 
 ## What is Observability and Monitoring in Site Reliability Engineering?
 

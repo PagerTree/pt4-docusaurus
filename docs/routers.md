@@ -15,7 +15,7 @@ With routers, you can perform complex matching and actions on alerts. Routers co
 
 ### Routers Video
 
-::video-youtube[PagerTree Routers Tutorial Video (v4)]{#DTCqJnQPPJI}
+<iframe src="https://www.youtube-nocookie.com/embed/DTCqJnQPPJI" title="PagerTree Routers Tutorial Video (v4)" class="rds-video"></iframe>
 
 ## Rules Syntax
 

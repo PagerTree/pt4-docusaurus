@@ -94,4 +94,4 @@ The [summary data type metric](metric-types.md#summary) cannot be averaged acros
 
 - [Prometheus Cheat Sheet PDF](../.gitbook/assets/prometheus-cheat-sheet.pdf)
 - [Prometheus Monitoring Pipeline Diagram](../.gitbook/assets/prometheus-monitoring-pipeline.png)
-- ::video-youtube[]{#PHmwfegj_WQ}
+- <iframe src="https://www.youtube-nocookie.com/embed/PHmwfegj_WQ" title="" class="rds-video"></iframe>

@@ -56,7 +56,7 @@ For [Kubernetes](https://cloud.google.com/learn/what-is-kubernetes) related moni
 
 Tom Wilkie of GrafanaLabs did a great talk on these at GrafanaCon EU 2018. For more information on these methodologies watch the video below or check out this article by [Grafana Labs](https://grafana.com/blog/2018/08/02/the-red-method-how-to-instrument-your-services/).
 
-::video-youtube[Tom Wilkie of GrafanaLabs]{#zk77VS98Em8}
+<iframe src="https://www.youtube-nocookie.com/embed/zk77VS98Em8" title="Tom Wilkie of GrafanaLabs" class="rds-video"></iframe>
 
 ## History of SRE <a href="#history-of-sre" id="history-of-sre"></a>
 

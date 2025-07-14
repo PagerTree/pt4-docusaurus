@@ -27,7 +27,7 @@ Key features of Alertmanager include:
 
 Grouping categorizes alerts with a similar [label set](data-model.md#what-is-a-label) into a single notification. The group is configured by a routing tree in the [configuration file](alertmanager.md#config-file).
 
-:::hint
+:::tip
 **Example**: Your database goes down, and all services can no longer reach it. Prometheus' alerting rules were configured to send an alert for each service that cannot communicate with the database. As a result, many alerts were sent to Alertmanager. Alertmanager groups these alerts into one and sends a single alert/notification.
 :::
 
@@ -35,7 +35,7 @@ Grouping categorizes alerts with a similar [label set](data-model.md#what-is-a-l
 
 Inhibition suppresses notifications for certain alerts if certain other alerts are already firing. Inhibitions are configured through the Alertmanager [configuration file](alertmanager.md#config-file).
 
-:::hint
+:::tip
 **Example**: An alert is firing about an entire cluster that is not reachable. Alertmanager is configured to inhibit all other alerts concerning the cluster if this alert condition is already firing. This prevents duplicate alerts/notifications from being sent that might be downstream from the actual issue.
 :::
 
@@ -43,7 +43,7 @@ Inhibition suppresses notifications for certain alerts if certain other alerts a
 
 Silences are a way to mute alerts for a given time. Silences are configured in the web interface of Alertmanager.
 
-:::hint
+:::tip
 **Example**: Incoming alerts are checked to see whether they match all the equality or regular expression matches of active silence. If they do, no notifications will be sent out for that alert.
 :::
 

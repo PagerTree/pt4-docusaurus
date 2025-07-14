@@ -24,9 +24,9 @@ description: A curated list of helpful Docker resources and links.
 
 ## Videos
 
-::video-youtube[Docker Simplified in 55 seconds]{#vP_4DlOH1G4}
+<iframe src="https://www.youtube-nocookie.com/embed/vP_4DlOH1G4" title="Docker Simplified in 55 seconds" class="rds-video"></iframe>
 
-::video-youtube[Docker Basics in 162 seconds]{#EUrFVnCnxLE}
+<iframe src="https://www.youtube-nocookie.com/embed/EUrFVnCnxLE" title="Docker Basics in 162 seconds" class="rds-video"></iframe>
 
-::video-youtube[Docker Networking]{#To_TH6Au5zo}
+<iframe src="https://www.youtube-nocookie.com/embed/To_TH6Au5zo" title="Docker Networking" class="rds-video"></iframe>
 

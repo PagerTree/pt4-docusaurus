@@ -15,7 +15,7 @@ _If you would like a video to follow along instead, you can see it on_ [_YouTube
 
 <!-- truncate -->
 
-::video-youtube[Prometheus Monitoring Tutorial]{#-STqqJZG36w}
+<iframe src="https://www.youtube-nocookie.com/embed/-STqqJZG36w" title="Prometheus Monitoring Tutorial" class="rds-video"></iframe>
 
 ## Setup Docker Environment
 

@@ -54,3 +54,11 @@ Members of your account will now be required to sign-in using SSO via the [Singl
     <figure>![enable sso config button](<.gitbook/assets/idp-config-enable-button.png>)<figcaption><p>Enable SSO Config Button</p></figcaption></figure>
 
 Members of your account will now be required to sign-in using SSO via the [Single Sign-On login page](https://app.pagertree.com/sso)
+
+## Troubleshooting
+
+:::info
+
+If you are running into an issue with Azure (Entra) stating "Invalid Idp Response: Invalid Audience", this stems from Microsoft adding an extra "spn:" prefix to the Entity ID. Please [email the PagerTree support team](mailto:support@pagertree.com) to resolve this issue.
+
+:::

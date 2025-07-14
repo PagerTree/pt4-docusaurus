@@ -9,7 +9,7 @@ description: >-
 
 ## Video-SLA, SLO and SLI Made Simple
 
-::video-youtube[SLA, SLO and SLI Made Simple]{#-ECVHx239Ro}
+<iframe src="https://www.youtube-nocookie.com/embed/-ECVHx239Ro" title="SLA, SLO and SLI Made Simple" class="rds-video"></iframe>
 
 Regardless of whether your service is free or paid, your customers expect a certain level of quality and availability, that's why it's important to establish clear expectations with both customers and your internal team. Doing so will help foster healthy relationships between service providers and customers, while also providing your team with measurable goals and deliverables to maintain high performance. This is where Service Level Agreements (SLAs), Service Level Objectives (SLOs), and Service Level Indicators (SLIs) come into the equation.
 

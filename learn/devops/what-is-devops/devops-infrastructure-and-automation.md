@@ -45,7 +45,7 @@ Infrastructure as Code (IaC) is a fundamental practice in DevOps, where infrastr
 * **Version Control:** Infrastructure configurations can be versioned and tracked, enabling rollbacks to previous states and providing an audit trail for changes.
 * **Improved Collaboration:** IaC facilitates better collaboration between development and operations teams by allowing them to use familiar code review and version control practices.
 
-::video-youtube[What is Infrastructure as Code (IaC)?]{#RO7VcUAsf-I}
+<iframe src="https://www.youtube-nocookie.com/embed/RO7VcUAsf-I" title="What is Infrastructure as Code (IaC)?" class="rds-video"></iframe>
 
 ## Benefits of DevOps Infrastructure
 

@@ -54,7 +54,7 @@ RED breaks down into three key categories:
 
 Tom Wilkie of GrafanaLabs did a great talk on these at GrafanaCon EU 2018.
 
-::video-youtube[Tom Wilkie of GrafanaLabs RED Method]{#zk77VS98Em8}
+<iframe src="https://www.youtube-nocookie.com/embed/zk77VS98Em8" title="Tom Wilkie of GrafanaLabs RED Method" class="rds-video"></iframe>
 
 
 

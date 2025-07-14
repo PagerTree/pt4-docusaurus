@@ -24,7 +24,7 @@ Counter metrics can reset to zero when a scraped process restarts (e.g., the ser
 
 [`irate()`](https://prometheus.io/docs/prometheus/latest/querying/functions/#irate) - **"instantaneous rate of increase"** - calculates a per-second increase over the time window, only considering the last 2 points.
 
-:::hint
+:::tip
 `irate()` is much more responsive than `rate()`. It is good for high-resolution metrics. It should not be used for alerting conditions.
 :::
 
@@ -34,7 +34,7 @@ Counter metrics can reset to zero when a scraped process restarts (e.g., the ser
 
 `increase()` - **"absolute increase"** - calculates the absolute increase over a given time value, including extrapolation.
 
-:::hint
+:::tip
 Logically, only the `increase()` function includes extrapolation because it measures an absolute increase. `rate()` and `irate()` functions calculate a slope (derivative), which will not change even if extrapolation is included.
 :::
 

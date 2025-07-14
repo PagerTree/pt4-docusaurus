@@ -42,7 +42,7 @@ Add the following to the `scrape_configs` section in your `prometheus.yml` to sc
     - targets: ['pushgateway.example.org:9091']
 ```
 
-:::hint
+:::tip
 Note the [`honor_labels: true`](https://github.com/prometheus/pushgateway#about-the-job-and-instance-labels) scrape option. Because the Pushgateway proxies metrics from other jobs that usually attach their own `job` label to a group of metrics, you will want to prevent Prometheus from overwriting any such labels with the target labels from the scrape configuration.
 :::
 

@@ -1,7 +1,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import remarkDirectiveSugar from 'remark-directive-sugar';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -39,7 +38,7 @@ const config: Config = {
         },
         docs: {
           sidebarPath: './sidebars.ts',
-          remarkPlugins: [remarkDirectiveSugar],
+          remarkPlugins: [],
           editUrl: 'https://github.com/pagertree/pt4-docusaurus/tree/main/',
         },
         blog: {
@@ -54,7 +53,7 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-          remarkPlugins: [remarkDirectiveSugar],
+          remarkPlugins: [],
         },
         sitemap: {
           priority: 1,
@@ -74,7 +73,7 @@ const config: Config = {
         path: 'learn',
         routeBasePath: 'learn',
         sidebarPath: './sidebarsLearn.ts',
-        remarkPlugins: [remarkDirectiveSugar],
+        remarkPlugins: [],
         editUrl: 'https://github.com/pagertree/pt4-docusaurus/tree/main/',
       },
     ],

@@ -19,7 +19,7 @@ The following are true about teams:
 
 ### Tutorial Video
 
-::video-youtube[PagerTree Teams Tutorial Video (v4)]{#bZ5cyFv27r0}
+<iframe src="https://www.youtube-nocookie.com/embed/bZ5cyFv27r0" title="PagerTree Teams Tutorial Video (v4)" class="rds-video"></iframe>
 
 ## Team Roles
 

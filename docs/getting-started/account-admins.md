@@ -8,7 +8,7 @@ description: >-
 
 ## Account Admin Video
 
-::video-youtube[Account Admin QuickStart Guide]{#eHGHzjZYXqI}
+<iframe src="https://www.youtube-nocookie.com/embed/eHGHzjZYXqI" title="Account Admin QuickStart Guide" class="rds-video"></iframe>
 
 ## Required Reading
 
@@ -21,9 +21,7 @@ Account admins are the only users within your account who can add [users](https:
 ### Inviting Users
 
 1. Navigate to the [Users page](https://app.pagertree.com/users).
-2.  **Click** the **New User Button** in the top right corner.\
-
-
+2.  **Click** the **New User Button** in the top right corner.
     <figure>![Create User Button](<../.gitbook/assets/image (2).png>)<figcaption><p>Create User Button</p></figcaption></figure>
 3.  Follow the instructions on the New User form:
 
@@ -143,9 +141,6 @@ To override an event for a duration of time:
 
 <figure>![Annotated Override Form ](<../.gitbook/assets/event-override-form.png>)<figcaption><p>Annotated Override Form </p></figcaption></figure>
 
-\
-
-
 <figure>![Overridden Event](<../.gitbook/assets/event-override.png>)<figcaption><p>Overridden Event</p></figcaption></figure>
 
 ## Notifications
@@ -168,8 +163,8 @@ Users can elect from the following [default notification channels](https://pager
 
 ### Do Not Disturb Bypass
 
-Users can bypass their [Apple](https://apps.apple.com/us/app/pagertree/id1266437807?platform=iphone) and [Android](https://play.google.com/store/apps/details?id=com.pagertree.app\&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1\&pli=1) devices' DND to receive push, SMS, and voice notifications while their phones are in DND mode.\
-\
+Users can bypass their [Apple](https://apps.apple.com/us/app/pagertree/id1266437807?platform=iphone) and [Android](https://play.google.com/store/apps/details?id=com.pagertree.app\&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1\&pli=1) devices' DND to receive push, SMS, and voice notifications while their phones are in DND mode.
+
 Instructions for both can be found in the [Notifications](https://pagertree.com/docs/notifications#bypass-do-not-disturb-1) documentation.
 
 ### Notification Persistence (Push)
@@ -226,7 +221,7 @@ Notification Rules are specific to a user's preference but can be re-used by all
 
 You can find the full documentation for notification rules [here](https://pagertree.com/docs/notification-rules).
 
-:::hint
+:::tip
 **When to use Routers vs Notification Rules?**
 
 Routers would be used if you would like to route an alert to your after-hours team when it comes in during non-business hours.
