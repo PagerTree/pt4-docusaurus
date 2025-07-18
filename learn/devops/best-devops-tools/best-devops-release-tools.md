@@ -4,7 +4,7 @@ The release phase of the DevOps lifecycle focuses on preparing code for deployme
 
 ### DevOps Release Tools Include:
 
-[**CI/CD Automation Tools**](best-devops-release-tools.md#ci-cd-automation-tools)
+[**CI/CD Automation Tools**](best-devops-release-tools.md#cicd-automation-tools)
 
 * Jenkins
 * GitLab CI/CD

@@ -74,7 +74,7 @@ SLOs, on the other hand, are internal documents typically written by product man
 
 SLAs and SLOs are both projections of the level of service that should be provided. They are both written by teams, usually based on historical performance data.
 
-SLIs are the actual “Performance” of the service provided to the customer. SLIs are monitored and measured through tools like [Prometheus](/learn/prometheus/) and should be available to both internal teams and customers to ensure SLAs and SLOs are being met.
+SLIs are the actual “Performance” of the service provided to the customer. SLIs are monitored and measured through tools like [Prometheus](/learn/prometheus/overview.md) and should be available to both internal teams and customers to ensure SLAs and SLOs are being met.
 
 ## SLA vs SLO vs SLI in the Real World
 

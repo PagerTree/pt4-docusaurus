@@ -16,14 +16,14 @@ In this article, we will examine each phase of the DevOps lifecycle, highlight p
 
 ## DevOps Lifecycle Tools and Phases:
 
-1. [Plan](./#devops-planning-tools)
-2. [Code](./#devops-coding-tools)
-3. [Build](./#devops-build-tools)
-4. [Test](./#devops-testing-tools-test-automation-tools)
-5. [Release](./#devops-release-tools-ci-cd-automation-tools)
-6. [Deploy](./#devops-deployment-tools)
-7. [Operate](./#devops-operations-tools)
-8. [Monitor](./#devops-monitoring-tools-application-performance-monitoring-tools)
+1. [Plan](#devops-planning-tools)
+2. [Code](#devops-coding-tools)
+3. [Build](#devops-build-tools)
+4. [Test](#devops-testing-tools-test-automation-tools)
+5. [Release](#devops-release-tools-cicd-automation-tools)
+6. [Deploy](#devops-deployment-tools)
+7. [Operate](#devops-operations-tools)
+8. [Monitor](#devops-monitoring-tools-application-performance-monitoring-tools)
 
 ## DevOps Planning Tools
 

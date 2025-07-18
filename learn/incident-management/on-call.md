@@ -8,12 +8,12 @@ description: >-
 
 ## What is on-call?
 
-* **On-call** - is the practice of designating specific people to be available during specific times to be able to respond to an [incident](../) (even if outside of normal working hours).
+* **On-call** - is the practice of designating specific people to be available during specific times to be able to respond to an [incident](./README.md) (even if outside of normal working hours).
 * **On-call schedule** - is a schedule that ensures the right person is always available to quickly respond to incidents and outages.
 
 On-call is a critical responsibility for many IT, [DevOps](../devops/what-is-devops.md), and  Support Operations teams that maintain services demanding 24/7 [availability](https://pagertree.com/learn/devops/what-is-devops/top-25-devops-interview-questions#id-24.-what-is-high-availability-ha).
 
-Team members take turns "being on-call", to provide coverage around the clock or outside of business hours. The person on-call is empowered to [identify, respond, and resolve](README.md#steps-of-the-incident-management-process) any interruptions to service availability.
+Team members take turns "being on-call", to provide coverage around the clock or outside of business hours. The person on-call is empowered to [identify, respond, and resolve](./README.md#steps-of-the-incident-management-process) any interruptions to service availability.
 
 ## The importance of effective on-call schedules
 

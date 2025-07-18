@@ -27,10 +27,10 @@ Incident management is a critical process for any organization that aims to prov
 
 [Incident management processes](https://pagertree.com/learn/devops/what-is-devops/top-25-devops-interview-questions#id-23.-what-is-incident-management) can be slightly different depending on the size, type, and maturity of a company, but in general these are the steps:
 
-1. [Detect](./#detect)
-2. [Respond](./#respond)
-3. [Resolve](./#resolve)
-4. [Learn](./#learn)
+1. [Detect](#detect)
+2. [Respond](#respond)
+3. [Resolve](#resolve)
+4. [Learn](#learn)
 
 :::tip
 The key to good incident management is having a good process, clear communication, and a calm head.

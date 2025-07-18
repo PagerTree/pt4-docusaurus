@@ -6,7 +6,7 @@ description: Pushgateway allows short-lived jobs to expose their metrics to Prom
 
 ## What is Pushgateway?
 
-[Pushgateway](https://github.com/prometheus/pushgateway) is a component in the [Prometheus](/learn/prometheus/) ecosystem that allows short-lived jobs to expose their metrics to Prometheus. It is an intermediary between short-lived job instances (which may not be consistently available for scraping) and Prometheus. Here's how Pushgateway works and what it does:
+[Pushgateway](https://github.com/prometheus/pushgateway) is a component in the [Prometheus](/learn/prometheus/overview.md) ecosystem that allows short-lived jobs to expose their metrics to Prometheus. It is an intermediary between short-lived job instances (which may not be consistently available for scraping) and Prometheus. Here's how Pushgateway works and what it does:
 
 1. **Job Persistence**: Pushgateway allows short-lived jobs to push their metrics to it, rather than Prometheus [scraping](overview.md#architecture) them directly. These jobs may be transient, such as cron jobs or batch jobs that run periodically and do not live long enough to be scraped.
 2. **Push Mechanism**: Instead of the traditional pull mechanism used by Prometheus, where Prometheus scrapes metrics endpoints on targets, Pushgateway flips the model. Jobs push their metrics to the Pushgateway using [a simple HTTP POST request](pushgateway.md#pushing-metrics).

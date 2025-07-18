@@ -18,7 +18,7 @@ A well-structured [DevOps pipeline](https://pagertree.com/learn/devops/what-is-d
 * Kyverno
 * Cloud Custodian
 
-[**Config/Service Discovery Tools**](best-devops-operations-tools.md#config-service-discovery-tools)
+[**Config/Service Discovery Tools**](best-devops-operations-tools.md#configservice-discovery-tools)
 
 * Consul
 * Etcd

@@ -8,7 +8,7 @@ description: >-
 
 ## What is Docker Compose?
 
-[Docker Compose](https://docs.docker.com/compose/) is a powerful tool that simplifies the management and orchestration of [multi-container](containers.md) Docker applications. It allows you to define and run multi-container applications using a single [YAML file](compose.md#the-docker-compose-file-docker-compose.yml), streamlining the development, deployment, and scaling of containerized environments.
+[Docker Compose](https://docs.docker.com/compose/) is a powerful tool that simplifies the management and orchestration of [multi-container](containers.md) Docker applications. It allows you to define and run multi-container applications using a single [YAML file](compose.md#the-docker-compose-file-composeyaml), streamlining the development, deployment, and scaling of containerized environments.
 
 ### Key Benefits
 
@@ -30,7 +30,7 @@ Installation Instructions: [https://docs.docker.com/compose/install/](https://do
 
 ## How Does Docker Compose Work?
 
-Docker Compose reads a [YAML file](compose.md#the-docker-compose-file-docker-compose.yml) (commonly named `compose.yaml`) that defines the configuration of your multi-container application. You then interact with your Compose application through the [Compose CLI](https://docs.docker.com/compose/reference/). 
+Docker Compose reads a [YAML file](#the-docker-compose-file-composeyaml) (commonly named `compose.yaml`) that defines the configuration of your multi-container application. You then interact with your Compose application through the [Compose CLI](https://docs.docker.com/compose/reference/). 
 
 [Commands](compose.md#common-commands) like `docker compose up` are used to create and manage the containers specified in the Compose file, handling tasks such as container creation, [networking](compose.md#networking), [volume mounting](compose.md#volumes), and service dependencies. You can then use `docker compose down` to stop and remove the created containers and networks.
 
@@ -286,7 +286,7 @@ healthcheck:
 Dockerfiles and Docker Compose files serve complementary roles in the containerization process.
 
 * [Dockerfiles](dockerfile.md) are used to define the contents and build process of individual Docker [images](images.md)
-* [Docker Compose files](compose.md#the-docker-compose-file-compose.yaml) are used to define and manage [multi-container](containers.md) applications, orchestrating the deployment and management of multiple containers as a cohesive application stack.
+* [Docker Compose files](compose.md#the-docker-compose-file-composeyaml) are used to define and manage [multi-container](containers.md) applications, orchestrating the deployment and management of multiple containers as a cohesive application stack.
 
 ### How is Docker Compose Different than Kubernetes?
 

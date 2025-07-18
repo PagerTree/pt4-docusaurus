@@ -15,7 +15,7 @@ DevOps Planning tools include:
 1. [Jira](best-devops-planning-tools.md#jira)
 2. [Trello](best-devops-planning-tools.md#trello)
 3. [Miro](best-devops-planning-tools.md#miro)
-4. [Monday.com](best-devops-planning-tools.md#monday.com)
+4. [Monday.com](best-devops-planning-tools.md#mondaycom)
 5. [Nuclino](best-devops-planning-tools.md#nuclino)
 
 <figure>![DevOps Planning Tools](<../../.gitbook/assets/DevOps Planning Tools.png>)<figcaption><p>DevOps Planning Tools</p></figcaption></figure>
