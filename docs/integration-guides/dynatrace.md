@@ -54,6 +54,9 @@ In this integration tutorial we will show you how to send problem notifications 
 }
 ```
 
+5. Select **Send test notification** to make sure your webhook integration is working.
+6. **Save changes**.
+
 :::tip
 Payload variables are documented in the [Dynatrace documentation](https://docs.dynatrace.com/docs/discover-dynatrace/references/dynatrace-api/environment-api/settings/schemas/builtin-problem-notifications) under the `WebHookNotification` object.
 :::
