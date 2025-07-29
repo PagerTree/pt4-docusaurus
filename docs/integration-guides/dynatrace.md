@@ -1,5 +1,5 @@
 ---
-description: Connect your Dynatrace problems to PagerTree.
+description: Connect your Dynatrace problem notifications to PagerTree.
 ---
 
 # Dynatrace
