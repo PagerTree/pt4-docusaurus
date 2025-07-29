@@ -85,6 +85,7 @@ const sidebars: SidebarsConfig = {
     'integration-guides/cronitor',
     'integration-guides/datadog',
     'integration-guides/dead-mans-snitch',
+    'integration-guides/dynatrace',
     'integration-guides/echoes-hq',
     'integration-guides/elastalert',
     'integration-guides/email',
