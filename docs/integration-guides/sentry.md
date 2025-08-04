@@ -16,8 +16,7 @@ description: Connect your Sentry issues to PagerTree.
 
 Sentry triggers user-defined alerts by monitoring website performance, errors, and issues.
 
-* When an issue or error is created in Sentry, an alert is created in PagerTree automatically.
-* When an issue is resolved in Sentry, the alert is resolved in PagerTree.
+* When an issue or error is created in Sentry by Alert Conditions, an alert is created in PagerTree automatically.
 
 ## Integration Walkthrough
 
@@ -48,14 +47,8 @@ By using the webhooks integration, you can use custom Alerts and Conditions to c
    - **Name**: Enter a name for the integration (e.g., "PagerTree Webhook").
    - **Webhook URL**: Paste the **PagerTree Endpoint URL** you copied.
    - **Alert Rule Action**: **Enable**. This option allows the integration to be used the in the Alert Conditions.
-   - **Permissions**:
-        - **Issue & Event**: **Read**
-        - **Alerts**: **Read**
-    - **Webhooks**:
-        - **issue**: **enabled**
-
-        <figure>![Sentry Webhook Settings](<../.gitbook/assets/sentry-create-internal-integration-settings.png>)<figcaption><p>Configure the Sentry Webhook settings.</p></figcaption></figure>
 4.  **Click Save Changes**.
+        <figure>![Sentry Webhook Settings](<../.gitbook/assets/sentry-create-internal-integration-settings.png>)<figcaption><p>Configure the Sentry Webhook settings.</p></figcaption></figure>
 5. **Copy the Client Secret** - Scroll to the bottom of the newly created Sentry integration and copy the client secret.
     <figure>![Sentry Client Secret](<../.gitbook/assets/sentry-copy-client-secret.png>)<figcaption><p>Copy the Client Secret.</p></figcaption></figure>
 
