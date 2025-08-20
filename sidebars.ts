@@ -159,6 +159,7 @@ const sidebars: SidebarsConfig = {
     'integration-guides/uptime',
     'integration-guides/uptimerobot',
     'integration-guides/webhook',
+    'integration-guides/zabbix',
     'integration-guides/zendesk',
   ]
 
