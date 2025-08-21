@@ -123,6 +123,7 @@ const sidebars: SidebarsConfig = {
     'integration-guides/prometheus',
     'integration-guides/prtg-network-monitor',
     'integration-guides/pulsetic',
+    'integration-guides/scom',
     'integration-guides/sentry',
     'integration-guides/serverguard24',
     'integration-guides/site24x7',
