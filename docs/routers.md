@@ -46,8 +46,17 @@ When routers are matching rules they are given access to data.
   always: true, // will always be true
   alert: {...}, // the alert object being evaluated
   log: { // the source log of the alert (if one exists)
-    data: {...}, 
-    headers: {...}
+    // if the log was from a webhook based integration 
+    // it will have the following properties
+    data: {...}, // the body of the request
+    headers: {...}, // the headers of the request
+
+    // if the log was from an email integration 
+    // it will have the following properties
+    from: ["..."], // array of email addresses (but usually just one)
+    to: ["...", "..."], // array of email addresses
+    subject: "...", // text
+    body: "..." // raw body text
   }, 
   log_parsed: boolean, // a boolean indicating if PagerTree was able to parse the log to an object
 }
