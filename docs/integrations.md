@@ -48,10 +48,11 @@ The timeout value is the amount of time to wait after the alert has been created
 
 ## Templates
 
-Each integration supports customizing the alert title and description using handlebars substitution.
+Each integration supports customizing the alert title and description using [handlebars](https://handlebarsjs.com/guide/) substitution.
 
-* Use any [handlebars-helpers](https://github.com/helpers/handlebars-helpers) to support any logic.
+* Use the [handlebars](https://handlebarsjs.com/guide/) templating language and any [handlebars-helpers](https://github.com/helpers/handlebars-helpers) to support any logic.
 * Use [JSON dot notation selection](https://lodash.com/docs/4.17.10#get) to access deeply nested data (ex: `data.alarm.region`). If you are unsure of the data being received by your integration, make sure to check the [logs](#integration-logs).
+* The description template supports HTML markup. Use HTML tags to format the description (ex: `<b>`, `<i>`, `<br>`, etc...).
 
 :::tip
 Handlebars will [automatically try to sanitize](https://handlebarsjs.com/guide/#html-escaping) any HTML or special characters (ex: `&` `<` `>` `"` `'` `=`) from the input data. Use the triple-stash `{{{triple_stash}}}` if you want to allow HTML or special tags.

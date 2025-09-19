@@ -80,3 +80,34 @@ In this integration tutorial we will show you how to send alarms from AWS CloudW
 You have successfully completed the AWS Cloudwatch integration.
 
 ***
+
+## Integration Templates
+By default, the AWS CloudWatch integration sends the webhook in text format. PagerTree simplifies the parsing of the text and JSON for you in-case you want to use the [integration templates](../integrations.md#templates).
+
+### Example Templates
+
+#### Title Template Example
+Notice the use of triple-stash `{{{triple_stash}}}` to allow HTML markup.
+
+```handlebars
+{{data.Message.AWSAccountId}} {{{data.Subject}}}
+```
+
+
+#### Description Template Example
+Notice the use of the `<pre>` HTML tag to preserve formatting and line breaks. Also, notice how we use `{{#with}}` to create a new context for easier access to the data.
+
+```handlebars
+<pre>
+{{#with data.Message as |cw|}}
+  **Alarm Name:** {{cw.AlarmName}}
+  **Description:** {{cw.AlarmDescription}}
+  **AWS Account:** {{cw.AWSAccountId}}
+  **State:** {{cw.NewStateValue}}
+  **Reason:** {{cw.NewStateReason}}
+  **Metric:** {{cw.Trigger.MetricName}}
+  **Namespace:** {{cw.Trigger.Namespace}}
+  **Statistic:** {{cw.Trigger.StatisticType}} ({{cw.Trigger.Statistic}})
+{{/with}}
+</pre>
+```
