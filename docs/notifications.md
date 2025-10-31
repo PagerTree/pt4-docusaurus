@@ -70,21 +70,16 @@ Download the [PagerTree contact card (vCard)](https://pagertree.com/assets/img/k
 
 #### Android App
 
-1.  Tap **Settings**.
-
-    <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-select-settings.jpg>)<figcaption></figcaption></figure>
-2.  Tap **Notifications**.
-
-    <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-select-notifications.jpg>)<figcaption></figcaption></figure>
-3.  Tap the **PagerTree App**.
-
-    <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-select-pagertree-app.jpg>)<figcaption></figcaption></figure>
-4.  Tap the **Alert Channel** that needs to be customized.
-
-    <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-select-pagertree-channel.jpg>)<figcaption></figcaption></figure>
-5.  Toggle the **Ignore Do not disturb** setting to **on**.
-
-    <figure>![](<https://pagertree.com/assets/img/kb/notifications/android-toggle-dnd.jpg>)<figcaption></figcaption></figure>
+    1. From the Android App Home Screen, [select "My Settings"](https://app.pagertree.com/user/settings).
+        <figure>![](<.gitbook/assets/android-select-my-settings.png>)<figcaption></figcaption></figure>
+    2. Scroll down to the **Other Settings** section, and click the **Mobile App Settings** button.
+        <figure>![](<.gitbook/assets/android-select-open-mobile-app-settings.png>)<figcaption></figcaption></figure>
+    3. In the Android Settings, follow the steps below:
+        1. Select **Notifications**.
+            <figure>![](<.gitbook/assets/android-select-app-notifications.png>)<figcaption></figcaption></figure>
+        2. Select **Critical**.
+        3. Select **Override Do Not Disturb** to enable.
+            <figure>![](<.gitbook/assets/android-select-override-dnd.png>)<figcaption></figcaption></figure>
 
 ### Bypass DnD iPhone
 
@@ -121,32 +116,26 @@ When a user has persistent notifications, push notifications will be sent every 
 
 ## Custom Sounds (Push)
 
-1. Navigate to the [My Settings Page](https://app.pagertree.com/user/settings).
-2. Scroll to the **Other Settings section**.
-3.  Select the notification sound to be played.
-
-    <figure>![Custom Sound](<.gitbook/assets/select-sound-notification-setting.png>)<figcaption><p>Custom Notification Sound Setting</p></figcaption></figure>
-4. Click **Update**.
+For Android, custom sounds need to be configured in the App Settings [see below](#custom-sounds-on-android). For iPhone, custom sounds will automatically play without any extra configuration.
 
 ### Custom Sounds on Android
 
 On Android customizing the notification sound can be done by going to the notification preferences and customizing the sound for the alert channel.
 
-1.  Tap **Settings**
-
-    <figure>![android settings](<https://pagertree.com/assets/img/kb/notifications/android-select-settings.jpg>)<figcaption></figcaption></figure>
-2.  Tap **Notifications**
-
-    <figure>![android notifications](<https://pagertree.com/assets/img/kb/notifications/android-select-notifications.jpg>)<figcaption></figcaption></figure>
-3.  Tap the **PagerTree App**
-
-    <figure>![pagertree app](<https://pagertree.com/assets/img/kb/notifications/android-select-pagertree-app.jpg>)<figcaption></figcaption></figure>
-4.  Tap the **Alert Channel** that needs to be customized
-
-    <figure>![pagertree critical alerts](<https://pagertree.com/assets/img/kb/notifications/android-select-pagertree-channel.jpg>)<figcaption></figcaption></figure>
-5.  Click the **Sound** section and select a sound
-
-    <figure>![alert sounds](<https://pagertree.com/assets/img/kb/notifications/android-select-sound.jpeg>)<figcaption></figcaption></figure>
+    1. From the Android App Home Screen, [select "My Settings"](https://app.pagertree.com/user/settings).
+        <figure>![](<.gitbook/assets/android-select-my-settings.png>)<figcaption></figcaption></figure>
+    2. Scroll down to the **Other Settings** section, and click the **Mobile App Settings** button.
+        <figure>![](<.gitbook/assets/android-select-open-mobile-app-settings.png>)<figcaption></figcaption></figure>
+    3. In the Android Settings, follow the steps below:
+        1. Select **Notifications**.
+            <figure>![](<.gitbook/assets/android-select-app-notifications.png>)<figcaption></figcaption></figure>
+        2. Select the channel to customize the sound for.
+        3. Select **Sound**.
+            <figure>![](<.gitbook/assets/android-select-channel-sound.png>)<figcaption></figcaption></figure>
+        3. Select **My Sounds**.
+            <figure>![](<.gitbook/assets/android-select-channel-sound-2.png>)<figcaption></figcaption></figure>
+        4. Select the desired sound.
+            <figure>![](<.gitbook/assets/android-select-channel-sound-3.png>)<figcaption></figcaption></figure>
 
 ### Custom Sound Files for Android
 
