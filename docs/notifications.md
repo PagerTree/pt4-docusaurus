@@ -168,3 +168,21 @@ If you would like to download any of our sounds for installation, you can find t
 ### Custom Sounds on iPhone
 
 Custom sounds on iPhones will automatically play, no extra configuration needed.
+
+## Troubleshooting Push Notifications
+If you are not receiving push notifications, please try the following steps:
+1. Ensure that push notifications are enabled in your [user preferences](users#default-notification-channels).
+    <figure>![Push Notifications Enabled](<.gitbook/assets/push-notifications-enabled.png>)<figcaption><p>Push Notifications Enabled</p></figcaption></figure>
+1. Ensure that push notification permissions enabled for the PagerTree app in your phone settings.
+    <figure>![android permissions](<.gitbook/assets/android-permissions.png>)<figcaption><p>Android Permissions</p></figcaption></figure>
+1. Ensure that your [device is registered](#register-your-device).
+1. Ensure that notification rules are not overriding push notifications. (See [notification rules](notification-rules#attach-the-notification-rules-to-your-user) for more information.)
+
+### Reset Push Notification Token
+If you are still not receiving push notifications, you can try resetting your push notification token by following these steps:
+1. Navigate to the [My Settings page](https://app.pagertree.com/user/settings).
+1. Scroll to the **App Registrations** section.
+1. Click **Remove** on all devices.
+1. Click **Update** to save changes.
+1. Re-register your device by clicking **Register this device**.
+1. Click the **Send Test Notification** button to verify that push notifications are working.

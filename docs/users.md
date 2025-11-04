@@ -90,7 +90,7 @@ Voice notifications only apply to the alert open message.
 
 ### Notification Rules
 
-Notification rules allow custom notification sequences to be built for the alert open message. Please see the [notification rules documentation](users.md#notification-rules) for full details.
+Notification rules allow custom notification sequences to be built for the alert open message. Please see the [notification rules documentation](notification-rules.md) for full details.
 
 ### Going On-Call Notifications
 
