@@ -186,3 +186,24 @@ If you are still not receiving push notifications, you can try resetting your pu
 1. Click **Update** to save changes.
 1. Re-register your device by clicking **Register this device**.
 1. Click the **Send Test Notification** button to verify that push notifications are working.
+
+### Reinstall the App
+If push notifications still aren't working after trying the previous steps, reinstalling the PagerTree app may resolve the issue.
+
+**Before reinstalling:**
+1. Navigate to the [My Settings page](https://app.pagertree.com/user/settings).
+2. Scroll to the **App Registrations** section.
+3. Click **Remove** on all registered devices.
+4. Click **Update** to save changes.
+
+**Reinstall process:**
+1. Uninstall the PagerTree app from your device.
+2. Download and install the app again:
+    - **Android**: [Google Play Store](https://play.google.com/store/apps/details?id=com.pagertree.app\&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
+    - **iOS**: [Apple App Store](https://apps.apple.com/us/app/pagertree/id1266437807)
+
+**After reinstalling:**
+1. Open the app and allow all permissions when prompted.
+2. Navigate back to [My Settings](https://app.pagertree.com/user/settings).
+3. Click **Register this device** to re-register your device.
+4. Test notifications to verify they're working properly.

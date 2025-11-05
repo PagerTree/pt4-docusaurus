@@ -231,7 +231,7 @@ The setval action will assign data to the alert. Define a custom title, descript
 **Parameters**
 
 * _map_ - hash - Allowed keys: title, description, tags, and/or urgency.
-* _handlebars_ - boolean - Boolean indicating _severity_ and _message_ should use handlebars notation.
+* _handlebars_ - boolean - Boolean indicating _title_ and _description_ should use handlebars notation.
 
 ```yaml
 # simple example
