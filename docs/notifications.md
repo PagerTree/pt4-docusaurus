@@ -207,3 +207,10 @@ If push notifications still aren't working after trying the previous steps, rein
 2. Navigate back to [My Settings](https://app.pagertree.com/user/settings).
 3. Click **Register this device** to re-register your device.
 4. Test notifications to verify they're working properly.
+
+## Troubleshooting WhatsApp Notifications
+If you are not receiving WhatsApp notifications, please try the following steps:
+1. Ensure that WhatsApp notifications are enabled in your user preferences.
+1. Ensure that notification rules are not overriding WhatsApp notifications. (See [notification rules](notification-rules#attach-the-notification-rules-to-your-user) for more information.)
+
+If you are still not receiving WhatsApp notifications, or see an **undelivered** status on the notification, in WhatsApp, **send a message with '?'** as the content to the PagerTree WhatsApp number: **+1 (817) 592-8301**. This will re-establish the connection between PagerTree and WhatsApp for your number. (Sometimes WhatsApp can flag messages as spam, and this step helps to resolve that issue.)
