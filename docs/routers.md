@@ -82,7 +82,7 @@ Internally PagerTree uses the [sift package](https://github.com/crcn/sift.js) to
 * [$nor](https://github.com/crcn/sift.js#nor)
 * [$size](https://github.com/crcn/sift.js#size)
 * [$type](https://github.com/crcn/sift.js#type)
-* [$regex](https://github.com/crcn/sift.js#regex)
+* [$regex](https://github.com/crcn/sift.js#regex) (ECMAScript (JavaScript) regular expressions. Use [regex101.com](https://regex101.com/) to test.)
 * [$elemMatch](https://github.com/crcn/sift.js#elemmatch)
 * [$not](https://github.com/crcn/sift.js#not)
 
