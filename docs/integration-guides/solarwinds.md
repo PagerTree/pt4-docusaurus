@@ -98,7 +98,6 @@ You have successfully completed the SolarWinds Integration.
 #### SolarWinds Action Payload
 
 ```text title="solarwinds_action_payload.url"
-
 ActionType=Create&NodeName=${NodeName}&AlertID=${N=Alerting;M=AlertID}&AlertMessage=${N=Alerting;M=AlertMessage}&AlertDescription=${N=Alerting;M=AlertDescription}&AlertDetailsUrl=${N=Alerting;M=AlertDetailsUrl}&AcknowledgeUrl=${N=Alerting;M=AcknowledgeUrl}&AlertTriggerCount=${N=Alerting;M=AlertTriggerCount}&AlertTriggerTime=${N=Alerting;M=AlertTriggerTime;F=DateTime}&Severity=${N=Alerting;M=Severity}
 ```
 
