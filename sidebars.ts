@@ -143,6 +143,7 @@ const sidebars: SidebarsConfig = {
     'integration-guides/solarwinds',
     'integration-guides/stackdriver',
     'integration-guides/statuscake',
+    'integration-guides/status-gator',
     {
       type: 'category',
       label: 'Twilio',
