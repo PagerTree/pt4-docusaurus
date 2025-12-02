@@ -111,3 +111,32 @@ Notice the use of the `<pre>` HTML tag to preserve formatting and line breaks. A
 {{/with}}
 </pre>
 ```
+
+## Use with Routers
+You can use the AWS CloudWatch integration with [Routers](../routers.md) to customize how alerts are handled based on specific criteria. For example, you can route alerts to different teams based on the AWS account ID or the alarm name.
+
+### Example Router Conditions
+
+```yaml
+---
+rules:
+  - match:
+      log.data.Message.AWSAccountId: "account-id-123456789012"
+    actions:
+      - type: setval
+        map:
+          tags:
+            - CustomerA
+      - type: assign
+        receiver: tem_xxxxxx1
+  - match:
+      log.data.Message.AlarmName: "Production-High-CPU-Alarm"
+    actions:
+      - type: setval
+        map:
+          tags:
+            - DevOps
+      - type: assign
+        receiver: tem_xxxxxx2
+```
+

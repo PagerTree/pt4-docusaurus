@@ -65,6 +65,17 @@ Content-Type: application/json
 }
 ```
 
+```bash
+curl -X POST https://api.pagertree.com/integration/int_ODCWagoG9 \
+  -H "Content-Type: application/json" \
+  -d '{
+	"event_type": "create",
+	"Id": "example-id-123",
+	"Title": "Example Incident Title",
+	"Description": "Example Incident Description"
+}'
+```
+
 #### Example Request #2
 
 ```
@@ -90,6 +101,27 @@ Content-Type: application/json
 }
 ```
 
+```bash
+curl -X POST https://api.pagertree.com/integration/int_ODCWagoG9 \
+  -H "Content-Type: application/json" \
+  -d '{
+	"event_type": "create",
+	"Id": "example-id-123",
+	"Title": "Example Incident Title",
+	"Description": "Example Incident Description",
+	"Tags": [
+		"a",
+		"b",
+		"c"
+	],
+	"Meta": {
+		"incident": true,
+		"incident_severity": "SEV-1",
+		"incident_message": "Please join conference bridge 1-800-123-4567"
+	}
+}'
+```
+
 You have successfully completed the Webhook Integration.
 
 ## Integration Options
@@ -98,3 +130,4 @@ You have successfully completed the Webhook Integration.
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------- |
 | Token                   | The token can be used to authenticate request. Must be passed in by requesting clients in the `pagertree-token` HTTP header. |         |
 | Capture Additional Data | Should PagerTree capture and display other data sent?                                                                        | False   |
+| Wrapper Key						 | The key in the JSON payload that wraps all PagerTree fields. For example, if the payload is `{ "acme_payload": { "Id": "123" } }`, the wrapper key is `acme_payload`. |         |
