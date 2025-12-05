@@ -9,7 +9,7 @@ description: Learn about outgoing webhooks and how events are triggered for your
 Outgoing Webhooks are requests made by PagerTree to a user-defined URL, the payload provided represents an alert. Webhooks allow you to extend PagerTree by performing any logic you wish.
 
 :::info
-This documentation is meant for webhooks that are _outgoing_ from PagerTree. If you are looking for incoming webhooks, please refer to the [incoming webhook documentation](webhook.md).
+This documentation is meant for webhooks that are _outgoing_ from PagerTree. If you are looking for _incoming webhooks_, please refer to the [incoming webhook documentation](webhook.md).  If you are looking for _incoming_ webhooks with a _custom format_, please see [custom webhooks](custom-webhook.md).
 :::
 
 ### Create An Outgoing Webhook

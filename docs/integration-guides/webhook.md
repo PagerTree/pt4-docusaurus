@@ -17,7 +17,7 @@ Webhooks are user defined HTTP callbacks. They are usually triggered by some eve
 If your tool is not listed on our integrations page, the webhook integration is a great choice to use as an integration point since most tools support sending webhooks for alerts and alarms.
 
 :::info
-This documentation is meant for webhooks that are _incoming_ into PagerTree. If you are looking for outgoing webhooks, please refer to the [outgoing webhook documentation](outgoing-webhook.md).
+This documentation is meant for webhooks that are _incoming_ into PagerTree. If you are looking for _incoming_ webhooks with a _custom format_, please see [custom webhooks](custom-webhook.md). If you are looking for outgoing webhooks, please refer to the [outgoing webhook documentation](outgoing-webhook.md).
 :::
 
 ## How It Works
