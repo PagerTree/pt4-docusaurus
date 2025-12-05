@@ -59,6 +59,6 @@ Members of your account will now be required to sign-in using SSO via the [Singl
 
 :::info
 
-If you are running into an issue with Azure (Entra) stating "Invalid Idp Response: Invalid Audience", this stems from Microsoft adding an extra "spn:" prefix to the Entity ID. Please [email the PagerTree support team](mailto:support@pagertree.com) to resolve this issue.
+If you are running into an issue with Azure (Entra) stating "Invalid Idp Response: Invalid Audience", this stems from Microsoft adding an extra "spn:" prefix to the Entity ID. Please switch your SSO Vendor type to `Azure AD` to resolve this issue.
 
 :::

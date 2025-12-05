@@ -82,6 +82,7 @@ const sidebars: SidebarsConfig = {
     'integration-guides/aws-cloudwatch',
     'integration-guides/azure-monitor',
     'integration-guides/cloudflare',
+    'integration-guides/custom-webhook',
     'integration-guides/cronitor',
     'integration-guides/datadog',
     'integration-guides/dead-mans-snitch',
