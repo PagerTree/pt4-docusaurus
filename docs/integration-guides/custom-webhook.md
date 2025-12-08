@@ -4,6 +4,10 @@ description: >-
   This allows advanced rule-based processing with YAML configurations.
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 # Custom Webhook
 
 | Company       | Estimated Time | Vendor Docs | Open Source                                                                                                                |
@@ -65,11 +69,87 @@ Define rules in YAML for matching and actions ([see examples below](#examples)).
 ### In Your Source Tool
 Configure your tool (e.g., UptimeRobot, AWS SNS, etc.) to send `POST` requests to PagerTree's endpoint URL. The payload will be processed using your YAML rules.
 
+## YAML Syntax Reference
+
+### Rule Structure
+
+``` yaml
+preprocess:
+  # preprocessors
+  # - type: parse_sns
+rules:
+  - match:
+      # conditions (see your specific tool's payload)
+      # log.data.state: "alarm"
+    actions:
+      - type: create|acknowledge|resolve
+        thirdparty_id: "{{log.data.id}}"
+default:
+  actions:
+    - type: ignore
+```
+
+### Preprocessors
+
+ | Preprocessor | Description |
+ | ------------ | ----------- |
+ | `parse_json` | Converts a raw string into JSON. |
+ | `parse_sns` | Processes AWS SNS payloads and parses the Notification `Message`. |
+
+### Match Data
+The shape of the data passed in for you to match on is as follows:
+
+```json
+{
+  "always": true,
+  "log": {
+    "data": {
+      /* Your tool's payload (a combition of any query parameters and JSON payload) (hash) */
+      "key1": "value1",
+      "key2": {
+        "key3": 123
+      }
+      // ...
+    },
+    "headers": {
+      /* Headers of the HTTP Request sent by your tool (hash) */
+      "Content-Type": "application/json"
+      // ...
+    },
+    "body": "", // Raw body of the payload (string). 
+    "params": {}, // Raw query parameters (hash).
+    "method": "", // The HTTP verb (string).
+    "url": "", // The URL that was called (string).
+    "remote_ip": , // The IP that made the call (string).
+  }
+}
+```
+
+### Action Fields
+
+| Field               | Required? | Type           | Purpose |
+| ------------------- | --------- | ------------- | ----------------------------------------------- |
+| `type`              | ✅ | string | `create`, `acknowledge`, `resolve` |
+| `thirdparty_id`     | ✅ | string | Identifier used for alert correlation. (see [integrations@alert-aggregation](../integrations.md#alert-aggregation)) |
+| `title`             | on create | string | Alert title. |
+| `description`       | - | string | Alert description. |
+| `urgency`           | - | enum | `critical`, `high`, `medium`, `low`, `silent` |
+| `tags`              | - | list/string | Alert tags. List (array). String (comma delimited) |
+| `meta`              | - | object | Additional metadata (hash) |
+| `additional_data`   | - | list | Supplemental visual fields (object) `{format: "text\|link\|img\|email\|phone\|datetime", label: "string", value: "string"}` |
+| `dedup_keys` | - | list/string | Global deduplication keys. List (array). String (command delimiated) |
+| `incident`| - | boolean | Boolean value `true\|false` if this alert should be flagged as an incident |
+| `incident_severity` | if `incident` true | string | `SEV-1`, `SEV-2`, `SEV-3`, `SEV-4`, `SEV-5` |
+| `incident_message` | if `incident` true | string | A custom message to be displayed at the top of the alert page |
+
 ## Examples
 
-### Example: New Relic Integration (YAML)
-```yaml
+### Example: New Relic
 
+<Tabs>
+  <TabItem value="new-relic-yaml" label="new-relic.yaml" default>
+    
+```yaml
 ---
 rules:
   - match:
@@ -104,8 +184,9 @@ default:
       reason: "Unhandled New Relic alert"
 ```
 
-### Example: New Relic Integration (cURL)
-```bash
+  </TabItem>
+  <TabItem value="new-relic-curl" label="New Relic (cURL)">
+    ```bash
 curl -X POST https://api.pagertree.com/integration/int_ABC123 \
   -H "Content-Type: application/json" \
   -d '{
@@ -149,8 +230,13 @@ curl -X POST https://api.pagertree.com/integration/int_ABC123 \
   "version": 3
 }'
 ```
+  </TabItem>
+</Tabs>
 
-### Example: AWS SNS Cloudwatch (YAML)
+### Example: AWS SNS + Cloudwatch
+
+<Tabs>
+  <TabItem value="aws-sns-cloudwatch-yml" label="aws-sns-cloudwatch.yml" default>
 
 ```yaml
 ---
@@ -200,59 +286,24 @@ rules:
 default:
   actions:
     - type: ignore
-      reason: "Unhandled AWS Health Event"
+      reason: "Unhandled CloudWatch Event"
 ```
 
-##### Example: AWS SNS Cloudwatch (cURL)
+  </TabItem>
+  <TabItem value="aws-sns-cloudwatch-curl" label="AWS SNS + Cloudwatch (cURL)">
 
 ```bash
-curl -X POST http://example.com \
+curl -X POST https://api.pagertree.com/integration/int_ABC123 \
   -H "Content-Type: text/plain" \
   --data-raw '{"Type": "Notification", "MessageId": "[REDACTED]", "TopicArn": "arn:aws:sns:us-west-2:[ACCOUNT_ID]:[TOPIC_NAME]", "Subject": "ALARM: \"[ALARM_NAME]\" in US West (Oregon)", "Message": "{\"AlarmName\": \"[ALARM_NAME]\", \"AlarmDescription\": null, \"AWSAccountId\": \"[ACCOUNT_ID]\", \"AlarmConfigurationUpdatedTimestamp\": \"2025-12-05T21:52:26.532+0000\", \"NewStateValue\": \"ALARM\", \"NewStateReason\": \"Threshold Crossed: 1 out of the last 1 datapoints [[DATAPOINT_VALUE] (05/12/25 21:50:00)] was not less than the threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition).\", \"StateChangeTime\": \"2025-12-05T21:53:58.466+0000\", \"Region\": \"US West (Oregon)\", \"AlarmArn\": \"arn:aws:cloudwatch:us-west-2:[ACCOUNT_ID]:alarm:[ALARM_NAME]\", \"OldStateValue\": \"OK\", \"OKActions\": [\"arn:aws:sns:us-west-2:[ACCOUNT_ID]:[TOPIC_NAME]\"], \"AlarmActions\": [\"arn:aws:sns:us-west-2:[ACCOUNT_ID]:[TOPIC_NAME]\"], \"InsufficientDataActions\": [], \"Trigger\": {\"MetricName\": \"CallCount\", \"Namespace\": \"AWS/Usage\", \"StatisticType\": \"Statistic\", \"Statistic\": \"AVERAGE\", \"Unit\": null, \"Dimensions\": [{\"value\": \"API\", \"name\": \"Type\"}, {\"value\": \"SendLast24Hours\", \"name\": \"Resource\"}, {\"value\": \"SES\", \"name\": \"Service\"}, {\"value\": \"None\", \"name\": \"Class\"}], \"Period\": 60, \"EvaluationPeriods\": 1, \"DatapointsToAlarm\": 1, \"ComparisonOperator\": \"LessThanThreshold\", \"Threshold\": 1.0, \"TreatMissingData\": \"notBreaching\", \"EvaluateLowSampleCountPercentile\": \"\"}}", "Timestamp": "2025-12-05T21:53:58.509Z", "SignatureVersion": "1", "Signature": "[REDACTED]", "SigningCertURL": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-[REDACTED].pem", "UnsubscribeURL": "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:[ACCOUNT_ID]:[TOPIC_NAME]:[SUBSCRIPTION_ID]"}'
 ```
+  </TabItem>
+</Tabs>
+
+
+##### Example: AWS SNS Cloudwatch (cURL)
+
+
 
 You have successfully completed the Custom Webhook Integration.
 
-## YAML Syntax Reference
-
-### Rule Structure
-
-``` yaml
-preprocess:
-  # preprocessors
-  # - type: parse_sns
-rules:
-  - match:
-      # conditions (see your specific tool's payload)
-      # log.data.state: "alarm"
-    actions:
-      - type: create|acknowledge|resolve
-        thirdparty_id: "{{log.data.id}}"
-default:
-  actions:
-    - type: ignore
-```
-
-### Preprocessors
-
- | Preprocessor | Description |
- | ------------ | ----------- |
- | `parse_json` | Converts a raw string into JSON. |
- | `parse_sns` | Processes AWS SNS payloads and parses the Notification `Message`. |
-
-### Action Fields
-
-| Field               |Type           | Purpose |
-| ------------------- | ------------- | ----------------------------------------------- |
-| `type`              | string | `create`, `acknowledge`, `resolve` |
-| `thirdparty_id`     | string | Identifier used for alert correlation. (see [integrations@alert-aggregation](../integrations.md#alert-aggregation)) |
-| `title`             | string | Alert title. |
-| `description`       | string | Alert description. |
-| `urgency`           | enum | `critical`, `high`, `medium`, `low`, `silent` |
-| `tags`              | list/string | Alert tags. List (array). String (comma delimited) |
-| `meta`              | object | Additional metadata (hash) |
-| `additional_data`   | list | Supplemental visual fields (object) `{format: "text\|link\|img\|email\|phone\|datetime", label: "string", value: "string"}` |
-| `dedup_keys` | list/string | Global deduplication keys. List (array). String (command delimiated) |
-| `incident`| boolean | Boolean value `true\|false` if this alert should be flagged as an incident |
-| `incident_severity` | string | `SEV-1`, `SEV-2`, `SEV-3`, `SEV-4`, `SEV-5` |
-| `incident_message` | string | A custom message to be displayed at the top of the alert page |
