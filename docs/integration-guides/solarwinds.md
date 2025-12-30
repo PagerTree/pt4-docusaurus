@@ -6,7 +6,7 @@ description: Connect your SolarWinds alerts to PagerTree.
 
 | Company                                                  | Estimated Time | Vendor Docs                                                                                                                                                                                 | Open Source                                                                                                                     |
 | -------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [SolarWinds Worldwide, LLC](https://www.solarwinds.com/) | 10 minutes     | [view](https://support.solarwinds.com/Success\_Center/Orion\_Platform/Orion\_Documentation/Orion\_Platform\_Administrator\_Guide/Available\_alert\_actions/Send\_a\_GET\_or\_POST\_request) | [v3.rb](https://github.com/PagerTree/pager\_tree-integrations/blob/main/app/models/pager\_tree/integrations/solar\_winds/v3.rb) |
+| [SolarWinds Worldwide, LLC](https://www.solarwinds.com/) | 10 minutes     | [view](https://documentation.solarwinds.com/en/success_center/orionplatform/content/core-orion-variables-and-examples-sw1115.htm) | [v3.rb](https://github.com/PagerTree/pager\_tree-integrations/blob/main/app/models/pager\_tree/integrations/solar\_winds/v3.rb) |
 
 ## What is SolarWinds?
 
