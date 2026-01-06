@@ -12,7 +12,7 @@ COPY . .
 RUN yarn build:docs && yarn build:blog && yarn build:learn
 
 # Serve stage: Use a specific Caddy version for reproducibility
-FROM caddy:2.10.0-alpine
+FROM caddy:2.10.2-alpine
 
 # Copy static files from the build stage
 COPY --from=builder /app/build /srv
