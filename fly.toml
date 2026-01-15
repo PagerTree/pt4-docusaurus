@@ -11,6 +11,9 @@ kill_timeout = '5s'
 [experimental]
   auto_rollback = true
 
+[[restart]]
+  policy = "always"
+
 [[services]]
   protocol = "tcp"
   internal_port = 8080

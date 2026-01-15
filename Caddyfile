@@ -1,6 +1,7 @@
 {
 	# debug # DEV
 	# auto_https off # DEV
+	admin off
 }
 
 :8080 {
