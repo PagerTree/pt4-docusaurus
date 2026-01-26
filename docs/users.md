@@ -65,7 +65,7 @@ You should now see the advanced options in the navigation menu.
 
     <figure>![phone verification form](<.gitbook/assets/phone-verify-form.png>)<figcaption><p>Phone Verification Form</p></figcaption></figure>
 
-be redirectedIf successful, you will be redirected to the My Settings page with the message "Phone verified successfully".
+be redirected. If successful, you will be redirected to the My Settings page with the message "Phone verified successfully".
 
 ## Notifications
 

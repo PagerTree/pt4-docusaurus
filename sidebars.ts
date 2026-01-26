@@ -49,6 +49,7 @@ const sidebars: SidebarsConfig = {
     'routers',
     'notification-rules',
     'single-sign-on-sso',
+    'email-to-text',
   ],
 
   apiSidebar: [
