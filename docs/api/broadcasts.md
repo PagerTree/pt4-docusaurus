@@ -16,6 +16,12 @@
 | response\_requested\_by         | timestamp                  | The deadline of when the destinations have to respond by.                                 |
 | broadcast\_response\_options    | BroadcastResponseOption\[] | `:id, :value, :position, :broadcast_responses_count`                                      |
 | broadcast\_responses            | BroadcastResponses\[]      | `:id, :prefix_id, :account_user_id, :broadcast_response_option_id, :channel, :created_at` |
+| select\_specific\_channels       | boolean                    | If true, the broadcast will only be sent via the "forced" channels specified in the `notify_*` parameters. If false, the broadcast will be sent via all user's preferred channels. |
+| notify\_push                    | boolean                    | If true, the broadcast will be sent via push notifications. Only applicable if `select_specific_channels` is true. |
+| notify\_email                   | boolean                    | If true, the broadcast will be sent via email. Only applicable if `select_specific_channels` is true. |
+| notify\_sms                     | boolean                    | If true, the broadcast will be sent via SMS. Only applicable if `select_specific_channels` is true. |
+| notify\_slack                   | boolean                    | If true, the broadcast will be sent via Slack. Only applicable if `select_specific_channels` is true. |
+| notify\_whatsapp                | boolean                    | If true, the broadcast will be sent via WhatsApp. Only applicable if `select_specific_channels` is true. |
 
 ## Create a Broadcast
 
@@ -33,6 +39,12 @@ def broadcast_params
     :tag_list,
     :response_requested,
     :response_requested_by,
+    :select_specific_channels,
+    :notify_push,
+    :notify_email,
+    :notify_sms,
+    :notify_slack,
+    :notify_whatsapp,
     destination_team_ids: [],
     destination_account_user_ids: [],
     broadcast_response_options_attributes: [
