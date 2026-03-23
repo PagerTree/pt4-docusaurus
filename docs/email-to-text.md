@@ -10,7 +10,7 @@ Email to Text lets you send SMS text messages by sending an email. Convert email
 
 **Key Features:**
 * Send SMS via email from any email client
-* Unique gateway domain per account (`[your-id].e2t.pagertree.com`)
+* Unique gateway domain per account (`[your-gateway-domain].e2t.pagertree.com`)
 * Recipients must have verified phone numbers in your account
 * All messages logged in PagerTree interface
 
@@ -22,7 +22,7 @@ Email to Text is currently in beta and will require enabling for your account. P
 
 **Email Format:**
 ```
-To: [phone-number]@[your-gateway-domain].e2t.pagertree.com
+To: [10-digit-phonenumber]@[your-gateway-domain].e2t.pagertree.com
 Subject: Your message
 Body: SMS content
 ```
