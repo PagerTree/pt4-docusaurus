@@ -95,6 +95,13 @@ It integrates with any email payload.
   `$eq`, `$regex`, `$gt`, `$in`, `$and`, `$or`, `$not`, `$exists`, and more. (see [routers#operators](../routers.md#operators))
 - Handlebars templates allow injecting values directly from payload structure. (see [handlebars](https://handlebarsjs.com/guide/) and [handlebars-helpers](https://github.com/helpers/handlebars-helpers)). An additional helper `regexMatch(string, pattern, flags)` is included for convinience for extracting fields (for example the thirdparty_id).
 
+### Video Explanation
+
+Check out the following video, for an in-depth explanation of how to use the custom definition feature of the email integration.
+
+<iframe src="https://www.youtube-nocookie.com/embed/vhmv4gGcTRs" title="
+How to Set Up Custom Email Alert Rules in PagerTree (Create on DOWN, Resolve on UP) – YAML Tutorial" class="rds-video"></iframe>
+
 ### Rule Structure
 ``` yaml
 rules:
