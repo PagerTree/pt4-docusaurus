@@ -57,8 +57,10 @@ Members of your account will now be required to sign-in using SSO via the [Singl
 
 ## Troubleshooting
 
-:::info
+### Azure (Entra) Troubleshooting
+[Azure (Entra)](https://docs.microsoft.com/en-us/azure/active-directory/) users may encounter an "Invalid Idp Response: Invalid Audience" error due to Microsoft adding an extra "spn:" prefix to the Entity ID. To resolve this issue, switch your SSO Vendor type to `Azure AD`.
 
-If you are running into an issue with Azure (Entra) stating "Invalid Idp Response: Invalid Audience", this stems from Microsoft adding an extra "spn:" prefix to the Entity ID. Please switch your SSO Vendor type to `Azure AD` to resolve this issue.
-
-:::
+### KeyCloak Troubleshooting
+[KeyCloak](https://www.keycloak.org/) users may enounter a "null origin" error when trying to authenticate. To resolve this issue, adjust the following settings in KeyCloak:
+1. Set the "Force POST Binding" option to "ON" in the KeyCloak SAML client settings.
+2. Adjust the "Referrer Policy" (under Realm Settings > Security Defenses) to "strict-origin-when-cross-origin".
