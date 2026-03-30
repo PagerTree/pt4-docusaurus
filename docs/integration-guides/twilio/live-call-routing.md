@@ -36,6 +36,10 @@ Twilio users can route incoming phone calls to on-call customer support.
 
 In this integration tutorial we will show you how to route an incoming phone call from Twilio into PagerTree. The estimated time for this integration is 7 minutes. We assume that you already have a PagerTree and Twilio account setup.
 
+:::tip
+Make sure your Twilio account is upgraded to a paid account. Load the minimum requirements for a paid account (~$20), as trial accounts have limitations that prevent the integration from working properly.
+:::
+
 ### In Twilio - Create API Credentials
 
 1. Open a text editor, as we’ll need to copy several pieces of data.
@@ -177,3 +181,4 @@ rules:
     - type: assign
       receiver: tem_ddddd # Team D
 ```
+
