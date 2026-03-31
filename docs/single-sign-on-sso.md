@@ -64,3 +64,6 @@ Members of your account will now be required to sign-in using SSO via the [Singl
 [KeyCloak](https://www.keycloak.org/) users may enounter a "null origin" error when trying to authenticate. To resolve this issue, adjust the following settings in KeyCloak:
 1. Set the "Force POST Binding" option to "ON" in the KeyCloak SAML client settings.
 2. Adjust the "Referrer Policy" (under Realm Settings > Security Defenses) to "strict-origin-when-cross-origin".
+
+### Authentik Troubleshooting
+[Authentik](https://goauthentik.io/) users need to ensure that the **Authentik** Vendor type is selected in the SSO Config form (PagerTree). Additionally, Authentik users need to select the **Redirect** option for the **Service Provider Binding** (in Authentik).
