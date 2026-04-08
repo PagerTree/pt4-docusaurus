@@ -19,7 +19,7 @@ description: >-
 * _NameIDPolicy_ - urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
 * _Encryption_ - false
 
-1. Enable "advanced mode".
+1. Enable ["advanced mode"](./users.md#advanced-mode).
 2. Navigate to the [Idp Configs page](https://app.pagertree.com/single\_sign\_on\_configs).
 3. Click **New SSO Config** button.
 4. In the new Idp Config form:
