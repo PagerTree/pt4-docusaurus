@@ -52,6 +52,13 @@ This documentation is for _incoming custom_ webhooks (that need custom logic) in
   `$eq`, `$regex`, `$gt`, `$in`, `$and`, `$or`, `$not`, `$exists`, and more. (see [routers#operators](../routers.md#operators))
 - Handlebars templates allow injecting values directly from payload structure. (see [handlebars](https://handlebarsjs.com/guide/) and [handlebars-helpers](https://github.com/helpers/handlebars-helpers))
 
+### Video Explanation
+
+Check out the following video, for an in-depth explanation of how to use the custom YAML definition in the PagerTree Custom Webhook integration.
+
+<iframe src="https://www.youtube-nocookie.com/embed/OkV5GD6VqfU" title="
+How to Set Up Custom Webhook Alert Rules in PagerTree (Create on DOWN, Resolve on UP) – YAML Tutorial" class="rds-video"></iframe>
+
 ## Integration Walkthrough
 
 In this tutorial, we'll set up the Custom Webhook integration in PagerTree and configure the YAML rules. We assume you have a PagerTree account and a custom tool that can send POST webhooks.
