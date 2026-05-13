@@ -30,6 +30,10 @@ To receive push notifications you must:
 3. Register your device.
 4. Ensure push notifications are enabled in your preferences.
 
+:::info
+For alert notifications to bypass Do Not Disturb (DnD) on your phone, the alert urgency must be set to `critical`.
+:::
+
 ### Register Your Device
 
 1. Navigate to the [My Settings page](https://app.pagertree.com/user/settings).
@@ -70,6 +74,10 @@ Download the [PagerTree contact card (vCard)](https://pagertree.com/assets/img/k
 
 #### Android App
 
+:::info
+For alert notifications to bypass Do Not Disturb (DnD) on your phone, the alert urgency must be set to `critical`.
+:::
+
     1. From the Android App Home Screen, [select "My Settings"](https://app.pagertree.com/user/settings).
         <figure>![](<.gitbook/assets/android-select-my-settings.png>)<figcaption></figcaption></figure>
     2. Scroll down to the **Other Settings** section, and click the **Mobile App Settings** button.
@@ -96,6 +104,10 @@ Download the [PagerTree contact card (vCard)](https://pagertree.com/assets/img/k
     <figure>![iphone bypass](<https://pagertree.com/assets/img/kb/notifications/iphone-emergency-bypass-toggle-dnd.jpg>)<figcaption></figcaption></figure>
 
 #### iPhone App
+
+:::info
+For alert notifications to bypass Do Not Disturb (DnD) on your phone, the alert urgency must be set to `critical`.
+:::
 
 1. During the installation of the iPhone app, when asked about critical alerts, click **Allow.**
 

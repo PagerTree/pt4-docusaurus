@@ -21,7 +21,7 @@
 | 6            | Responders          | Users that have acknowledged this alert.                                                                                                                |
 | 7            | Title               | Should be concise and descriptive. It shows up on all notification channels                                                                             |
 | 8            | Public Url          | The public shareable URL to this alert (default: disabled)                                                                                              |
-| 9            | Urgency             | `low\|medium\|high\|critical` - Determines the push notification priority and can affect routers and notification rules.                                |
+| 9            | Urgency             | `low\|medium\|high\|critical` - Determines the push notification priority and can affect routers and notification rules. `critical` alerts will [bypass Do Not Disturb (DnD)](./notifications.md#bypass-do-not-disturb) on your phone. |
 | 10           | Stakeholders        | Any stakeholders that are attached to the alert                                                                                                         |
 | 11           | Third Party ID      | The unique identifier that maps this alert with and object in a 3rd party system                                                                        |
 | 12           | Deduplication Count | An incrementing integer. Will increase if the Integration tries to create an alert with the same Third Party ID, another alert is created with the same |
@@ -145,4 +145,4 @@ If you are unsure which level an incident is (e.g. not sure if SEV-2 or SEV-1), 
 | Question                          | Answer                                                                                                     |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | Who can create an Alert?          | Any account user or integration may create an alert.                                                       |
-| What does the urgency mean / do ? | The alert urgency determines the push notification priority and can affect routers and notification rules. |
+| What does the urgency mean / do ? | The alert urgency determines the push notification priority and can affect routers and notification rules. `critical` alerts will [bypass Do Not Disturb (DnD)](./notifications.md#bypass-do-not-disturb) on your phone. |
