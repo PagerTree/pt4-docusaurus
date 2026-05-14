@@ -51,6 +51,10 @@ figure img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
 }
 
+figure.figure-mobile img {
+  max-width: 320px;
+}
+
 figure figcaption {
   font-size: 0.8rem; /* Slightly smaller font */
   color: var(--ifm-color-gray-700); /* Muted color (adjust based on theme) */
