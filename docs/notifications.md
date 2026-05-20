@@ -24,6 +24,23 @@ Download the [PagerTree contact card (vCard)](https://pagertree.com/assets/img/k
 Voice notifications are only sent for **alert open** events. You will not receive voice notifications for alert timeouts, drops, broadcasts, or other system events.
 :::
 
+## SMS Opt-In & Terms
+
+PagerTree sends SMS notifications to phone numbers verified by account users. To receive SMS notifications:
+
+1. Navigate to [My Settings](https://app.pagertree.com/user/settings).
+2. Click **Add Phone**, enter your number and select a verification method, then click **Update**.
+3. Enter the 6-digit code you receive and click **Verify**.
+4. Ensure SMS is enabled in your [notification preferences](users.md#default-notification-channels).
+
+:::note
+Message frequency varies based on your alert volume and notification rules. Msg & data rates may apply.
+:::
+
+To opt out of SMS notifications at any time, reply **STOP** to any PagerTree SMS. To re-enable, update your notification preferences in [My Settings](https://app.pagertree.com/user/settings). Reply **HELP** for assistance or contact [support@pagertree.com](mailto:support@pagertree.com).
+
+For full terms, see our [Terms of Service](https://pagertree.com/terms-of-service#63-sms-communications).
+
 ---
 
 ## App Notifications (Push)
