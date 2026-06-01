@@ -22,7 +22,7 @@ Email to Text is currently in beta and will require enabling for your account. P
 
 **Email Format:**
 ```
-To: [10-digit-phonenumber]@[your-gateway-domain].e2t.pagertree.com
+To: [phonenumber]@[your-gateway-domain].e2t.pagertree.com
 Subject: Your message
 Body: SMS content
 ```
@@ -35,8 +35,9 @@ Body: Database backup completed successfully
 ```
 
 **Phone Number Format:**
-* US: 10 digits (e.g., `5551234567`)
-* International: Include country code (e.g., `441234567890`)
+* US (without country code): 10 digits (e.g., `5551234567`)
+* US (with country code): 11 digits (e.g., `15551234567`)  
+* International: Include country code (e.g., `441234567890` for UK)
 * No spaces, dashes, or formatting
 
 ## Setup

@@ -37,13 +37,13 @@ PagerTree gives your account a unique email domain to send alert emails to. You 
 If you had something like this working before:
 
 ```
-alerts@yourserver.com → [10-digit-phone]@txt.att.net
+alerts@yourserver.com → [phonenumber]@txt.att.net
 ```
 
 You just change the domain to your PagerTree address:
 
 ```
-alerts@yourserver.com → [10-digit-phone]@your-domain.e2t.pagertree.com
+alerts@yourserver.com → [phonenumber]@your-domain.e2t.pagertree.com
 ```
 
 ## How to Set It Up (2 Minutes)
