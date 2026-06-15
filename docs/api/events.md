@@ -8,8 +8,8 @@
 
 | Property              | Type              | Description                                                                                                                           |
 | --------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| start\_datetime       | datetime          | The start datetime of the event.                                                                                                      |
-| end\_datetime         | datetime          | The end datetime of the event.                                                                                                        |
+| start\_time       | datetime          | The start time of the event.                                                                                                      |
+| end\_time         | datetime          | The end time of the event.                                                                                                        |
 | layer                 | integer           | The escalation layer number this event is assigned to.                                                                                |
 | time\_zone            | string            | The [valid time zone name](#valid-time-zone-names) the event will respect.                                                   |
 | repeat                | boolean           | Flag dictating whether or not this is a [repeating](../schedules.md#repeating-event) event.                                           |
@@ -35,8 +35,8 @@ POST https://api.pagertree.com/api/v4/events
 def event_params
   params.permit(
     :parent_id,
-    :start_datetime,
-    :end_datetime,
+    :start_time,
+    :end_time,
     :layer,
     :time_zone,
     :repeat,
@@ -53,8 +53,8 @@ end
 
 **Required Parameters**
 
-* start\_datetime
-* end\_datetime
+* start\_time
+* end\_time
 * layer
 * time\_zone
 * at least 1 Account User ID
