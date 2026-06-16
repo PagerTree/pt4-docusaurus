@@ -44,6 +44,7 @@ You can also pass modifiers to modify the filters. The modifiers must be in the 
 | gte        | `>=`                       | `attribute >= value`          |
 | beginsWith | string begins with       | attribute.beginsWith(value) |
 | contains   | string or array contains | attribute.contains(value)   |
+| between    | range                     | attribute between value1 and value2 |
 
 Multiple operators can be applied by separating each token with a comma: `<attribute_name1>:<operation1>,<attribute_name2>:<operation2>`
 
@@ -51,7 +52,7 @@ An example query url might look like the following:
 
 ```
 # Single operation
-GET https://api.pagertree.com/api/v4/alerts?title=test&ops=title:beginsWith
+GET https://api.pagertree.com/api/v4/alerts?title=test&created_at=2026-06-09T00:00:00-07:00..2026-06-10T00:00:00-07:00&ops=title:beginsWith,created_at:between
 
 # Combining operations
 GET https://api.pagertree.com/api/v4/schedules/:id/events?ops=start_datetime:gte,end_datetime:lte&start_datetime=2022-10-12 07:00:00&end_datetime=2022-10-13 07:00:00
