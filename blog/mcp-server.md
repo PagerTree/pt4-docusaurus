@@ -11,6 +11,8 @@ We just launched the **PagerTree MCP server** - an open source [Model Context Pr
 
 Instead of logging into dashboards, copying alert IDs, and navigating menus, you can now just ask your AI assistant: *"Who is on call right now?"* or *"Acknowledge the database alert"* - and it happens.
 
+<!-- truncate -->
+
 [Get started on GitHub →](https://github.com/pagertree/pagertree-mcp-server)
 
 ---
