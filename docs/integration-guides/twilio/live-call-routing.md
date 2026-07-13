@@ -40,6 +40,10 @@ In this integration tutorial we will show you how to route an incoming phone cal
 Make sure your Twilio account is upgraded to a paid account. Load the minimum requirements for a paid account (~$20), as trial accounts have limitations that prevent the integration from working properly.
 :::
 
+:::info
+If your on-call responders' phone numbers are outside the US, see [Enable Twilio Voice Geographic Permissions](live-call-routing.md#enable-twilio-voice-geographic-permissions) below, or calls to them may silently fail to connect.
+:::
+
 ### In Twilio - Create API Credentials
 
 1. Open a text editor, as we’ll need to copy several pieces of data.
@@ -131,6 +135,18 @@ You can set the destinations of the Live Call Routing integration to be multiple
 | Force Caller Input                 | Should PagerTree force caller input even if there is only one team assigned as a destination?                                                                            | False                                                                                                              |
 | API Region                         | Should PagerTree use a specific Twilio region? If so, API Key + Secret and configured routing region (Twilio phone number) must match.                                   | US1 (Ashburn)                                                                                                      |
 | Banned Phones                      | List of phone number in [E.164 Format](https://www.twilio.com/docs/glossary/what-e164) to block from calling this number.                                                |                                                                                                                    |
+
+## Enable Twilio Voice Geographic Permissions
+
+Twilio disables calling to most countries/regions by default as a fraud prevention measure. Live Call Routing needs to dial out to your on-call responders, so make sure Voice permissions are enabled for every country/region your responders' phone numbers are in.
+
+:::warning
+If this isn't configured, calls to on-call responders in disabled countries/regions will silently fail to connect, even though the integration is otherwise set up correctly.
+:::
+
+1. From the [Twilio dashboard](https://console.twilio.com/), navigate to **Develop -> Voice -> Settings -> Geographic Permissions**.
+2. Enable the checkbox next to each country/region you need to call (at minimum, enable the countries where your on-call responders' phone numbers are located).
+3. Click **Save**.
 
 ## Configure Twilio Media Access
 
