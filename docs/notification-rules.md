@@ -5,7 +5,7 @@
 With notification rules, you can perform custom notification sequences. Notification rules are processed after PagerTree has selected the account user to notify, but before default notification channels are used. The diagram below shows the high level workflow for alerts and how they move within the PagerTree system.
 
 * Notification rules are objects that can dynamically change a notification cycle.
-* Notification rules only apply to the Alert open message.
+* By default, notification rules apply to the Alert Open message. You can opt individual rules into other message types (such as Alert Acknowledged, Alert Resolved, or Broadcast Sent) using the `types` field. See [Message Types](notification-rules.md#message-types).
 * Notification rules must be attached to an account user to be used.
 * To access notification rules, you must enable "advanced mode".
 * Notification rules are evaluated in top down order.
@@ -29,6 +29,42 @@ Please see the routers documentation for rules syntax and match conditions.
 :::info
 _Remember to come back here for_ [_notification rule specific action types_](notification-rules.md#action-types).
 :::
+
+## Message Types
+
+By default, a rule applies only to the **Alert Open** message (i.e. the initial escalation page). You can make a rule apply to other message types by adding a `types` field to the rule.
+
+* _types_ - array - one or more of the message types below. If omitted, defaults to `["alert.open"]`.
+
+| Type                 | Fires when...                                    |
+| -------------------- | ------------------------------------------------- |
+| `alert.open`          | An alert is opened and paging an account user (default). |
+| `alert.acknowledged`  | Someone else acknowledges the alert.               |
+| `alert.rejected`      | Someone else rejects the alert.                    |
+| `alert.resolved`      | The alert is resolved.                             |
+| `alert.dropped`       | The alert is dropped (no one responded in time).   |
+| `alert.timeout`       | An escalation layer times out.                     |
+| `alert.handoff`       | The alert is handed off to the account user.       |
+| `broadcast.sent`      | A broadcast is sent to the account user.           |
+
+:::info
+Only `alert.open` supports escalation semantics ([notify](notification-rules.md#notify) actions with a _timeout_, plus [repeat](notification-rules.md#repeat)). Every other message type is a single, immediate notification: only the _channels_ of the first matching rule's `notify` action(s) are used, and any `timeout`/`repeat` are ignored.
+:::
+
+You do not need to rewrite existing rules to take advantage of this - rules without a `types` field keep behaving exactly as before (applying only to `alert.open`). Just add new rule entries with an explicit `types` list alongside your existing rules.
+
+```yaml
+# A quiet ping when someone else acknowledges or resolves the alert.
+- types:
+  - alert.acknowledged
+  - alert.resolved
+  match:
+    always: true
+  actions:
+  - type: notify
+    channels:
+    - push
+```
 
 ## Actions Block
 
@@ -218,6 +254,63 @@ rules:
       timeout: 5m
 ```
 
+### Example #4 Beyond Alert Open
+
+* Match Alert Open (the default escalation)
+  1. Notify email, slack (wait 1 minute)
+  2. Notify voice (wait 5 minutes)
+  3. Repeat the above cycle 1 more time
+* Match Alert Acknowledged, Alert Resolved, or Alert Dropped
+  1. Notify push (single, immediate - no escalation)
+* Match Broadcast Sent outside of working hours
+  1. Ignore
+
+```yaml
+# Escalate loudly on the initial page: email + slack first, then voice if still unanswered.
+# Just a quiet ping when someone else already handled it (or it timed out/dropped).
+# Don't notify me about broadcasts overnight.
+---
+rules:
+  - types:
+    - alert.open
+    match:
+      always: true
+    actions:
+    - type: notify
+      channels:
+      - email
+      - slack
+      timeout: 1m
+    - type: notify
+      channels:
+      - voice
+      timeout: 5m
+    - type: repeat
+      times: 1
+
+  - types:
+    - alert.acknowledged
+    - alert.resolved
+    - alert.dropped
+    match:
+      always: true
+    actions:
+    - type: notify
+      channels:
+      - push
+
+  - types:
+    - broadcast.sent
+    match:
+      $timeBetween:
+        timeformat: 'hh:mm a'
+        timezone: 'America/Los_Angeles'
+        starttime: '10:00 pm'
+        endtime: '07:00 am'
+    actions:
+    - type: ignore
+```
+
 ## Common Mistakes
 
 ### Forgot to Attach to User
@@ -235,4 +328,5 @@ A common error when configuring notification rules is that the YAML is not forma
 | Question                                                                                        | Answer                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | What happens if the escalation layer timeout is shorter than my entire notification rule cycle? | The notification rule cycle will stop after the escalation layer times out. It's possible that all notify actions are not reached because the escalation layer timing out. |
-| Broadcasts don't seem to be respecting my notification rules, why?                              | Notification rules are only applicable when being notified about an Alert.                                                                                                 |
+| Broadcasts don't seem to be respecting my notification rules, why?                              | By default, notification rules only apply to Alert Open. To have a rule apply to a broadcast, add `types: [broadcast.sent]` to that rule. See [Message Types](notification-rules.md#message-types). |
+| Can I use timeout and repeat for message types other than Alert Open?                            | No. Escalation (`timeout`/`repeat`) is only supported for `alert.open`. Other message types send a single, immediate notification using the first matching rule's channels. |
