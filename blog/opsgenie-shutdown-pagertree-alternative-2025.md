@@ -44,7 +44,7 @@ Unlike OpsGenie’s rocky history, [PagerTree boasts a track record of uptime an
 
 ### 2. Affordable, Transparent Pricing
 
-Starting at just [$10/user/month](https://pagertree.com/pricing) (with a generous free plan for small teams), PagerTree delivers [premium features](https://pagertree.com/features) without hidden add-ons. On-call schedules, escalation layers, and multi-channel notifications (think SMS, phone, Slack, and even WhatsApp) are all included—no hidden charges.
+Starting at just [$15/user/month](https://pagertree.com/pricing) (with a generous free plan for small teams), PagerTree delivers [premium features](https://pagertree.com/features) without hidden add-ons. On-call schedules, escalation layers, and multi-channel notifications (think SMS, phone, Slack, and even WhatsApp) are all included—no hidden charges.
 
 ### 3. Seamless Integrations
 
@@ -62,7 +62,7 @@ With OpsGenie phasing out, PagerTree is built to evolve with your needs. Regular
 
 | Feature           | PagerTree                   | OpsGenie                     |
 | ----------------- | --------------------------- | ---------------------------- |
-| **Pricing**       | $10/user/month, free tier   | $9/user/month + add-ons      |
+| **Pricing**       | $15/user/month, free tier   | $9/user/month + add-ons      |
 | **Reliability**   | Proven uptime               | Past outages (e.g., 2022)    |
 | **Setup Time**    | \<30 minutes                 | Steeper learning curve       |
 | **Notifications** | SMS, phone, Slack, WhatsApp | Similar, but some cost extra |

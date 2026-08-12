@@ -46,8 +46,7 @@ Austin
   * Better UI - Both desktop and mobile have been redone. Better organization. Clear call to action.
   * Billing - Now handled through Stripe Billing Portal.
 * Pricing
-  * Reduced to our original pricing model (Elite $15 - Pro $10 - Basic $0).
-  * We’ve introduced a new “Enterprise” package (Enterprise $25).
+  * We’ve introduced a new “Enterprise” package.
 * Authentication and Security
   * 2FA - [Two Factor Authentication](https://pagertree.com/docs/users#two-factor-authentication) has been added.
   * SSO - [SSO](https://pagertree.com/docs/single-sign-on-sso) has been simplified.
