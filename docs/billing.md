@@ -92,7 +92,7 @@ Grand Total = 10 users x $15 user/month = **$150.00 / month**
 * You are subscribed to a plan that costs ($15/user/month)
 * You **add** 5 users in the middle of your billing cycle, bringing the total user count to 15 users.
 
-Grand Total = (10 users x $15 user/month x 0.5) + (5 user x $15 user/month x 0.5) = $150/month + $37.50/month = **$187.50 / month**
+Grand Total = (10 users x $15 user/month x 1.0) + (5 user x $15 user/month x 0.5) = $150/month + $37.50/month = **$187.50 / month**
 
 ### Billing Example #3 (Prorated, Scale Down)
 
@@ -100,23 +100,23 @@ Grand Total = (10 users x $15 user/month x 0.5) + (5 user x $15 user/month x 0.5
 * You are subscribed to a plan that costs ($15/user/month)
 * You **remove** 5 users in the middle of your billing cycle, bringing the total user count to 5 users.
 
-Grand Total = (5 users x $15 user/month x 0.5) + (5 user x $15 user/month x 0.5) = $75/month + $37.50/month = **$112.50 / month**
+Grand Total = (10 users x $15 user/month x 0.5) + (5 user x $15 user/month x 0.5) = $75/month + $37.50/month = **$112.50 / month**
 
 ### Billing Example #4 (Prorated, Upgrade Plan)
 
 * You have 10 users in your account
 * You are subscribed to a plan that costs ($15/user/month)
-* You **upgrade** your plan in the middle of the month to a plan that costs ($20/user/month)
+* You **upgrade** your plan in the middle of the month to a plan that costs ($19/user/month)
 
-Grand Total = (10 users x $15 user/month x 0.5) + (10 user x $20 user/month x 0.5) = $75/month + $100/month = **$175.00 / month**
+Grand Total = (10 users x $15 user/month x 0.5) + (10 user x $19 user/month x 0.5) = $75/month + $95/month = **$170.00 / month**
 
 ### Billing Example #5 (Prorated, Downgrade Plan)
 
 * You have 10 users in your account
-* You are subscribed to a plan that costs ($15/user/month)
-* You **downgrade** your plan in the middle of the month to a plan that costs ($10/user/month)
+* You are subscribed to a plan that costs ($19/user/month)
+* You **downgrade** your plan in the middle of the month to a plan that costs ($15/user/month)
 
-Grand Total = (10 users x $15 user/month x 0.5) + (10 user x $10 user/month x 0.5) = $75/month + $50/month = **$125.00 / month**
+Grand Total = (10 users x $19 user/month x 0.5) + (10 user x $15 user/month x 0.5) = $95/month + $75/month = **$170.00 / month**
 
 ### Billing Example #6 (Annual)
 
