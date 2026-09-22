@@ -25,6 +25,7 @@ This documentation is meant for webhooks that are _incoming_ into PagerTree. If 
 Webhooks are versatile user-defined callbacks that many applications support.
 
 * When the payload event\_type is create (`event_type === "create"`), an alert is created in PagerTree automatically.
+* When the payload event\_type is update (`event_type === "update"`), the alert matching the given `Id` is updated in PagerTree automatically. Only the fields included in the payload are changed; anything left out is untouched.
 * When the payload event\_type is acknowledge (`event_type === "acknowledge"`), an alert is acknowledged in PagerTree automatically.
 * When the payload event\_type is resolved (`event_type === "resolve"`), the alert is resolved in PagerTree automatically.
 
@@ -41,14 +42,18 @@ In this integration tutorial we will show you how to send a Webhook into PagerTr
 
 The calling application must send a **POST** request with a **Content-Type: application/json**. The body of the request should have the following values.
 
-| Field       | Type         | Valid Values                 |
-| ----------- | ------------ | ---------------------------- |
-| event\_type | string       | create\|acknowledge\|resolve |
-| Id          | string       | a unique id                  |
-| Title       | string       | (non-empty)                  |
-| Description | string       | (non-empty)                  |
-| Tags        | string array | (optional)                   |
-| Meta        | map          | (optional)                   |
+| Field       | Type         | Valid Values                        |
+| ----------- | ------------ | ------------------------------------ |
+| event\_type | string       | create\|update\|acknowledge\|resolve |
+| Id          | string       | a unique id                          |
+| Title       | string       | (non-empty)                          |
+| Description | string       | (non-empty)                          |
+| Tags        | string array | (optional)                           |
+| Meta        | map          | (optional)                           |
+
+:::info
+For `update`, `Id` must match the `Id` of an existing alert (it cannot be used to change an alert's `Id`), and every other field is optional - only the fields you include are changed on the alert.
+:::
 
 #### Example Request # 1
 
@@ -121,6 +126,32 @@ curl -X POST https://api.pagertree.com/integration/int_ODCWagoG9 \
 	}
 }'
 ```
+
+#### Example Request #3 (Update)
+
+```
+POST /integration/int_ODCWagoG9 HTTP/1.1
+Host: api.pagertree.com
+Content-Type: application/json
+
+{
+	"event_type": "update",
+	"Id": "example-id-123",
+	"Urgency": "critical"
+}
+```
+
+```bash
+curl -X POST https://api.pagertree.com/integration/int_ODCWagoG9 \
+  -H "Content-Type: application/json" \
+  -d '{
+	"event_type": "update",
+	"Id": "example-id-123",
+	"Urgency": "critical"
+}'
+```
+
+This updates only the `Urgency` field on the alert with `Id` `example-id-123`. The `Title`, `Description`, `Tags`, and `Meta` fields are left unchanged since they were not included in the payload.
 
 You have successfully completed the Webhook Integration.
 

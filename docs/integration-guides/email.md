@@ -76,7 +76,7 @@ Remember, if the members of the group are those people going on-call, it might m
 :::
 
 ## Custom Parsing Rules
-The email integration supports creating, acknowleding, and resolving alerts via a custom YAML definition (very similar to the [Custom Webhook Integration](./custom-webhook.md))
+The email integration supports creating, updating, acknowledging, and resolving alerts via a custom YAML definition (very similar to the [Custom Webhook Integration](./custom-webhook.md))
 
 **Key features include:**
 
@@ -84,7 +84,7 @@ The email integration supports creating, acknowleding, and resolving alerts via 
     [Routers](../routers.md)).
 -   **Email Field Support** via `log.<field>`.
 -   **Handlebars templates** for dynamic fields (see [handlebars](https://handlebarsjs.com/guide/) and [handlebars-helpers](https://github.com/helpers/handlebars-helpers)).
--   **Actions**: `create`, `acknowledge`, `resolve`.
+-   **Actions**: `create`, `update`, `acknowledge`, `resolve`.
 
 It integrates with any email payload.
 
@@ -109,7 +109,7 @@ rules:
       # conditions (see your specific tool's payload)
       # log.subject: "alarm"
     actions:
-      - type: create|acknowledge|resolve
+      - type: create|update|acknowledge|resolve
         thirdparty_id: "{{log.subject}}"
 default:
   actions:
@@ -135,7 +135,7 @@ The shape of the data passed in for you to match on is as follows:
 
 | Field               | Required? | Type           | Purpose |
 | ------------------- | --------- | ------------- | ----------------------------------------------- |
-| `type`              | ✅ | string | `create`, `acknowledge`, `resolve` |
+| `type`              | ✅ | string | `create`, `update`, `acknowledge`, `resolve` |
 | `thirdparty_id`     | ✅ | string | Identifier used for alert correlation. (see [integrations@alert-aggregation](../integrations.md#alert-aggregation)) |
 | `title`             | on create | string | Alert title. |
 | `description`       | - | string | Alert description. |
@@ -147,6 +147,10 @@ The shape of the data passed in for you to match on is as follows:
 | `incident`| - | boolean | Boolean value `true\|false` if this alert should be flagged as an incident |
 | `incident_severity` | if `incident` true | string | `SEV-1`, `SEV-2`, `SEV-3`, `SEV-4`, `SEV-5` |
 | `incident_message` | if `incident` true | string | A custom message to be displayed at the top of the alert page |
+
+:::info
+For `update`, `thirdparty_id` is only used to find the existing alert to update - it cannot be used to change the alert's `thirdparty_id`. Every field besides `type` and `thirdparty_id` is optional; only the fields your rule returns are changed on the alert, so leave a field out entirely if you don't want it touched.
+:::
 
 ### Custom Definition Example
 
@@ -167,6 +171,15 @@ rules:
     # Works for:
     # event_url=https://...
     # event_url=<a href="https://...">
+    thirdparty_id: >-
+      {{{itemAt (regexMatch log.body 'event_url=(?:<a\s+href=")?(https?://[^"\r\n>]+)') 1}}}
+- match:
+    log.body:
+      "$regex": "event_type=Escalated"
+      "$options": "i"
+  actions:
+  - type: "update"
+    urgency: "critical"
     thirdparty_id: >-
       {{{itemAt (regexMatch log.body 'event_url=(?:<a\s+href=")?(https?://[^"\r\n>]+)') 1}}}
 - match:
@@ -192,6 +205,21 @@ Event Alarm
 event_type=Automatic
 event_url=https://monitor.company.com//en/events/724751/summary
 ```
+
+  </TabItem>
+  <TabItem value="update-email" label="Update Email">
+
+```email
+Subject: 
+Event 123 @ 18:18:35 UTC 2026-02-11
+
+Body:
+Event Alarm
+event_type=Escalated
+event_url=https://monitor.company.com//en/events/724751/summary
+```
+
+This only changes the alert's `urgency`. Since `title` and `description` are not included, they keep their original values.
 
   </TabItem>
   <TabItem value="resolve-email" label="Resolve Email">

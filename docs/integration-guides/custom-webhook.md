@@ -27,7 +27,7 @@ resolve alerts based on the webhook contents.
     [Routers](../routers.md)).
 -   **Nested JSON support** via `log.data.<field>`.
 -   **Handlebars templates** for dynamic fields (see [handlebars](https://handlebarsjs.com/guide/) and [handlebars-helpers](https://github.com/helpers/handlebars-helpers)).
--   **Actions**: `create`, `acknowledge`, `resolve`.
+-   **Actions**: `create`, `update`, `acknowledge`, `resolve`.
 -   **Preprocessors** such as `parse_json` and `parse_sns`.
 
 It integrates with tools like UptimeRobot, AWS SNS, Pingdom, and many more by parsing payloads and applying your rules.
@@ -89,7 +89,7 @@ rules:
       # conditions (see your specific tool's payload)
       # log.data.state: "alarm"
     actions:
-      - type: create|acknowledge|resolve
+      - type: create|update|acknowledge|resolve
         thirdparty_id: "{{log.data.id}}"
 default:
   actions:
@@ -136,7 +136,7 @@ The shape of the data passed in for you to match on is as follows:
 
 | Field               | Required? | Type           | Purpose |
 | ------------------- | --------- | ------------- | ----------------------------------------------- |
-| `type`              | ✅ | string | `create`, `acknowledge`, `resolve` |
+| `type`              | ✅ | string | `create`, `update`, `acknowledge`, `resolve` |
 | `thirdparty_id`     | ✅ | string | Identifier used for alert correlation. (see [integrations@alert-aggregation](../integrations.md#alert-aggregation)) |
 | `title`             | on create | string | Alert title. |
 | `description`       | - | string | Alert description. |
@@ -148,6 +148,10 @@ The shape of the data passed in for you to match on is as follows:
 | `incident`| - | boolean | Boolean value `true\|false` if this alert should be flagged as an incident |
 | `incident_severity` | if `incident` true | string | `SEV-1`, `SEV-2`, `SEV-3`, `SEV-4`, `SEV-5` |
 | `incident_message` | if `incident` true | string | A custom message to be displayed at the top of the alert page |
+
+:::info
+For `update`, `thirdparty_id` is only used to find the existing alert to update - it cannot be used to change the alert's `thirdparty_id`. Every field besides `type` and `thirdparty_id` is optional; only the fields your rule returns are changed on the alert, so leave a field out entirely if you don't want it touched.
+:::
 
 ## Examples
 
@@ -239,6 +243,44 @@ curl -X POST https://api.pagertree.com/integration/int_ABC123 \
 ```
   </TabItem>
 </Tabs>
+
+### Example: Update Urgency Without Resolving
+
+Some tools send a "downgraded" or "warning" event when an incident's severity changes without it actually closing. Rather than resolving and recreating the alert, use `update` to change just the urgency:
+
+```yaml
+---
+rules:
+  - match:
+      log.data.currentState: "open"
+      log.data.severity: "CRITICAL"
+    actions:
+      - type: create
+        title: "{{log.data.accumulations.policyName.[0]}}"
+        thirdparty_id: "{{log.data.incidentId}}"
+        urgency: "critical"
+
+  - match:
+      log.data.currentState: "open"
+      log.data.severity: "WARNING"
+    actions:
+      - type: update
+        thirdparty_id: "{{log.data.incidentId}}"
+        urgency: "medium"
+
+  - match:
+      log.data.currentState: "closed"
+    actions:
+      - type: resolve
+        thirdparty_id: "{{log.data.incidentId}}"
+
+default:
+  actions:
+    - type: ignore
+      reason: "Unhandled event"
+```
+
+Since `title` isn't included in the `update` action, the alert keeps its original title - only `urgency` changes.
 
 ### Example: AWS SNS + Cloudwatch
 
