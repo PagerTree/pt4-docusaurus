@@ -39,6 +39,36 @@ After setting a maximum number of users for your account, PagerTree will prevent
 
 <figure>![account user limit option](<.gitbook/assets/user-limits.png>)<figcaption><p>Account User Limit Option</p></figcaption></figure>
 
+## Consolidated Billing
+
+Consolidated billing (also called unified billing) lets multiple PagerTree accounts share one subscription, one invoice, and one payment method. It is available on the [Enterprise plan](https://pagertree.com/pricing/).
+
+* One account is the **billing account**. Other accounts are **linked** to it.
+* Linked accounts share the billing account's plan, so every account in the group gets the same features.
+* All charges go to the billing account. The plan, payment method, and invoices are managed from the billing account.
+* Seats are counted as the number of _distinct_ users across all accounts in the group. A user who belongs to several of the accounts is billed once.
+* Each account keeps its own data, users, admins, and settings. Linking accounts for billing doesn't share anything else between them.
+* [Notification credits](billing.md#notification-limits) stay per account and are based on each account's own number of users.
+* A [user limit](billing.md#user-limits) set on the billing account caps distinct users across the whole group. A linked account can also set its own limit to cap just its own users.
+
+Billing administrators can see the group in the **Unified Billing** section of the [Account Settings page](https://app.pagertree.com/account/settings). In the billing account, it lists each linked account and the total number of billable users. In a linked account, it shows which account manages billing.
+
+### Setting Up Consolidated Billing
+
+Linking and unlinking accounts is done by our [support team](mailto:support@pagertree.com). Email us the name of the account that should own billing and the names of the accounts to link to it.
+
+* Accounts on a trial or free plan can be linked right away. If an account has its own paid subscription, we'll cancel it and credit the unused time before linking it.
+* An unlinked account is left without a subscription and will need to choose a plan of its own.
+* The billing account can't be deleted while it pays for other accounts. Contact support to move their billing first.
+
+### Billing Example (Consolidated Billing)
+
+* You have three accounts: IT (10 users), Facilities (6 users), and Security (5 users)
+* 4 users belong to both IT and Security
+* You are subscribed to a plan that costs ($15/user/month)
+
+Grand Total = (10 + 6 + 5 - 4 shared users) x $15 user/month = 17 users x $15 user/month = **$255.00 / month**
+
 ## Notification Limits
 
 **You shouldn't have to worry about notification limits if your users are primarily in the US and Canada.**
