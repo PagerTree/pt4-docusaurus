@@ -323,4 +323,4 @@ If you are not receiving WhatsApp notifications:
 If notifications still aren't arriving or show an **undelivered** status, open WhatsApp and send a message with the content `?` to the PagerTree WhatsApp number: **+1 (817) 592-8301**. This re-establishes the connection between PagerTree and WhatsApp, which can sometimes be interrupted if messages are flagged as spam.
 
 ## Daily Notification Limits
-PagerTree limits how many notifications each user and each account can receive per day on each channel. If a notification's log shows **"Daily <channel> limit reached"**, the limit was hit and that channel resumes at midnight UTC. See [Notification Limits](https://pagertree.com/notification-limits/#daily-send-limits) for the limits and how to raise them.
+PagerTree limits how many notifications each user and each account can receive per day on each channel. If a notification's log shows a message like **"Daily sms limit reached for this user"**, the limit was hit and that channel resumes at midnight UTC. See [Notification Limits](https://pagertree.com/notification-limits/#daily-send-limits) for the limits and how to raise them.
