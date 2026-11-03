@@ -10,6 +10,7 @@ With notification rules, you can perform custom notification sequences. Notifica
 * To access notification rules, you must enable "advanced mode".
 * Notification rules are evaluated in top down order.
 * If no rules are matched, the account user is notified on their default notification channels.
+* [Quiet mode](notifications.md#quiet-mode) is applied after notification rules: it removes the channels the user has quieted.
 * Notification rules are written in YAML.
 
 <figure>![high level alert workflow](<https://pagertree.com/assets/img/kb/routers/high-level-alert-workflow-notification-rules.png>)<figcaption><p>High Level Alert Workflow (Notification Rules)</p></figcaption></figure>

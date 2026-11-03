@@ -8,6 +8,7 @@ A team's escalation policy defines the time each [escalation layer](escalation-p
 
 * If an [account user](users.md) acknowledges the alert (or the alert is auto resolved by an [integration](integrations.md)), no further escalation layers will be notified.
 * If all users reject an alert or the timeout elapses it will be escalated to the next layer.
+* Users in [quiet mode](notifications.md#quiet-mode) with **Auto-reject** reject the alert right away, so it can move on without waiting for the timeout.
 * When there are no more layers, PagerTree will
   1. check to see if there is a [repeat option](escalation-policies.md#repeat-option) defined
   2. check to see if there is a [reassign option](escalation-policies.md#reassign-option) defined

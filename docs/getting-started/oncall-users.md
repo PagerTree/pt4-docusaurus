@@ -69,6 +69,7 @@ You have now completed the PagerTree user quick start guide. For additional lear
 ## Additional Topics
 
 * [Going On-Call Notifications](https://pagertree.com/docs/users#going-on-call-notifications)
+* [Quiet Mode](https://pagertree.com/docs/notifications#quiet-mode)
 * [Persistent Notifications](https://pagertree.com/docs/notifications#notification-persistence-push-1)
 * [Do-not-Disturb Bypass](https://pagertree.com/docs/notifications#bypass-do-not-disturb-1)
 * [Custom Sounds](https://pagertree.com/docs/notifications#custom-sounds-push)
