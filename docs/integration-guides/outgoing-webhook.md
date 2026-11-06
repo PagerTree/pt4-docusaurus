@@ -178,7 +178,7 @@ If you are using a custom template you can access the linked data like so: `{{al
 
 ## Applicable Events
 
-Currently PagerTree support 8 events:
+Currently PagerTree support 10 events:
 
 1. `alert.created` - fired exactly once, when the alert is created in the database.
 2. `alert.open` - Fired exactly once, when the alert [transitions from queued -> open](../alerts.md#alert-states).
@@ -188,6 +188,8 @@ Currently PagerTree support 8 events:
 6. `alert.resolved` - fired 0-1 times, when the alert is [resolved](../alerts.md#resolve).
 7. `alert.dropped` - fired 0-1 times, when the alert is [dropped](../alerts.md#alert-states).
 8. `alert.handoff` - fired 0-N times, when the alert is [handed off](../alerts.md#handoff).
+9. `alert.snoozed` - fired 0-N times, when the alert is [snoozed](../alerts.md#snooze). The payload's `snoozed_until` says when the snooze ends.
+10. `alert.unsnoozed` - fired 0-N times, when a snooze ends (early, or on time) and paging resumes. Not fired when the snooze ends because the alert was acknowledged, resolved, or handed off (those send `alert.acknowledged`, `alert.resolved`, or `alert.handoff` instead), or deleted.
 
 ## Outgoing Rules
 
