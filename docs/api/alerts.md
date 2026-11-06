@@ -19,6 +19,7 @@
 | acknowledged\_at | timestamp | A timestamp of when the alert was first acknowledged. (Does not get reset if handed off or the alert was routed to multiple teams.) |
 | resolved\_at     | timestamp | A timestamp of when the alert was resolved.                                                                                         |
 | dedup\_keys      | string\[] | Unique identifiers that group alerts within the account.                                                                            |
+| snoozed\_until   | timestamp | When the current [snooze](../alerts.md#snooze) ends. `null` if the alert is not snoozed.                                            |
 
 ### Notes
 
@@ -85,7 +86,7 @@ GET https://api.pagertree.com/api/v4/alerts
 
 ## Acknowledge an Alert
 
-[Acknowledge](../alerts.md#acknowledge) an alert. Must be in the open|dropped|suppressed state.
+[Acknowledge](../alerts.md#acknowledge) an alert. Must be in the open|dropped|suppressed|snoozed state.
 
 ```
 POST https://api.pagertree.com/api/v4/alerts/:id/acknowledge
@@ -101,10 +102,32 @@ POST https://api.pagertree.com/api/v4/alerts/:id/reject
 
 ## Resolve an Alert
 
-[Resolve](../alerts.md#resolve) an alert. Must be in the open|dropped|acknowledged state.
+[Resolve](../alerts.md#resolve) an alert. Must be in the open|dropped|acknowledged|snoozed state.
 
 ```
 POST https://api.pagertree.com/api/v4/alerts/:id/resolve
+```
+
+## Snooze an Alert
+
+[Snooze](../alerts.md#snooze) an alert. Must be in the open state. The alert moves to the `snoozed` state.
+
+```
+POST https://api.pagertree.com/api/v4/alerts/:id/snooze
+```
+
+#### Required Parameters
+
+| Property | Type    | Description                                                                         |
+| -------- | ------- | ----------------------------------------------------------------------------------- |
+| duration | integer | How long to snooze, in seconds. Between `60` (1 minute) and `604800` (7 days).      |
+
+## Unsnooze an Alert
+
+End an alert's [snooze](../alerts.md#snooze) early and resume notifications. The alert must be in the `snoozed` state, and moves back to `open`.
+
+```
+POST https://api.pagertree.com/api/v4/alerts/:id/unsnooze
 ```
 
 ## Comment on an Alert
