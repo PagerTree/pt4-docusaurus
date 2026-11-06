@@ -110,7 +110,7 @@ Snoozing an alert pauses its notifications for a set amount of time (ex: you kno
 
 When the snooze ends, the alert goes back to `open` and the escalation picks up on the same layer it was on. It pages whoever is on-call for that layer at that moment, so if the shift changed during the snooze, the new on-call person is paged.
 
-To snooze an alert, it must be in the `open` state. You can snooze for 5 minutes up to 24 hours from the web ui (up to 7 days with the API).
+To snooze an alert, it must be in the `open` state. You can snooze for 5 minutes up to 24 hours from the web ui, email, and the Slack menu, and up to 7 days with the API or a text command (sms, WhatsApp, or Slack). Text commands accept minutes (`30m`), hours (`2h`), or days (`1d`). Snooze is available on the Pro, Elite, and Enterprise [plans](https://pagertree.com/pricing).
 
 * _Unsnooze_ - End the snooze early and resume notifications right away.
 * Acknowledging, resolving, or deleting a snoozed alert ends the snooze. The alert will not page again.
@@ -118,10 +118,16 @@ To snooze an alert, it must be in the `open` state. You can snooze for 5 minutes
 
 #### Methods to Snooze
 
-| Channel | Directions                                                                                   |
-| ------- | -------------------------------------------------------------------------------------------- |
-| web ui  | Click the snooze button and choose a duration. To end it early, click unsnooze in the banner. |
-| api     | See [Snooze an Alert](api/alerts.md#snooze-an-alert).                                         |
+| Channel | Directions                                                                                                                                       |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| web ui  | On the alert page, click the snooze button and choose a duration. To end it early, click the unsnooze button.                                     |
+| web ui  | To snooze many alerts at once, select them in the alerts table, open the actions menu, click snooze, and choose a duration (15 minutes, 1 hour, or 4 hours). |
+| email   | Click the snooze button, then choose a duration.                                                                                                  |
+| sms      | Reply `z <alert-id> <duration>` (ex: `z 123 1h`). If you only have one open alert, you can leave out the alert id (ex: `z 30m`). |
+| voice    | Push 5 to snooze. Snoozing from a call always lasts 30 minutes. (If 5 is your acknowledge or reject key, the call tells you which key to push instead.) |
+| whatsapp | Same as sms.                                                                                                                      |
+| slack    | Choose a duration from the snooze menu on the alert message, or send the same command as sms (ex: `/pt z 123 1h`).                |
+| api     | See [Snooze an Alert](api/alerts.md#snooze-an-alert).                                                                                             |
 
 ## Incident
 
