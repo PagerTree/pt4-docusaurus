@@ -7,6 +7,10 @@
 * Alerts are created by [Integrations](integrations.md) or [Account Users](users.md).
 * Alerts have one or more "destinations". An alert destination can be a [Team](teams.md), Account User, or [Router](routers.md).
 
+### Alert Lifecycle Video
+
+<iframe src="https://www.youtube-nocookie.com/embed/-qQBPnPLhdk" title="The Alert Lifecycle in PagerTree: States, Acknowledge, Reject, Resolve &amp; Incidents" class="rds-video"></iframe>
+
 ## User Interface
 
 <figure>![annotated alert information](<.gitbook/assets/alert-ui-annotated.png>)<figcaption><p>Annotated Alert Information</p></figcaption></figure>
