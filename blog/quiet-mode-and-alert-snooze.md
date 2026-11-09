@@ -52,6 +52,8 @@ You got paged, you looked at it, and you know the fix will take an hour (or the 
 
 **Snooze** pauses paging on an alert for a set amount of time. While an alert is snoozed, it's in the new `snoozed` state and nobody is paged.
 
+<iframe src="https://www.youtube-nocookie.com/embed/zw1aI1rKUyg" title="Snoozing Alerts in PagerTree: Pause an Alert While You Fix It" class="rds-video"></iframe>
+
 ### Picks Up Where It Left Off
 
 When the snooze ends, the alert goes back to `open` and the escalation picks up **on the same layer it was on**. It pages whoever is on call for that layer *at that moment*, so if the shift changed while the alert was snoozed, the new on-call person gets paged instead of the person who went off call.

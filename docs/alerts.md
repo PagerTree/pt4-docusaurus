@@ -110,6 +110,8 @@ Snoozing an alert pauses its notifications for a set amount of time (ex: you kno
 
 When the snooze ends, the alert goes back to `open` and the escalation picks up on the same layer it was on. It pages whoever is on-call for that layer at that moment, so if the shift changed during the snooze, the new on-call person is paged.
 
+<iframe src="https://www.youtube-nocookie.com/embed/zw1aI1rKUyg" title="Snoozing Alerts in PagerTree: Pause an Alert While You Fix It" class="rds-video"></iframe>
+
 To snooze an alert, it must be in the `open` state. You can snooze for 5 minutes up to 24 hours from the web ui, email, and the Slack menu, and up to 7 days with the API or a text command (sms, WhatsApp, or Slack). Text commands accept minutes (`30m`), hours (`2h`), or days (`1d`). Snooze is available on the Pro, Elite, and Enterprise [plans](https://pagertree.com/pricing).
 
 * _Unsnooze_ - End the snooze early and resume notifications right away.
