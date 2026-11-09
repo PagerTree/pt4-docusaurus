@@ -6,6 +6,10 @@
 * Maintenance windows can be created for the present or scheduled for the future.
 * To create maintenance windows, you must enable "advanced mode" and have the role of admin.
 
+### Tutorial Video
+
+<iframe src="https://www.youtube-nocookie.com/embed/oqUhx9r3cto" title="Maintenance Windows in PagerTree: Silence Integrations During Planned Work" class="rds-video"></iframe>
+
 ## Integrations
 
 ### Quick Create
