@@ -16,6 +16,10 @@ A team's escalation policy defines the time each [escalation layer](escalation-p
 
 **Note**: All repeat cycles will be performed before attempting to reassign the alert.
 
+### How Escalation Policies Work Video
+
+<iframe src="https://www.youtube-nocookie.com/embed/FGpvVWR8Xm4" title="How Escalation Policies Work" class="rds-video"></iframe>
+
 ### Escalation Layers
 
 * An escalation policy can have 1..n escalation layers.
