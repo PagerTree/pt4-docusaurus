@@ -22,6 +22,8 @@ And on Android, [alert sounds now play even when your phone is on vibrate](#also
 
 Say you're at church or in a meeting. You don't want your phone going off for the next hour, but you also don't want to sign out of PagerTree or rearrange the on-call schedule. Quiet mode pauses your PagerTree notifications for a while, and always has an end time, so you never forget to turn them back on.
 
+<iframe src="https://www.youtube-nocookie.com/embed/wJkbvaXgHWQ" title="Quiet Mode in PagerTree: Pause Your Notifications (Silence vs Auto-Reject)" class="rds-video"></iframe>
+
 ### How It Works
 
 1. Click the **bell-slash** icon in the top navigation bar (web or mobile app).

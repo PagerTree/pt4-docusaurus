@@ -188,6 +188,8 @@ All `critical` urgency alerts will now trigger a Critical Alert on your iPhone, 
 
 Quiet mode pauses your PagerTree notifications for a while, without signing out. It only applies to you, in the current account, and always has an end time.
 
+<iframe src="https://www.youtube-nocookie.com/embed/wJkbvaXgHWQ" title="Quiet Mode in PagerTree: Pause Your Notifications (Silence vs Auto-Reject)" class="rds-video"></iframe>
+
 1. Click the **bell-slash** icon in the top navigation bar (web or mobile app).
 2. Pick a duration (5 minutes to 8 hours), or click **Custom…** for more options.
 
