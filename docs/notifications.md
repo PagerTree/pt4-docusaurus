@@ -197,7 +197,7 @@ While it's on, the icon turns indigo (hover over it to see the end time), and a 
 * **Auto-reject**: new alerts are rejected for you right away, so they move to the next person without waiting for the timeout. Account admins can turn this off in **Account Settings**.
 
 :::info
-Quiet mode is on every plan. A custom end time (up to 7 days), choosing channels, letting critical alerts break through, and auto-reject need a higher [plan](https://pagertree.com/pricing).
+Quiet mode is on every plan. A custom end time (up to 7 days), choosing channels, letting critical alerts break through, and auto-reject are available on the Pro, Elite, and Enterprise [plans](https://pagertree.com/pricing).
 :::
 
 Quiet mode is separate from your phone's Do Not Disturb (see [Bypass Do Not Disturb](#bypass-do-not-disturb)). Team admins can see who's in quiet mode on a team's on-call list, and the alert log shows when someone was silenced or auto-rejected.

@@ -30,7 +30,7 @@ The auto aggregate and resolve functionality are only available in the [Elite pr
 
 ### Auto Aggregate
 
-You can configure an integration to aggregate incoming alerts by title to reduce noise. The scope of the aggregation is limited to alerts created by the integration in the `queued|open|acknowledged|dropped` [alert states](alerts.md#alert-states) with an exact match on the title string.
+You can configure an integration to aggregate incoming alerts by title to reduce noise. The scope of the aggregation is limited to alerts created by the integration in the `queued|open|acknowledged|snoozed|dropped` [alert states](alerts.md#alert-states) with an exact match on the title string.
 
 The timeout value is the amount of time PagerTree will look back for alerts with the same title created by the integration and must be between 15 minutes (15m) and 30 days (30d) specified in [ms notation](https://github.com/vercel/ms).
 
@@ -189,7 +189,7 @@ end
 
 To reduce noise PagerTree will try to aggregate incoming alerts by `thirdparty_id`. The thirdparty\_id will differ for each integration, see the [source code](https://github.com/PagerTree/pager_tree-integrations/tree/main/app/models/pager_tree/integrations) for your integration to see what the thirdparty\_id consists of.
 
-When a "create" request comes in from a 3rd party system, PagerTree check's to see if there is another alert (from the same integration) with the same thirdparty\_id in the (queued|open|acknowledged|dropped) state. If there is, PagerTree will increment the dedup count on the existing alert. Else, PagerTree will proceed to create the new alert.
+When a "create" request comes in from a 3rd party system, PagerTree check's to see if there is another alert (from the same integration) with the same thirdparty\_id in the (queued|open|acknowledged|snoozed|dropped) state. If there is, PagerTree will increment the dedup count on the existing alert. Else, PagerTree will proceed to create the new alert.
 
 Below is pseudo code showing how PagerTree tries to aggregate the alerts.
 
@@ -200,17 +200,19 @@ alert = integration.alerts
 
 case action
   when :create
-    if alert && (alert.status_queued? || 
-        alert.status_open? || 
-        alert.status_acknowledged? || 
-        alert.status_dropped?)
+    if alert&.status.in?([
+      "queued",
+      "open",
+      "acknowledged",
+      "snoozed",
+      "dropped"
+    ])
       # alert already exists, increment dedup count
       alert.dedup_count += 1
     else
       # create a new alert
       alert = Alert.new
     end
-  end
   # ...
 end
 ```
@@ -219,6 +221,10 @@ Most integrations should handle unique ids for you, but if your integration requ
 
 1. The 3rd party system is sending the "resolved" message to PagerTree. This will auto "resolve" the alert in PagerTree.
 2. Make sure your team is marking the alert as "resolved" in PagerTree. This will allow the system to create a new alert with the same ID.
+
+### Alert Aggregation Video
+
+<iframe src="https://www.youtube-nocookie.com/embed/bIurTCRxRAI" title="Alert Aggregation in PagerTree: How Duplicate Alerts Are Deduped" class="rds-video"></iframe>
 
 ### Alert Aggregation Example #1 (Simple)
 

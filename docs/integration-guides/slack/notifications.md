@@ -30,6 +30,7 @@ Slack users will experience a seamless connection between Slack and PagerTree. N
 
 * You will receive notifications in Slack when an alert is created, acknowledged, or dropped in PagerTree.
 * You can interact with PagerTree through slash commands in Slack.
+* You can [snooze](../../alerts.md#snooze) an alert from the snooze menu on the alert message, or with the `z <alert-id> <duration>` command (ex: `/pt z 123 1h`).
 
 ## Integration Walkthrough
 
