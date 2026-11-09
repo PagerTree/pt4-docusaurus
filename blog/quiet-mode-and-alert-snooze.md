@@ -1,5 +1,5 @@
 ---
-date: 2026-11-06
+date: 2026-11-09
 authors: pagertree
 description: "PagerTree now has quiet mode, to pause your own notifications for a while, and alert snooze, to pause paging on a single alert. Plus, the Android app now plays alert sounds even when your phone is on vibrate."
 keywords: ["pagertree quiet mode", "snooze alert", "pause on-call notifications", "snooze incident alert", "on-call do not disturb", "alert fatigue", "on-call management", "incident management snooze"]
